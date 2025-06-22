@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>37-43. Discurso de los corintios</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="description" content="Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.">
+  <meta name="keywords" content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body id="top">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../logo.svg" alt="Corpus Abierto Logo" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#top" title="Inicio"><i class="bi bi-arrow-up-circle fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#downloads-links" title="Descargas"><i class="bi bi-download fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#visualizaciones" title="Visualizaciones"><i class="bi bi-bar-chart-line fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapas" title="Mapas"><i class="bi bi-map fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/eduardo-aleman/corpusabierto" target="_blank" title="Repositorio en GitHub"><i class="bi bi-github fs-4"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="alert alert-info text-center" role="alert">
+          Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.
+        </div>
+      </div>
+      <div class="col-md-4 mb-2 mb-md-0">
+        <h6 class="mb-2">Otros textos disponibles</h6>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Anales de Tácito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <div class="mb-3">
+    <h1 class="display-4">Historia de la Guerra del Peloponeso</h1>
+    <p class="lead">Libro I</p>
+    <p class="lead">Tucídides</p>
+  </div>
+  <div class="mb-4">
+    <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
+      <option value="cap1.html">1. Prólogo. La importancia de la Guerra del Peloponeso</option>
+      <option value="cap2-19.html">2-19. La “Arqueología”. Debilidad de épocas anteriores en relación con la Grecia de la Guerra del Peloponeso. Crítica histórica</option>
+      <option value="cap20-22.html">20-22. La investigación de Tucídides. El método histórico</option>
+      <option value="cap23.html">23. La magnitud de la Guerra del Peloponeso. Sus causas</option>
+      <option value="cap24-55.html">24-55. Conflicto de Corcira</option>
+      <option value="cap31.html">31. Embajadas de corcireos y corintios a Atenas</option>
+      <option value="cap32-36.html">32-36. Discurso de los corcireos</option>
+      <option value="cap37-43.html" selected>37-43. Discurso de los corintios</option>
+      <option value="cap44-45.html">44-45. Alianza defensiva de Atenas y Corcira. Intervención ateniense</option>
+      <option value="cap46.html">46. Preparativos de los corintios</option>
+      <option value="cap47.html">47. Preparativos de los corcireos</option>
+      <option value="cap48-52.html">48-52. Batalla naval de las islas de Síbota</option>
+      <option value="cap53.html">53. Conversaciones entre atenienses y corintios</option>
+      <option value="cap54.html">54. Corintios y corcireos reivindican la victoria</option>
+      <option value="cap55.html">55. Los corintios y los atenienses regresan a su patria</option>
+      <option value="cap56-66.html">56-66. Conflicto de Potidea</option>
+      <option value="cap57.html">57. Intrigas de Perdicas contra los atenienses</option>
+      <option value="cap58.html">58. Sublevación de Potidea</option>
+      <option value="cap59.html">59. Los atenienses en Macedonia</option>
+      <option value="cap60.html">60. Ayuda de Corinto</option>
+      <option value="cap61.html">61. Expedición de Calías</option>
+      <option value="cap62-63.html">62-63. La Batalla de Potidea</option>
+      <option value="cap64-66.html">64-66. Asedio de Potidea</option>
+      <option value="cap67-88.html">67-88. El debate de Esparta</option>
+      <option value="cap68-72.html">68-72. Discurso de los corintios</option>
+      <option value="cap73-79.html">73-79. Discurso de los atenienses</option>
+      <option value="cap80-85.html">80-85. Discurso de Arquidamo</option>
+      <option value="cap86.html">86. Discurso de Estenelaidas</option>
+      <option value="cap87.html">87. El tratado ha sido violado</option>
+      <option value="cap88.html">88. El miedo de Esparta al poderío de Atenas. La verdadera causa</option>
+      <option value="cap89-118.html">89-118. La «Pentecontecia». Historia de Atenas después de las Guerras Médicas</option>
+      <option value="cap90-93.html">90-93. La reconstrucción de las murallas de Atenas. Actuación de Temístocles</option>
+      <option value="cap94.html">94. Expedición de Pausanias contra Chipre y Bizancio</option>
+      <option value="cap95.html">95. Acusaciones contra Pausanias. La hegemonía pasa a los atenienses</option>
+      <option value="cap96.html">96. La Confederación ático-delia</option>
+      <option value="cap97-100.html">97-100. Orígenes y crecimiento del poderío ateniense. De la hegemonía al Imperio</option>
+      <option value="cap101.html">101. La rebelión de los hilotas. Rendición de Tasos</option>
+      <option value="cap102.html">102. Diferencias entre Esparta y Atenas. El incidente de Itome</option>
+      <option value="cap103.html">103. Fin de la resistencia de Itome. Alianza de Mégara y Atenas</option>
+      <option value="cap104.html">104. Los atenienses en Egipto</option>
+      <option value="cap105-106.html">105-106. Guerras contra Corinto, Epidauro y Egina</option>
+      <option value="cap107.html">107. Expedición lacedemonia a Grecia Central</option>
+      <option value="cap108.html">108. Batallas de Tanagra y de Enófita. Atenas acaba sus Muros Largos</option>
+      <option value="cap109-110.html">109-110. Derrota de los atenienses en Egipto</option>
+      <option value="cap111.html">111. Los atenienses en Tesalia, en el Peloponeso y en Acarnania</option>
+      <option value="cap112.html">112. Tregua de cinco años con Esparta. Expedición a Chipre. Muerte de Cimón. Guerra Sagrada</option>
+      <option value="cap113.html">113. Batalla de Coronea. Derrota ateniense en Grecia Central</option>
+      <option value="cap114.html">114. Sublevación de Eubea y de Mégara</option>
+      <option value="cap115-117.html">115-117. La Paz de Treinta años. La Guerra de Samos</option>
+      <option value="cap118.html">118. Fin de la «Pentecontecia». Embajada lacedemonia a Delfos</option>
+      <option value="cap119-125.html">119-125. Asamblea de la Liga del Peloponeso en Esparta</option>
+      <option value="cap120-124.html">120-124. Discurso de los corintios</option>
+      <option value="cap125.html">125. Se decide la guerra</option>
+      <option value="cap126-139.html">126-139. Reclamaciones y pretextos</option>
+      <option value="cap126-127.html">126-127. Primera embajada lacedemonia a Atenas. El sacrilegio de los Alcmeónidas</option>
+      <option value="cap128-134.html">128-134. Réplica ateniense. El sacrilegio del Ténaro. Traición de Pausanias</option>
+      <option value="cap135-138.html">135-138. El caso de Temístocles</option>
+      <option value="cap139-145.html">139-145. La Asamblea de Atenas</option>
+      <option value="cap139.html">139. Nuevas embajadas lacedemonias a Atenas. El ultimátum</option>
+      <option value="cap140-144.html">140-144. Discurso de Pericles</option>
+      <option value="cap145.html">145. Respuesta de Atenas</option>
+      <option value="cap146.html">146. Acaba el relato de las causas y antecedentes de la Guerra del Peloponeso</option>
+    </select>
+  </div>
+  <div class="row align-items-stretch">
+    <div class="col-md-6 d-flex flex-column mb-4">
+      <h5>Texto original (griego)</h5>
+      <div id="greekText" class="text-container flex-fill">
+        <p><em>Aquí irá el texto en griego…</em></p>
+        <div class="notes-container mt-3">
+  <h6>Notas críticas de G. B. Alberti</h6>
+  <p>(Nota: El siguiente es un extracto del aparato crítico. Consúltese G. B. Alberti, <em>Thucydidis Historiae</em> Vol. 1, Libri 1–2, Istituto Poligrafico dello Stato, 1972. <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>.)</p>
+  <p>1 ΘΟΥΚΥΔΙΔΗΣ ὁ Ἀθηναῖος ξυνέγραψε Eust. 1501, 28• Dion. Hal. <em>De Thuc. propr.</em> 793 (Us.-Rad.)• Quintil. X 1, 73• Lucian. <em>Hist. conscr.</em> 40• Arr. <em>Anab.</em> I 1, 2• Marcell. <em>Vit. Thuc.</em> 14• 58• schol. Thuc. I 1, 1 (Hude)</p>
+  <p>1-7 Θ. Ἀ. – διανοούμενον schol. Lucian. Hist. conscr. 40 (Rabe)</p>
+  <p>2-3 ὡς – καθισταμένου schol. Thuc. I 1, 3 (Hude)</p>
+  <p>3-5 καὶ ἐλπίσας – προγεγενημένων schol. Thuc. I 1, 3 (Hude)• Dion. Hal. <em>De Thuc. propr.</em> 794 (Us.-Rad.)</p>
+  <p>5-7 τεκμαιρόμενος – διανοούμενον schol. Thuc. I 1, 5 (Hude)</p>
+  <hr>
+  <p>TITULUS: Θουκυδίδου ἱστοριῶν α ‹G› Ud: Θ. συγγραφῆς α ΑΒΕ: Θ. συγγραφῆς πρῶτον F: Θ. α M²: om. C⁴</p>
+  <hr>
+  <p>5 ἦσαν FG⁴, Ael. Dion.: ἦσαν Α B C⁴ G M², Dion. Hal.: ἦσαν Ε • 6 πρὸς ἑκατέρους ΑΒΕGM², Dion. Hal.: om. C⁴ F • 7 post κίνησις add. τε Ηᶜ • 8 μεγίστη δὴ A B E G M², Dion. Hal. 164, Alex., Priscian.: δὴ μεγίστη C⁴ F, Dion. Hal. 857, Anon. Vita, schol. Aristoph.</p>
+</div>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column mb-4">
+      <h5>Traducción (español)</h5>
+      <div id="spanishText" class="text-container flex-fill">
+        <p><em>Aquí irá la traducción al español…</em></p>
+        <div class="notes-container mt-3">
+  <h6>Notas de Juan José Torres Esbarranch</h6>
+  <p>(Torres Esbarranch, Juan José, ed. and trans. Tucídides. <em>Historia de la guerra del Peloponeso</em>. Libros I–II. Madrid: Gredos, 1990.)</p>
+  <ol>
+    <li>El historiador no se dirige exclusivamente a sus conciudadanos (cf. II 19, 2; 34, 7; VIII 67, 2), sino a un público amplio y a la posteridad; por eso une su nombre al de su ciudad, como Hecateo (cf. F. Jacoby, <em>Die Fragmente der griechischen Historiker</em> [FGrHist], Berlín-Leiden, 1923) y Heródoto (I, Proemio).</li>
+    <li>Esta guerra (431–404) supuso la culminación de la oposición entre Atenas y Esparta.</li>
+    <li>Es la historia de cómo evolucionó la guerra y de la política relacionada con ella; su investigación se centra en causas profundas y consecuencias morales.</li>
+    <li>Su preocupación por narrar la guerra comenzó con la guerra misma y su genio lo llevó a analizar con extraordinaria profundidad los sucesos contemporáneos.</li>
+    <li>En comparación con el pasado remoto y reciente, Tucídides afirma la importancia y superioridad del presente.</li>
+    <li>Pretende distanciarse de predecesores; su obra conjuga novedad, singularidad y voluntad de permanencia.</li>
+    <li><em>Kínēsis.</em> Sobre este término, cf. H. Patzer, <em>Gnomon</em> 16 (1940), 350; N. G. L. Hammond, “The arrangement of the thought in the proem and in other parts of Thucydides I”, <em>The Classical Quarterly</em> 11 (1952), 132.</li>
+    <li>“Bárbaros” designa al extranjero no griego; “xénos” al extranjero griego (cf. Heródoto II 160, 4).</li>
+    <li>Muchos pueblos no griegos (epirotas, tracios, macedonios…) se vieron implicados; cf. A. W. Gomme, <em>A Historical Commentary on Thucydides I</em>, Oxford, 1945, 91.</li>
+    <li>Pasaje de dudosa interpretación sobre “acontecimientos anteriores” y “todavía más antiguos”; discusión de Stahl, Schadewaldt y Classen; cf. I 97, 2.</li>
+  </ol>
+</div>
+      </div>
+    </div>
+  </div>
+  <section class="mb-5" id="downloads-links">
+    <p>Descargar texto original en griego, con traducción y notas:</p>
+    <p>
+      <a href="../../tucidides/lib1/lib1-cap37-43.txt" target="_blank">TXT</a> |
+      <a href="../../tucidides/lib1/lib1-cap37-43.md" target="_blank">MD</a> |
+      <a href="../../tucidides/lib1/lib1-cap37-43.xml" target="_blank">XML-TEI</a>
+    </p>
+  </section>
+</main>
+<footer class="bg-dark text-light">
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+    <span>© 2025 CorpusAbierto</span>
+    <div>
+      <a href="#top" class="text-light me-3"><i class="bi bi-arrow-up-circle"></i> Arriba</a>
+      <a href="https://github.com/usuario/repositorio" target="_blank" class="text-light me-3"><i class="bi bi-github"></i> GitHub</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="license" class="text-light"><i class="bi bi-cc-circle"></i> Licencia CC BY 4.0</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../../scripts/word-highlighter.js" defer></script>
+</body>
+</html>
