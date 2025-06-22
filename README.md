@@ -99,7 +99,7 @@ function enableHighlight() {
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/repositorio.git
+   git clone https://github.com/eduardo-aleman/corpusabierto
    cd repositorio
    ```
 2. Copia `cap1.html` y renómbralo según capítulo.
