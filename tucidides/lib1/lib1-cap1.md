@@ -1,36 +1,49 @@
-Texto original (griego):
-ΘΟΥΚΥΔΙΔΟΥ
+# Texto original (griego)
+
+ΘΟΥΚΥΔΙΔΟΥ  
 ΙΣΤΟΡΙΩΝ Α
 
 Θουκυδίδης Ἀθηναῖος ξυνέγραψε τὸν πόλεμον τῶν Πελοποννησίων καὶ Ἀθηναίων, ὡς ἐπολέμησαν πρὸς ἀλλήλους, ἀρξάμενος εὐθὺς καθισταμένου καὶ ἐλπίσας μέγαν τε ἔσεσθαι καὶ ἀξιολογώτατον τῶν προγεγενημένων, τεκμαιρόμενος ὅτι ἀκμάζοντές τε ἦσαν ἐς αὐτὸν ἀμφότεροι παρασκευῇ τῇ πάσῃ καὶ τὸ ἄλλο Ἑλληνικὸν ὁρῶν ξυνιστάμενον πρὸς ἑκατέρους, τὸ μὲν εὐθύς, τὸ δὲ καὶ διανοούμενον. [2] κίνησις γὰρ αὕτη μεγίστη δὴ τοῖς Ἕλλησιν ἐγένετο καὶ μέρει τινὶ τῶν βαρβάρων, ὡς δὲ εἰπεῖν καὶ ἐπὶ πλεῖστον ἀνθρώπων. τὰ γὰρ πρὸ αὐτῶν καὶ τὰ ἔτι παλαίτερα σαφῶς μὲν εὑρεῖν διὰ χρόνου πλῆθος ἀδύνατον ἦν, ἐκ δὲ τεκμηρίων ὧν ἐπὶ μακρότατον σκοποῦντί μοι πιστεῦσαι ξυμβαίνει οὐ μεγάλα νομίζω γενέσθαι οὔτε κατὰ τοὺς πολέμους οὔτε ἐς τὰ ἄλλα.
 
-Notas críticas de G. B. Alberti:
-(Nota: El siguiente es un extracto del aparato crítico. Consúltese G. B. Alberti, Thucydidis Historiae Vol. 1, Libri 1–2, Istituto Poligrafico dello Stato, 1972. Ver libro: https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/)
+## Notas críticas de G. B. Alberti
+
+> (Nota: El siguiente es un extracto del aparato crítico. Consúltese G. B. Alberti, *Thucydidis Historiae* Vol. 1, Libri 1–2, Istituto Poligrafico dello Stato, 1972. [Ver libro](https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/))
+
 1. ΘΟΥΚΥΔΙΔΗΣ ὁ Ἀθηναῖος ξυνέγραψε Eust. 1501, 28• Dion. Hal. De Thuc. propr. 793 (Us.-Rad.)• Quintil. X 1, 73• Lucian. Hist. conscr. 40• Arr. Anab. I 1, 2• Marcell. Vit. Thuc. 14• 58• schol. Thuc. I 1, 1 (Hude)
 2. 1-7 Θ. Ἀ. - διανοούμενον schol. Lucian. Hist. conscr. 40 (Rabe)
 3. 2-3 ὡς - καθισταμένου schol. Thuc. I 1, 3 (Hude)
 4. 3-5 καὶ ἐλπίσας - προγεγενημένων schol. Thuc. I 1, 3 (Hude)• Dion. Hal. De Thuc. propr. 794 (Us.-Rad.)
 5. 5-7 τεκμαιρόμενος - διανοούμενον schol. Thuc. I 1, 5 (Hude)
----
-TITULUS: Θουκυδίδου ἱστοριῶν α ‹G› Ud: Θ. συγγραφῆς α ΑΒΕ: Θ. συγγραφῆς πρῶτον F: Θ. α M²: om. C⁴
----
-5. ἦσαν FG⁴, Ael. Dion.: ἦσαν Α B C⁴ G M², Dion. Hal.: ἦσαν Ε • 6 πρὸς ἑκατέρους ΑΒΕGM², Dion. Hal.: om. C⁴ F • 7 post κίνησις add. τε Ηᶜ • 8 μεγίστη δὴ A B E G M², Dion. Hal. 164, Alex., Priscian.: δὴ μεγίστη C⁴ F, Dion. Hal. 857, Anon. Vita, schol. Aristoph.
 
-Traducción (español):
-de Tucídides
+---
+
+**TITULUS:** Θουκυδίδου ἱστοριῶν α ‹G› Ud: Θ. συγγραφῆς α ΑΒΕ: Θ. συγγραφῆς πρῶτον F: Θ. α M²: om. C⁴
+
+---
+
+5. ἦσαν FG⁴, Ael. Dion.: ἦσαν Α B C⁴ G M², Dion. Hal.: ἦσαν Ε  
+6. πρὸς ἑκατέρους ΑΒΕGM², Dion. Hal.: om. C⁴ F  
+7. post κίνησις add. τε Ηᶜ  
+8. μεγίστη δὴ A B E G M², Dion. Hal. 164, Alex., Priscian.: δὴ μεγίστη C⁴ F, Dion. Hal. 857, Anon. Vita, schol. Aristoph.
+
+# Traducción (español)
+
+de Tucídides  
 Investigaciones, Libro A
 
 Tucídides de Atenas¹ escribió la historia de la guerra entre los peloponesios y los atenienses² relatando cómo se desarrollaron sus hostilidades³, y se puso a ello⁴ tan pronto como se declaró, porque pensaba que iba a ser importante y más memorable que las anteriores⁵. Basaba su conjetura en el hecho de que ambos pueblos la emprendían en su mejor momento gracias a sus recursos de todo tipo⁶, y en que veía que los restantes griegos, unos de inmediato y otros disponiéndose a ello, se alineaban en uno u otro bando. [2] Esta fue, en efecto, la mayor conmoción⁷ que haya afectado a los griegos y a buena parte de los bárbaros⁸; alcanzó, por así decirlo, a casi toda la humanidad⁹. Pues los acontecimientos anteriores, y los todavía más antiguos¹⁰, era imposible, ciertamente, conocerlos con precisión a causa de la distancia del tiempo; pero por los indicios a los que puedo dar crédito cuando indago lo más lejos posible, no creo que ocurriera nada importante ni en lo referente a las guerras ni en lo demás.
 
-Notas de Juan José Torres Esbarranch:
-(Torres Esbarranch, Juan José, ed. and trans. Tucídides. Historia de la guerra del Peloponeso. Libros I–II. Madrid: Gredos, 1990.)
-1. El historiador no se dirige exclusivamente a sus conciudadanos (cf. II 19, 2; 34, 7; VIII 67, 2), sino a un público amplio y a la posteridad; por eso une su nombre al de su ciudad, como Hecateo (cf. F. Jacoby, Die Fragmente der griechischen Historiker [FGrHist], Berlín-Leiden, 1923) y Heródoto (I, Proemio).
+## Notas de Juan José Torres Esbarranch
+
+*(Torres Esbarranch, Juan José, ed. and trans. Tucídides. Historia de la guerra del Peloponeso. Libros I–II. Madrid: Gredos, 1990.)*
+
+1. El historiador no se dirige exclusivamente a sus conciudadanos (cf. II 19, 2; 34, 7; VIII 67, 2), sino a un público amplio y a la posteridad; por eso une su nombre al de su ciudad, como Hecateo (cf. F. Jacoby, *Die Fragmente der griechischen Historiker* [FGrHist], Berlín-Leiden, 1923) y Heródoto (I, Proemio).
 2. Esta guerra (431–404) supuso la culminación de la oposición entre Atenas y Esparta.
 3. Es la historia de cómo evolucionó la guerra y de la política relacionada con ella; su investigación se centra en causas profundas y consecuencias morales.
 4. Su preocupación por narrar la guerra comenzó con la guerra misma y su genio lo llevó a analizar con extraordinaria profundidad los sucesos contemporáneos.
 5. En comparación con el pasado remoto y reciente, Tucídides afirma la importancia y superioridad del presente.
 6. Pretende distanciarse de predecesores; su obra conjuga novedad, singularidad y voluntad de permanencia.
-7. Kínēsis. Sobre este término, cf. H. Patzer, Gnomon 16 (1940), 350; N. G. L. Hammond, “The arrangement of the thought in the proem and in other parts of Thucydides I”, The Classical Quarterly 11 (1952), 132.
+7. *Kínēsis.* Sobre este término, cf. H. Patzer, *Gnomon* 16 (1940), 350; N. G. L. Hammond, “The arrangement of the thought in the proem and in other parts of Thucydides I”, *The Classical Quarterly* 11 (1952), 132.
 8. “Bárbaros” designa al extranjero no griego; “xénos” al extranjero griego (cf. Heródoto II 160, 4).
-9. Muchos pueblos no griegos (epirotas, tracios, macedonios…) se vieron implicados; cf. A. W. Gomme, A Historical Commentary on Thucydides I, Oxford, 1945, 91.
+9. Muchos pueblos no griegos (epirotas, tracios, macedonios…) se vieron implicados; cf. A. W. Gomme, *A Historical Commentary on Thucydides I*, Oxford, 1945, 91.
 10. Pasaje de dudosa interpretación sobre “acontecimientos anteriores” y “todavía más antiguos”; discusión de Stahl, Schadewaldt y Classen; cf. I 97, 2.
