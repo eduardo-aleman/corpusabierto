@@ -16,10 +16,53 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body id="top">
-  <header><!-- NAVBAR omitted --></header>
+  
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/logo.svg" alt="Corpus Abierto Logo" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#top" title="Inicio"><i class="bi bi-arrow-up-circle fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#downloads-links" title="Descargas"><i class="bi bi-download fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#visualizaciones" title="Visualizaciones"><i class="bi bi-bar-chart-line fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapas" title="Mapas"><i class="bi bi-map fs-4"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/eduardo-aleman/corpusabierto" target="_blank" title="Repositorio en GitHub"><i class="bi bi-github fs-4"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="alert alert-info text-center" role="alert">
+          Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.
+        </div>
+      </div>
+      <div class="col-md-4 mb-2 mb-md-0">
+        <h6 class="mb-2">Otros textos disponibles</h6>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Anales de Tácito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
   <main class="container">
-    <div class="mb-3"><h1 class="display-4">Historia de la Guerra del Peloponeso</h1><p class="lead">Tucídides</p></div>
-    <div class="mb-4"><select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
+    <div class="mb-3">
+      <h1 class="display-4">Historia de la Guerra del Peloponeso</h1>
+      <p class="lead">Tucídides</p>
+    </div>
+    <div class="mb-4">
+      <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
+        
 <option value="/tucidides/lib1/cap1.html">1. Prólogo. La importancia de la Guerra del Peloponeso</option>
 <option value="/tucidides/lib1/cap2-19.html">2-19. La “Arqueología”. Debilidad de épocas anteriores en relación con la Grecia de la Guerra del Peloponeso. Crítica histórica</option>
 <option value="/tucidides/lib1/cap20-22.html">20-22. La investigación de Tucídides. El método histórico</option>
@@ -82,20 +125,24 @@
 <option value="/tucidides/lib1/cap140-144.html">140-144. Discurso de Pericles</option>
 <option value="/tucidides/lib1/cap145.html" selected>145. Respuesta de Atenas</option>
 <option value="/tucidides/lib1/cap146.html">146. Acaba el relato de las causas y antecedentes de la Guerra del Peloponeso</option>
-</select></div>
+
+      </select>
+    </div>
     <div class="row align-items-stretch">
       <div class="col-md-6 d-flex flex-column mb-4">
         <h5>Texto original (griego)</h5>
         <div id="greekText" class="text-container flex-fill">
-          <div class="notes-container"><h6>Notas críticas de G. B. Alberti</h6>
-          <p>(Nota: El siguiente es un extracto del aparato crítico. Consúltese G. B. Alberti, Thucydidis Historiae Vol. 1, Libri 1–2, Istituto Poligrafico dello Stato, 1972. <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>.)</p></div>
+          <p><em>Aquí irá el texto en griego…</em></p>
+          <p><strong>Notas críticas de G. B. Alberti</strong></p>
+          <p>(Nota: El siguiente es un extracto del aparato crítico. Consúltese G. B. Alberti, <em>Thucydidis Historiae</em> Vol. 1, Libri 1–2, Istituto Poligrafico dello Stato, 1972. <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>.)</p>
         </div>
       </div>
       <div class="col-md-6 d-flex flex-column mb-4">
         <h5>Traducción (español)</h5>
         <div id="spanishText" class="text-container flex-fill">
-          <div class="notes-container"><h6>Notas de Juan José Torres Esbarranch</h6>
-          <p>(Torres Esbarranch, Juan José, ed. and trans. Tucídides. Historia de la guerra del Peloponeso. Libros I–II. Madrid: Gredos, 1990.)</p></div>
+          <p><em>Aquí irá la traducción al español…</em></p>
+          <p><strong>Notas de Juan José Torres Esbarranch</strong></p>
+          <p>(Torres Esbarranch, Juan José, ed. and trans. Tucídides. <em>Historia de la guerra del Peloponeso</em>. Libros I–II. Madrid: Gredos, 1990.)</p>
         </div>
       </div>
     </div>
@@ -104,7 +151,18 @@
       <p><a href="#" target="_blank">TXT</a> | <a href="#" target="_blank">MD</a> | <a href="#" target="_blank">XML-TEI</a></p>
     </section>
   </main>
-  <footer><!-- Footer omitted --></footer>
+  
+<footer class="bg-dark text-light">
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+    <span>© 2025 CorpusAbierto</span>
+    <div>
+      <a href="#top" class="text-light me-3"><i class="bi bi-arrow-up-circle"></i> Arriba</a>
+      <a href="https://github.com/usuario/repositorio" target="_blank" class="text-light me-3"><i class="bi bi-github"></i> GitHub</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="license" class="text-light"><i class="bi bi-cc-circle"></i> Licencia CC BY 4.0</a>
+    </div>
+  </div>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="/scripts/word-highlighter.js" defer></script>
 </body>
