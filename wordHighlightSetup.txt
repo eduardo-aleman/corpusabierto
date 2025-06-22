@@ -1,0 +1,53 @@
+Para que el script de resaltado funcione, cada palabra debe llevar un atributo `id` o `data-map`. A continuación, los pasos:
+
+1. Envuelve manualmente todas las palabras en `<span>` con `id` y `class="word"`. Ejemplo:
+   ```html
+   <span id="w1" class="word">λόγος</span>
+   ```
+
+2. Asigna `data-map` en la palabra origen para agrupar varias palabras relacionadas. Ejemplo:
+   ```html
+   <span id="w1" class="word" data-map="t2">λόγος</span>
+   ```
+
+3. Asegúrate de que las palabras destino tengan el `id` correspondiente. Ejemplo:
+   ```html
+   <span id="t2" class="word">discurso</span>
+   ```
+
+4. (Opcional) Si quieres que `wrapWords` siga envolviendo automáticamente incluso cuando haya `<span>`, comenta esta línea en el script:
+   ```js
+   // if (container.querySelector('span')) return;
+   ```
+
+5. Ejemplo completo de estructura en tu HTML:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <title>Mi texto bilingüe</title>
+</head>
+<body>
+  <div id="greekText">
+    <span id="w1" class="word" data-map="t2">λόγος</span>
+    <span id="w2" class="word">ἐστίν</span>
+    <span id="w3" class="word">μέγας</span>
+    <!-- ... -->
+  </div>
+
+  <div id="spanishText">
+    <span id="t1" class="word">el</span>
+    <span id="t2" class="word">discurso</span>
+    <span id="t3" class="word">es</span>
+    <span id="t4" class="word">grande</span>
+    <!-- ... -->
+  </div>
+
+  <script src="/scripts/wordHighlight.js"></script>
+</body>
+</html>
+```
