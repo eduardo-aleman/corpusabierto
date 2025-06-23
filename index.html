@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CorpusAbierto</title>
 
-  <!-- Estilos propios -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <style>:root{--color-bg:#fff;--color-text:#212529;--color-border:#dee2e6;--color-container-bg:#fafafa;--color-highlight:#ffeb3b;--color-link:#0d6efd;--radius:.375rem;--spacing:1.5rem}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--color-bg);color:var(--color-text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;font-size:1rem;scroll-behavior:smooth}a{color:var(--color-link);text-decoration:none}a:hover,a:focus{text-decoration:underline}.word{display:inline;cursor:pointer;transition:background-color .2s ease;position:relative}.word:hover,.word:focus{background-color:rgba(255,235,59,.3)}.highlight{background-color:var(--color-highlight);transition:background-color .2s ease}.text-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-bottom:2rem;flex:1;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.notes-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-top:var(--spacing);margin-bottom:2rem;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.text-container p,.notes-container p{margin-bottom:1rem}.text-container ul,.text-container ol,.notes-container ul,.notes-container ol{margin:0 0 1rem 1.5rem}.text-container br+br,.notes-container br+br{content:"";display:block;margin-bottom:var(--spacing);line-height:0}.text-container::-webkit-scrollbar,.notes-container::-webkit-scrollbar{width:8px}.text-container::-webkit-scrollbar-track,.notes-container::-webkit-scrollbar-track{background:var(--color-bg)}.text-container::-webkit-scrollbar-thumb,.notes-container::-webkit-scrollbar-thumb{background-color:var(--color-border);border-radius:var(--radius)}@media (max-width:768px){.text-container,.notes-container{padding:1rem;max-height:50vh}}.word:focus{outline:3px solid var(--color-link);outline-offset:2px}.text-container.flex-fill{} .text-container br{display:inline!important;content:" "!important;margin:0!important;line-height:normal!important}.text-container br+br{display:block!important;margin:var(--spacing) 0!important;line-height:normal!important}</style>
 
-  <!-- Iconos y manifest -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -21,16 +19,16 @@
   <meta name="keywords"
     content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+  
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></noscript>
 </head>
 
 <body id="top">
 
   <header>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div class="container">
         <a class="navbar-brand" href="/">
@@ -73,7 +71,6 @@
       </div>
     </nav>
 
-    <!-- ENCABEZADO -->
     <div class="container mb-4">
       <div class="row">
         <div class="col-md-8">
@@ -88,22 +85,19 @@
             <a href="#" class="list-group-item list-group-item-action">
               Anales de Tácito
             </a>
-            <!-- Más enlaces pueden añadirse aquí -->
-          </div>
+            </div>
         </div>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <!-- TÍTULO -->
     <div class="mb-3">
       <h1 class="display-4">Historia de la Guerra del Peloponeso</h1>
       <h2 class="h2">Libro I</h2>
       <p class="lead">Tucídides</p>
     </div>
 
-    <!-- DROPDOWN DE CAPÍTULOS -->
     <div class="mb-4">
       <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
         <option value="/tucidides/lib1/html/cap1.html" selected>1. Prólogo. La importancia de la Guerra del Peloponeso
@@ -484,7 +478,6 @@
       </div>
     </div>
 
-    <!-- ENLACES DE DESCARGA -->
     <section class="mb-5" id="downloads-links">
       <p>Descargar texto original en griego, con traducción y notas:</p>
       <p>
@@ -495,7 +488,6 @@
     </section>
   </main>
 
-  <!-- FOOTER (diseño inverso) -->
   <footer class="bg-dark text-light">
     <div class="container py-3 d-flex justify-content-between align-items-center">
       <span>© 2025 CorpusAbierto</span>
@@ -511,11 +503,8 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="/scripts/word-highlighter.js" defer></script>
-  <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
-  <script>mermaid.initialize({ startOnLoad: true });</script>
 </body>
 
 </html>
