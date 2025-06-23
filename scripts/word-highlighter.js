@@ -1,14 +1,16 @@
 /* Archivo: /scripts/word-highlighter.js */
 
-// Envuelve palabras solo si no hay ya spans.word
+/**
+ * Envuelve el contenido de un contenedor en <span class="word">,
+ * asignando data-index a cada token. Si ya existen spans.word, no vuelve a envolver.
+ */
 function wrapWords(containerId) {
   const container = document.getElementById(containerId);
   if (!container) {
     console.warn(`No existe el contenedor #${containerId}`);
     return;
   }
-  // Si ya hay spans.word, no envolvemos de nuevo
-  if (container.querySelector('span.word')) return;
+  if (container.querySelector('span.word')) return;  // ya envuelto
 
   const text = container.innerHTML
     .replace(/<br\s*\/?>/gi, ' <br> ')
@@ -31,36 +33,64 @@ function wrapWords(containerId) {
   });
 }
 
-// Resalta según data-map, id (bidireccional) o data-index
+/**
+ * Quita la clase .highlight de todos los elementos que la tuvieran.
+ */
+function clearHighlights() {
+  document.querySelectorAll('.highlight')
+          .forEach(el => el.classList.remove('highlight'));
+}
+
+/**
+ * Activa el resaltado y scroll al elemento emparejado:
+ * - data-map ➔ resalta todos los IDs listados y hace scroll
+ * - id="w#_##" o "t#_##" ➔ usa regex para emparejar el otro prefijo
+ * - data-index ➔ resalta por posición
+ */
 function enableHighlight() {
   document.querySelectorAll('.word').forEach(word => {
     word.addEventListener('click', () => {
-      // Limpiar resaltados previos
-      document.querySelectorAll('.highlight').forEach(h => h.classList.remove('highlight'));
+      clearHighlights();
 
-      // 1) Si clicado en español (tiene data-map), resaltar los destinos en griego
+      // 1) traducciones manuales: data-map="t2_3,t2_4"
       if (word.dataset.map) {
         word.dataset.map.split(',').forEach(id => {
           const tgt = document.getElementById(id.trim());
-          if (tgt) tgt.classList.add('highlight');
-        });
-      }
-      // 2) Si clicado en griego (tiene id pero no data-map), resaltar su traducción en español
-      else if (word.id) {
-        // (Opcional) resalta también el propio término griego
-        word.classList.add('highlight');
-        // Buscar todos los spans en español que lo referencian
-        document.querySelectorAll('.word[data-map]').forEach(span => {
-          const maps = span.dataset.map.split(',').map(s => s.trim());
-          if (maps.includes(word.id)) {
-            span.classList.add('highlight');
+          if (tgt) {
+            tgt.classList.add('highlight');
+            tgt.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         });
+        return;
       }
-      // 3) Si no tiene ni data-map ni id, cae en data-index
-      else if (word.dataset.index) {
-        document.querySelectorAll(`.word[data-index="${word.dataset.index}"]`)
-                .forEach(span => span.classList.add('highlight'));
+
+      // 2) emparejamiento griego<->español por ID (w#_## <-> t#_##)
+      if (word.id) {
+        const m = word.id.match(/^([wt])(\d+)_(\d+)$/);
+        if (m) {
+          const [, prefix, cap, par] = m;
+          const otherPrefix = prefix === 'w' ? 't' : 'w';
+          const otherId = `${otherPrefix}${cap}_${par}`;
+          const otherSpan = document.getElementById(otherId);
+
+          // resaltamos el clicado
+          word.classList.add('highlight');
+
+          if (otherSpan) {
+            otherSpan.classList.add('highlight');
+            otherSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            console.warn(`No encontrado par para id ${word.id}`);
+          }
+          return;
+        }
+      }
+
+      // 3) correspondencia por índice en texto paralelo
+      if (word.dataset.index) {
+        document
+          .querySelectorAll(`.word[data-index="${word.dataset.index}"]`)
+          .forEach(span => span.classList.add('highlight'));
       }
     });
   });
