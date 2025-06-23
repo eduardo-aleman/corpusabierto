@@ -40,8 +40,7 @@ a:focus {
 
 /* Palabras interactivas */
 .word {
-  /* Cambiado a inline para que no rompa líneas */
-  display: inline;
+  display: inline-block;
   cursor: pointer;
   transition: background-color 0.2s ease;
   position: relative;
@@ -65,33 +64,29 @@ a:focus {
   margin-bottom: 2rem;
   max-height: 60vh;
   overflow-y: auto;
-
-  /* Fuerza el flujo normal y desactiva flexbox */
-  display: block !important;
-  white-space: normal !important;
+  display: block; /* Permite el flujo normal de texto */
 }
 
-/* Si usas <p> dentro: restaura su margen */
+/* Dentro de un .d-flex.flex-column, estos flex-children se comportan así: */
+/* El texto crece para emparejar altura de columna */
+.text-container.flex-fill {
+  flex: 1 1 auto;
+}
+/* Las notas no crecen */
+.notes-container {
+  flex: 0 0 auto;
+}
+
+/* Restaurar márgenes en párrafos y listas dentro de los contenedores */
 .text-container p,
 .notes-container p {
   margin-bottom: 1rem;
 }
-
-/* Espaciado para listas */
 .text-container ul,
 .text-container ol,
 .notes-container ul,
 .notes-container ol {
   margin: 0 0 1rem 1.5rem;
-}
-
-/* Convierte dos <br> consecutivos en un salto de párrafo con espacio */
-.text-container br + br,
-.notes-container br + br {
-  content: "";
-  display: block;
-  margin-bottom: var(--spacing);
-  line-height: 0;
 }
 
 /* Scrollbar personalizado (WebKit) */
@@ -123,25 +118,4 @@ a:focus {
   outline: 3px solid var(--color-link);
   outline-offset: 2px;
 }
-
-/* Asegura que .flex-fill no recupere el flex original */
-.text-container.flex-fill {
-  display: block !important;
-  flex: 0 1 auto !important;
-}
-/* ——— Anular saltos de línea individuales en los contenedores de texto ——— */
-.text-container br {
-  /* convierto cada <br> en un espacio en línea */
-  display: inline !important;
-  content: " " !important;
-  margin: 0 !important;
-  line-height: normal !important;
-}
-
-/* los dobles <br><br> vuelven a ser bloque y marcan párrafo */
-.text-container br + br {
-  display: block !important;
-  margin: var(--spacing) 0 !important;
-  line-height: normal !important;
-}
-/* ——— Fin de anulación de saltos de línea individuales ——— */
+/* Fin del archivo styles.css */
