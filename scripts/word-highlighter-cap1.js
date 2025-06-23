@@ -1,4 +1,3 @@
-javascript
 /* Archivo: /scripts/word-highlighter-cap1.js */
 
 /**
