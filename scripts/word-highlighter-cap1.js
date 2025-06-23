@@ -4,7 +4,6 @@ javascript
 /**
  * Envuelve el contenido de un contenedor en <span class="word">,
  * asignando data-index a cada token. Si ya existen spans.word, no vuelve a envolver.
- * (En el capítulo 1 los spans ya están presentes, así que wrapWords solo actúa si los quitas.)
  */
 function wrapWords(containerId) {
   const container = document.getElementById(containerId);
@@ -49,19 +48,25 @@ function clearHighlights() {
  * - data-map ➔ resalta todos los IDs listados y hace scroll
  * - id="w#"/"t#" ➔ empareja directamente palabra a palabra
  * - data-index ➔ resalta por posición (fallback)
+ * Incluye logs de depuración en consola.
  */
 function enableHighlightCap1() {
   document.querySelectorAll('.word').forEach(word => {
     word.addEventListener('click', () => {
       clearHighlights();
+      console.log('▶ clicado:', word.id || `[idx=${word.dataset.index}]`, word.dataset.map);
 
       // 1) traducciones manuales: data-map="w4" etc.
       if (word.dataset.map) {
         word.dataset.map.split(',').forEach(id => {
-          const tgt = document.getElementById(id.trim());
+          const tgtId = id.trim();
+          const tgt = document.getElementById(tgtId);
           if (tgt) {
+            console.log('   → data-map →', tgtId);
             tgt.classList.add('highlight');
             tgt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            console.warn('   ⚠ data-map NO encontrado →', tgtId);
           }
         });
         return;
@@ -69,11 +74,11 @@ function enableHighlightCap1() {
 
       // 2) emparejamiento palabra-por-palabra por ID (w# <-> t#)
       if (word.id) {
-        // Si id empieza por 'w', buscamos el 't' correspondiente, y viceversa
         const prefix = word.id.charAt(0);
         const num    = word.id.slice(1);
         const otherId = (prefix === 'w' ? 't' : 'w') + num;
         const otherSpan = document.getElementById(otherId);
+        console.log('   → emparejar con →', otherId);
 
         // resaltamos el clicado
         word.classList.add('highlight');
@@ -82,13 +87,14 @@ function enableHighlightCap1() {
           otherSpan.classList.add('highlight');
           otherSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
-          console.warn(`No encontrado par para id ${word.id}`);
+          console.warn(`   ⚠ NO encontrado par para id ${word.id}`);
         }
         return;
       }
 
-      // 3) fallback: correspondencia por índice en texto paralelo
+      // 3) fallback por índice
       if (word.dataset.index) {
+        console.log('   → fallback idx →', word.dataset.index);
         document
           .querySelectorAll(`.word[data-index="${word.dataset.index}"]`)
           .forEach(span => span.classList.add('highlight'));
@@ -99,8 +105,8 @@ function enableHighlightCap1() {
 
 // Inicialización al cargar la página (solo capítulo 1)
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('📦 word-highlighter-cap1 inicializado');
   wrapWords('greekText');
   wrapWords('spanishText');
   enableHighlightCap1();
-  console.log('word-highlighter-cap1 inicializado');
 });
