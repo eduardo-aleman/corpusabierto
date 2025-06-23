@@ -1,6 +1,6 @@
 /* Archivo: static/css/styles.css */
 
-/* — Variables globales — */
+/* Variables globales */
 :root {
   --color-bg: #ffffff;
   --color-text: #212529;
@@ -12,14 +12,14 @@
   --spacing: 1.5rem;
 }
 
-/* — Reset ligero — */
+/* Reset ligero */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* — Tipografía base — */
+/* Tipografía base */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -38,7 +38,7 @@ a:focus {
   text-decoration: underline;
 }
 
-/* — Palabras interactivas — */
+/* Palabras interactivas */
 .word {
   display: inline-block;
   cursor: pointer;
@@ -54,13 +54,7 @@ a:focus {
   transition: background-color 0.2s ease;
 }
 
-/* — Configuración de las columnas flex — */
-.row.align-items-stretch > .col-md-6 {
-  display: flex;
-  flex-direction: column;
-}
-
-/* — Contenedores de texto y notas — */
+/* Contenedores de texto y notas */
 .text-container,
 .notes-container {
   background-color: var(--color-container-bg);
@@ -68,15 +62,22 @@ a:focus {
   border-radius: var(--radius);
   padding: var(--spacing);
   margin-bottom: 2rem;
+  max-height: 60vh;
   overflow-y: auto;
+  display: block; /* Permite el flujo normal de texto */
 }
 
-/* — Hacer que el primer .text-container de cada columna crezca igualado al de la otra — */
-.row.align-items-stretch > .col-md-6 > .text-container {
+/* Dentro de un .d-flex.flex-column, estos flex-children se comportan así: */
+/* El texto crece para emparejar altura de columna */
+.text-container.flex-fill {
   flex: 1 1 auto;
 }
+/* Las notas no crecen */
+.notes-container {
+  flex: 0 0 auto;
+}
 
-/* — Restaurar márgenes en párrafos y listas dentro de los contenedores — */
+/* Restaurar márgenes en párrafos y listas dentro de los contenedores */
 .text-container p,
 .notes-container p {
   margin-bottom: 1rem;
@@ -88,7 +89,7 @@ a:focus {
   margin: 0 0 1rem 1.5rem;
 }
 
-/* — Scrollbar personalizado (WebKit) — */
+/* Scrollbar personalizado (WebKit) */
 .text-container::-webkit-scrollbar,
 .notes-container::-webkit-scrollbar {
   width: 8px;
@@ -103,7 +104,7 @@ a:focus {
   border-radius: var(--radius);
 }
 
-/* — Responsive — */
+/* Responsive */
 @media (max-width: 768px) {
   .text-container,
   .notes-container {
@@ -112,7 +113,7 @@ a:focus {
   }
 }
 
-/* — Accesibilidad: foco visible — */
+/* Accesibilidad: foco visible */
 .word:focus {
   outline: 3px solid var(--color-link);
   outline-offset: 2px;
