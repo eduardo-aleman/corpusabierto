@@ -1,4 +1,3 @@
-```css
 /* Archivo: static/css/styles.css */
 
 /* Variables globales */
@@ -34,7 +33,6 @@ a {
   color: var(--color-link);
   text-decoration: none;
 }
-
 a:hover,
 a:focus {
   text-decoration: underline;
@@ -42,17 +40,16 @@ a:focus {
 
 /* Palabras interactivas */
 .word {
-  display: inline-block;
+  /* Cambiado a inline para que no rompa líneas */
+  display: inline;
   cursor: pointer;
   transition: background-color 0.2s ease;
   position: relative;
 }
-
 .word:hover,
 .word:focus {
   background-color: rgba(255, 235, 59, 0.3);
 }
-
 .highlight {
   background-color: var(--color-highlight);
   transition: background-color 0.2s ease;
@@ -68,16 +65,33 @@ a:focus {
   margin-bottom: 2rem;
   max-height: 60vh;
   overflow-y: auto;
-  /* Volver al flujo normal para respetar párrafos y saltos de línea */
-  display: block;
-  /* Si solo usas <br> para saltos, esto hará que se respeten */
-  white-space: pre-wrap;
+
+  /* Fuerza el flujo normal y desactiva flexbox */
+  display: block !important;
+  white-space: normal !important;
 }
 
-/* Espaciado entre elementos hijos (párrafos, listas, etc.) */
-.text-container > * + *,
-.notes-container > * + * {
-  margin-top: 1rem;
+/* Si usas <p> dentro: restaura su margen */
+.text-container p,
+.notes-container p {
+  margin-bottom: 1rem;
+}
+
+/* Espaciado para listas */
+.text-container ul,
+.text-container ol,
+.notes-container ul,
+.notes-container ol {
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Convierte dos <br> consecutivos en un salto de párrafo con espacio */
+.text-container br + br,
+.notes-container br + br {
+  content: "";
+  display: block;
+  margin-bottom: var(--spacing);
+  line-height: 0;
 }
 
 /* Scrollbar personalizado (WebKit) */
@@ -85,12 +99,10 @@ a:focus {
 .notes-container::-webkit-scrollbar {
   width: 8px;
 }
-
 .text-container::-webkit-scrollbar-track,
 .notes-container::-webkit-scrollbar-track {
   background: var(--color-bg);
 }
-
 .text-container::-webkit-scrollbar-thumb,
 .notes-container::-webkit-scrollbar-thumb {
   background-color: var(--color-border);
@@ -112,10 +124,8 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* Overrides de Bootstrap .flex-fill en .text-container */
+/* Asegura que .flex-fill no recupere el flex original */
 .text-container.flex-fill {
-  /* No crecer para emparejar alturas */
+  display: block !important;
   flex: 0 1 auto !important;
 }
-```
-/* Fin del archivo: static/css/styles.css */
