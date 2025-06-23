@@ -129,3 +129,19 @@ a:focus {
   display: block !important;
   flex: 0 1 auto !important;
 }
+/* ——— Anular saltos de línea individuales en los contenedores de texto ——— */
+.text-container br {
+  /* convierto cada <br> en un espacio en línea */
+  display: inline !important;
+  content: " " !important;
+  margin: 0 !important;
+  line-height: normal !important;
+}
+
+/* los dobles <br><br> vuelven a ser bloque y marcan párrafo */
+.text-container br + br {
+  display: block !important;
+  margin: var(--spacing) 0 !important;
+  line-height: normal !important;
+}
+/* ——— Fin de anulación de saltos de línea individuales ——— */
