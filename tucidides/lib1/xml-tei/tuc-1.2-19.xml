@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 2-19</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Fuente del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
+        </respStmt>
+        <respStmt>
+          <resp>Fuente de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Fuente de la traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación de textos</resp>
+          <name>CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-22">22 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="grc_src">
+          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory Crane. Disponible en <ref target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.2.1-1.19.3">Scaife Viewer</ref>.
+        </bibl>
+        <bibl xml:id="crit_src">
+          Alberti, G. B., ed. <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2), Istituto Poligrafico dello Stato, 1972.
+        </bibl>
+        <bibl xml:id="trans_src">
+          Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990.
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación del archivo para los capítulos 2-19 con segmentación y alineación.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="2">
+            <linkGrp type="alignment">
+                <link target="#t2_1 #w2_1"/>
+                <link target="#t2_2 #w2_2"/>
+                <link target="#t2_3 #w2_3"/>
+                <link target="#t2_4 #w2_4"/>
+                <link target="#t2_5 #w2_5"/>
+                <link target="#t2_6 #w2_6"/>
+            </linkGrp>
+            <div type="source" xml:lang="grc">
+                <p><seg xml:id="w2_1">φαίνεται γὰρ ἡ νῦν Ἑλλὰς καλουμένη οὐ πάλαι βεβαίως οἰκουμένη, ἀλλὰ μεταναστάσεις τε οὖσαι τὰ πρότερα καὶ ῥᾳδίως ἕκαστοι τὴν ἑαυτῶν ἀπολείποντες βιαζόμενοι ὑπό τινων αἰεὶ πλειόνων.</seg></p>
+                <p><seg xml:id="w2_2">τῆς γὰρ ἐμπορίας οὐκ οὔσης, οὐδ’ ἐπιμειγνύντες ἀδεῶς ἀλλήλοις οὔτε κατὰ γῆν οὔτε διὰ θαλάσσης, νεμόμενοί τε τὰ αὑτῶν ἕκαστοι ὅσον ἀποζῆν καὶ περιουσίαν χρημάτων οὐκ ἔχοντες οὐδὲ γῆν φυτεύοντες, ἄδηλον ὂν ὁπότε τις ἐπελθὼν καὶ ἀτειχίστων ἅμα ὄντων ἄλλος ἀφαιρήσεται, τῆς τε καθ’ ἡμέραν ἀναγκαίου τροφῆς πανταχοῦ ἂν ἡγούμενοι ἐπικρατεῖν, οὐ χαλεπῶς ἀπανίσταντο, καὶ δι’ αὐτὸ οὔτε μεγέθει πόλεων ἴσχυον οὔτε τῇ ἄλλῃ παρασκευῇ.</seg></p>
+                <p><seg xml:id="w2_3">μάλιστα δὲ τῆς γῆς ἡ ἀρίστη αἰεὶ τὰς μεταβολὰς τῶν οἰκητόρων εἶχεν, ἥ τε νῦν Θεσσαλία καλουμένη καὶ Βοιωτία Πελοποννήσου τε τὰ πολλὰ πλὴν Ἀρκαδίας, τῆς τε ἄλλης ὅσα ἦν κράτιστα.</seg></p>
+                <p><seg xml:id="w2_4">διὰ γὰρ ἀρετὴν γῆς αἵ τε δυνάμεις τισὶ μείζους ἐγγιγνόμεναι στάσεις ἐνεποίουν ἐξ ὧν ἐφθείροντο, καὶ ἅμα ὑπὸ ἀλλοφύλων μᾶλλον ἐπεβουλεύοντο.</seg></p>
+                <p><seg xml:id="w2_5">τὴν γοῦν Ἀττικὴν ἐκ τοῦ ἐπὶ πλεῖστον διὰ τὸ λεπτόγεων ἀστασίαστον οὖσαν ἄνθρωποι ᾤκουν οἱ αὐτοὶ αἰεί.</seg></p>
+                <p><seg xml:id="w2_6">καὶ παράδειγμα τόδε τοῦ λόγου οὐκ ἐλάχιστόν ἐστι διὰ τὰς μετοικίας ἐς τὰ ἄλλα μὴ ὁμοίως αὐξηθῆναι· ἐκ γὰρ τῆς ἄλλης Ἑλλάδος οἱ πολέμῳ ἢ στάσει ἐκπίπτοντες παρ Ἀθηναίους οἱ δυνατώτατοι ὡς βέβαιον ὂν ἀνεχώρουν, καὶ πολῖται γιγνόμενοι εὐθὺς ἀπὸ παλαιοῦ μείζω ἔτι ἐποίησαν πλήθει ἀνθρώπων τὴν πόλιν, ὥστε καὶ ἐς Ἰωνίαν ὕστερον ὡς οὐχ ἱκανῆς οὔσης τῆς Ἀττικῆς ἀποικίας ἐξέπεμψαν.</seg></p>
+            </div>
+            <div type="translation" xml:lang="es">
+                <p><seg xml:id="t2_1">Es evidente<ref target="#note11">¹¹</ref>, en efecto, que la tierra que ahora se llama Grecia no estaba habitada antiguamente de forma estable, sino que al principio hubo migraciones y todos abandonaban fácilmente su territorio forzados por otros pueblos cada vez más numerosos.</seg></p>
+                <p><seg xml:id="t2_2">[2] El comercio no existía y las comunicaciones entre los pueblos no eran seguras ni por tierra ni por mar; cada uno sacaba de su propia tierra solo lo indispensable para vivir, y no acumulaban riquezas ni efectuaban plantaciones<ref target="#note12">¹²</ref>, puesto que nadie sabía cuándo otros se les echarían encima y, al no estar protegidos por murallas, los despojarían; en consecuencia, pensando que en cualquier parte iban a conseguir el indispensable alimento cotidiano, emigraban sin dificultad, y por ello no eran poderosos ni por la magnitud de sus ciudades ni por otro tipo de recursos<ref target="#note13">¹³</ref>.</seg></p>
+                <p><seg xml:id="t2_3">[3] Las tierras más fértiles, mayormente, experimentaban continuos cambios de habitantes: así la que ahora se llama Tesalia y Beocia y la mayor parte del Peloponeso<ref target="#note14">¹⁴</ref> con la excepción de Arcadia, y de las restantes, las que eran mejores.</seg></p>
+                <p><seg xml:id="t2_4">[4] Gracias a la fertilidad de la tierra, las fortunas de algunos aumentaban y eran causa de disensiones internas que provocaban la ruina de los pueblos, a la vez que los dejaban más expuestos a los ataques de tribus del exterior.</seg></p>
+                <p><seg xml:id="t2_5">[5] Pero el Ática, según esto, por vivir desde los tiempos más remotos sin disensiones internas debido a la aridez de su suelo<ref target="#note15">¹⁵</ref>, fue habitada sin interrupción por los mismos hombres<ref target="#note16">¹⁶</ref>.</seg></p>
+                <p><seg xml:id="t2_6">[6] Y una demostración bastante clara de mi teoría la constituye el hecho de que las otras regiones no progresaron en la misma medida a causa de las migraciones. En efecto, los hombres más poderosos, al ser desterrados del resto de Grecia debido a guerras o a disensiones internas, se refugiaban en Atenas por aprecio a su estabilidad y, convirtiéndose en ciudadanos<ref target="#note17">¹⁷</ref>, desde los primeros tiempos acrecentaron todavía más la población de la ciudad, hasta el punto de que más tarde, al resultar el Ática insuficiente, incluso enviaron colonias a Jonia<ref target="#note18">¹⁸</ref>.</seg></p>
+            </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="3">
+            <linkGrp type="alignment">
+                <link target="#t3_1 #w3_1"/>
+                <link target="#t3_2 #w3_2"/>
+                <link target="#t3_3 #w3_3"/>
+                <link target="#t3_4 #w3_4"/>
+                <link target="#t3_5 #w3_5"/>
+            </linkGrp>
+            <div type="source" xml:lang="grc">
+                <p><seg xml:id="w3_1">δηλοῖ δέ μοι καὶ τόδε τῶν παλαιῶν ἀσθένειαν οὐχ ἥκιστα· πρὸ γὰρ τῶν Τρωικῶν οὐδὲν φαίνεται πρότερον κοινῇ ἐργασαμένη ἡ Ἑλλάς·</seg></p>
+                <p><seg xml:id="w3_2">δοκεῖ δέ μοι, οὐδὲ τοὔνομα τοῦτο ξύμπασά πω εἶχεν, ἀλλὰ τὰ μὲν πρὸ Ἕλληνος τοῦ Δευκαλίωνος καὶ πάνυ οὐδὲ εἶναι ἡ ἐπίκλησις αὕτη, κατὰ ἔθνη δὲ ἄλλα τε καὶ τὸ Πελασγικὸν ἐπὶ πλεῖστον ἀφ’ ἑαυτῶν τὴν ἐπωνυμίαν παρέχεσθαι, Ἕλληνος δὲ καὶ τῶν παίδων αὐτοῦ ἐν τῇ Φθιώτιδι ἰσχυσάντων, καὶ ἐπαγομένων αὐτοὺς ἐπ’ ὠφελίᾳ ἐς τὰς ἄλλας πόλεις, καθ’ ἑκάστους μὲν ἤδη τῇ ὁμιλίᾳ μᾶλλον καλεῖσθαι Ἕλληνας, οὐ μέντοι πολλοῦ γε χρόνου [ἐδύνατο] καὶ ἅπασιν ἐκνικῆσαι.</seg></p>
+                <p><seg xml:id="w3_3">τεκμηριοῖ δὲ μάλιστα Ὅμηρος· πολλῷ γὰρ ὕστερον ἔτι καὶ τῶν Τρωικῶν γενόμενος οὐδαμοῦ τοὺς ξύμπαντας ὠνόμασεν, οὐδ’ ἄλλους ἢ τοὺς μετ’ Ἀχιλλέως ἐκ τῆς Φθιώτιδος, οἵπερ καὶ πρῶτοι Ἕλληνες ἦσαν, Δαναοὺς δὲ ἐν τοῖς ἔπεσι καὶ Ἀργείους καὶ Ἀχαιοὺς ἀνακαλεῖ. οὐ μὴν οὐδὲ βαρβάρους εἴρηκε διὰ τὸ μηδὲ Ἕλληνάς πω, ὡς ἐμοὶ δοκεῖ, ἀντίπαλον ἐς ἓν ὄνομα ἀποκεκρίσθαι.</seg></p>
+                <p><seg xml:id="w3_4">οἱ δ’ οὖν ὡς ἕκαστοι Ἕλληνες κατὰ πόλεις τε ὅσοι ἀλλήλων ξυνίεσαν καὶ ξύμπαντες ὕστερον κληθέντες οὐδὲν πρὸ τῶν Τρωικῶν δι’ ἀσθένειαν καὶ ἀμειξίαν ἀλλήλων ἁθρόοι ἔπραξαν.</seg></p>
+                <p><seg xml:id="w3_5">ἀλλὰ καὶ ταύτην τὴν στρατείαν θαλάσσῃ ἤδη πλείω χρώμενοι ξυνεξῆλθον.</seg></p>
+            </div>
+            <div type="translation" xml:lang="es">
+                <p><seg xml:id="t3_1">Me demuestra también, y no con menor claridad, la debilidad de los antiguos el hecho de que, antes de la Guerra de Troya<ref target="#note19">¹⁹</ref>, la Hélade no parece haber acometido ninguna empresa en común;</seg></p>
+                <p><seg xml:id="t3_2">[2] pienso, además, que este nombre<ref target="#note20">²⁰</ref> no solo no designaba todavía al país en su totalidad, sino que antes de Helén, el hijo de Deucalión<ref target="#note21">²¹</ref>, ni siquiera existía tal denominación, y que las diferentes gentes, y sobre todo los pelasgos<ref target="#note22">²²</ref>, extendían el nombre de su propio pueblo. Pero cuando Helén y sus hijos se hicieron poderosos en la Ftiótide<ref target="#note23">²³</ref>, y los solicitaban para acudir en auxilio de otras ciudades, los diferentes pueblos, desde entonces, debido a aquellas relaciones, dieron una mayor difusión al nombre de helenos, denominación que, sin embargo, durante mucho tiempo, no pudo imponerse a todos.</seg></p>
+                <p><seg xml:id="t3_3">[3] Homero lo prueba mejor que nadie, pues, aunque vivió en una época muy posterior a la de la Guerra de Troya<ref target="#note24">²⁴</ref>, en ninguna parte aplicó el nombre colectivamente, ni tampoco a otros que no fueran los compañeros de Aquiles, procedentes de Ftiótide, que fueron precisamente los primeros helenos<ref target="#note25">²⁵</ref>, sino que en sus poemas, al referirse a todos, los llamó dánaos, argivos y aqueos. Tampoco utilizó el término de bárbaros<ref target="#note26">²⁶</ref> por la razón de que los griegos, según creo, todavía no se distinguían con un solo nombre que fuera el contrario.</seg></p>
+                <p><seg xml:id="t3_4">[4] Así, pues, aquellos que recibieron el nombre de helenos, primero separadamente, ciudad tras ciudad a medida que se comprendían entre sí, y en conjunto después, no realizaron nada en común antes de la Guerra de Troya a causa de su debilidad y aislamiento.</seg></p>
+                <p><seg xml:id="t3_5">[5] Y marcharon juntos a esta expedición solo cuando su experiencia del mar fue mayor<ref target="#note27">²⁷</ref>.</seg></p>
+            </div>
+        </div>
+        </div>
+    </body>
+  </text>
+</TEI>
