@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CorpusAbierto</title>
 
-  <style>:root{--color-bg:#fff;--color-text:#212529;--color-border:#dee2e6;--color-container-bg:#fafafa;--color-highlight:#ffeb3b;--color-link:#0d6efd;--radius:.375rem;--spacing:1.5rem}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--color-bg);color:var(--color-text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;font-size:1rem;scroll-behavior:smooth}a{color:var(--color-link);text-decoration:none}a:hover,a:focus{text-decoration:underline}.word{display:inline;cursor:pointer;transition:background-color .2s ease;position:relative}.word:hover,.word:focus{background-color:rgba(255,235,59,.3)}.highlight{background-color:var(--color-highlight);transition:background-color .2s ease}.text-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-bottom:2rem;flex:1;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.notes-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-top:var(--spacing);margin-bottom:2rem;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.text-container p,.notes-container p{margin-bottom:1rem}.text-container ul,.text-container ol,.notes-container ul,.notes-container ol{margin:0 0 1rem 1.5rem}.text-container br+br,.notes-container br+br{content:"";display:block;margin-bottom:var(--spacing);line-height:0}.text-container::-webkit-scrollbar,.notes-container::-webkit-scrollbar{width:8px}.text-container::-webkit-scrollbar-track,.notes-container::-webkit-scrollbar-track{background:var(--color-bg)}.text-container::-webkit-scrollbar-thumb,.notes-container::-webkit-scrollbar-thumb{background-color:var(--color-border);border-radius:var(--radius)}@media (max-width:768px){.text-container,.notes-container{padding:1rem;max-height:50vh}}.word:focus{outline:3px solid var(--color-link);outline-offset:2px}.text-container.flex-fill{} .text-container br{display:inline!important;content:" "!important;margin:0!important;line-height:normal!important}.text-container br+br{display:block!important;margin:var(--spacing) 0!important;line-height:normal!important}</style>
+  <style>:root{--color-bg:#fff;--color-text:#212529;--color-border:#dee2e6;--color-container-bg:#fafafa;--color-highlight:#ffeb3b;--color-link:#0d6efd;--radius:.375rem;--spacing:1.5rem}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--color-bg);color:var(--color-text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;font-size:1rem;scroll-behavior:smooth}a{color:var(--color-link);text-decoration:none}a:hover,a:focus{text-decoration:underline}.word{display:inline;cursor:pointer;transition:background-color .2s ease;position:relative}.word:hover,.word:focus{background-color:rgba(255,235,59,.3)}.highlight{background-color:var(--color-highlight);transition:background-color .2s ease}.text-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-bottom:2rem;flex:1;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.notes-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-top:var(--spacing);margin-bottom:2rem;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.text-container p,.notes-container p{margin-bottom:1rem}.text-container ul,.text-container ol,.notes-container ul,.notes-container ol{margin:0 0 1rem 1.5rem}.text-container br+br,.notes-container br+br{content:"";display:block;margin-bottom:var(--spacing);line-height:0}.text-container::-webkit-scrollbar,.notes-container::-webkit-scrollbar{width:8px}.text-container::-webkit-scrollbar-track,.notes-container::-webkit-scrollbar-track{background:var(--color-bg)}.text-container::-webkit-scrollbar-thumb,.notes-container::-webkit-scrollbar-thumb{background-color:var(--color-border);border-radius:var(--radius)}@media (max-width:768px){.text-container,.notes-container{padding:1rem;max-height:50vh}}.word:focus{outline:3px solid var(--color-link);outline-offset:2px}.text-container.flex-fill{} .text-container br{display:inline!important;content:" "!important;margin:0!important;line-height:normal!important}.text-container br+br{display:block!important;margin:var(--spacing) 0!important;line-height:normal!important}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}</style>
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -19,8 +19,7 @@
   <meta name="keywords"
     content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
 
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></noscript>
@@ -99,6 +98,7 @@
     </div>
 
     <div class="mb-4">
+      <label for="chapterSelect" class="visually-hidden">Seleccionar capítulo:</label>
       <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
         <option value="/tucidides/lib1/html/cap1.html" selected>1. Prólogo. La importancia de la Guerra del Peloponeso
         </option>
@@ -200,9 +200,9 @@
     <div class="row align-items-stretch">
 
       <div class="col-md-6 d-flex flex-column mb-4">
-        <h5>Texto original (griego)</h5>
-        <h6>Fuente: <a href="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3"
-            target="_blank">Perseus</a>.</h6>
+        <h3>Texto original (griego)</h3>
+        <h4>Fuente: <a href="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3"
+            target="_blank">Perseus</a>.</h4>
         <div id="greekText" class="text-container">
           <h4>Capítulo 1</h4>
           <span id="w1" class="word">ΘΟΥΚΥΔΙΔΟΥ</span><br>
@@ -261,7 +261,7 @@
         </div>
 
         <div class="notes-container mt-3">
-          <h6>Notas críticas de G. B. Alberti</h6>
+          <h4>Notas críticas de G. B. Alberti</h4>
           <p>(A continuación un extracto a manera de ejemplo del aparato crítico de Alberti. Consúltese G. B. Alberti,
             <em>Thucydidis
               Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.
@@ -309,10 +309,10 @@
       </div>
 
       <div class="col-md-6 d-flex flex-column mb-4">
-        <h5>Traducción (español)</h5>
-        <h6>Fuente: <a
+        <h3>Traducción (español)</h3>
+        <h4>Fuente: <a
             href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
-            target="_blank">archive.org</a>.</h6>
+            target="_blank">archive.org</a>.</h4>
         <div id="spanishText" class="text-container">
           <h4>Capítulo 1</h4>
           <span id="t1" class="word" data-map="w1">de Tucídides</span><br>
@@ -355,7 +355,7 @@
         </div>
 
         <div class="notes-container mt-3" id="downloads">
-          <h6>Notas de Juan José Torres Esbarranch</h6>
+          <h4>Notas de Juan José Torres Esbarranch</h4>
           <p>(Torres Esbarranch, Juan José, ed. and trans. Tucídides. <em>Historia de la guerra del Peloponeso</em>.
             Libros I-II. Madrid: Gredos, 1990. <a
               href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
