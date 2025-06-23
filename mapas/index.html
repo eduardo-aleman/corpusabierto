@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CorpusAbierto</title>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    #corpus-map-container {
+        position: relative;
+        width: 100%;
+        height: 600px; /* O la altura que desees */
+    }
+    #corpus-map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    #map-legend {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: auto;
+        height: auto;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1000; /* Asegura que esté sobre el mapa */
+        font-size: 13px;
+        padding: 10px;
+        line-height: 1.6;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    }
+    #map-legend strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #map-legend ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    #map-legend ul:last-child {
+        margin-bottom: 0;
+    }
+    #map-legend i {
+        width: 1.2em;
+        text-align: center;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+
+  <!-- Iconos y manifest -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description"
+    content="Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.">
+  <meta name="keywords"
+    content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/logo.svg" alt="Corpus Abierto Logo" height="60" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#top" title="Inicio">
+                <i class="bi bi-arrow-up-circle fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#downloads-links" title="Descargas">
+                <i class="bi bi-download fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visualizaciones" title="Visualizaciones">
+                <i class="bi bi-bar-chart-line fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mapas" title="Mapas">
+                <i class="bi bi-map fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/eduardo-aleman/corpusabierto" target="_blank"
+                title="Repositorio en GitHub">
+                <i class="bi bi-github fs-4"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="alert alert-info text-center" role="alert">
+            Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de
+            estudio. <br /><br /> Sitio en construcción.
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 mb-md-0">
+          <h6 class="mb-2">Otros textos disponibles</h6>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              Anales de Tácito
+            </a>
+            <!-- Más enlaces pueden añadirse aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- TÍTULO -->
+    <div class="mb-3">
+      <h1 class="display-4">Historia de la Guerra del Peloponeso de Tucídides</h1>
+      <h2 class="h2">Mapa de los lugares mencionados en el libro I</h2>
+    </div>
+
+    <div id="corpus-map-container">
+    <div id="corpus-map"></div>
+
+    <div id="map-legend">
+        <strong>Frecuencia (color)</strong>
+        <ul>
+            <li><span style="color:blue;">●</span> 1</li>
+            <li><span style="color:green;">●</span> 2–5</li>
+            <li><span style="color:orange;">●</span> 6–15</li>
+            <li><span style="color:red;">●</span> 16+</li>
+        </ul>
+        <strong>Tipo de lugar (ícono)</strong>
+        <ul>
+            <li><i class="fa fa-university"></i> Ciudad</li>
+            <li><i class="fa fa-map"></i> Región</li>
+            <li><i class="fa fa-tree"></i> Isla</li>
+            <li><i class="fa fa-tint"></i> Río</li>
+        </ul>
+    </div>
+</div>
+
+  <!-- FOOTER (diseño inverso) -->
+  <footer class="bg-dark text-light">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+      <span>© 2025 CorpusAbierto</span>
+      <div>
+        <a href="#top" class="text-light me-3"><i class="bi bi-arrow-up-circle"></i> Arriba</a>
+        <a href="https://github.com/usuario/repositorio" target="_blank" class="text-light me-3">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="license" class="text-light">
+          <i class="bi bi-cc-circle"></i> Licencia CC BY 4.0
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="/scripts/tuc-lib1-mapa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/js/all.min.js"></script>
+  
+</body>
+
+</html>
