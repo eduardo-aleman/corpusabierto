@@ -12,10 +12,6 @@
           <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
         </respStmt>
         <respStmt>
-          <resp>Fuente de las notas críticas</resp>
-          <name xml:id="Alberti">Alberti, G. B.</name>
-        </respStmt>
-        <respStmt>
           <resp>Fuente de la traducción al español</resp>
           <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
         </respStmt>
@@ -26,87 +22,1084 @@
       </titleStmt>
       <publicationStmt>
         <publisher>CorpusAbierto</publisher>
-        <date when="2025-06-22">22 de junio de 2025</date>
+        <date when="2025-06-23">23 de junio de 2025</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
-            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
-          </licence>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es"> Esta obra está bajo
+            una Licencia Creative Commons Atribución 4.0 Internacional. </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <bibl xml:id="grc_src">
-          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory Crane. Disponible en <ref target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.2.1-1.19.3">Scaife Viewer</ref>.
-        </bibl>
-        <bibl xml:id="crit_src">
-          Alberti, G. B., ed. <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2), Istituto Poligrafico dello Stato, 1972.
-        </bibl>
-        <bibl xml:id="trans_src">
-          Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990.
-        </bibl>
+          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory
+          Crane. Disponible en <ref
+            target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.2.1-1.19.3">Scaife
+          Viewer</ref>. </bibl>
+        <bibl xml:id="trans_src"> Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides.
+          Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. </bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación textual, notas críticas y herramientas de estudio.</p>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
       </projectDesc>
     </encodingDesc>
     <revisionDesc>
-      <change when="2025-06-22" who="#CorpusAbierto">Creación del archivo para los capítulos 2-19 con segmentación y alineación.</change>
+      <change when="2025-06-23" who="#CorpusAbierto">Creación del archivo para los capítulos 2-19
+        con segmentación y alineación completa.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="textpart" subtype="book" n="1">
-        <div type="textpart" subtype="chapter" n="2">
-            <linkGrp type="alignment">
-                <link target="#t2_1 #w2_1"/>
-                <link target="#t2_2 #w2_2"/>
-                <link target="#t2_3 #w2_3"/>
-                <link target="#t2_4 #w2_4"/>
-                <link target="#t2_5 #w2_5"/>
-                <link target="#t2_6 #w2_6"/>
-            </linkGrp>
-            <div type="source" xml:lang="grc">
-                <p><seg xml:id="w2_1">φαίνεται γὰρ ἡ νῦν Ἑλλὰς καλουμένη οὐ πάλαι βεβαίως οἰκουμένη, ἀλλὰ μεταναστάσεις τε οὖσαι τὰ πρότερα καὶ ῥᾳδίως ἕκαστοι τὴν ἑαυτῶν ἀπολείποντες βιαζόμενοι ὑπό τινων αἰεὶ πλειόνων.</seg></p>
-                <p><seg xml:id="w2_2">τῆς γὰρ ἐμπορίας οὐκ οὔσης, οὐδ’ ἐπιμειγνύντες ἀδεῶς ἀλλήλοις οὔτε κατὰ γῆν οὔτε διὰ θαλάσσης, νεμόμενοί τε τὰ αὑτῶν ἕκαστοι ὅσον ἀποζῆν καὶ περιουσίαν χρημάτων οὐκ ἔχοντες οὐδὲ γῆν φυτεύοντες, ἄδηλον ὂν ὁπότε τις ἐπελθὼν καὶ ἀτειχίστων ἅμα ὄντων ἄλλος ἀφαιρήσεται, τῆς τε καθ’ ἡμέραν ἀναγκαίου τροφῆς πανταχοῦ ἂν ἡγούμενοι ἐπικρατεῖν, οὐ χαλεπῶς ἀπανίσταντο, καὶ δι’ αὐτὸ οὔτε μεγέθει πόλεων ἴσχυον οὔτε τῇ ἄλλῃ παρασκευῇ.</seg></p>
-                <p><seg xml:id="w2_3">μάλιστα δὲ τῆς γῆς ἡ ἀρίστη αἰεὶ τὰς μεταβολὰς τῶν οἰκητόρων εἶχεν, ἥ τε νῦν Θεσσαλία καλουμένη καὶ Βοιωτία Πελοποννήσου τε τὰ πολλὰ πλὴν Ἀρκαδίας, τῆς τε ἄλλης ὅσα ἦν κράτιστα.</seg></p>
-                <p><seg xml:id="w2_4">διὰ γὰρ ἀρετὴν γῆς αἵ τε δυνάμεις τισὶ μείζους ἐγγιγνόμεναι στάσεις ἐνεποίουν ἐξ ὧν ἐφθείροντο, καὶ ἅμα ὑπὸ ἀλλοφύλων μᾶλλον ἐπεβουλεύοντο.</seg></p>
-                <p><seg xml:id="w2_5">τὴν γοῦν Ἀττικὴν ἐκ τοῦ ἐπὶ πλεῖστον διὰ τὸ λεπτόγεων ἀστασίαστον οὖσαν ἄνθρωποι ᾤκουν οἱ αὐτοὶ αἰεί.</seg></p>
-                <p><seg xml:id="w2_6">καὶ παράδειγμα τόδε τοῦ λόγου οὐκ ἐλάχιστόν ἐστι διὰ τὰς μετοικίας ἐς τὰ ἄλλα μὴ ὁμοίως αὐξηθῆναι· ἐκ γὰρ τῆς ἄλλης Ἑλλάδος οἱ πολέμῳ ἢ στάσει ἐκπίπτοντες παρ Ἀθηναίους οἱ δυνατώτατοι ὡς βέβαιον ὂν ἀνεχώρουν, καὶ πολῖται γιγνόμενοι εὐθὺς ἀπὸ παλαιοῦ μείζω ἔτι ἐποίησαν πλήθει ἀνθρώπων τὴν πόλιν, ὥστε καὶ ἐς Ἰωνίαν ὕστερον ὡς οὐχ ἱκανῆς οὔσης τῆς Ἀττικῆς ἀποικίας ἐξέπεμψαν.</seg></p>
-            </div>
-            <div type="translation" xml:lang="es">
-                <p><seg xml:id="t2_1">Es evidente<ref target="#note11">¹¹</ref>, en efecto, que la tierra que ahora se llama Grecia no estaba habitada antiguamente de forma estable, sino que al principio hubo migraciones y todos abandonaban fácilmente su territorio forzados por otros pueblos cada vez más numerosos.</seg></p>
-                <p><seg xml:id="t2_2">[2] El comercio no existía y las comunicaciones entre los pueblos no eran seguras ni por tierra ni por mar; cada uno sacaba de su propia tierra solo lo indispensable para vivir, y no acumulaban riquezas ni efectuaban plantaciones<ref target="#note12">¹²</ref>, puesto que nadie sabía cuándo otros se les echarían encima y, al no estar protegidos por murallas, los despojarían; en consecuencia, pensando que en cualquier parte iban a conseguir el indispensable alimento cotidiano, emigraban sin dificultad, y por ello no eran poderosos ni por la magnitud de sus ciudades ni por otro tipo de recursos<ref target="#note13">¹³</ref>.</seg></p>
-                <p><seg xml:id="t2_3">[3] Las tierras más fértiles, mayormente, experimentaban continuos cambios de habitantes: así la que ahora se llama Tesalia y Beocia y la mayor parte del Peloponeso<ref target="#note14">¹⁴</ref> con la excepción de Arcadia, y de las restantes, las que eran mejores.</seg></p>
-                <p><seg xml:id="t2_4">[4] Gracias a la fertilidad de la tierra, las fortunas de algunos aumentaban y eran causa de disensiones internas que provocaban la ruina de los pueblos, a la vez que los dejaban más expuestos a los ataques de tribus del exterior.</seg></p>
-                <p><seg xml:id="t2_5">[5] Pero el Ática, según esto, por vivir desde los tiempos más remotos sin disensiones internas debido a la aridez de su suelo<ref target="#note15">¹⁵</ref>, fue habitada sin interrupción por los mismos hombres<ref target="#note16">¹⁶</ref>.</seg></p>
-                <p><seg xml:id="t2_6">[6] Y una demostración bastante clara de mi teoría la constituye el hecho de que las otras regiones no progresaron en la misma medida a causa de las migraciones. En efecto, los hombres más poderosos, al ser desterrados del resto de Grecia debido a guerras o a disensiones internas, se refugiaban en Atenas por aprecio a su estabilidad y, convirtiéndose en ciudadanos<ref target="#note17">¹⁷</ref>, desde los primeros tiempos acrecentaron todavía más la población de la ciudad, hasta el punto de que más tarde, al resultar el Ática insuficiente, incluso enviaron colonias a Jonia<ref target="#note18">¹⁸</ref>.</seg></p>
-            </div>
+      <div type="textpart" subtype="chapter" n="2">
+        <linkGrp type="alignment">
+          <link target="#t2_1 #w2_1" />
+          <link target="#t2_2 #w2_2" />
+          <link target="#t2_3 #w2_3" />
+          <link target="#t2_4 #w2_4" />
+          <link target="#t2_5 #w2_5" />
+          <link target="#t2_6 #w2_6" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w2_1">φαίνεται γὰρ ἡ νῦν Ἑλλὰς καλουμένη οὐ πάλαι βεβαίως οἰκουμένη, ἀλλὰ
+              μεταναστάσεις τε οὖσαι τὰ πρότερα καὶ ῥᾳδίως ἕκαστοι τὴν ἑαυτῶν ἀπολείποντες
+              βιαζόμενοι ὑπό τινων αἰεὶ πλειόνων.</seg>
+          </p>
+          <p>
+            <seg xml:id="w2_2">τῆς γὰρ ἐμπορίας οὐκ οὔσης, οὐδ’ ἐπιμειγνύντες ἀδεῶς ἀλλήλοις οὔτε
+              κατὰ γῆν οὔτε διὰ θαλάσσης, νεμόμενοί τε τὰ αὑτῶν ἕκαστοι ὅσον ἀποζῆν καὶ περιουσίαν
+              χρημάτων οὐκ ἔχοντες οὐδὲ γῆν φυτεύοντες, ἄδηλον ὂν ὁπότε τις ἐπελθὼn καὶ ἀτειχίστων
+              ἅμα ὄντων ἄλλος ἀφαιρήσεται, τῆς τε καθ’ ἡμέραν ἀναγκαίου τροφῆς πανταχοῦ ἂν ἡγούμενοι
+              ἐπικρατεῖν, οὐ χαλεπῶς ἀπανίσταντο, καὶ δι’ αὐτὸ οὔτε μεγέθει πόλεων ἴσχυον οὔτε τῇ
+              ἄλλῃ παρασκευῇ.</seg>
+          </p>
+          <p>
+            <seg xml:id="w2_3">μάλιστα δὲ τῆς γῆς ἡ ἀρίστη αἰεὶ τὰς μεταβολὰς τῶν οἰκητόρων εἶχεν, ἥ
+              τε νῦν Θεσσαλία καλουμένη καὶ Βοιωτία Πελοποννήσου τε τὰ πολλὰ πλὴν Ἀρκαδίας, τῆς τε
+              ἄλλης ὅσα ἦν κράτιστα.</seg>
+          </p>
+          <p>
+            <seg xml:id="w2_4">διὰ γὰρ ἀρετὴν γῆς αἵ τε δυνάμεις τισὶ μείζους ἐγγιγνόμεναι στάσεις
+              ἐνεποίουν ἐξ ὧν ἐφθείροντο, καὶ ἅμα ὑπὸ ἀλλοφύλων μᾶλλον ἐπεβουλεύοντο.</seg>
+          </p>
+          <p>
+            <seg xml:id="w2_5">τὴν γοῦν Ἀττικὴν ἐκ τοῦ ἐπὶ πλεῖστον διὰ τὸ λεπτόγεων ἀστασίαστον
+              οὖσαν ἄνθρωποι ᾤκουν οἱ αὐτοὶ αἰεί.</seg>
+          </p>
+          <p>
+            <seg xml:id="w2_6">καὶ παράδειγμα τόδε τοῦ λόγου οὐκ ἐλάχιστόν ἐστι διὰ τὰς μετοικίας ἐς
+              τὰ ἄλλα μὴ ὁμοίως αὐξηθῆναι· ἐκ γὰρ τῆς ἄλλης Ἑλλάδος οἱ πολέμῳ ἢ στάσει ἐκπίπτοντες
+              παρ Ἀθηναίους οἱ δυνατώτατοι ὡς βέβαιον ὂν ἀνεχώρουν, καὶ πολῖται γιγνόμενοι εὐθὺς ἀπὸ
+              παλαιοῦ μείζω ἔτι ἐποίησαν πλήθει ἀνθρώπων τὴν πόλιν, ὥστε καὶ ἐς Ἰωνίαν ὕστερον ὡς
+              οὐχ ἱκανῆς οὔσης τῆς Ἀττικῆς ἀποικίας ἐξέπεμψαν.</seg>
+          </p>
         </div>
-        <div type="textpart" subtype="chapter" n="3">
-            <linkGrp type="alignment">
-                <link target="#t3_1 #w3_1"/>
-                <link target="#t3_2 #w3_2"/>
-                <link target="#t3_3 #w3_3"/>
-                <link target="#t3_4 #w3_4"/>
-                <link target="#t3_5 #w3_5"/>
-            </linkGrp>
-            <div type="source" xml:lang="grc">
-                <p><seg xml:id="w3_1">δηλοῖ δέ μοι καὶ τόδε τῶν παλαιῶν ἀσθένειαν οὐχ ἥκιστα· πρὸ γὰρ τῶν Τρωικῶν οὐδὲν φαίνεται πρότερον κοινῇ ἐργασαμένη ἡ Ἑλλάς·</seg></p>
-                <p><seg xml:id="w3_2">δοκεῖ δέ μοι, οὐδὲ τοὔνομα τοῦτο ξύμπασά πω εἶχεν, ἀλλὰ τὰ μὲν πρὸ Ἕλληνος τοῦ Δευκαλίωνος καὶ πάνυ οὐδὲ εἶναι ἡ ἐπίκλησις αὕτη, κατὰ ἔθνη δὲ ἄλλα τε καὶ τὸ Πελασγικὸν ἐπὶ πλεῖστον ἀφ’ ἑαυτῶν τὴν ἐπωνυμίαν παρέχεσθαι, Ἕλληνος δὲ καὶ τῶν παίδων αὐτοῦ ἐν τῇ Φθιώτιδι ἰσχυσάντων, καὶ ἐπαγομένων αὐτοὺς ἐπ’ ὠφελίᾳ ἐς τὰς ἄλλας πόλεις, καθ’ ἑκάστους μὲν ἤδη τῇ ὁμιλίᾳ μᾶλλον καλεῖσθαι Ἕλληνας, οὐ μέντοι πολλοῦ γε χρόνου [ἐδύνατο] καὶ ἅπασιν ἐκνικῆσαι.</seg></p>
-                <p><seg xml:id="w3_3">τεκμηριοῖ δὲ μάλιστα Ὅμηρος· πολλῷ γὰρ ὕστερον ἔτι καὶ τῶν Τρωικῶν γενόμενος οὐδαμοῦ τοὺς ξύμπαντας ὠνόμασεν, οὐδ’ ἄλλους ἢ τοὺς μετ’ Ἀχιλλέως ἐκ τῆς Φθιώτιδος, οἵπερ καὶ πρῶτοι Ἕλληνες ἦσαν, Δαναοὺς δὲ ἐν τοῖς ἔπεσι καὶ Ἀργείους καὶ Ἀχαιοὺς ἀνακαλεῖ. οὐ μὴν οὐδὲ βαρβάρους εἴρηκε διὰ τὸ μηδὲ Ἕλληνάς πω, ὡς ἐμοὶ δοκεῖ, ἀντίπαλον ἐς ἓν ὄνομα ἀποκεκρίσθαι.</seg></p>
-                <p><seg xml:id="w3_4">οἱ δ’ οὖν ὡς ἕκαστοι Ἕλληνες κατὰ πόλεις τε ὅσοι ἀλλήλων ξυνίεσαν καὶ ξύμπαντες ὕστερον κληθέντες οὐδὲν πρὸ τῶν Τρωικῶν δι’ ἀσθένειαν καὶ ἀμειξίαν ἀλλήλων ἁθρόοι ἔπραξαν.</seg></p>
-                <p><seg xml:id="w3_5">ἀλλὰ καὶ ταύτην τὴν στρατείαν θαλάσσῃ ἤδη πλείω χρώμενοι ξυνεξῆλθον.</seg></p>
-            </div>
-            <div type="translation" xml:lang="es">
-                <p><seg xml:id="t3_1">Me demuestra también, y no con menor claridad, la debilidad de los antiguos el hecho de que, antes de la Guerra de Troya<ref target="#note19">¹⁹</ref>, la Hélade no parece haber acometido ninguna empresa en común;</seg></p>
-                <p><seg xml:id="t3_2">[2] pienso, además, que este nombre<ref target="#note20">²⁰</ref> no solo no designaba todavía al país en su totalidad, sino que antes de Helén, el hijo de Deucalión<ref target="#note21">²¹</ref>, ni siquiera existía tal denominación, y que las diferentes gentes, y sobre todo los pelasgos<ref target="#note22">²²</ref>, extendían el nombre de su propio pueblo. Pero cuando Helén y sus hijos se hicieron poderosos en la Ftiótide<ref target="#note23">²³</ref>, y los solicitaban para acudir en auxilio de otras ciudades, los diferentes pueblos, desde entonces, debido a aquellas relaciones, dieron una mayor difusión al nombre de helenos, denominación que, sin embargo, durante mucho tiempo, no pudo imponerse a todos.</seg></p>
-                <p><seg xml:id="t3_3">[3] Homero lo prueba mejor que nadie, pues, aunque vivió en una época muy posterior a la de la Guerra de Troya<ref target="#note24">²⁴</ref>, en ninguna parte aplicó el nombre colectivamente, ni tampoco a otros que no fueran los compañeros de Aquiles, procedentes de Ftiótide, que fueron precisamente los primeros helenos<ref target="#note25">²⁵</ref>, sino que en sus poemas, al referirse a todos, los llamó dánaos, argivos y aqueos. Tampoco utilizó el término de bárbaros<ref target="#note26">²⁶</ref> por la razón de que los griegos, según creo, todavía no se distinguían con un solo nombre que fuera el contrario.</seg></p>
-                <p><seg xml:id="t3_4">[4] Así, pues, aquellos que recibieron el nombre de helenos, primero separadamente, ciudad tras ciudad a medida que se comprendían entre sí, y en conjunto después, no realizaron nada en común antes de la Guerra de Troya a causa de su debilidad y aislamiento.</seg></p>
-                <p><seg xml:id="t3_5">[5] Y marcharon juntos a esta expedición solo cuando su experiencia del mar fue mayor<ref target="#note27">²⁷</ref>.</seg></p>
-            </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t2_1">Es evidente, en efecto, que la tierra que ahora se llama Grecia no
+              estaba habitada antiguamente de forma estable, sino que al principio hubo migraciones
+              y todos abandonaban fácilmente su territorio forzados por otros pueblos cada vez más
+              numerosos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t2_2">[2] El comercio no existía y las comunicaciones entre los pueblos no
+              eran seguras ni por tierra ni por mar; cada uno sacaba de su propia tierra solo lo
+              indispensable para vivir, y no acumulaban riquezas ni efectuaban plantaciones, puesto
+              que nadie sabía cuándo otros se les echarían encima y, al no estar protegidos por
+              murallas, los despojarían; en consecuencia, pensando que en cualquier parte iban a
+              conseguir el indispensable alimento cotidiano, emigraban sin dificultad, y por ello no
+              eran poderosos ni por la magnitud de sus ciudades ni por otro tipo de recursos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t2_3">[3] Las tierras más fértiles, mayormente, experimentaban continuos
+              cambios de habitantes: así la que ahora se llama Tesalia y Beocia y la mayor parte del
+              Peloponeso con la excepción de Arcadia, y de las restantes, las que eran mejores.</seg>
+          </p>
+          <p>
+            <seg xml:id="t2_4">[4] Gracias a la fertilidad de la tierra, las fortunas de algunos
+              aumentaban y eran causa de disensiones internas que provocaban la ruina de los
+              pueblos, a la vez que los dejaban más expuestos a los ataques de tribus del exterior.</seg>
+          </p>
+          <p>
+            <seg xml:id="t2_5">[5] Pero el Ática, según esto, por vivir desde los tiempos más
+              remotos sin disensiones internas debido a la aridez de su suelo, fue habitada sin
+              interrupción por los mismos hombres.</seg>
+          </p>
+          <p>
+            <seg xml:id="t2_6">[6] Y una demostración bastante clara de mi teoría la constituye el
+              hecho de que las otras regiones no progresaron en la misma medida a causa de las
+              migraciones. En efecto, los hombres más poderosos, al ser desterrados del resto de
+              Grecia debido a guerras o a disensiones internas, se refugiaban en Atenas por aprecio
+              a su estabilidad y, convirtiéndose en ciudadanos, desde los primeros tiempos
+              acrecentaron todavía más la población de la ciudad, hasta el punto de que más tarde,
+              al resultar el Ática insuficiente, incluso enviaron colonias a Jonia.</seg>
+          </p>
         </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="3">
+        <linkGrp type="alignment">
+          <link target="#t3_1 #w3_1" />
+          <link target="#t3_2 #w3_2" />
+          <link target="#t3_3 #w3_3" />
+          <link target="#t3_4 #w3_4" />
+          <link target="#t3_5 #w3_5" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w3_1">δηλοῖ δέ μοι καὶ τόδε τῶν παλαιῶν ἀσθένειαν οὐχ ἥκιστα· πρὸ γὰρ τῶν
+              Τρωικῶν οὐδὲν φαίνεται πρότερον κοινῇ ἐργασαμένη ἡ Ἑλλάς·</seg>
+          </p>
+          <p>
+            <seg xml:id="w3_2">δοκεῖ δέ μοι, οὐδὲ τοὔνομα τοῦτο ξύμπασά πω εἶχεν, ἀλλὰ τὰ μὲν πρὸ
+              Ἕλληνος τοῦ Δευκαλίωνος καὶ πάνυ οὐδὲ εἶναι ἡ ἐπίκλησις αὕτη, κατὰ ἔθνη δὲ ἄλλα τε καὶ
+              τὸ Πελασγικὸν ἐπὶ πλεῖστον ἀφ’ ἑαυτῶν τὴν ἐπωνυμίαν παρέχεσθαι, Ἕλληνος δὲ καὶ τῶν
+              παίδων αὐτοῦ ἐν τῇ Φθιώτιδι ἰσχυσάντων, καὶ ἐπαγομένων αὐτοὺς ἐπ’ ὠφελίᾳ ἐς τὰς ἄλλας
+              πόλεις, καθ’ ἑκάστους μὲν ἤδη τῇ ὁμιλίᾳ μᾶλλον καλεῖσθαι Ἕλληνας, οὐ μέντοι πολλοῦ γε
+              χρόνου [ἐδύνατο] καὶ ἅπασιν ἐκνικῆσαι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w3_3">τεκμηριοῖ δὲ μάλιστα Ὅμηρος· πολλῷ γὰρ ὕστερον ἔτι καὶ τῶν Τρωικῶν
+              γενόμενος οὐδαμοῦ τοὺς ξύμπαντας ὠνόμασεν, οὐδ’ ἄλλους ἢ τοὺς μετ’ Ἀχιλλέως ἐκ τῆς
+              Φθιώτιδος, οἵπερ καὶ πρῶτοι Ἕλληνες ἦσαν, Δαναοὺς δὲ ἐν τοῖς ἔπεσι καὶ Ἀργείους καὶ
+              Ἀχαιοὺς ἀνακαλεῖ. οὐ μὴν οὐδὲ βαρβάρους εἴρηκε διὰ τὸ μηδὲ Ἕλληνάς πω, ὡς ἐμοὶ δοκεῖ,
+              ἀντίπαλον ἐς ἓν ὄνομα ἀποκεκρίσθαι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w3_4">οἱ δ’ οὖν ὡς ἕκαστοι Ἕλληνες κατὰ πόλεις τε ὅσοι ἀλλήλων ξυνίεσαν καὶ
+              ξύμπαντες ὕστερον κληθέντες οὐδὲν πρὸ τῶν Τρωικῶν δι’ ἀσθένειαν καὶ ἀμειξίαν ἀλλήλων
+              ἁθρόοι ἔπραξαν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w3_5">ἀλλὰ καὶ ταύτην τὴν στρατείαν θαλάσσῃ ἤδη πλείω χρώμενοι ξυνεξῆλθον.</seg>
+          </p>
         </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t3_1">Me demuestra también, y no con menor claridad, la debilidad de los
+              antiguos el hecho de que, antes de la Guerra de Troya, la Hélade no parece haber
+              acometido ninguna empresa en común;</seg>
+          </p>
+          <p>
+            <seg xml:id="t3_2">[2] pienso, además, que este nombre no solo no designaba todavía al
+              país en su totalidad, sino que antes de Helén, el hijo de Deucalión, ni siquiera
+              existía tal denominación, y que las diferentes gentes, y sobre todo los pelasgos,
+              extendían el nombre de su propio pueblo. Pero cuando Helén y sus hijos se hicieron
+              poderosos en la Ftiótide, y los solicitaban para acudir en auxilio de otras ciudades,
+              los diferentes pueblos, desde entonces, debido a aquellas relaciones, dieron una mayor
+              difusión al nombre de helenos, denominación que, sin embargo, durante mucho tiempo, no
+              pudo imponerse a todos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t3_3">[3] Homero lo prueba mejor que nadie, pues, aunque vivió en una época
+              muy posterior a la de la Guerra de Troya, en ninguna parte aplicó el nombre
+              colectivamente, ni tampoco a otros que no fueran los compañeros de Aquiles,
+              procedentes de Ftiótide, que fueron precisamente los primeros helenos, sino que en sus
+              poemas, al referirse a todos, los llamó dánaos, argivos y aqueos. Tampoco utilizó el
+              término de bárbaros por la razón de que los griegos, según creo, todavía no se
+              distinguían con un solo nombre que fuera el contrario.</seg>
+          </p>
+          <p>
+            <seg xml:id="t3_4">[4] Así, pues, aquellos que recibieron el nombre de helenos, primero
+              separadamente, ciudad tras ciudad a medida que se comprendían entre sí, y en conjunto
+              después, no realizaron nada en común antes de la Guerra de Troya a causa de su
+              debilidad y aislamiento.</seg>
+          </p>
+          <p>
+            <seg xml:id="t3_5">[5] Y marcharon juntos a esta expedición solo cuando su experiencia
+              del mar fue mayor.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="4">
+        <linkGrp type="alignment">
+          <link target="#t4_1 #w4_1" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w4_1">Μίνως γὰρ παλαίτατος ὧν ἀκοῇ ἴσμεν ναυτικὸν ἐκτήσατο καὶ τῆς νῦν
+              Ἑλληνικῆς θαλάσσης ἐπὶ πλεῖστον ἐκράτησε καὶ τῶν Κυκλάδων νήσων ἦρξέ τε καὶ οἰκιστὴς
+              πρῶτος τῶν πλείστων ἐγένετο, Κᾶρας ἐξελάσας καὶ τοὺς ἑαυτοῦ παῖδας ἡγεμόνας
+              ἐγκαταστήσας· τό τε λῃστικόν, ὡς εἰκός, καθῄρει ἐκ τῆς θαλάσσης ἐφ’ ὅσον ἐδύνατο, τοῦ
+              τὰς προσόδους μᾶλλον ἰέναι αὐτῷ.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t4_1">Minos fue el primero, de los que conocemos por la tradición, en
+              procurarse una flota y extender su dominio por la mayor parte de lo que hoy llamamos
+              mar griego; sometió las islas Cícladas y fue el primer colonizador de la mayor parte
+              de ellas, expulsando a los carios y estableciendo como gobernadores a sus propios
+              hijos. Y, como era natural, para que le llegaran con mayor seguridad los tributos,
+              procuró, hasta donde alcanzó su poder, limpiar el mar de piratas.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="5">
+        <linkGrp type="alignment">
+          <link target="#t5_1 #w5_1" />
+          <link target="#t5_2 #w5_2" />
+          <link target="#t5_3 #w5_3" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w5_1">οἱ γὰρ Ἕλληνες τὸ πάλαι καὶ τῶν βαρβάρων οἵ τε ἐν τῇ ἠπείρῳ
+              παραθαλάσσιοι καὶ ὅσοι νήσους εἶχον, ἐπειδὴ ἤρξαντο μᾶλλον περαιοῦσθαι ναυσὶν ἐπ’
+              ἀλλήλους, ἐτράποντο πρὸς λῃστείαν, ἡγουμένων ἀνδρῶν οὐ τῶν ἀδυνατωτάτων κέρδους τοῦ
+              σφετέρου αὐτῶν ἕνεκα καὶ τοῖς ἀσθενέσι τροφῆς, καὶ προσπίπτοντες πόλεσιν ἀτειχίστοις
+              καὶ κατὰ κώμας οἰκουμέναις ἥρπαζον καὶ τὸν πλεῖστον τοῦ βίου ἐντεῦθεν ἐποιοῦντο, οὐκ
+              ἔχοντός πω αἰσχύνην τούτου τοῦ ἔργου, φέροντος δέ τι καὶ δόξης μᾶλλον·</seg>
+          </p>
+          <p>
+            <seg xml:id="w5_2">δηλοῦσι δὲ τῶν τε ἠπειρωτῶν τινὲς ἔτι καὶ νῦν, οἷς κόσμος καλῶς τοῦτο
+              δρᾶν, καὶ οἱ παλαιοὶ τῶν ποιητῶν τὰς πύστεις τῶν καταπλεόντων πανταχοῦ ὁμοίως
+              ἐρωτῶντες εἰ λῃσταί εἰσιν, ὡς οὔτε ὧν πυνθάνονται ἀπαξιούντων τὸ ἔργον, οἷς τε
+              ἐπιμελὲs εἴη εἰδέναι οὐκ ὀνειδιζόντων.</seg>
+          </p>
+          <p>
+            <seg xml:id="w5_3">ἐλῄζοντο δὲ καὶ κατ’ ἤπειρον ἀλλήλους.καὶ μέχρι τοῦδε πολλὰ τῆς
+              Ἑλλάδος τῷ παλαιῷ τρόπῳ νέμεται περί τε Λοκροὺς τοὺς Ὀζόλας καὶ Αἰτωλοὺς καὶ Ἀκαρνᾶνας
+              καὶ τὴν ταύτῃ ἤπειρον. τό τε σιδηροφορεῖσθαι τούτοις τοῖς ἠπειρώταις ἀπὸ τῆς παλαιᾶς
+              λῃστείας ἐμμεμένηκεν·</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t5_1">Los griegos de otro tiempo, en efecto, y los bárbaros que vivían en
+              la costa del continente o en las islas, una vez que empezaron a pasar con sus naves de
+              unas tierras a otras con mayor frecuencia, se dedicaron a la piratería bajo el mando
+              de hombres que, sin ser ellos los de menos recursos, buscaban su propio provecho y
+              sustento para los débiles. Cayendo sobre poblaciones sin murallas formadas por aldeas
+              dispersas, las saqueaban y obtenían de allí la mayor parte de sus medios de vida, pues
+              esta actividad no comportaba ningún deshonor, sino que más bien proporcionaba una
+              cierta gloria.</seg>
+          </p>
+          <p>
+            <seg xml:id="t5_2">[2] Lo demuestran aún hoy algunos pueblos del continente, para
+              quienes el éxito en estas acciones constituye un honor, y también los poetas antiguos,
+              que en todas las ocasiones dirigen la misma pregunta de si son piratas a los
+              navegantes que desembarcan, señal de que quienes eran interrogados no desdeñaban
+              aquella actividad, y que aquellos que se preocupaban de informarse no la reprochaban.</seg>
+          </p>
+          <p>
+            <seg xml:id="t5_3">[3] En tierra también se dedicaban al pillaje unos contra otros. Y
+              hasta nuestros días se vive a la manera antigua en muchas zonas de Grecia, en la
+              región de los locros ozolos, de los etolios y de los acarnanios y por aquella parte
+              del continente. La costumbre de llevar armas que tienen estos pueblos continentales es
+              una supervivencia de la antigua piratería.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="6">
+        <linkGrp type="alignment">
+          <link target="#t6_1 #w6_1" />
+          <link target="#t6_2 #w6_2" />
+          <link target="#t6_3 #w6_3" />
+          <link target="#t6_4 #w6_4" />
+          <link target="#t6_5 #w6_5" />
+          <link target="#t6_6 #w6_6" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w6_1">πᾶσα γὰρ ἡ Ἑλλὰς ἐσιδηροφόρει διὰ τὰς ἀφάρκτους τε οἰκήσεις καὶ οὐκ
+              ἀσφαλεῖς παρ ἀλλήλους ἐφόδους, καὶ ξυνήθη τὴν δίαιταν μεθ’ ὅπλων ἐποιήσαντο ὥσπερ οἱ
+              βάρβαροι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w6_2">σημεῖον δ’ ἐστὶ ταῦτα τῆς Ἑλλάδος ἔτι οὕτω νεμόμενα τῶν ποτὲ καὶ ἐς
+              πάντας ὁμοίων διαιτημάτων.</seg>
+          </p>
+          <p>
+            <seg xml:id="w6_3">ἐν τοῖς πρῶτοι δὲ Ἀθηναῖοι τόν τε σίδηρον κατέθεντο καὶ ἀνειμένῃ τῇ
+              διαίτῃ ἐς τὸ τρυφερώτερον μετέστησαν. καὶ οἱ πρεσβύτεροι αὐτοῖς τῶν εὐδαιμόνων διὰ τὸ
+              ἁβροδίαιτον οὐ πολὺς χρόνος ἐπειδὴ χιτῶνάς τε λινοῦς ἐπαύσαντο φοροῦντες καὶ χρυσῶν
+              τεττίγων ἐνέρσει κρωβύλον ἀναδούμενοι τῶν ἐν τῇ κεφαλῇ τριχῶν· ἀφ’ οὗ καὶ Ἰώνων τοὺς
+              πρεσβυτέρους κατὰ τὸ ξυγγενὲς ἐπὶ πολὺ αὕτη ἡ σκευὴ κατέσχεν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w6_4">μετρίᾳ δ’ αὖ ἐσθῆτι καὶ ἐς τὸν νῦν τρόπον πρῶτοι Λακεδαιμόνιοι
+              ἐχρήσαντο καὶ ἐς τὰ ἄλλα πρὸς τοὺς πολλοὺς οἱ τὰ μείζω κεκτημένοι ἰσοδίαιτοι μάλιστα
+              κατέστησαν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w6_5">ἐγυμνώθησάν τε πρῶτοι καὶ ἐς τὸ φανερὸν ἀποδύντες λίπα μετὰ τοῦ
+              γυμνάζεσθαι ἠλείψαντο· τὸ δὲ πάλαι καὶ ἐν τῷ Ὀλυμπικῷ ἀγῶνι διαζώματα ἔχοντες περὶ τὰ
+              αἰδοῖα οἱ ἀθληταὶ ἠγωνίζοντο, καὶ οὐ πολλὰ ἔτη ἐπειδὴ πέπαυται. ἔτι δὲ καὶ ἐν τοῖς
+              βαρβάροις ἔστιν οἷς νῦν, καὶ μάλιστα τοῖς Ἀσιανοῖς, πυγμῆς καὶ πάλης ἆθλα τίθεται, καὶ
+              διεζωμένοι τοῦτο δρῶσιν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w6_6">πολλὰ δ’ ἂν καὶ ἄλλα τις ἀποδείξειε τὸ παλαιὸν Ἑλληνικὸν ὁμοιότροπα
+              τῷ νῦν βαρβαρικῷ διαιτώμενον.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t6_1">Toda Grecia, en efecto, llevaba armas debido a que sus viviendas
+              carecían de protección y a que las comunicaciones entre los pueblos no eran seguras;
+              se acostumbraron a la vida en armas, igual que los bárbaros.</seg>
+          </p>
+          <p>
+            <seg xml:id="t6_2">[2] Y las zonas de Grecia que todavía viven así constituyen un
+              indicio de que en otro tiempo formas de vida semejantes se daban por todas partes.</seg>
+          </p>
+          <p>
+            <seg xml:id="t6_3">[3] Entre aquellos griegos, los atenienses fueron los primeros en
+              abandonar el hierro y pasarse, por la libertad de sus costumbres, a una vida más
+              muelle. No hace mucho tiempo que en Atenas los más viejos de los ricos dejaron de
+              llevar, como signo de su vida de lujo, guitones de lino y de recoger las guedejas de
+              su cabello en la cabeza mediante la inserción de cigarras de oro; de aquí proviene que
+              esta moda imperara también durante mucho tiempo entre los viejos jonios, debido a su
+              parentesco.</seg>
+          </p>
+          <p>
+            <seg xml:id="t6_4">[4] Por el contrario, los lacedemonios fueron los primeros en usar
+              vestidos sencillos, a la moda de ahora, y, en general, quienes poseían una mayor
+              fortuna adoptaron, antes que nadie, el mismo modo de vida de la masa.</seg>
+          </p>
+          <p>
+            <seg xml:id="t6_5">[5] También fueron los primeros en mostrarse desnudos y en
+              desvestirse en público y untarse con aceite en los ejercicios gimnásticos.
+              Antiguamente, en cambio, e incluso en los Juegos Olímpicos, los atletas competían
+              llevando un ceñidor que les cubría las vergüenzas, costumbre que se ha perdido no hace
+              muchos años. Pero todavía hoy día hay pueblos bárbaros, en especial los asiáticos,
+              que, al celebrar competiciones de pugilato y lucha, lo hacen cubiertos con taparrabos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t6_6">[6] En muchos otros aspectos, asimismo, se podría demostrar que el
+              mundo griego antiguo vivía de modo semejante al mundo bárbaro de hoy.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="7">
+        <linkGrp type="alignment">
+          <link target="#t7_1 #w7_1" />
+          <link target="#t7_2 #w7_2" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w7_1">τῶν δὲ πόλεων ὅσαι μὲν νεώτατα ᾠκίσθησαν καὶ ἤδη πλωιμωτέρων ὄντων,
+              περιουσίας μᾶλλον ἔχουσai χρημάτων ἐπ’ αὐτοῖς τοῖς αἰγιαλοῖς τείχεσιν ἐκτίζοντο καὶ
+              τοὺς ἰσθμοὺς ἀπελάμβανον ἐμπορίας τε ἕνεκα καὶ τῆς πρὸς τοὺς προσοίκους ἕκαστοι
+              ἰσχύος·</seg>
+          </p>
+          <p>
+            <seg xml:id="w7_2">αἱ δὲ παλαιαὶ διὰ τὴν λῃστείαν ἐπὶ πολὺ ἀντίσχουσαν ἀπὸ θαλάσσης
+              μᾶλλον ᾠκίσθησαν, αἵ τε ἐν ταῖς νήσοις καὶ ἐν ταῖς ἠπείροις (ἔφερον γὰρ ἀλλήλους τε
+              καὶ τῶν ἄλλων ὅσοι ὄντες οὐ θαλάσσιοι κάτω ᾤκουν), καὶ μέχρι τοῦδε ἔτι ἀνῳκισμένοι
+              εἰσίν.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t7_1">Respecto a las ciudades, las de fundación más reciente, que, por ser
+              las circunstancias más favorables para la navegación, tenían recursos en mayor
+              abundancia, fueron construidas con murallas en la misma costa y cerraron los istmos
+              pensando en el comercio y la defensa de cada una frente a sus vecinas.</seg>
+          </p>
+          <p>
+            <seg xml:id="t7_2">Las ciudades antiguas, por el contrario, tanto las insulares como las
+              continentales, fueron fundadas generalmente lejos del mar a causa de la piratería, que
+              se mantuvo durante mucho tiempo (pues no solo se robaban entre sí, sino que también
+              robaban a todos los que, aun sin vivir del mar, habitaban junto a la costa), y hasta
+              hoy día han seguido en el interior.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="8">
+        <linkGrp type="alignment">
+          <link target="#t8_1 #w8_1" />
+          <link target="#t8_2 #w8_2" />
+          <link target="#t8_3 #w8_3" />
+          <link target="#t8_4 #w8_4" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w8_1">καὶ οὐχ ἧσσον λῃσταὶ ἦσαν οἱ νησιῶται, Κᾶρές τε ὄντες καὶ Φοίνικες·
+              οὗτοι γὰρ δὴ τὰς πλείστας τῶν νήσων ᾤκησαν. μαρτύριον δέ· Δήλου γὰρ καθαιρομένης ὑπὸ
+              Ἀθηναίων ἐν τῷδε τῷ πολέμῳ καὶ τῶν θηκῶν ἀναιρεθεισῶν ὅσαι ἦσαν τῶν τεθνεώτων ἐν τῇ
+              νήσῳ, ὑπὲρ ἥμισυ Κᾶρες ἐφάνησαν, γνωσθέντες τῇ τε σκευῇ τῶν ὅπλων ξυντεθαμμένῃ καὶ τῷ
+              τρόπῳ ᾧ νῦν ἔτι θάπτουσιν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w8_2">καταστάντος δὲ τοῦ Μίνω ναυτικοῦ πλωιμώτερα ἐγένετο παρ’ ἀλλήλους (οἱ
+              γὰρ ἐκ τῶν νήσων κακοῦργοι ἀνέστησαν ὑπ’ αὐτοῦ, ὅτεπερ καὶ τὰς πολλὰς αὐτῶν κατῴκιζε),</seg>
+          </p>
+          <p>
+            <seg xml:id="w8_3">καὶ οἱ παρὰ θάλασσαν ἄνθρωποι μᾶλλον ἤδη τὴν κτῆσιν τῶν χρημάτων
+              ποιούμενοι βεβαιότερον ᾤκουν, καί τινες καὶ τείχη περιεβάλλοντο ὡς πλουσιώτεροι ἑαυτῶν
+              γιγνόμενοι· ἐφιέμενοι γὰρ τῶν κερδῶν οἵ τε ἥσσους ὑπέμενον τὴν τῶν κρεισσόνων
+              δουλείαν, οἵ τε δυνατώτεροι περιουσίας ἔχοντες προσεποιοῦντο ὑπηκόους τὰς ἐλάσσους
+              πόλεις.</seg>
+          </p>
+          <p>
+            <seg xml:id="w8_4">καὶ ἐν τούτῳ τῷ τρόπῳ μᾶλλον ἤδη ὄντες ὕστερον χρόνῳ ἐπὶ Τροίαν
+              ἐστράτευσαν.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t8_1">No fueron menos piratas los isleños, que eran carios y fenicios,
+              pueblos que, como es sabido, colonizaron la mayor parte de las islas. He aquí una
+              prueba: cuando, durante la guerra que nos ocupa, Delos fue purificada por los
+              atenienses y fueron retiradas todas las tumbas de los que habían muerto en la isla, se
+              vio que más de la mitad pertenecían a carios; fueron identificados por el tipo de
+              armas enterradas con ellos y por la forma de enterramiento, que todavía es la misma
+              actualmente.</seg>
+          </p>
+          <p>
+            <seg xml:id="t8_2">[2] Pero cuando fue creada la flota de Minos, las comunicaciones por
+              mar entre los pueblos resultaron más fáciles (pues expulsó a los malhechores de las
+              islas cuando estableció colonias en la mayoría de ellas),</seg>
+          </p>
+          <p>
+            <seg xml:id="t8_3">[3] y los que habitaban junto al mar acrecentaron su fortuna y
+              empezaron a vivir de forma más estable, e incluso algunos, al verse más ricos de lo
+              que eran antes, se rodearon de murallas. Por el deseo de ganancias, los más débiles
+              aceptaban su sumisión a los más fuertes, y los más poderosos con su abundancia se
+              granjeaban el vasallaje de las ciudades más pequeñas.</seg>
+          </p>
+          <p>
+            <seg xml:id="t8_4">[4] Y ya se había consolidado esta situación cuando, posteriormente,
+              emprendieron la expedición contra Troya.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="9">
+        <linkGrp type="alignment">
+          <link target="#t9_1 #w9_1" />
+          <link target="#t9_2 #w9_2" />
+          <link target="#t9_3 #w9_3" />
+          <link target="#t9_4 #w9_4" />
+          <link target="#t9_5 #w9_5" />
+          <link target="#t9_6 #w9_6" />
+          <link target="#t9_7 #w9_7" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w9_1">Ἀγαμέμνων τέ μοι δοκεῖ τῶν τότε δυνάμει προύχων καὶ οὐ τοσοῦτον τοῖς
+              Τυνδάρεω ὅρκοις κατειλημμένους τοὺς Ἑλένης μνηστῆρας ἄγων τὸν στόλον ἀγεῖραι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_2">λέγουσι δὲ καὶ οἱ τὰ σαφέστατα Πελοποννησίων μνήμῃ παρὰ τῶν πρότερον
+              δεδεγμένοι Πέλοπά τε πρῶτον πλήθει χρημάτων, ἃ ἦλθεν ἐκ τῆς Ἀσίας ἔχων ἐς ἀνθρώπους
+              ἀπόρους, δύναμιν περιποιησάμενον τὴν ἐπωνυμίαν τῆς χώρας ἔπηλυν ὄντα ὅμως σχεῖν, καὶ
+              ὕστερον τοῖς ἐκγόνοις ἔτι μείζω ξυνενεχθῆναι, Εὐρυσθέως μὲν ἐν τῇ Ἀττικῇ ὑπὸ
+              Ἡρακλειδῶν ἀποθανόντος, Ἀτρέως δὲ μητρὸς ἀδελφοῦ ὄντος αὐτῷ, καὶ ἐπιτρέψαντος
+              Εὐρυσθέως, ὅτ ἐστράτευε, Μυκήνας τε καὶ τὴν ἀρχὴν κατὰ τὸ οἰκεῖον Ἀτρεῖ (τυγχάνειν δὲ
+              αὐτὸν φεύγοντα τὸν πατέρα διὰ τὸν Χρυσίππου θάνατον), καὶ ὡς οὐκέτι ἀνεχώρησεν
+              Εὐρυσθεύς, βουλομένων καὶ τῶν Μυκηναίων φόβῳ τῶν Ἡρακλειδῶν καὶ ἅμα δυνατὸν δοκοῦντα
+              εἶναι καὶ τὸ πλῆθος τεθεραπευκότα τῶν Μυκηναίων τε καὶ ὅσων Εὐρυσθεὺς ἦρχε τὴν
+              βασιλείαν Ἀτρέα παραλαβεῖν, καὶ τῶν Περσειδῶν τοὺς Πελοπίδας μείζους καταστῆναι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_3">ἅ μοι δοκεῖ Ἀγαμέμνων παραλαβὼν καὶ ναυτικῷ [τε] ἅμα ἐπὶ πλέον τῶν
+              ἄλλων ἰσχύσας, τὴν στρατείαν οὐ χάριτι τὸ πλέον ἢ φόβῳ ξυναγαγὼν ποιήσασθαι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_4">φαίνεται γὰρ ναυσί τε πλείσταις αὐτὸς ἀφικόμενος καὶ Ἀρκάσι
+              προσπαρασχών, ὡς Ὅμηρος τοῦτο δεδήλωκεν, εἴ τῳ ἱκανὸς τεκμηριῶσαι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_5">καὶ ἐν τοῦ σκήπτρου ἅμα τῇ παραδόσει εἴρηκεν αὐτὸν πολλῇσι νήσοισι
+              καὶ Ἄργεϊ παντὶ ἀνάσσειν·</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_6">οὐκ ἂν οὖν νήσων ἔξω τῶν περιοικίδων (αὗται δὲ οὐκ ἂν πολλαὶ εἶεν)
+              ἠπειρώτης ὢν ἐκράτει, εἰ μή τι καὶ ναυτικὸν εἶχεν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w9_7">εἰκάζειν δὲ χρὴ καὶ ταύτῃ τῇ στρατείᾳ οἷα ἦν τὰ πρὸ αὐτῆς.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t9_1">Me parece, además, que Agamenón consiguió reunir las fuerzas
+              expedicionarias porque era el más poderoso de sus contemporáneos, y no tanto por ir al
+              frente de los pretendientes de Helena, obligados por el juramento prestado a Tindáreo.</seg>
+          </p>
+          <p>
+            <seg xml:id="t9_2">[2] Dicen, por cierto, quienes han recogido de los antepasados las
+              tradiciones más precisas sobre los peloponesios, que primero Pélope, gracias a la gran
+              fortuna con la que desde Asia llegó a un pueblo sin recursos, se hizo con el poder y,
+              a pesar de ser extranjero, alcanzó el honor de dar su nombre al país, y que después el
+              poder de sus descendientes todavía aumentó cuando Euristeo murió en el Ática a manos
+              de los Heráclidas tras haber confiado, al partir hacia la guerra, Micenas y su imperio
+              a Atreo debido a su parentesco, ya que Atreo (desterrado entonces por su padre a causa
+              de la muerte de Crisipo) era hermano de la madre de Euristeo. Y como que Euristeo ya
+              no regresó, Atreo heredó el reino de Micenas y todos los dominios de Euristeo, tal
+              como quisieron los micénicos por miedo a los Heráclidas y porque, además, parecía un
+              hombre fuerte y se había ganado al pueblo. Así los Pelópidas se hicieron más poderosos
+              que los Perseidas.</seg>
+          </p>
+          <p>
+            <seg xml:id="t9_3">[3] Agamenón, en mi opinión, gracias a que había recibido esta
+              herencia y, además, por tener una mayor fuerza naval que los otros, pudo emprender y
+              llevar a cabo la expedición, no tanto por el reconocimiento de que era objeto como por
+              el temor que inspiraba. Es evidente, en efecto, que fue él quien llegó con el mayor
+              número de naves, y que también proporcionó algunas a los arcadios, tal como Homero lo
+              demuestra, si su testimonio se considera válido.</seg>
+          </p>
+          <p>
+            <seg xml:id="t9_4">[4] Y, además, en la transmisión del cetro dice de él que «reinaba en
+              muchas islas y en toda Argos». Ahora bien, viviendo en el continente, si no hubiese
+              tenido una flota, no hubiera podido ejercer su dominio sobre otras islas que no fueran
+              las vecinas (y esas no serían <em>muchas</em>).</seg>
+          </p>
+          <p>
+            <seg xml:id="t9_5">[5] Por esta expedición, asimismo, hay que conjeturar cómo eran las
+              circunstancias anteriores a ella.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="10">
+        <linkGrp type="alignment">
+          <link target="#t10_1 #w10_1" />
+          <link target="#t10_2 #w10_2" />
+          <link target="#t10_3 #w10_3" />
+          <link target="#t10_4 #w10_4" />
+          <link target="#t10_5 #w10_5" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w10_1">καὶ ὅτι μὲν Μυκῆναι μικρὸν ἦν, ἢ εἴ τι τῶν τότε πόλισμα νῦν μὴ
+              ἀξιόχρεων δοκεῖ εἶναι, οὐκ ἀκριβεῖ ἄν τις σημείῳ χρώμενος ἀπιστοίη μὴ γενέσθαι τὸν
+              στόλον τοσοῦτον ὅσον οἵ τε ποιηταὶ εἰρήκασι καὶ ὁ λόγος κατέχει.</seg>
+          </p>
+          <p>
+            <seg xml:id="w10_2">Λακεδαιμονίων γὰρ εἰ ἡ πόλις ἐρημωθείη, λειφθείη δὲ τά τε ἱερὰ καὶ
+              τῆς κατασκευῆς τὰ ἐδάφη, πολλὴν ἂν οἶμαι ἀπιστίαν τῆς δυνάμεως προελθόντος πολλοῦ
+              χρόνου τοῖς ἔπειτα πρὸς τὸ κλέος αὐτῶν εἶναι (καίτοι Πελοποννήσου τῶν πέντε τὰς δύο
+              μοίρας νέμονται, τῆς τε ξυμπάσης ἡγοῦνται καὶ τῶν ἔξω ξυμμάχων πολλῶν· ὅμως δὲ οὔτε
+              ξυνοικισθείσης πόλεως οὔτε ἱεροῖς καὶ κατασκευαῖς πολυτελέσι χρησαμένης, κατὰ κώμας δὲ
+              τῷ παλαιῷ τῆς Ἑλλάδος τρόπῳ οἰκισθείσης, φαίνοιτ’ ἂν ὑποδεεστέρα), Ἀθηναίων δὲ τὸ αὐτὸ
+              τοῦτο παθόντων διπλασίαν ἂν τὴν δύναμιν εἰκάζεσθαι ἀπὸ τῆς φανερᾶς ὄψεως τῆς πόλεως ἢ
+              ἔστιν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w10_3">οὔκουν ἀπιστεῖν εἰκός, οὐδὲ τὰς ὄψεις τῶν πόλεων μᾶλλον σκοπεῖν ἢ
+              τὰς δυνάμεις, νομίζειν δὲ τὴν στρατείαν ἐκείνην μεγίστην μὲν γενέσθαι τῶν πρὸ αὑτῆς,
+              λειπομένην δὲ τῶν νῦν, τῇ Ὁμήρου αὖ ποιήσει εἴ τι χρὴ κἀνταῦθα πιστεύειν, ἣν εἰκὸς ἐπὶ
+              τὸ μεῖζον μὲν ποιητὴν ὄντα κοσμῆσαι, ὅμως δὲ φαίνεται καὶ οὕτως ἐνδεεστέρα.</seg>
+          </p>
+          <p>
+            <seg xml:id="w10_4">πεποίηκε γὰρ χιλίων καὶ διακοσίων νεῶν τὰς μὲν Βοιωτῶν εἴκοσι καὶ
+              ἑκατὸν ἀνδρῶν, τὰς δὲ Φιλοκτήτου πεντήκοντα, δηλῶν, ὡς ἐμοὶ δοκεῖ, τὰς μεγίστας καὶ
+              ἐλαχίστας· ἄλλων γοῦν μεγέθους πέρι ἐν νεῶν καταλόγῳ οὐκ ἐμνήσθη. αὐτερέται δὲ ὅτι
+              ἦσαν καὶ μάχιμοι πάντες, ἐν ταῖς Φιλοκτήτου ναυσὶ δεδήλωκεν· τοξότας γὰρ πάντας
+              πεποίηκε τοὺς προσκώπους. περίνεως δὲ οὐκ εἰκὸς πολλοὺς ξυμπλεῖν ἔξω τῶν βασιλέων καὶ
+              τῶν μάλιστα ἐν τέλει, ἄλλως τε καὶ μέλλοντας πέλαγος περαιώσεσθαι μετὰ σκευῶν
+              πολεμικῶν, οὐδ’ αὖ τὰ πλοῖα κατάφαρκτα ἔχοντας, ἀλλὰ τῷ παλαιῷ τρόπῳ λῃστικώτερον
+              παρεσκευασμένα.</seg>
+          </p>
+          <p>
+            <seg xml:id="w10_5">πρὸς τὰς μεγίστας δ’ οὖν καὶ ἐλαχίστας ναῦς τὸ μέσον σκοποῦντι οὐ
+              πολλοὶ φαίνονται ἐλθόντες, ὡς ἀπὸ πάσης τῆς Ἑλλάδος κοινῇ πεμπόμενοι.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t10_1">No se utilizaría un indicio exacto si, basándose en que Micenas era
+              pequeña o en que alguna ciudad de las de entonces parece ahora sin importancia, se
+              pusiera en duda que la expedición fue tan grande como los poetas la han cantado y como
+              la tradición mantiene;</seg>
+          </p>
+          <p>
+            <seg xml:id="t10_2">[2] pues si fuera desolada la ciudad de los lacedemonios, y solo
+              quedaran los templos y los cimientos de los edificios, pienso que, al cabo de mucho
+              tiempo, los hombres del mañana tendrían muchas dudas respecto a que la fuerza de los
+              lacedemonios correspondiera a su fama. Sin embargo, ocupan dos quintas partes del
+              Peloponeso y su hegemonía se extiende a la totalidad y a sus muchos aliados del
+              exterior; pero, a pesar de esto, dado que la ciudad no tiene templos ni edificios
+              suntuosos y no está construida de forma conjunta, sino que está formada por aldeas
+              dispersas a la manera antigua de Grecia, parecería muy inferior. Por el contrario, si
+              les ocurriera esto mismo a los atenienses, al mostrarse ante los ojos de los hombres
+              del mañana la apariencia de la ciudad, conjeturarían que la fuerza de Atenas era doble
+              de la real.</seg>
+          </p>
+          <p>
+            <seg xml:id="t10_3">[3] No hay razón, pues, para plantear dudas ni para prestar más
+              atención a las apariencias de las ciudades que a sus fuerzas reales, sino que hay que
+              creer que aquella expedición fue más importante que las anteriores, aunque inferior a
+              las de ahora, si es que también en este caso debemos confiar en los versos de Homero,
+              quien, aunque es verosímil que, como poeta, la ponderara para engrandecerla, aun así,
+              sin embargo, deja clara su inferioridad.</seg>
+          </p>
+          <p>
+            <seg xml:id="t10_4">[4] En efecto, en la flota de mil doscientas naves atribuye a las de
+              los beocios ciento veinte hombres y a las de Filoctetes cincuenta, indicando, en mi
+              opinión, las mayores y las menores; en el Catálogo de las Naves al menos, no se
+              menciona nada acerca del tamaño de las otras. Que todos eran a la vez remeros y
+              combatientes, lo demuestra al referirse a las naves de Filoctetes, pues dice que eran
+              arqueros todos los que manejaban los remos. Y no es probable que fueran a bordo muchos
+              pasajeros, a excepción de los reyes y de los dignatarios principales, sobre todo dado
+              que tenían que atravesar el mar con los pertrechos de guerra y que no tenían, además,
+              barcos con puentes, sino construidos a la antigua usanza, más bien al modo de los
+              piratas.</seg>
+          </p>
+          <p>
+            <seg xml:id="t10_5">[5] Así, pues, si sacamos la media de las naves mayores y menores,
+              es evidente que no fueron muchos combatientes, tratándose de una expedición enviada en
+              común por toda Grecia.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="11">
+        <linkGrp type="alignment">
+          <link target="#t11_1 #w11_1" />
+          <link target="#t11_2 #w11_2" />
+          <link target="#t11_3 #w11_3" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w11_1">αἴτιον δ’ ἦν οὐχ ἡ ὀλιγανθρωπία τοσοῦτον ὅσον ἡ ἀχρηματία. τῆς γὰρ
+              τροφῆς ἀπορίᾳ τόν τε στρατὸν ἐλάσσω ἤγαγον καὶ ὅσον ἤλπιζον αὐτόθεν πολεμοῦντα
+              βιοτεύσειν, ἐπειδὴ δὲ ἀφικόμενοι μάχῃ ἐκράτησαν (δῆλον δέ· τὸ γὰρ ἔρυμα τῷ στρατοπέδῳ
+              οὐκ ἂν ἐτειχίσαντο), φαίνονται δ’ οὐδ’ ἐνταῦθα πάσῃ τῇ δυνάμει χρησάμενοι, ἀλλὰ πρὸς
+              γεωργίαν τῆς Χερσονήσου τραπόμενοι καὶ λῃστείαν τῆς τροφῆς ἀπορίᾳ. ᾗ καὶ μᾶλλον οἱ
+              Τρῶες αὐτῶν διεσπαρμένων τὰ δέκα ἔτη ἀντεῖχον βίᾳ, τοῖς αἰεὶ ὑπολειπομένοις ἀντίπαλοι
+              ὄντες.</seg>
+          </p>
+          <p>
+            <seg xml:id="w11_2">περιουσίαν δὲ εἰ ἦλθον ἔχοντες τροφῆς καὶ ὄντες ἁθρόοι ἄνευ λῃστείας
+              καὶ γεωργίας ξυνεχῶς τὸν πόλεμον διέφερον, ῥᾳδίως ἂν μάχῃ κρατοῦντες εἷλον, οἵ γε καὶ
+              οὐχ ἁθρόοι, ἀλλὰ μέρει τῷ αἰεὶ παρόντι ἀντεῖχον, πολιορκίᾳ δ’ ἂν προσκαθεζόμενοι ἐν
+              ἐλάσσονί τε χρόνῳ καὶ ἀπονώτερον τὴν Τροίαν εἷλον.</seg>
+          </p>
+          <p>
+            <seg xml:id="w11_3">ἀλλὰ δι’ ἀχρηματίαν τά τε πρὸ τούτων ἀσθενῆ ἦν καὶ αὐτά γε δὴ ταῦτα,
+              ὀνομαστότατα τῶν πρὶν γενόμενα, δηλοῦται τοῖς ἔργοις ὑποδεέστερα ὄντα τῆς φήμης καὶ
+              τοῦ νῦν περὶ αὐτῶν διὰ τοὺς ποιητὰς λόγου κατεσχηκότος·</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t11_1">La causa no era tanto la escasez de hombres como la falta de
+              recursos. Debido a la dificultad de aprovisionamiento, transportaron un ejército
+              reducido en proporción a los medios de vida que esperaban obtener en el país mientras
+              combatían. Y después que vencieron en el combate que siguió a su llegada (hecho
+              evidente, pues, de lo contrario, no hubieran construido la fortificación del
+              campamento), se ve que ni siquiera entonces utilizaron todas sus fuerzas, sino que, a
+              causa de la dificultad de aprovisionamiento, se dedicaron a cultivar las tierras del
+              Quersoneso y a la piratería. Por este motivo principalmente, los troyanos, al estar
+              dispersos los griegos, pudieron resistir durante diez años de lucha abierta, ya que
+              sus fuerzas eran equivalentes al retén que sucesivamente quedaba frente a ellos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t11_2">[2] Por el contrario, si los griegos hubieran llegado con abundancia
+              de provisiones, y si todos a la vez, sin dedicarse a la agricultura y a la piratería,
+              hubieran proseguido la guerra sin interrupción, fácilmente se hubieran impuesto en el
+              combate y hubieran tomado la ciudad, dado que, incluso sin actuar a la vez, solo con
+              la parte del ejército que sucesivamente estaba presente, resistieron; y si se hubieran
+              establecido en torno a ella para sitiarla, hubieran tomado Troya en menos tiempo y con
+              menos dificultades.</seg>
+          </p>
+          <p>
+            <seg xml:id="t11_3">[3] Pero así como la debilidad de las empresas anteriores fue debida
+              a la falta de recursos, sin duda ocurre lo mismo con la Guerra de Troya, que si bien
+              ha obtenido más renombre que las anteriores, los hechos demuestran que fue inferior a
+              su fama y a la tradición que, gracias a los poetas, prevalece actualmente.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="12">
+        <linkGrp type="alignment">
+          <link target="#t12_1 #w12_1" />
+          <link target="#t12_2 #w12_2" />
+          <link target="#t12_3 #w12_3" />
+          <link target="#t12_4 #w12_4" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w12_1">ἐπεὶ καὶ μετὰ τὰ Τρωικὰ ἡ Ἑλλὰς ἔτι μετανίστατό τε καὶ κατῳκίζετο,
+              ὥστε μὴ ἡσυχάσασαν αὐξηθῆναι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w12_2">ἥ τε γὰρ ἀναχώρησις τῶν Ἑλλήνων ἐξ Ἰλίου χρονία γενομένη πολλὰ
+              ἐνεόχμωσε, καὶ στάσεις ἐν ταῖς πόλεσιν ὡς ἐπὶ πολὺ ἐγίγνοντο, ἀφ’ ὧν ἐкπίπτοντες τὰς
+              πόλεις ἔκτιζον.</seg>
+          </p>
+          <p>
+            <seg xml:id="w12_3">Βοιωτοί τε γὰρ οἱ νῦν ἑξηκοστῷ ἔτει μετὰ Ἰλίου ἅλωσιν ἐξ Ἄρνης
+              ἀναστάντες ὑπὸ Θεσσαλῶν τὴν νῦν μὲν Βοιωτίαν, πρότερον δὲ Καδμηίδα γῆν καλουμένην
+              ᾤκισαν (ἦν δὲ αὐτῶν καὶ ἀποδασμὸς πρότερον ἐν τῇ γῇ ταύτῃ, ἀφ’ ὧν καὶ ἐς Ἴλιον
+              ἐστράτευσαν), Δωριῆς τε ὀγδοηκοστῷ ἔτει ξὺν Ἡρακλείδαις Πελοπόννησον ἔσχον.</seg>
+          </p>
+          <p>
+            <seg xml:id="w12_4">μόλις τε ἐν πολλῷ χρόνῳ ἡσυχάσασα ἡ Ἑλλὰς βεβαίως καὶ οὐκέτι
+              ἀνισταμένη ἀποικίας ἐξέπεμψε, καὶ Ἴωνας μὲν Ἀθηναῖοι καὶ νησιωτῶν τοὺς πολλοὺς ᾤκισαν,
+              Ἰταλίας δὲ καὶ Σικελίας τὸ πλεῖστον Πελοποννήσιοι τῆς τε ἄλλης Ἑλλάδος ἔστιν ἃ χωρία.
+              πάντα δὲ ταῦτα ὕστερον τῶν Τρωικῶν ἐκτίσθη.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t12_1">Lo cierto es que, incluso después de la Guerra de Troya, Grecia
+              todavía siguió sometida al proceso de migraciones y colonizaciones que impidieron la
+              paz necesaria para desarrollarse.</seg>
+          </p>
+          <p>
+            <seg xml:id="t12_2">[2] El regreso de los griegos de Ilión después de tanto tiempo
+              provocó muchos cambios, y en la mayor parte de las ciudades se produjeron disensiones
+              internas a consecuencia de las cuales los que eran desterrados fundaban nuevas
+              ciudades.</seg>
+          </p>
+          <p>
+            <seg xml:id="t12_3">[3] Así, los actuales beocios, sesenta años después de la toma de
+              Ilión, tras ser expulsados de Arne por los tesalios, ocuparon la Beocia de hoy, que
+              antes se llamaba tierra cadmea (una rama de este pueblo ya estaba antes en esta
+              tierra, y algunos de ellos participaron en la expedición contra Ilión), y, ochenta
+              años después de la misma fecha, los dorios con los Heráclidas se apoderaron del
+              Peloponeso.</seg>
+          </p>
+          <p>
+            <seg xml:id="t12_4">[4] Cuando finalmente, después de mucho tiempo, Grecia alcanzó una
+              paz estable y se acabaron las migraciones, empezó a enviar colonias al exterior; los
+              atenienses ocuparon Jonia y las más de las islas, mientras que los peloponesios
+              colonizaron la mayor parte de Italia y de Sicilia y algunos lugares del resto de
+              Grecia. Todas estas colonias fueron fundadas después de la Guerra de Troya.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="13">
+        <linkGrp type="alignment">
+          <link target="#t13_1 #w13_1" />
+          <link target="#t13_2 #w13_2" />
+          <link target="#t13_3 #w13_3" />
+          <link target="#t13_4 #w13_4" />
+          <link target="#t13_5 #w13_5" />
+          <link target="#t13_6 #w13_6" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w13_1">δυνατωτέρας δὲ γιγνομένης τῆς Ἑλλάδος καὶ τῶν χρημάτων τὴν κτῆσιν
+              ἔτι μᾶλλον ἢ πρότερον ποιουμένης τὰ πολλὰ τυραννίδες ἐν ταῖς πόλεσι καθίσταντο, τῶν
+              προσόδων μειζόνων γιγνομένων (πρότερον δὲ ἦσαν ἐπὶ ῥητοῖς γέρασι πατρικαὶ βασιλεῖαι),
+              ναυτικά τε ἐξηρτύετο ἡ Ἑλλάς, καὶ τῆς θαλάσσης μᾶλλον ἀντείχοντο.</seg>
+          </p>
+          <p>
+            <seg xml:id="w13_2">πρῶτοι δὲ Κορίνθιοι λέγονται ἐγγύτατα τοῦ νῦν τρόπου μεταχειρίσαι τὰ
+              περὶ τὰς ναῦς, καὶ τριήρεις ἐν Κορίνθῳ πρῶτον τῆς Ἑλλάδος ναυπηγηθῆναι.</seg>
+          </p>
+          <p>
+            <seg xml:id="w13_3">φαίνεται δὲ καὶ Σαμίοις Ἀμεινοκλῆς Κορίνθιος ναυπηγὸς ναῦς ποιήσας
+              τέσσαρας· ἔτη δ ἐστὶ μάλιστα τριακόσια ἐς τὴν τελευτὴν τοῦδε τοῦ πολέμου ὅτε
+              Ἀμεινοκλῆς Σαμίοις ἦλθεν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w13_4">ναυμαχία τε παλαιτάτη ὧν ἴσμεν γίγνεται Κορινθίων πρὸς Κερκυραίους·
+              ἔτη δὲ μάλιστα καὶ ταύτῃ ἑξήκοντα καὶ διακόσιά ἐστι μέχρι τοῦ αὐτοῦ χρόνου.</seg>
+          </p>
+          <p>
+            <seg xml:id="w13_5">οἰκοῦντες γὰρ τὴν πόλιν οἱ Κορίνθιοι ἐπὶ τοῦ Ἰσθμοῦ αἰεὶ δή ποτε
+              ἐμπόριον εἶχον, τῶν Ἑλλήνων τὸ πάλαι κατὰ γῆν τὰ πλείω ἢ κατὰ θάλασσαν, τῶν τε ἐντὸς
+              Πελοποννήσου καὶ τῶν ἔξω, διὰ τῆς ἐκείνων παρ’ ἀλλήλους ἐπιμισγόντων, χρήμασί τε
+              δυνατοὶ ἦσαν, ὡς καὶ τοῖς παλαιοῖς ποιηταῖς δεδήλωται· ἀφνειὸν γὰρ ἐπωνόμασαν τὸ
+              χωρίον. ἐπειδή τε οἱ Ἕλληνες μᾶλλον ἔπλῳζον, τὰς ναῦς κτησάμενοι τὸ λῃστικὸν καθῄρουν,
+              καὶ ἐμπόριον παρέχοντες ἀμφότερα δυνατὴν ἔσχον χρημάτων προσόδῳ τὴν πόλιν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w13_6">καὶ Ἴωσιν ὕστερον πολὺ γίγνεται ναυτικὸν ἐπὶ Κύρου Περσῶν πρώτου
+              βασιλεύοντος καὶ Καμβύσου τοῦ υἱέος αὐτοῦ, τῆς τε καθ’ ἑαυτοὺς θαλάσσης Κύρῳ
+              πολεμοῦντες ἐκράτησάν τινα χρόνον. καὶ Πολυκράτης Σάμου τυραννῶν ἐπὶ Καμβύσου ναυτικῷ
+              ἰσχύων ἄλλας τε τῶν νήσων ὑπηκόους ἐποιήσατο καὶ Ῥήνειαν ἑλὼν ἀνέθηκε τῷ Ἀπόλλωνι τῷ
+              Δηλίῳ. Φωκαῆς τε Μασσαλίαν οἰκίζοντες Καρχηδονίους ἐνίκων ναυμαχοῦντες·</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t13_1">Al hacerse Grecia más poderosa y dedicarse todavía más que antes a
+              la adquisición de riquezas, en la mayoría de las ciudades se establecieron tiranías
+              con el aumento de los ingresos (antes había monarquías hereditarias con prerrogativas
+              delimitadas), y Grecia se puso a equipar flotas y a vivir más de cara al mar.</seg>
+          </p>
+          <p>
+            <seg xml:id="t13_2">[2] Se dice que los corintios fueron los primeros en ocuparse de las
+              construcciones navales con técnicas muy semejantes a las actuales y que las primeras
+              trirremes de Grecia se construyeron en Corinto.</seg>
+          </p>
+          <p>
+            <seg xml:id="t13_3">[3] Se sabe, asimismo, que Aminocles, un armador corintio, construyó
+              cuatro naves para los samios; y fue unos trescientos años antes del fin de nuestra
+              guerra cuando Aminocles fue a Samos.</seg>
+          </p>
+          <p>
+            <seg xml:id="t13_4">[4] La más antigua batalla naval de la que tenemos noticia se
+              disputó entre los corintios y los corcireos, unos doscientos sesenta años antes de la
+              misma fecha.</seg>
+          </p>
+          <p>
+            <seg xml:id="t13_5">[5] Los corintios, con su ciudad situada en el istmo, tuvieron ya
+              desde antiguo un centro comercial, dado que antiguamente los griegos, al comunicarse
+              más por tierra que por mar, tanto los de dentro como los de fuera del Peloponeso se
+              relacionaban entre sí a través del territorio de los corintios, que, así, se
+              convirtieron en una potencia económica, como lo demuestran incluso los poetas antiguos
+              al dar al lugar el calificativo de opulento. Y cuando los griegos se dedicaron más a
+              la navegación, los corintios se procuraron naves y procedieron a eliminar la
+              piratería, y debido a que ofrecían un centro comercial terrestre y marítimo a la vez,
+              gracias a la afluencia de riqueza, tuvieron una ciudad poderosa.</seg>
+          </p>
+          <p>
+            <seg xml:id="t13_6">[6] Más tarde, en tiempo de Ciro, el primer rey persa, y de su hijo
+              Cambises, los jonios también tuvieron una flota considerable, y en su guerra contra
+              Ciro dominaron durante un cierto tiempo el mar cercano a sus costas. Policrates, que
+              fue tirano de Samos en tiempos de Cambises, asimismo fue poderoso gracias a su flota,
+              y, entre otras islas que sometió, tomó Renea y la consagró a Apolo delio. Y los
+              foceos, que fundaron Marsella, combatiendo por mar vencieron a los cartagineses.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="14">
+        <linkGrp type="alignment">
+          <link target="#t14_1 #w14_1" />
+          <link target="#t14_2 #w14_2" />
+          <link target="#t14_3 #w14_3" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w14_1">δυνατώτατα γὰρ ταῦτα τῶν ναυτικῶν ἦν. φαίνεται δὲ καὶ ταῦτα πολλαῖς
+              γενεαῖς ὕστερα γενόμενα τῶν Τρωικῶν τριήρεσι μὲν ὀλίγαις χρώμενα, πεντηκοντόροις δ’
+              ἔτι καὶ πλοίοις μακροῖς ἐξηρτυμένα ὥσπερ ἐκεῖνα.</seg>
+          </p>
+          <p>
+            <seg xml:id="w14_2">ὀλίγον τε πρὸ τῶν Μηδικῶν καὶ τοῦ Δαρείου θανάτου, ὃς μετὰ Καμβύσην
+              Περσῶν ἐβασίλευσε, τριήρεις περί τε Σικελίαν τοῖς τυράννοις ἐς πλῆθος ἐγένοντο καὶ
+              Κερκυραίοις· ταῦτα γὰρ τελευταῖα πρὸ τῆς Ξέρξου στρατείας ναυτικὰ ἀξιόλογα ἐν τῇ
+              Ἑλλάδι κατέστη.</seg>
+          </p>
+          <p>
+            <seg xml:id="w14_3">Αἰγινῆται γὰρ καὶ Ἀθηναῖοι, καὶ εἴ τινες ἄλλοι, βραχέα ἐκέκτηντο,
+              καὶ τούτων τὰ πολλὰ πεντηκοντόρους· ὀψέ τε ἀφ’ οὗ Ἀθηναίους Θεμιστοκλῆς ἔπεισεν
+              Αἰγινήταις πολεμοῦντας, καὶ ἅμα τοῦ βαρβάρου προσδοκίμου ὄντος, τὰς ναῦς ποιήσασθαι
+              αἷσπερ καὶ ἐναυμάχησαν· καὶ αὗται οὔπω εἶχον διὰ πάσης καταστρώματα.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t14_1">Estas eran, sin duda, las flotas más poderosas. Pero incluso estas,
+              a pesar de que se formaron muchas generaciones después de la Guerra de Troya, tenían,
+              al parecer, pocas trirremes, y estaban compuestas por pentecóntoros y naves largas,
+              como las flotas antiguas.</seg>
+          </p>
+          <p>
+            <seg xml:id="t14_2">[2] Sin embargo, poco antes de las Guerras Médicas y de la muerte de
+              Darío, que fue rey de los persas después de Cambises, los tiranos de Sicilia y los
+              corcireos tuvieron trirremes en número considerable;</seg>
+          </p>
+          <p>
+            <seg xml:id="t14_3">[3] estas fueron las últimas flotas dignas de mención que hubo en
+              Grecia antes de la expedición de Jerjes, pues las que poseían los eginetas, los
+              atenienses y algunos otros eran pequeñas y estaban formadas en su mayor parte por
+              pentecóntoros; fue más tarde cuando Temístocles persuadió a los atenienses, que
+              estaban en guerra con los eginetas a la vez que a la espera del ataque de los
+              bárbaros, a construir las naves con las que combatieron; y estas todavía no tenían
+              puentes en toda su extensión.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="15">
+        <linkGrp type="alignment">
+          <link target="#t15_1 #w15_1" />
+          <link target="#t15_2 #w15_2" />
+          <link target="#t15_3 #w15_3" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w15_1">τὰ μὲν οὖν ναυτικὰ τῶν Ἑλλήνων τοιαῦτα ἦν, τά τε παλαιὰ καὶ τὰ
+              ὕστερον γενόμενα. ἰσχὺν δὲ περιεποιήσαντο ὅμως οὐκ ἐλαχίστην οἱ προσσχόντες αὐτοῖς
+              χρημάτων τε προσόδῳ καὶ ἄλλων ἀρχῇ· ἐπιπλέοντες γὰρ τὰς νήσους κατεστρέφοντο, καὶ
+              μάλιστα ὅσοι μὴ διαρκῆ εἶχον χώραν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w15_2">κατὰ γῆν δὲ πόλεμος, ὅθεν τις καὶ δύναμις παρεγένετο, οὐδεὶς
+              ξυνέστη· πάντες δὲ ἦσαν, ὅσοι καὶ ἐγένοντο, πρὸς ὁμόρους τοὺς σφετέρους ἑκάστοις, καὶ
+              ἐκδήμους στρατείας πολὺ ἀπὸ τῆς ἑαυτῶν ἐπ’ ἄλλων καταστροφῇ οὐκ ἐξῇσαν οἱ Ἕλληνες. οὐ
+              γὰρ ξυνειστήκεσαν πρὸς τὰς μεγίστας πόλεις ὑπήκοοι, οὐδ’ αὖ αὐτοὶ ἀπὸ τῆς ἴσης κοινὰς
+              στρατείας ἐποιοῦντο, κατ’ ἀλλήλους δὲ μᾶλλον ὡς ἕκαστοι οἱ ἀστυγείτονες ἐπολέμουν.</seg>
+          </p>
+          <p>
+            <seg xml:id="w15_3">μάλιστα δὲ ἐς τὸν πάλαι ποτὲ γενόμενον πόλεμον Χαλκιδέων καὶ
+              Ἐρετριῶν καὶ τὸ ἄλλο Ἑλληνικὸν ἐς ξυμμαχίαν ἑκατέρων διέστη.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t15_1">Así fueron, pues, las flotas de los griegos, las antiguas y las que
+              se formaron más tarde. Lograron, sin embargo, un poder nada despreciable quienes se
+              dedicaron a ellas, gracias a la afluencia de riqueza y al dominio sobre otros pueblos,
+              pues en sus expediciones navales conquistaban las islas especialmente quienes no
+              tenían un territorio suficiente.</seg>
+          </p>
+          <p>
+            <seg xml:id="t15_2">[2] Por tierra no se disputó ninguna guerra de la que pudiera
+              derivar algún poder, sino que todas las que se produjeron eran las de cada pueblo con
+              sus propios vecinos, y los griegos no salieron a expediciones al exterior a mucha
+              distancia de su país con miras a la conquista de otros. Esto fue así porque no se
+              habían constituido alianzas bajo la dirección de las ciudades mayores, y ni siquiera
+              emprendían expediciones comunes en igualdad de derechos, sino que las ciudades vecinas
+              se hacían la guerra más bien unas a otras separadamente.</seg>
+          </p>
+          <p>
+            <seg xml:id="t15_3">[3] Fue, ante todo, en la guerra que tuvo lugar antiguamente entre
+              los calcideos y los eretrieos cuando el resto del mundo griego se dividió para aliarse
+              con uno u otro bando.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="16">
+        <linkGrp type="alignment">
+          <link target="#t16_1 #w16_1" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w16_1">ἐπεγένετο δὲ ἄλλοις τε ἄλλοθι κωλύματα μὴ αὐξηθῆναι, καὶ Ἴωσι
+              προχωρησάντων ἐπὶ μέγα τῶν πραγμάτων Κῦρος καὶ ἡ Περσικὴ βασιλεία Κροῖσον καθελοῦσα
+              καὶ ὅσα ἐντὸς Ἅλυος ποταμοῦ πρὸς θάλασσαν ἐπεστράτευσε καὶ τὰς ἐν τῇ ἠπείρῳ πόλεις
+              ἐδούλωσε, Δαρεῖός τε ὕστερον τῷ Φοινίκων ναυτικῷ κρατῶν καὶ τὰς νήσους.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <p>
+            <seg xml:id="t16_1">Cada pueblo encontró obstáculos de distinto tipo en su desarrollo.
+              Así, contra los jonios, en un momento de gran prosperidad, Ciro y el imperio persa,
+              tras destronar a Creso y conquistar todos los territorios situados entre el río Halis
+              y el mar, hicieron una expedición y sometieron las ciudades del continente; y Darío,
+              más tarde, gracias a la flota fenicia, se apoderó también de las islas.</seg>
+          </p>
+        </div>
+      </div>
+      <div type="textpart" subtype="chapter" n="17">
+        <linkGrp type="alignment">
+          <link target="#t17_1 #w17_1" />
+        </linkGrp>
+        <div type="source" xml:lang="grc">
+          <p>
+            <seg xml:id="w17_1">τύραννοί τε ὅσοι ἦσαν ἐν ταῖς Ἑλληνικαῖς πόλεσι,τὸ ἐφ’ ἑαυτῶν μόνον
+              προορώμενοι ἔς τε τὸ σῶμα καὶ ἐς τὸ τὸν ἴδιον οἶκον αὔξειν δι’ ἀσφαλείας ὅσον ἐδύναντο
+              μάλιστα τὰς πόλεις ᾤκουν, ἐπράχθη δὲ οὐδὲν ἀπ’ αὐτῶν ἔ ργον ἀξιόλογον, εἰ μὴ εἴ τι
+              πρὸς περιοίκους τοὺς αὐτῶν ἑκάστοις· οἱ γὰρ ἐν Σικελίᾳ ἐπὶ πλεῖστον ἐχώρησαν δυνάμεως.
+              οὕτω πανταχόθεν ἡ Ἑλλὰς ἐπὶ πολὺν χρόνον κατείχετο μήτε κοινῇ φανερὸν μηδὲν
+              κατεργάζεσθαι, κατὰ πόλεις τε ἀτολμοτέρα εἶναι.</seg>
+          </p>
+        </div>
+        <div type="translation" xml:lang="es">
+          <div type="translation" xml:lang="es">
+            <p>
+              <seg xml:id="t17_1">Por lo que respecta a los tiranos, todos los que estaban
+                establecidos en las ciudades griegas, mirando solo por sus intereses, tanto por su
+                seguridad personal como por el engrandecimiento de su propia casa, gobernaban las
+                ciudades con la máxima prudencia posible, y no llevaron a cabo ninguna empresa digna
+                de mención, salvo alguna guerra particular contra sus vecinos respectivos. Los
+                tiranos de Sicilia, en cambio, llegaron a los niveles más altos de poder. Así, por
+                motivos de todo tipo, Grecia se vio obligada durante mucho tiempo a no realizar nada
+                notable en común y a que las empresas de cada una de sus ciudades carecieran de
+                audacia.</seg>
+            </p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="18">
+          <linkGrp type="alignment">
+            <link target="#t18_1 #w18_1" />
+            <link target="#t18_2 #w18_2" />
+            <link target="#t18_3 #w18_3" />
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p>
+              <seg xml:id="w18_1">ἐπειδὴ δὲ οἵ τε Ἀθηναίων τύραννοι καὶ οἱ ἐκ τῆς ἄλλης Ἑλλάδος ἐπὶ
+                πολὺ καὶ πρὶν τυραννευθείσης οἱ πλεῖστοι καὶ τελευταῖοι πλὴν τῶν ἐν Σικελίᾳ ὑπὸ
+                Λακεδαιμονίων κατελύθησαν (ἡ γὰρ Λακεδαίμων μετὰ τὴν κτίσιν τῶν νῦν ἐνοικούντων
+                αὐτὴν Δωριῶν ἐπὶ πλεῖστον ὧν ἴσμεν χρόνον στασιάσασα ὅμως ἐκ παλαιτάτου καὶ ηὐνομήθη
+                καὶ αἰεὶ ἀτυράννευτος ἦν· ἔτη γάρ ἐστι μάλιστα τετρακόσια καὶ ὀλίγῳ πλείω ἐς τὴν
+                τελευτὴν τοῦδε τοῦ πολέμου ἀφ’ οὗ Λακεδαιμόνιοι τῇ αὐτῇ πολιτείᾳ χρῶνται, καὶ δι’
+                αὐτὸ δυνάμενοι καὶ τὰ ἐν ταῖς ἄλλαις πόλεσι καθίστασαν), μετὰ δὲ τὴν τῶν τυράννων
+                κατάλυσιν ἐκ τῆς Ἑλλάδος οὐ πολλοῖς ἔτεσιν ὕστερον καὶ ἡ ἐν Μαραθῶνι μάχη Μήδων πρὸς
+                Ἀθηναίους ἐγένετο.</seg>
+            </p>
+            <p>
+              <seg xml:id="w18_2">δεκάτῳ δὲ ἔτει μετ’ αὐτὴν αὖθις ὁ βάρβαρος τῷ μεγάλῳ στόλῳ ἐπὶ τὴν
+                Ἑλλάδα δουλωσόμενος ἦλθεν. καὶ μεγάλου κινδύνου ἐπικρεμασθέντος οἵ τε Λακεδαιμόνιοι
+                τῶν ξυμπολεμησάντων Ἑλλήνων ἡγήσαντο δυνάμει προύχοντες, καὶ οἱ Ἀθηναῖοι ἐπιόντων
+                τῶν Μήδων διανοηθέντες ἐκλιπεῖν τὴν πόλιν καὶ ἀνασκευασάμενοι ἐς τὰς ναῦς ἐσβάντες
+                ναυτικοὶ ἐγένοντο. κοινῇ τε ἀπωσάμενοι τὸν βάρβαρον, ὕστερον οὐ πολλῷ διεκρίθησαν
+                πρός τε Ἀθηναίους καὶ Λακεδαιμονίους οἵ τε ἀποστάντες βασιλέως Ἕλληνες καὶ οἱ
+                ξυμπολεμήσαντες. δυνάμει γὰρ ταῦτα μέγιστα διεφάνη· ἴσχυον γὰρ οἱ μὲν κατὰ γῆν, οἱ
+                δὲ ναυσίν.</seg>
+            </p>
+            <p>
+              <seg xml:id="w18_3">καὶ ὀλίγον μὲν χρόνον ξυνέμεινεν ἡ ὁμαιχμία, ἔπειτα διενεχθέντες
+                οἱ Λακεδαιμόνιοι καὶ Ἀθηναῖοι ἐπολέμησαν μετὰ τῶν ξυμμάχων πρὸς ἀλλήλους· καὶ τῶν
+                ἄλλων Ἑλλήνων εἴ τινές που διασταῖεν, πρὸς τούτους ἤδη ἐχώρουν. ὥστε ἀπὸ τῶν Μηδικῶν
+                ἐς τόνδε αἰεὶ τὸν πόλεμον τὰ μὲν σπενδόμενοι, τὰ δὲ πολεμοῦντες ἢ ἀλλήλοις ἢ τοῖς
+                ἑαυτῶν ξυμμάχοις ἀφισταμένοις εὖ παρεσκευάσαντο τὰ πολέμια καὶ ἐμπειρότεροι ἐγένοντο
+                μετὰ κινδύνων τὰς μελέτας ποιούμενοι.</seg>
+            </p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p>
+              <seg xml:id="t18_1">Pero después que los tiranos de Atenas y los del resto de Grecia
+                —regida también antes en muchos sitios por tiranías—, es decir, la mayoría de los
+                tiranos y los últimos si exceptuamos los de Sicilia, fueron derrocados por los
+                lacedemonios (pues Lacedemonia, después de su fundación por los dorios que la siguen
+                habitando actualmente, aunque fue, de los que conocemos, el país que sufrió
+                disensiones internas durante más tiempo, sin embargo desde muy antiguo tuvo buenas
+                leyes y siempre se vio libre de tiranos, con lo que son unos cuatrocientos años o
+                unos pocos más los que han pasado hasta el final de nuestra guerra, desde que los
+                lacedemonios tienen la misma Constitución, y por esto se han hecho poderosos y han
+                impuesto su criterio en las otras ciudades), después de la expulsión de los tiranos
+                de Grecia, como decía, no muchos años después, tuvo lugar la batalla de Maratón
+                entre los medos y los atenienses.</seg>
+            </p>
+            <p>
+              <seg xml:id="t18_2">[2] Y diez años después de esta vinieron de nuevo los bárbaros
+                contra Grecia con su gran expedición para someterla. Ante la amenaza de este gran
+                peligro, los lacedemonios, por la superioridad de sus fuerzas, tomaron el mando de
+                los griegos aliados, mientras que los atenienses, al avanzar los medos, decidieron
+                abandonar la ciudad y, recogiendo sus bienes, se embarcaron en las naves y se
+                hicieron marinos. Tras rechazar en común a los bárbaros, no mucho después, tanto los
+                griegos que se habían rebelado contra el Rey como los que se habían aliado frente a
+                él se dividieron en dos bandos en torno a los atenienses y a los lacedemonios; estos
+                pueblos, en efecto, se habían revelado como los más poderosos, ya que los unos eran
+                fuertes por tierra y los otros por mar.</seg>
+            </p>
+            <p>
+              <seg xml:id="t18_3">[3] La alianza militar se mantuvo durante corto tiempo; luego los
+                lacedemonios y los atenienses tuvieron divergencias y se hicieron la guerra con la
+                ayuda de sus aliados; y a partir de entonces los otros griegos, en los casos en que
+                estaban en desacuerdo, acudían a ellos. De modo que desde las Guerras Médicas hasta
+                nuestra guerra, unas veces en paz, otras en guerra, bien entre sí, bien contra sus
+                propios aliados en rebeldía, prepararon cuidadosamente sus recursos para la guerra y
+                adquirieron más experiencia ejercitándose en medio de los peligros.</seg>
+            </p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="19">
+          <linkGrp type="alignment">
+            <link target="#t19_1 #w19_1" />
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p>
+              <seg xml:id="w19_1">καὶ οἱ μὲν Λακεδαιμόνιοι οὐχ ὑποτελεῖς ἔχοντες φόρου τοὺς
+                ξυμμάχους ἡγοῦντο, κατ ὀλιγαρχίαν δὲ σφίσιν αὐτοῖς μόνον ἐπιτηδείως ὅπως
+                πολιτεύσουσι θεραπεύοντες, Ἀθηναῖοι δὲ ναῦς τε τῶν πόλεων τῷ χρόνῳ παραλαβόντες πλὴν
+                Χίων καὶ Λεσβίων, καὶ χρήματα τοῖς πᾶσι τάξαντες φέρειν. καὶ ἐγένετο αὐτοῖς ἐς τόνδε
+                τὸν πόλεμον ἡ ἰδία παρασκευὴ μείζων ἢ ὡς τὰ κράτιστά ποτε μετὰ ἀκραιφνοῦς τῆς
+                ξυμμαχίας ἤνθησαν.</seg>
+            </p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p>
+              <seg xml:id="t19_1">Los lacedemonios ejercían su hegemonía sin tener a sus aliados
+                sujetos a tributo, pero preocupándose de que su régimen fuera oligárquico, de
+                acuerdo únicamente con su propia conveniencia. Los atenienses, en cambio, con el
+                tiempo se habían apropiado de las naves de las ciudades aliadas, salvo de las de
+                Quíos y Lesbos, y habían impuesto a todas el pago de un tributo. Y los recursos
+                militares que ellos tenían separadamente al comienzo de esta guerra eran mayores que
+                los de la época de mayor esplendor con la fuerza de la alianza intacta.</seg>
+            </p>
+          </div>
+        </div>
+      </div>
     </body>
   </text>
 </TEI>
