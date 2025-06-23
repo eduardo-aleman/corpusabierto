@@ -108,3 +108,8 @@ a:focus {
 .text-container.flex-fill {
   flex: 0 0 auto !important;
 }
+/* Evita que text-container flex-fill crezca para emparejar altura */
+.text-container.flex-fill {
+  /* 0 = no crecer, 1 = poder encogerse, auto = tamaño según contenido */
+  flex: 0 1 auto !important;
+}
