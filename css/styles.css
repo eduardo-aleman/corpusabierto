@@ -40,7 +40,6 @@ a:focus {
 
 /* Palabras interactivas */
 .word {
-  /* Cambiado a inline para que no rompa líneas */
   display: inline;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -55,20 +54,42 @@ a:focus {
   transition: background-color 0.2s ease;
 }
 
-/* Contenedores de texto y notas */
-.text-container,
+/* Contenedores de texto (aplicado a #greekText y #spanishText) */
+.text-container {
+  background-color: var(--color-container-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: 2rem; /* Espaciado entre la caja de texto y lo que le siga */
+
+  /* *** MODIFICACIÓN CLAVE: Permite que el elemento se estire en un contenedor flex-column *** */
+  flex: 1;
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedores de notas (los que están debajo del texto principal) */
 .notes-container {
   background-color: var(--color-container-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--spacing);
-  margin-bottom: 2rem;
+  margin-top: var(--spacing); /* Corresponde a la clase mt-3 en el HTML */
+  margin-bottom: 2rem; /* Espaciado entre la caja de notas y lo que le siga */
+
+  /* *** MODIFICACIÓN CLAVE: Quitar display: block !important para que se comporte en flexbox *** */
+  /* NO se añade flex: 1; aquí, para que mantenga su altura de contenido natural */
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
   max-height: 60vh;
   overflow-y: auto;
-
-  /* Fuerza el flujo normal y desactiva flexbox */
-  display: block !important;
-  white-space: normal !important;
 
   /* Asegura mismo ancho mínimo y máximo */
   width: 100%;
@@ -129,12 +150,15 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* Asegura que .flex-fill no recupere el flex original */
+/* *** MODIFICACIÓN CLAVE: Eliminar esta anulación si existe y no es necesaria *** */
+/* Asegura que .flex-fill no recupere el flex original (si esa clase existiera en el HTML) */
 .text-container.flex-fill {
-  display: block !important;
-  flex: 0 1 auto !important;
+  /* display: block !important; */ /* Comentar o eliminar */
+  /* flex: 0 1 auto !important; */ /* Comentar o eliminar */
 }
-/* ——— Anular saltos de línea individuales en los contenedores de texto ——— */
+
+/* --- REVISIÓN: Anular saltos de línea individuales en los contenedores de texto --- */
+/* Estas reglas deberían estar bien para tu propósito de resaltar palabras */
 .text-container br {
   /* convierto cada <br> en un espacio en línea */
   display: inline !important;
@@ -149,4 +173,4 @@ a:focus {
   margin: var(--spacing) 0 !important;
   line-height: normal !important;
 }
-/* ——— Fin de anulación de saltos de línea individuales ——— */
+/* --- Fin de anulación de saltos de línea individuales --- */
