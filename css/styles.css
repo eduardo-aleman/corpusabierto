@@ -69,6 +69,11 @@ a:focus {
   /* Fuerza el flujo normal y desactiva flexbox */
   display: block !important;
   white-space: normal !important;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 /* Si usas <p> dentro: restaura su margen */
