@@ -6,7 +6,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CorpusAbierto</title>
 
-  <style>:root{--color-bg:#fff;--color-text:#212529;--color-border:#dee2e6;--color-container-bg:#fafafa;--color-highlight:#ffeb3b;--color-link:#0d6efd;--radius:.375rem;--spacing:1.5rem}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--color-bg);color:var(--color-text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;font-size:1rem;scroll-behavior:smooth}a{color:var(--color-link);text-decoration:none}a:hover,a:focus{text-decoration:underline}.word{display:inline;cursor:pointer;transition:background-color .2s ease;position:relative}.word:hover,.word:focus{background-color:rgba(255,235,59,.3)}.highlight{background-color:var(--color-highlight);transition:background-color .2s ease}.text-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-bottom:2rem;flex:1;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.notes-container{background-color:var(--color-container-bg);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--spacing);margin-top:var(--spacing);margin-bottom:2rem;max-height:60vh;overflow-y:auto;width:100%;min-width:0;box-sizing:border-box}.text-container p,.notes-container p{margin-bottom:1rem}.text-container ul,.text-container ol,.notes-container ul,.notes-container ol{margin:0 0 1rem 1.5rem}.text-container br+br,.notes-container br+br{content:"";display:block;margin-bottom:var(--spacing);line-height:0}.text-container::-webkit-scrollbar,.notes-container::-webkit-scrollbar{width:8px}.text-container::-webkit-scrollbar-track,.notes-container::-webkit-scrollbar-track{background:var(--color-bg)}.text-container::-webkit-scrollbar-thumb,.notes-container::-webkit-scrollbar-thumb{background-color:var(--color-border);border-radius:var(--radius)}@media (max-width:768px){.text-container,.notes-container{padding:1rem;max-height:50vh}}.word:focus{outline:3px solid var(--color-link);outline-offset:2px}.text-container.flex-fill{} .text-container br{display:inline!important;content:" "!important;margin:0!important;line-height:normal!important}.text-container br+br{display:block!important;margin:var(--spacing) 0!important;line-height:normal!important}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}</style>
+  <style>
+    :root {
+      --color-bg: #fff;
+      --color-text: #212529;
+      --color-border: #dee2e6;
+      --color-container-bg: #fafafa;
+      --color-highlight: #ffeb3b;
+      --color-link: #0d6efd;
+      --radius: .375rem;
+      --spacing: 1.5rem
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 1rem;
+      scroll-behavior: smooth
+    }
+
+    a {
+      color: var(--color-link);
+      text-decoration: none
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline
+    }
+
+    .word {
+      display: inline;
+      cursor: pointer;
+      transition: background-color .2s ease;
+      position: relative
+    }
+
+    .word:hover,
+    .word:focus {
+      background-color: rgba(255, 235, 59, .3)
+    }
+
+    .highlight {
+      background-color: var(--color-highlight);
+      transition: background-color .2s ease
+    }
+
+    .text-container {
+      background-color: var(--color-container-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: var(--spacing);
+      margin-bottom: 2rem;
+      flex: 1;
+      max-height: 60vh;
+      overflow-y: auto;
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box
+    }
+
+    .notes-container {
+      background-color: var(--color-container-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: var(--spacing);
+      margin-top: var(--spacing);
+      margin-bottom: 2rem;
+      max-height: 60vh;
+      overflow-y: auto;
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box
+    }
+
+    .text-container p,
+    .notes-container p {
+      margin-bottom: 1rem
+    }
+
+    .text-container ul,
+    .text-container ol,
+    .notes-container ul,
+    .notes-container ol {
+      margin: 0 0 1rem 1.5rem
+    }
+
+    .text-container br+br,
+    .notes-container br+br {
+      content: "";
+      display: block;
+      margin-bottom: var(--spacing);
+      line-height: 0
+    }
+
+    .text-container::-webkit-scrollbar,
+    .notes-container::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .text-container::-webkit-scrollbar-track,
+    .notes-container::-webkit-scrollbar-track {
+      background: var(--color-bg)
+    }
+
+    .text-container::-webkit-scrollbar-thumb,
+    .notes-container::-webkit-scrollbar-thumb {
+      background-color: var(--color-border);
+      border-radius: var(--radius)
+    }
+
+    @media (max-width:768px) {
+
+      .text-container,
+      .notes-container {
+        padding: 1rem;
+        max-height: 50vh
+      }
+    }
+
+    .word:focus {
+      outline: 3px solid var(--color-link);
+      outline-offset: 2px
+    }
+
+    .text-container.flex-fill {}
+
+    .text-container br {
+      display: inline !important;
+      content: " " !important;
+      margin: 0 !important;
+      line-height: normal !important
+    }
+
+    .text-container br+br {
+      display: block !important;
+      margin: var(--spacing) 0 !important;
+      line-height: normal !important
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important
+    }
+  </style>
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -20,9 +178,12 @@
     content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></noscript>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </noscript>
 </head>
 
 <body id="top">
@@ -84,7 +245,7 @@
             <a href="#" class="list-group-item list-group-item-action">
               Anales de Tácito
             </a>
-            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -348,7 +509,7 @@
               φαίνονται ἐλθόντες, ὡς ἀπὸ πάσης τῆς Ἑλλάδος κοινῇ πεμπόμενοι.</span></p>
 
           <h4>Capítulo 11</h4>
-          <p><span id="w11_1" class="word">αἴτιον δ’ ἦν οὐχ ἡ ὀλιγανθρωπία τοσοῦτον ὅσον ἡ ἀχρηματία. τῆς γὰρ τροφῆς
+          <p><span id="w11_1" class="word">αἴτιον δ’ ἦν οὐх ἡ ὀλιγανθρωπία τοσοῦτον ὅσον ἡ ἀχρηματία. τῆς γὰρ τροφῆς
               ἀπορίᾳ τόν τε στρατὸν ἐλάσσω ἤγαγον καὶ ὅσον ἤλπιζον αὐτόθεν πολεμοῦντα βιοτεύσειν, ἐπειδὴ δὲ ἀφικόμενοι
               μάχῃ ἐκράτησαν (δῆλον δέ· τὸ γὰρ ἔρυμα τῷ στρατοπέδῳ οὐκ ἂν ἐτειχίσαντο), φαίνονται δ’ οὐδ’ ἐνταῦθα πάσῃ
               τῇ δυνάμει χρησάμενοι, ἀλλὰ πρὸς γεωργίαν τῆς Χερσονήσου τραπόμενοι καὶ λῃστείαν τῆς τροφῆς ἀπορίᾳ. ᾗ καὶ
@@ -363,7 +524,7 @@
               τοὺς ποιητὰς λόγου κατεσχηκότος·</span></p>
 
           <h4>Capítulo 12</h4>
-          <p><span id="w12_1" class="word">ἐπεὶ καὶ μετὰ τὰ Τρωικὰ ἡ Ἑλλὰς ἔτι μετανίστατό τε καὶ κατῳκίζετο, ὥστε μὴ
+          <p><span id="w12_1" class="word">ἐπεὶ καὶ μετὰ τὰ Τρωικὰ ἡ Ἑλλὰς ἔτι μετανíστατό τε καὶ κατῳκíζετο, ὥστε μὴ
               ἡσυχάσασαν αὐξηθῆναι.</span></p>
           <p><span id="w12_2" class="word">ἥ τε γὰρ ἀναχώρησις τῶν Ἑλλήνων ἐξ Ἰλίου χρονία γενομένη πολλὰ ἐνεόχμωσε, καὶ
               στάσεις ἐν ταῖς πόλεσιν ὡς ἐπὶ πολὺ ἐγίγνοντο, ἀφ’ ὧν ἐκπίπτοντες τὰς πόλεις ἔκτιζον.</span></p>
@@ -429,7 +590,7 @@
               καὶ τὰς νήσους.</span></p>
 
           <h4>Capítulo 17</h4>
-          <p><span id="t17_1" class="word">τύραννοί τε ὅσοι ἦσαν ἐν ταῖς Ἑλληνικαῖς πόλεσι,τὸ ἐφ’ ἑαυτῶν μόνον
+          <p><span id="w17_1" class="word">τύραννοί τε ὅσοι ἦσαν ἐν ταῖς Ἑλληνικαῖς πόλεσι,τὸ ἐφ’ ἑαυτῶν μόνον
               προορώμενοι ἔς τε τὸ σῶμα καὶ ἐς τὸ τὸν ἴδιον οἶκον αὔξειν δι’ ἀσφαλείας ὅσον ἐδύναντο μάλιστα τὰς πόλεις
               ᾤκουν, ἐπράχθη δὲ οὐδὲν ἀπ’ αὐτῶν ἔργον ἀξιόλογον, εἰ μὴ εἴ τι πρὸς περιοίκους τοὺς αὐτῶν ἑκάστοις· οἱ γὰρ
               ἐν Σικελίᾳ ἐπὶ πλεῖστον ἐχώρησαν δυνάμεως. οὕτω πανταχόθεν ἡ Ἑλλὰς ἐπὶ πολὺν χρόνον κατείχετο μήτε κοινῇ
@@ -456,7 +617,7 @@
               ἐμπειρότεροι ἐγένοντο μετὰ κινδύνων τὰς μελέτας ποιούμενοι.</span></p>
 
           <h4>Capítulo 19</h4>
-          <p><span id="w19_1" class="word">καὶ οἱ μὲν Λακεδαιμόνιοι οὐχ ὑποτελεῖς ἔχοντες φόρου τοὺς ξυμμάχους ἡγοῦντο,
+          <p><span id="w19_1" class="word">καὶ οἱ μὲν Λακεδαιμόνιοι οὐχ ὑποτελεῖς ἔχοντες φόρου τοὺς ξυмμάχους ἡγοῦντο,
               κατ ὀλιγαρχίαν δὲ σφίσιν αὐτοῖς μόνον ἐπιτηδείως ὅπως πολιτεύσουσι θεραπεύοντες, Ἀθηναῖοι δὲ ναῦς τε τῶν
               πόλεων τῷ χρόνῳ παραλαβόντες πλὴν Χίων καὶ Λεσβίων, καὶ χρήματα τοῖς πᾶσι τάξαντες φέρειν. καὶ ἐγένετο
               αὐτοῖς ἐς τόνδε τὸν πόλεμον ἡ ἰδία παρασκευὴ μείζων ἢ ὡς τὰ κράτιστά ποτε μετὰ ἀκραιφνοῦς τῆς ξυμμαχίας
@@ -668,175 +829,361 @@
               los dignatarios principales, sobre todo dado que tenían que atravesar el mar con los pertrechos de guerra
               y que no tenían, además, barcos con puentes, sino construidos a la antigua usanza, más bien al modo de los
               piratas.</span></p>
-          <p><span id="t10_5" class="word" data-map="w10_5">[5] Así, pues, si sacamos la media de las naves mayores y
-              menores, es evidente que no fueron muchos combatientes, tratándose de una expedición enviada en común por
-              toda Grecia<sup>79</sup>.</span></p>
-          <h4>Capítulo 11</h4>
-          <p><span id="t11_1" class="word" data-map="w11_1">La causa no era tanto la escasez de hombres como la falta de
-              recursos. Debido a la dificultad de aprovisionamiento<sup>80</sup>, transportaron un ejército reducido en
-              proporción a los medios de vida que esperaban obtener en el país mientras combatían. Y después que
-              vencieron en el combate que siguió a su llegada (hecho evidente, pues, de lo contrario, no hubieran
-              construido la fortificación del campamento)<sup>81</sup>, se ve que ni siquiera entonces utilizaron todas
-              sus fuerzas, sino que, a causa de la dificultad de aprovisionamiento, se dedicaron a cultivar las tierras
-              del Quersoneso y a la piratería<sup>82</sup>. Por este motivo principalmente, los troyanos, al estar
-              dispersos los griegos, pudieron resistir durante diez años de lucha abierta, ya que sus fuerzas eran
-              equivalentes al retén que sucesivamente quedaba frente a ellos.</span></p>
-          <p><span id="t11_2" class="word" data-map="w11_2">[2] Por el contrario, si los griegos hubieran llegado con
-              abundancia de provisiones, y si todos a la vez, sin dedicarse a la agricultura y a la piratería, hubieran
-              proseguido la guerra sin interrupción, fácilmente se hubieran impuesto en el combate y hubieran tomado la
-              ciudad, dado que, incluso sin actuar a la vez, solo con la parte del ejército que sucesivamente estaba
-              presente, resistieron; y si se hubieran establecido en torno a ella para sitiarla, hubieran tomado Troya
-              en menos tiempo y con menos dificultades.</span></p>
-          <p><span id="t11_3" class="word" data-map="w11_3">[3] Pero así como la debilidad de las empresas anteriores
-              fue debida a la falta de recursos, sin duda ocurre lo mismo con la Guerra de Troya, que si bien ha
-              obtenido más renombre que las anteriores, los hechos demuestran que fue inferior a su fama y a la
-              tradición que, gracias a los poetas, prevalece actualmente.</span></p>
-
-          <h4>Capítulo 12</h4>
-          <p><span id="t12_1" class="word" data-map="w12_1">Lo cierto es que, incluso después de la Guerra de Troya,
-              Grecia todavía siguió sometida al proceso de migraciones y colonizaciones que impidieron la paz necesaria
-              para desarrollarse.</span></p>
-          <p><span id="t12_2" class="word" data-map="w12_2">[2] El regreso de los griegos de Ilión después de tanto
-              tiempo provocó muchos cambios, y en la mayor parte de las ciudades se produjeron disensiones internas a
-              consecuencia de las cuales los que eran desterrados fundaban nuevas ciudades.</span></p>
-          <p><span id="t12_3" class="word" data-map="w12_3">[3] Así, los actuales beocios, sesenta años después de la
-              toma de Ilión<sup>83</sup>, tras ser expulsados de Arne<sup>84</sup> por los tesalios, ocuparon la Beocia
-              de hoy, que antes se llamaba tierra cadmea<sup>85</sup> (una rama de este pueblo ya estaba antes en esta
-              tierra, y algunos de ellos participaron en la expedición contra Ilión)<sup>86</sup>, y, ochenta años
-              después de la misma fecha, los dorios con los Heráclidas se apoderaron del Peloponeso<sup>87</sup>.</span>
-          </p>
-          <p><span id="t12_4" class="word" data-map="w12_4">[4] Cuando finalmente, después de mucho tiempo, Grecia
-              alcanzó una paz estable y se acabaron las migraciones, empezó a enviar colonias al exterior; los
-              atenienses ocuparon Jonia y las más de las islas<sup>88</sup>, mientras que los peloponesios colonizaron
-              la mayor parte de Italia<sup>89</sup> y de Sicilia<sup>90</sup> y algunos lugares del resto de
-              Grecia<sup>91</sup>. Todas estas colonias fueron fundadas después de la Guerra de Troya.</span></p>
-
-          <h4>Capítulo 13</h4>
-          <p><span id="t13_1" class="word" data-map="w13_1">Al hacerse Grecia más poderosa y dedicarse todavía más que
-              antes a la adquisición de riquezas, en la mayoría de las ciudades se establecieron tiranías con el aumento
-              de los ingresos (antes había monarquías hereditarias con prerrogativas delimitadas), y Grecia se puso a
-              equipar flotas y a vivir más de cara al mar.</span></p>
-          <p><span id="t13_2" class="word" data-map="w13_2">[2] Se dice que los corintios fueron los primeros en
-              ocuparse de las construcciones navales con técnicas muy semejantes a las actuales y que las primeras
-              trirremes<sup>92</sup> de Grecia se construyeron en Corinto.</span></p>
-          <p><span id="t13_3" class="word" data-map="w13_3">[3] Se sabe, asimismo, que Aminocles<sup>93</sup>, un
-              armador corintio, construyó cuatro naves para los samios; y fue unos trescientos años antes del fin de
-              nuestra guerra<sup>94</sup> cuando Aminocles fue a Samos.</span></p>
-          <p><span id="t13_4" class="word" data-map="w13_4">[4] La más antigua batalla naval de la que tenemos noticia
-              se disputó entre los corintios y los corcireos<sup>95</sup>, unos doscientos sesenta años antes de la
-              misma fecha<sup>96</sup>.</span></p>
-          <p><span id="t13_5" class="word" data-map="w13_5">[5] Los corintios, con su ciudad situada en el istmo,
-              tuvieron ya desde antiguo un centro comercial, dado que antiguamente los griegos, al comunicarse más por
-              tierra que por mar, tanto los de dentro como los de fuera del Peloponeso se relacionaban entre sí a través
-              del territorio de los corintios, que, así, se convirtieron en una potencia económica, como lo demuestran
-              incluso los poetas antiguos al dar al lugar el calificativo de opulento<sup>97</sup>. Y cuando los griegos
-              se dedicaron más a la navegación, los corintios se procuraron naves y procedieron a eliminar la
-              piratería<sup>98</sup>, y debido a que ofrecían un centro comercial terrestre y marítimo a la vez, gracias
-              a la afluencia de riqueza, tuvieron una ciudad poderosa.</span></p>
-          <p><span id="t13_6" class="word" data-map="w13_6">[6] Más tarde, en tiempo de Ciro<sup>99</sup>, el primer rey
-              persa, y de su hijo Cambises<sup>100</sup>, los jonios también tuvieron una flota considerable, y en su
-              guerra contra Ciro dominaron durante un cierto tiempo el mar cercano a sus costas<sup>101</sup>.
-              Policrates, que fue tirano de Samos<sup>102</sup> en tiempos de Cambises, asimismo fue poderoso gracias a
-              su flota, y, entre otras islas que sometió, tomó Renea<sup>103</sup> y la consagró a Apolo
-              delio<sup>104</sup>. Y los foceos, que fundaron Marsella<sup>105</sup>, combatiendo por mar vencieron a
-              los cartagineses<sup>106</sup>.</span></p>
-
-          <h4>Capítulo 14</h4>
-          <p><span id="t14_1" class="word" data-map="w14_1">Estas eran, sin duda, las flotas más poderosas. Pero incluso
-              estas, a pesar de que se formaron muchas generaciones después de la Guerra de Troya, tenían, al parecer,
-              pocas trirremes, y estaban compuestas por pentecóntoros y naves largas, como las flotas
-              antiguas<sup>107</sup>.</span></p>
-          <p><span id="t14_2" class="word" data-map="w14_2">[2] Sin embargo, poco antes de las Guerras
-              Médicas<sup>108</sup> y de la muerte de Darío, que fue rey de los persas después de
-              Cambises<sup>109</sup>, los tiranos de Sicilia y los corcireos tuvieron trirremes en número
-              considerable;</span></p>
-          <p><span id="t14_3" class="word" data-map="w14_3">[3] estas fueron las últimas flotas dignas de mención que
-              hubo en Grecia antes de la expedición de Jerjes<sup>110</sup>, pues las que poseían los eginetas, los
-              atenienses y algunos otros eran pequeñas y estaban formadas en su mayor parte por pentecóntoros; fue más
-              tarde cuando Temístocles<sup>111</sup> persuadió a los atenienses, que estaban en guerra con los
-              eginetas<sup>112</sup> a la vez que a la espera del ataque de los bárbaros, a construir las naves con las
-              que combatieron; y estas todavía no tenían puentes en toda su extensión<sup>113</sup>.</span></p>
-
-          <h4>Capítulo 15</h4>
-          <p><span id="t15_1" class="word" data-map="w15_1">Así fueron, pues, las flotas de los griegos, las antiguas y
-              las que se formaron más tarde. Lograron, sin embargo, un poder nada despreciable quienes se dedicaron a
-              ellas, gracias a la afluencia de riqueza y al dominio sobre otros pueblos, pues en sus expediciones
-              navales conquistaban las islas especialmente quienes no tenían un territorio suficiente.</span></p>
-          <p><span id="t15_2" class="word" data-map="w15_2">[2] Por tierra no se disputó ninguna guerra de la que
-              pudiera derivar algún poder, sino que todas las que se produjeron eran las de cada pueblo con sus propios
-              vecinos, y los griegos no salieron a expediciones al exterior a mucha distancia de su país con miras a la
-              conquista de otros. Esto fue así porque no se habían constituido alianzas bajo la dirección de las
-              ciudades mayores, y ni siquiera emprendían expediciones comunes en igualdad de derechos, sino que las
-              ciudades vecinas se hacían la guerra más bien unas a otras separadamente<sup>114</sup>.</span></p>
-          <p><span id="t15_3" class="word" data-map="w15_3">[3] Fue, ante todo, en la guerra que tuvo lugar antiguamente
-              entre los calcideos y los eretrieos<sup>115</sup> cuando el resto del mundo griego se dividió para aliarse
-              con uno u otro bando.</span></p>
-
-          <h4>Capítulo 16</h4>
-          <p><span id="t16_1" class="word" data-map="w16_1">Cada pueblo encontró obstáculos de distinto tipo en su
-              desarrollo. Así, contra los jonios<sup>116</sup>, en un momento de gran prosperidad, Ciro y el imperio
-              persa, tras destronar a Creso<sup>117</sup> y conquistar todos los territorios situados entre el río
-              Halis<sup>118</sup> y el mar, hicieron una expedición y sometieron las ciudades del continente; y Darío,
-              más tarde, gracias a la flota fenicia<sup>119</sup>, se apoderó también de las islas<sup>120</sup>.</span>
-          </p>
-
-          <h4>Capítulo 17</h4>
-          <p><span id="t17_1" class="word" data-map="w17_1">Por lo que respecta a los tiranos, todos los que estaban
-              establecidos en las ciudades griegas, mirando solo por sus intereses, tanto por su seguridad personal como
-              por el engrandecimiento de su propia casa, gobernaban las ciudades con la máxima prudencia posible, y no
-              llevaron a cabo ninguna empresa digna de mención, salvo alguna guerra particular contra sus vecinos
-              respectivos. Los tiranos de Sicilia, en cambio, llegaron a los niveles más altos de poder<sup>121</sup>.
-              Así, por motivos de todo tipo, Grecia se vio obligada durante mucho tiempo a no realizar nada notable en
-              común y a que las empresas de cada una de sus ciudades carecieran de audacia.</span></p>
-
-          <h4>Capítulo 18</h4>
-          <p><span id="t18_1" class="word" data-map="w18_1">Pero después que los tiranos de Atenas<sup>122</sup> y los
-              del resto de Grecia —regida también antes en muchos sitios por tiranías—, es decir, la mayoría de los
-              tiranos y los últimos si exceptuamos los de Sicilia<sup>123</sup>, fueron derrocados por los lacedemonios
-              (pues Lacedemonia, después de su fundación por los dorios<sup>124</sup> que la siguen habitando
-              actualmente, aunque fue, de los que conocemos, el país que sufrió disensiones internas durante más tiempo,
-              sin embargo desde muy antiguo tuvo buenas leyes<sup>125</sup> y siempre se vio libre de tiranos, con lo
-              que son unos cuatrocientos años o unos pocos más los que han pasado hasta el final de nuestra
-              guerra<sup>126</sup> desde que los lacedemonios tienen la misma Constitución<sup>127</sup>, y por esto se
-              han hecho poderosos y han impuesto su criterio en las otras ciudades), después de la expulsión de los
-              tiranos de Grecia, como decía, no muchos años después, tuvo lugar la batalla de Maratón<sup>128</sup>
-              entre los medos<sup>129</sup> y los atenienses.</span></p>
-          <p><span id="t18_2" class="word" data-map="w18_2">[2] Y diez años después de esta vinieron de nuevo los
-              bárbaros contra Grecia con su gran expedición para someterla<sup>130</sup>. Ante la amenaza de este gran
-              peligro, los lacedemonios, por la superioridad de sus fuerzas, tomaron el mando de los griegos aliados,
-              mientras que los atenienses, al avanzar los medos, decidieron abandonar la ciudad y, recogiendo sus
-              bienes, se embarcaron en las naves y se hicieron marinos<sup>131</sup>. Tras rechazar en común a los
-              bárbaros, no mucho después, tanto los griegos que se habían rebelado contra el Rey<sup>132</sup> como los
-              que se habían aliado frente a él se dividieron en dos bandos en torno a los atenienses y a los
-              lacedemonios<sup>133</sup>; estos pueblos, en efecto, se habían revelado como los más
-              poderosos<sup>134</sup>, ya que los unos eran fuertes por tierra y los otros por mar.</span></p>
-          <p><span id="t18_3" class="word" data-map="w18_3">[3] La alianza militar<sup>135</sup> se mantuvo durante
-              corto tiempo; luego los lacedemonios y los atenienses tuvieron divergencias y se hicieron la guerra con la
-              ayuda de sus aliados<sup>136</sup>; y a partir de entonces los otros griegos, en los casos en que estaban
-              en desacuerdo, acudían a ellos. De modo que desde las Guerras Médicas hasta nuestra guerra, unas veces en
-              paz, otras en guerra, bien entre sí, bien contra sus propios aliados en rebeldía<sup>137</sup>, prepararon
-              cuidadosamente sus recursos para la guerra y adquirieron más experiencia ejercitándose en medio de los
-              peligros.</span></p>
-
-          <h4>Capítulo 19</h4>
-          <p><span id="t19_1" class="word" data-map="w19_1">Los lacedemonios ejercían su hegemonía sin tener a sus
-              aliados sujetos a tributo, pero preocupándose de que su régimen fuera oligárquico, de acuerdo únicamente
-              con su propia conveniencia. Los atenienses, en cambio, con el tiempo se habían apropiado de las naves de
-              las ciudades aliadas, salvo de las de Quíos y Lesbos<sup>138</sup>, y habían impuesto a todas el pago de
-              un tributo<sup>139</sup>. Y los recursos militares que ellos tenían separadamente al comienzo de esta
-              guerra eran mayores que los de la época de mayor esplendor con la fuerza de la alianza intacta.</span></p>
-
         </div>
-        <div class="notes-container mt-3" id="downloads">
+        <div class="notes-container mt-3">
           <h4>Notas de Juan José Torres Esbarranch</h4>
           <p>(Torres Esbarranch, Juan José, ed. and trans. Tucídides. <em>Historia de la guerra del Peloponeso</em>.
             Libros I-II. Madrid: Gredos, 1990. <a
               href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
               target="_blank">Ver
               libro</a>).</p>
-          <ol>
-            <li value="78">
-              <p>Cf. <em>Ilíada</em> II 719.</p>
+          <ol start="22">
+            <li>
+              <p>Con los nombres de pelasgos, léleges y carios se conocía a los primitivos habitantes de las tierras que
+                luego fueron ocupadas por los griegos o helenos. Estos pueblos, antes de la llegada de los griegos, se
+                extenderían por toda Grecia, y los pelasgos, en concreto, según los testimonios de Homero (cf. Ilíada II
+                681-684 y 840-843) y de Heródoto, estarían situados preferentemente en las regiones septentrionales, de
+                donde se verían obligados a emigrar al producirse las invasiones de los grupos indoeuropeos. Heródoto (I
+                56-58) los consideraba autóctonos e indicaba que su lengua no era griega; los pueblos autóctonos
+                pelásgicos, como era el caso de los atenienses, que luego se convirtieron en griegos, cambiaron sin duda
+                de lengua (cf. HERÓDOTO, I 57, 2-3; VIII 44). Una vez instalados los helenos y ya helenizada la
+                población autóctona ateniense, los pelasgos no asimilados quedarían como grupos marginales; tal sería el
+                caso de los que se instalaron en Lemnos tras ser expulsados del Ática por los atenienses, pelasgos que
+                realizarían incursiones contra el Ática y sobre los que se organizaría una campaña propagandística a
+                mediados del siglo V a. C. para justificar la toma de Lemnos por Milcíades (cf. HERÓDOTO, VI 137-140; E.
+                LUPPINO, «I Pelasgi e la propaganda política del V secolo a. C. », Contributi dell’Istituto di Storia
+                Antica I [1972], 71-77). De todas formas, el planteamiento de Heródoto del problema pelásgico es, por lo
+                menos, algo complicado (cf. HERÓDOTO, I 56-58; 146, 1; II 51-52; VI 137-140; VII 94-95; VIII 44). Su
+                identificación histórica no es segura, y ya Éforo en el siglo IV a. C. señalaba que los nombres de estos
+                pueblos eran términos imprecisos que servían para designar a distintos grupos que habitaban en la cuenca
+                del Egeo cuando llegaron los griegos. Tucídides no profundiza en el complejo problema de los pelasgos y
+                se limita a considerarlos como la población más numerosa y extendida de la Grecia prehelénica. Sobre
+                esta cuestión, cf. F. LOCHNER VON HÜTTENBACH, Die Pelasger, Múnich, 1960, y la reseña de G.
+                NEUMANN, Gnomon 34 (1962), 370-374.</p>
+            </li>
+            <li>
+              <p>Región situada al sudeste de Tesalia, en la que se encontraba Ftía, la patria de Aquiles.</p>
+            </li>
+            <li>
+              <p>Cf. HERÓDOTO, II 53. Según Heródoto, Homero y Hesíodo fueron contemporáneos y vivieron a mediados del
+                siglo IX a. C.</p>
+            </li>
+            <li>
+              <p>Cf. HOMERO, Ilíada II 683-684; IX 395; 447-448; XVI 595; Odisea XI 496.</p>
+            </li>
+            <li>
+              <p>En Ilíada II 867, sin embargo, se habla de los carios barbaróphōnoi (cf. ESTRABÓN, XIV 2, 28), por lo
+                que se piensa que Tucídides desconocía el verso o rechazaba su autenticidad o su valor probatorio
+                respecto al uso del término bárbaroi (cf. supra, nota 8).</p>
+            </li>
+            <li>
+              <p>Cf. infra, I 9, 3-4.</p>
+            </li>
+            <li>
+              <p>Mítico rey de Creta, cuyo nombre representa probablemente un título o un gentilicio, hijo de Zeus y de
+                Europa según la tradición. Tucídides le atribuye la creación de la primera gran flota, base de la
+                talasocracia cretense. Este dominio minoico sobre el Egeo y el Mediterráneo oriental, aunque ha sido
+                objeto de controversias e incluso negado por algunos, está de acuerdo con los testimonios antiguos (cf.,
+                por ej., HERÓDOTO, I 171, 2-3; III 122, 2; PLATÓN, Leyes 706a-b; ÉFORO, FGrHist 70 F 149;
+                ARISTÓTELES, Política II 7, 2 [1271b]; ESTRABÓN, X 4, 8; DIODORO, IV 60, 3; PAUSANIAS, I 27, 9) y ha
+                sido confirmado por las modernas investigaciones arqueológicas que evidencian una supremacía de la
+                cultura y economía cretense sobre las Cícladas, Chipre, Asia Menor y Egipto durante la primera mitad del
+                II milenio hasta el siglo XVI a. C. La talasocracia minoica no es, por tanto, una invención ateniense en
+                la búsqueda de un ilustre precedente para su imperio del siglo V a. C., aunque Tucídides proyecte en
+                cierto modo las condiciones políticas y económicas de la Atenas de su época sobre el pasado más lejano.
+                Ya antiguamente para crear un imperio las condiciones que se precisaban eran, según el historiador,
+                recursos financieros y la posesión de una flota, tributos y naves, es decir, las circunstancias que
+                permitieron la expansión imperial ateniense. Tucídides identifica imperio y talasocracia (cf. infra, I
+                8, 2-4) desde su óptica de una ciudad marítima e imperial.</p>
+            </li>
+            <li>
+              <p>La akoḗ, la tradición oral. Cf. infra, I 23, 3; 73, 2, etc.</p>
+            </li>
+            <li>
+              <p>Cf. infra, I 8, 2. Sobre la construcción naval en Creta, cf. S. MARINATOS, «La marine
+                créto-mycénienne», Bulletin de Correspondance Hellénique 62 (1933), 170-235.</p>
+            </li>
+            <li>
+              <p>El Egeo.</p>
+            </li>
+            <li>
+              <p>Archipiélago del Egeo meridional, al sudeste del Ática y de Eubea, con islas como Naxos (la mayor de
+                ellas con una extensión de unos 450 km2), Paros, Andros. . ., formando un círculo (kýklos) alrededor de
+                Delos.</p>
+            </li>
+            <li>
+              <p>Cf. infra, I 8, 1. Sobre los orígenes de este pueblo, véase HERÓDOTO, I 171 (cf.
+                HERÓDOTO, Historia I-II, intr. F. R. ADRADOS, trad. y notas de C. SCHRADER, Madrid, BCG 3, 1977, págs.
+                230-231. ) Tucídides está en desacuerdo con otras fuentes respecto a la expulsión de los carios de las
+                islas, que, según él, fue obra de Minos. Según Heródoto, sin embargo, fueron expulsados por los dorios y
+                los jonios (cf. HERÓDOTO, I 171, 5). Según el historiador de Halicarnaso, los carios no se dedicarían a
+                la piratería y estarían en buenas relaciones con Minos, cuya supremacía reconocerían, e incluso
+                contribuirían a equipar sus naves (cf. HERÓDOTO, 171, 2). En época histórica vivían en el suroeste de
+                Asia Menor. Sobre ellos, cf., asimismo, ESTRABÓN, XIV 2, 27-28.</p>
+            </li>
+            <li>
+              <p>En estos capítulos de la Arqueología, el tema del mar, de la importancia de su dominio y de su relación
+                con el progreso, es un leitmotiv, tal como demuestran las continuas referencias al uso y al control de
+                las rutas marinas (cf. I 2, 2; 3, 5; 4, 7; 8, 2-3; 9, 3-4; 10, 4; 13, 1-6; 14, 1-3; 15, 1) y al tema de
+                la piratería (cf. I 7; 8, 1-3; 10, 4; 11, 1-2; 13, 5). La valoración tucidídea de la piratería no es
+                negativa; va unida al desarrollo de la navegación y al progreso de las comunidades, procura medios de
+                subsistencia a los más débiles y poder, autoridad y gloria a los más poderosos, que con está actividad
+                se aseguran el apoyo y la obediencia de los primeros. Este juicio positivo coincide perfectamente con la
+                visión de PLATÓN (Leyes VII 823b) y de ARISTÓTELES (Política I 3, 4, 1256a), para los cuales la
+                piratería es un modus vivendi tan natural como la agricultura, la pesca o la caza. Cf. en este
+                sentido infra, I 11, 1, donde Tucídides, al hablar de la actividad de los griegos en Troya, dice que «a
+                causa de la dificultad de aprovisionamiento, se dedicaron a cultivar las tierras del Quersoneso y a la
+                piratería». La piratería, igual que la práctica del bandidaje en tierra (cf. infra, I 5, 3), está en
+                muchos aspectos relacionada con la guerra y con la actividad comercial. Su desarrollo y sus modalidades
+                van cambiando según las épocas, pero difícilmente desaparece. Coexiste peor, sin embargo, con la
+                existencia de una talasocracia. Así, por ejemplo, campó menos a sus anchas durante el período de la
+                hegemonía marítima de Atenas, que impuso su ley y se preocupó de combatirla (cf. PLUTARCO, Cimón 8,
+                3-5; Pericles 19, 1), pero en otras épocas de la historia de Grecia experimentó un notable auge e
+                incluso fue reglamentada y en cierto modo institucionalizada como guerra de corso; así ocurrió en muchos
+                Estados de la época helenística. Es, pues, un fenómeno ligado al progreso, que perduró en el
+                Mediterráneo. Sobre este tema, cf. H. A. ORMEROD, Piracy in the Ancient World, Londres, 1924; G.
+                BIRAGHI, «La pirateria greca in Tucidide», Acme 5 (1952), 471-477; Y. GARLAN, «Signification historique
+                de la piraterie grecque», Dialogues d’histoire ancienne 4 (1978), 1-16.</p>
+            </li>
+            <li>
+              <p>Cf. HOMERO, Odisea III 71-74; IX 252-255; Himno a Apolo 452-455.</p>
+            </li>
+            <li>
+              <p>Habitantes de la Lócride Ozolia o Hesperia, en la parte occidental de la costa norte del golfo de
+                Corinto, entre la Fócide y la Etolia. Se distinguen de los locros opuntios, que habitaban la Lócride
+                Opuntia u Oriental, territorio que se extendía frente a Eubea, al norte de Beocia. Cf. infra, I 103, 3;
+                108, 3.</p>
+            </li>
+            <li>
+              <p>Habitantes de Etolia, territorio situado al norte de la Lócride Ozolia y del golfo Calidonio, su salida
+                al mar.</p>
+            </li>
+            <li>
+              <p>Población de Acarnania, región al oeste de Etolia, bañada por el mar Jonio. El río Aqueloo la separa de
+                Etolia.</p>
+            </li>
+            <li>
+              <p>El quitón era el vestido normal en Grecia, usado tanto por los hombres como por las mujeres. El de
+                estas solía ser largo hasta los pies, mientras que era más corto el de aquellos. Sus características
+                particulares dependían de una serie de factores como la edad, el sexo, los gustos y las modas, etc. Sin
+                embargo, en líneas generales, había que distinguir entre dos tipos: el jónico y el dórico. El quitón
+                jónico era una fina túnica de lino, con mangas (por lo que se le llamaba cheirodōtós chitṓn) y cosida
+                por ambos lados, de modo que no fueran necesarias las fíbulas, mientras que el vestido dórico era de
+                lana, no tenía mangas y solo iba cerrado por un costado; por el otro estaba abierto (de ahí la
+                denominación de schistós chitṓn y el que Íbico llamara a las espartanas phainomêrídas por enseñar las
+                piernas por ese lado) y se abrochaba con fíbulas. La evolución del vestido masculino a la que se refiere
+                Tucídides en este pasaje no coincide, sin embargo, con el cambio de la moda femenina al que hace
+                referencia Heródoto en V 87-88, donde el historiador nos da una explicación anecdótica (la muerte del
+                único superviviente ateniense de una expedición contra Egina a manos de las mujeres atenienses, que, a
+                punzadas de fíbula, hicieron pagar a aquel la muerte de sus maridos) para justificar el paso del vestido
+                dórico, con fíbulas, al jónico, evitando así la utilización de las fíbulas. La moda del quitón de lino
+                sin aquel «peligroso cierre» procedía de Jonia, y los jonios, se cree, la habrían recibido de los carios
+                (cf. HERÓDOTO, I 146, 2; V 88); en enterramientos arcaicos atribuidos a carios, según se ha observado
+                (cf. R. LONG, «Greeks, Carians and the Purification of Delos», American Journal of Archaeology 62
+                [1958], 303), no aparecen fíbulas. Según este pasaje de Tucídides, por el contrario, la evolución no fue
+                del modelo dórico al jónico, tal como explica Heródoto, sino viceversa. Y las representaciones que nos
+                ofrecen la escultura y la cerámica permiten pensar que en Atenas, durante la época arcaica, se usaba el
+                vestido jónico, y que, después de las Guerras Médicas, se fue imponiendo el modelo dórico, posiblemente
+                como reacción contra el lujo y refinamiento orientales.</p>
+            </li>
+            <li>
+              <p>Se refiere a la moda de recoger los cabellos en la coronilla o encima de la nuca, que podemos observar
+                en las figuras de los vasos del período comprendido entre mediados del s. VI y el 470 a. C.,
+                aproximadamente. Las «cigarras» (téttiges) serían unos adornos o pasadores para sujetar el pelo. Se han
+                identificado con unas espirales que se insertaban en los cabellos. Sobre este uso, cf.
+                ARISTÓFANES, Caballeros 1321-34, Nubes 984-986. Es probable que el nombre se debiera a su forma, aunque
+                faltan testimonios seguros al respecto. Cf., asimismo, ATENEO, XII 512b-c.</p>
+            </li>
+            <li>
+              <p>Todas estas modas lujosas que compartieron los jonios y los atenienses no debieron de iniciarse en
+                Atenas y pasar luego a Jonia, sino que debió de ocurrir al revés.</p>
+            </li>
+            <li>
+              <p>El término «lacedemonios» era la denominación oficial de los espartanos y se refería tanto a los
+                espartiatas, los ciudadanos de pleno derecho, como a los periecos (cf. infra, n. 563 y 809).</p>
+            </li>
+            <li>
+              <p>Metríāi esthêti se refiere a la sencillez del modo de vestir dorio, pero también nos hace pensar en el
+                largo del vestido. El dorio era más corto que el jonio.</p>
+            </li>
+            <li>
+              <p>Cf. PLATÓN, República V 452c. Platón dice que los cretenses fueron los primeros en usar los gimnasios
+                (dando a esta palabra su sentido etimológico, es decir, refiriéndola a los lugares en que los hombres se
+                ejercitaban desnudos), y que luego les siguieron los lacedemonios. Según otras fuentes, sin embargo, la
+                costumbre de la desnudez en los ejercicios atléticos fue introducida por un personaje concreto: por el
+                lacedemonio Acanto, según DIONISIO DE HALICARNASO (VII 72, 3), y por el megareo Orsipo, según PAUSANIAS
+                (I 44, 1) y el escolio a este pasaje de Tucídides. Esta supresión del diázōma se habría producido en la
+                XV Olimpíada, en el 720 a. C.</p>
+            </li>
+            <li>
+              <p>Juegos panhelénicos que se celebraban cada cuatro años en Olimpia, en la Élide. La lista de los
+                vencedores de las Olimpíadas se iniciaba en el 776 a. C., y la referencia a los años olímpicos
+                constituía un sistema cronológico.</p>
+            </li>
+            <li>
+              <p>El diázōma es una especie de taparrabo.</p>
+            </li>
+            <li>
+              <p>En el pasaje citado de Platón se recuerda, refiriéndose al hecho de dejarse ver desnudos, que «no ha
+                mucho les parecía a los griegos vergonzoso y ridículo lo que ahora se lo parece a la mayoría de los
+                bárbaros». Cf. también a este respecto HERÓDOTO, 10, 3.</p>
+            </li>
+            <li>
+              <p>Tal es el caso de Corinto (cf. infra, I 13, 5), Epidamno (I 24, 1-2; 26, 5) y Potidea (I 56, 2; IV 120,
+                3), entre otros.</p>
+            </li>
+            <li>
+              <p>Puede pensarse en ciudades como Argos, Micenas, Cnoso y en la misma Atenas.</p>
+            </li>
+            <li>
+              <p>Cf. supra 4, n. 33.</p>
+            </li>
+            <li>
+              <p>Respecto a los fenicios en el Egeo, cf. HERÓDOTO, I 1, sobre el mítico rapto de Ío por los fenicios; II
+                44, 4, donde se habla de la colonización de Tasos por navegantes fenicios; II 54 y 56, sobre la
+                intervención en la fundación del oráculo de Dodona de una mujer consagrada, raptada por los fenicios en
+                Tebas de Egipto y vendida en Grecia; III 107, acerca de la exportación de incienso a Grecia por los
+                fenicios; y IV 147, 4-5, sobre los fenicios en la isla de Tera.</p>
+            </li>
+            <li>
+              <p>Literalmente «esta guerra», que se refiere naturalmente a la que es objeto de la Historia de Tucídides;
+                cf. infra, 97, 1; II 47, 1, etc.</p>
+            </li>
+            <li>
+              <p>En el 426 a. C.; cf. III 104, 1-2. Esta afirmación de Tucídides ha sido confirmada por el hallazgo en
+                Renea (cf. infra, I 13, 6, n. 103) de un depósito de material funerario correspondiente en general al
+                período que va del siglo VIII al V a. C.</p>
+            </li>
+            <li>
+              <p>El problema relativo a las tumbas carias es complejo. Lo cierto es que quienes efectuaron la
+                purificación de que habla Tucídides se encontraron con tumbas muy diferentes a las suyas, que no podían
+                identificar. Probablemente se trata en general de enterramientos griegos de época arcaica. De todas
+                formas, con apreciaciones como esta se demuestra el interés de Tucídides por los datos arqueológicos.
+                Cf. R. M. COOK, Annual of the British School at Athens 50 (1955), 266-270.</p>
+            </li>
+            <li>
+              <p>Cf. supra 4, nota 33. En cuanto a la importancia de la proximidad al mar y del amurallamiento, de lo
+                que se habla a continuación, recuérdese que son precisamente dos elementos a evitar en la ciudad ideal
+                de PLATÓN (Leyes 704d-707d; 778d; cf. D. PLÁCIDO SUÁREZ, «Platón y la Guerra del Peloponeso», Gerión 3
+                [1985], 43-62).</p>
+            </li>
+            <li>
+              <p>Sobre la comunidad de intereses entre débiles y poderosos, cf. supra, I 5, 1, n. 34. Es una idea que
+                encontramos en diversos pasajes. El imperio puede resultar útil a los súbditos y a los dominadores. La
+                unión hace la fuerza. Cf. en particular, en el discurso de Eufemo, VI 87, 3-4.</p>
+            </li>
+            <li>
+              <p>Padre «humano» de Helena (hija, en realidad, de Zeus y de Leda), que, siguiendo el consejo de Ulises,
+                hizo jurar a los pretendientes de su hija que aceptarían la elección de esta y que ayudarían, en caso de
+                necesidad, al elegido. Este fue el juramento invocado por Menelao para que todos los caudillos griegos
+                emprendieran la expedición contra Troya. Cf. ISÓCRATES, X 40; APOLODORO, III 10, 9, y PAUSANIAS, III 20,
+                9. Tucídides racionaliza el mito.</p>
+            </li>
+            <li>
+              <p>Probable alusión a Helánico (s. V a. C), que escribió un libro titulado Argoliká, en el que recogía
+                tradiciones peloponesias. Cf. infra, I 97, 2. Algunos fragmentos conservados se referirían a Atreo y
+                Euristeo; cf. F. JACOBY, FGrHist 4, F 155 y 157.</p>
+            </li>
+            <li>
+              <p>El mítico Pélope, hijo de Tántalo, era originario de Asia Menor, y emigró a Europa, expulsado por Ilo.
+                Llegó a Grecia, que era un país pobre, cargado de tesoros, e introdujo el lujo oriental. Después de
+                vencer a Enómao, se casó con su hija Hipodamía, y de este matrimonio nacieron muchos hijos, entre los
+                que se contaban Atreo y Tiestes. Fue rey de Pisa y de la Élide, y extendió su poder por gran parte del
+                Peloponeso, tierra a la que dio nombre (cf. supra, n. 14).</p>
+            </li>
+            <li>
+              <p>Euristeo era hijo de Esténelo y nieto de Perseo. Su madre era Nicipe, hija de Pélope. Reinó en Micenas
+                debido a una astucia de Hera, que logró que Euristeo naciera antes que Heracles, otro perseida, a quien
+                Zeus destinaba al trono. Impuso los «trabajos» a Heracles, que se había puesto al servicio de Euristeo
+                por mandato del oráculo. Siempre temeroso de Heracles, procuraba mantenerlo alejado y, tras la muerte
+                del héroe, persiguió a sus descendientes, los Heráclidas, que se refugiaron en el Ática. Finalmente
+                marchó contra los atenienses y fue vencido y muerto por Hilo, que iba al frente de los Heráclidas. Sus
+                dominios pasaron entonces a manos de un pelópida, Atreo, hermano de Nicipe, la madre de Euristeo. Cf.
+                HERÓDOTO, IX 27, 2; DIODORO, IV 57-58; PAUSANIAS, 44, 10; APOLODORO, II 8, 1.</p>
+            </li>
+            <li>
+              <p>La famosa ciudad de la Argólide que ha dado nombre al mundo micénico y que tuvo un papel capital en la
+                Grecia de los siglos XVI-XII a. C. Con posterioridad fue una ciudad débil que acabó incorporada a Argos
+                (hacia el 468; cf. DIODORO, XI 65, 1-5).</p>
+            </li>
+            <li>
+              <p>Crisipo era hijo de Pélope y de la ninfa Axíoque; era hermanastro, por tanto, de Atreo. En una de las
+                versiones que existen sobre su muerte, fue muerto por Atreo a instigación de Hipodamía.</p>
+            </li>
+            <li>
+              <p>Con Atreo, al que pasaron los dominios de Euristeo, los Pelópidas sustituyeron en la hegemonía a los
+                Perseidas. Tomando en consideración una tradición según la cual los Perseidas tendrían su sede en
+                Tirinto y los Pelópidas en Micenas, se podría pensar aquí en una fase en que la segunda se impusiera
+                sobre la primera.</p>
+            </li>
+            <li>
+              <p>Cf. Ilíada II 576-580 y 609-614: cien naves de Agamenón y sesenta proporcionadas a los arcadios.</p>
+            </li>
+            <li>
+              <p>Tucídides da poco crédito a Homero; piensa que su poesía embellece los hechos y aumenta su importancia.
+                Cf. infra, I 10, 3; II 41, 4, y VI 2, 1. A pesar de ello, lo utiliza para la reconstrucción de la
+                historia más antigua (cf. supra, I 5, 2, nota 35).</p>
+            </li>
+            <li>
+              <p>Cf. Ilíada II 100-109: el cetro había sido obra de Hefesto para el Crónida Zeus, quien lo entregó a
+                Hermes, y de este pasó a Agamenón a través de Pélope, Atreo y Tiestes.</p>
+            </li>
+            <li>
+              <p>Cf. Ilíada II 108. En Homero «Argos» puede referirse tanto a la ciudad de este nombre como a la
+                Argólide o a Grecia en general, especialmente al Peloponeso o a los territorios continentales del reino
+                de Agamenón, como en este caso.</p>
+            </li>
+            <li>
+              <p>Tucídides insiste en la importancia del dominio del mar como base de poderío, de influencia política y
+                de expansión económica. Cf., por ejemplo, supra, I 3, 5; 4; 7, 1; infra 13, 1; 143, 4; II 62, 2; 65, 7;
+                89, 10. Es uno de los principios básicos del historiador.</p>
+            </li>
+            <li>
+              <p>Esparta constituye un buen ejemplo para el razonamiento de Tucídides de que la potencia de una ciudad
+                no está en relación directa con la magnificencia de sus edificios.</p>
+            </li>
+            <li>
+              <p>No se refiere a las regiones, ya que estas eran seis: Laconia, Mesenia, Élide, Acaya, Argólide y
+                Arcadia. Aun uniendo Mesenia a Laconia, a la que estaba sometida, no podría referirse a las regiones,
+                puesto que entonces se trataría de una quinta parte. Seguramente, Tucídides se refiere a que Laconia y
+                Mesenia suponían los dos quintos del territorio peloponesio, aunque la extensión de las dos regiones era
+                en realidad inferior a las dos quintas partes.</p>
+            </li>
+            <li>
+              <p>Es una afirmación exagerada, puesto que Argos, la segunda potencia del Peloponeso, se mantenía aparte y
+                no intervino hasta la segunda fase de la guerra, después de la Paz de Nicias, y entonces se alineó al
+                lado de Atenas hasta el 404. Esta afirmación ha sido utilizada en relación con el problema de la
+                composición de la Historia de Tucídides. F. W. ULLRICH, Beiträge zur Erklärung des Thukydides, Hamburgo,
+                1846, pág. 124 ss. : considerando que la hegemonía de Esparta, después de la derrota de Atenas en el
+                404, se extendería, más que al Peloponeso, a toda Grecia, concluyó que este pasaje habría sido compuesto
+                con anterioridad al 404. Por el contrario, W. H. FORBES, Thucydides I, Oxford, 1895, defendió la tesis
+                de que fue escrito no después del 421, sino con posterioridad al 404, argumentando que Argos fue aliada
+                de Atenas entre el 420 y el 404.</p>
+            </li>
+            <li>
+              <p>Cf. supra, I 5, 1. Esparta no era una ciudad-estado con la estructura urbana de otras ciudades griegas
+                contemporáneas. Era en realidad una agrupación de ōbaí, aldeas (Limnas, Cinosura, Mesoa, Pitana y
+                Amiclas) que habían llegado a la unidad mediante un proceso de sinecismo. Cf. PAUSANIAS, III 2, 6; 16,
+                9; 19, 6; POLIBIO, V 19, 1-2; W. G. FORREST, A History of Sparta 950-192 B. C., Londres, 1968, págs.
+                24-34.</p>
+            </li>
+            <li>
+              <p>También HERÓDOTO (VII 20, 2) consideraba que la expedición contra Troya había sido inferior a la
+                expedición de Jerjes.</p>
+            </li>
+            <li>
+              <p>Cf. supra, I 9, 3, nota 65.</p>
+            </li>
+            <li>
+              <p>Cf. Ilíada II 510.</p>
+            </li>
+            <li>
+              <p>Cf. Ilíada II 719.</p>
+            </li>
+            <li>
+              <p>Se trata del libro II de la Ilíada, que constituye una relación de los pueblos que participaron en la
+                Guerra de Troya y de las fuerzas con que contaban.</p>
+            </li>
             </li>
             <li>
               <p>Según el cálculo de Tucídides, se alcanza un total de 102. 000 hombres, partiendo de una media de 85
@@ -860,7 +1207,8 @@
                 conflicto entre estas diez palabras de Tucídides relativas a la
                 construcción de una fortificación tras el desembarco, en el primer año, y los pasajes de la
                 <em>Ilíada</em> (VII 336-343; 436-463), donde se describe la construcción de una fortificación en el
-                décimo año...</p>
+                décimo año...
+              </p>
             </li>
             <li>
               <p>Sobre lo primero no habla la <em>Ilíada</em>. Posiblemente lo hacían los <em>Cantos Ciprios</em>.
@@ -1060,7 +1408,8 @@
             </li>
             <li>
               <p><em>Homaichmía</em>, alianza militar frente a una situación de emergencia, no una verdadera
-                <em>symmachía</em>.</p>
+                <em>symmachía</em>.
+              </p>
             </li>
             <li>
               <p>Los enfrentamientos entre Atenas y Esparta fueron frecuentes entre el 460-459 a. C. y la paz de treinta
