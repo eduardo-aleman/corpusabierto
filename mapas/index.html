@@ -4,113 +4,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CorpusAbierto</title>
+  <title>Mapa de Lugares - CorpusAbierto</title>
 
-  <!-- Estilos propios -->
-  <link rel="stylesheet" href="/css/styles.css">
-
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+  
   <style>
     #corpus-map-container {
-        position: relative;
-        width: 100%;
-        height: 600px; /* O la altura que desees */
+      position: relative;
+      width: 100%;
+      height: 75vh; /* Altura del 75% de la ventana para mejor visualización */
     }
     #corpus-map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      border-radius: .25rem; /* Bordes redondeados a juego con Bootstrap */
     }
     #map-legend {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        width: auto;
-        height: auto;
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        z-index: 1000; /* Asegura que esté sobre el mapa */
-        font-size: 13px;
-        padding: 10px;
-        line-height: 1.6;
-        box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: auto;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+      font-size: 13px;
+      padding: 10px;
+      line-height: 1.6;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.4);
     }
     #map-legend strong {
-        display: block;
-        margin-bottom: 5px;
+      display: block;
+      margin-bottom: 5px;
     }
     #map-legend ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-bottom: 10px;
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 10px;
     }
     #map-legend ul:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
     #map-legend i {
-        width: 1.2em;
-        text-align: center;
+      width: 1.2em;
+      text-align: center;
     }
-</style>
+  </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
 
-  <!-- Iconos y manifest -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <meta name="description"
-    content="Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.">
-  <meta name="keywords"
-    content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="description" content="Mapa interactivo de los lugares mencionados en el libro I de la Historia de la Guerra del Peloponeso de Tucídides.">
+  <meta name="keywords" content="Mapa, Tucídides, Guerra del Peloponeso, Corpus Abierto, Geografía antigua, Grecia, Atenas, Esparta">
 </head>
 
 <body id="top">
 
   <header>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/logo.svg" alt="Corpus Abierto Logo" height="60" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../logo.svg" alt="Corpus Abierto Logo" height="60" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
           aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-center">
+            <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#top" title="Inicio">
-                <i class="bi bi-arrow-up-circle fs-4"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#downloads-links" title="Descargas">
-                <i class="bi bi-download fs-4"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#visualizaciones" title="Visualizaciones">
-                <i class="bi bi-bar-chart-line fs-4"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mapas" title="Mapas">
-                <i class="bi bi-map fs-4"></i>
-              </a>
+                <a class="nav-link" href="../index.html">Volver al Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/eduardo-aleman/corpusabierto" target="_blank"
@@ -122,64 +97,41 @@
         </div>
       </div>
     </nav>
-
-    <!-- ENCABEZADO -->
-    <div class="container mb-4">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="alert alert-info text-center" role="alert">
-            Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de
-            estudio. <br /><br /> Sitio en construcción.
-          </div>
-        </div>
-        <div class="col-md-4 mb-2 mb-md-0">
-          <h6 class="mb-2">Otros textos disponibles</h6>
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
-              Anales de Tácito
-            </a>
-            <!-- Más enlaces pueden añadirse aquí -->
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
 
   <main class="container">
-    <!-- TÍTULO -->
-    <div class="mb-3">
-      <h1 class="display-4">Historia de la Guerra del Peloponeso de Tucídides</h1>
-      <h2 class="h2">Mapa de los lugares mencionados en el libro I</h2>
+    <div class="mb-4 text-center">
+      <h1 class="display-4">Historia de la Guerra del Peloponeso</h1>
+      <h2 class="h3">Mapa de los lugares mencionados en el libro I</h2>
     </div>
 
     <div id="corpus-map-container">
-    <div id="corpus-map"></div>
-
-    <div id="map-legend">
-        <strong>Frecuencia (color)</strong>
-        <ul>
-            <li><span style="color:blue;">●</span> 1</li>
-            <li><span style="color:green;">●</span> 2–5</li>
-            <li><span style="color:orange;">●</span> 6–15</li>
-            <li><span style="color:red;">●</span> 16+</li>
-        </ul>
-        <strong>Tipo de lugar (ícono)</strong>
-        <ul>
-            <li><i class="fa fa-university"></i> Ciudad</li>
-            <li><i class="fa fa-map"></i> Región</li>
-            <li><i class="fa fa-tree"></i> Isla</li>
-            <li><i class="fa fa-tint"></i> Río</li>
-        </ul>
+        <div id="corpus-map"></div>
+        <div id="map-legend">
+            <strong>Frecuencia (color)</strong>
+            <ul>
+                <li><span style="color:blue;">●</span> 1</li>
+                <li><span style="color:green;">●</span> 2–5</li>
+                <li><span style="color:orange;">●</span> 6–15</li>
+                <li><span style="color:red;">●</span> 16+</li>
+            </ul>
+            <strong>Tipo de lugar (ícono)</strong>
+            <ul>
+                <li><i class="fa fa-university"></i> Ciudad</li>
+                <li><i class="fa fa-map"></i> Región</li>
+                <li><i class="fa fa-tree"></i> Isla</li>
+                <li><i class="fa fa-tint"></i> Río</li>
+            </ul>
+        </div>
     </div>
-</div>
+  </main>
 
-  <!-- FOOTER (diseño inverso) -->
-  <footer class="bg-dark text-light">
+  <footer class="bg-dark text-light mt-5">
     <div class="container py-3 d-flex justify-content-between align-items-center">
       <span>© 2025 CorpusAbierto</span>
       <div>
         <a href="#top" class="text-light me-3"><i class="bi bi-arrow-up-circle"></i> Arriba</a>
-        <a href="https://github.com/usuario/repositorio" target="_blank" class="text-light me-3">
+        <a href="https://github.com/eduardo-aleman/corpusabierto" target="_blank" class="text-light me-3">
           <i class="bi bi-github"></i> GitHub
         </a>
         <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="license" class="text-light">
@@ -189,13 +141,87 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="/scripts/tuc-lib1-mapa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/js/all.min.js"></script>
   
-</body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
 
+      const map = L.map("corpus-map", {
+        center: [38.0, 24.0],
+        zoom: 5.5, // Un poco más de zoom inicial
+        zoomControl: true
+      });
+
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        minZoom: 4, // Evitar un zoom out excesivo
+        maxZoom: 16,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: "abcd"
+      }).addTo(map);
+
+      const featureGroups = {
+        "Ciudad": L.featureGroup().addTo(map),
+        "Región": L.featureGroup().addTo(map),
+        "Isla": L.featureGroup().addTo(map),
+        "Río": L.featureGroup().addTo(map)
+      };
+      
+      const iconMapping = {
+        'Ciudad': 'university',
+        'Región': 'map',
+        'Isla': 'tree',
+        'Río': 'tint'
+      };
+
+      function getColorByFreq(freq) {
+        if (freq >= 16) return 'red';
+        if (freq >= 6) return 'orange';
+        if (freq >= 2) return 'green';
+        return 'blue';
+      }
+
+      // La ruta a 'locations.json' es relativa a esta página HTML
+      fetch('locations.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('No se pudo cargar locations.json. Estado: ' + response.status);
+          }
+          return response.json();
+        })
+        .then(data => {
+          data.forEach(location => {
+            const color = getColorByFreq(location.freq);
+            const iconType = iconMapping[location.type] || 'circle';
+            const awesomeIcon = L.AwesomeMarkers.icon({
+              markerColor: color,
+              iconColor: 'white',
+              icon: iconType,
+              prefix: 'fa'
+            });
+            const marker = L.marker([location.lat, location.lng], { icon: awesomeIcon });
+            const popupContent = `<b>${location.name}</b> (${location.freq})<br>Tipo: ${location.type}`;
+            marker.bindPopup(popupContent);
+            if (featureGroups[location.type]) {
+              featureGroups[location.type].addLayer(marker);
+            }
+          });
+        })
+        .catch(error => {
+            console.error('Error al procesar el mapa:', error);
+            // Mostrar un error al usuario en la propia página
+            document.getElementById('corpus-map').innerHTML = 
+              `<div class="alert alert-danger m-3">Error: No se ha podido cargar el mapa. Verifique la consola del navegador.</div>`;
+        });
+
+      L.control.layers(null, featureGroups, {
+        position: 'topright',
+        collapsed: false
+      }).addTo(map);
+    });
+  </script>
+
+</body>
 </html>
