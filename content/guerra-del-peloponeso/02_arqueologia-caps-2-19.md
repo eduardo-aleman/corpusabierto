@@ -265,10 +265,9 @@ original_text: |
               πόλεων τῷ χρόνῳ παραλαβόντες πλὴν Χίων καὶ Λεσβίων, καὶ χρήματα τοῖς πᾶσι τάξαντες φέρειν. καὶ ἐγένετο
               αὐτοῖς ἐς τόνδε τὸν πόλεμον ἡ ἰδία παρασκευὴ μείζων ἢ ὡς τὰ κράτιστά ποτε μετὰ ἀκραιφνοῦς τῆς ξυμμαχίας
               ἤνθησαν.</span></p>
-      
 
 translation: |
-  
+
   <h4>Capítulo 2</h4>
           <p><span id="t2_1" class="word">Es evidente<sup>11</sup>, en efecto, que la tierra que ahora se llama Grecia
               no estaba habitada antiguamente de forma estable, sino que al principio hubo migraciones y todos
@@ -607,14 +606,13 @@ translation: |
               tributo<sup>139</sup>. Y los recursos militares que ellos tenían separadamente al comienzo de esta guerra
               eran mayores que los de la época de mayor esplendor con la fuerza de la alianza intacta.</span></p>
 
-          
 alberti: |
-      <h4>Notas críticas de G. B. Alberti</h4>
-          <p>(Consúltese G. B. Alberti, <em>Thucydidis
-              Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.
-            <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver
-              libro</a>.)
-          </p>
+  <h4>Notas críticas de G. B. Alberti</h4>
+      <p>(Consúltese G. B. Alberti, <em>Thucydidis
+          Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.
+        <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver
+          libro</a>.)
+      </p>
 notesEs: |
   <ol start="2">
             <li>
