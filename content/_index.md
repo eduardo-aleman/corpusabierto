@@ -1,6 +1,7 @@
 ---
 title: "1. Prólogo. La importancia de la Guerra del Peloponeso"
 work_title: "Historia de la Guerra del Peloponeso"
+order: 1 
 book: "Libro I"
 author: "Tucídides"
 translator: "Juan José Torres Esbarranch"

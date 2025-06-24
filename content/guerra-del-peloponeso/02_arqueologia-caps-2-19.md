@@ -1,7 +1,7 @@
 ---
 title: "Capítulos 2-19: Arqueología"
 slug: "cap2-19"
-order: "02"
+order: 2
 work_title: "Historia de la Guerra del Peloponeso"
 book: "Libro I"
 author: "Tucídides"
