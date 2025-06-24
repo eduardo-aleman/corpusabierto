@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "33_expedicion Pausanias Chipre Bizancio Cap 94"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "33_expedicion-pausanias-chipre-bizancio-cap-94"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "33"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

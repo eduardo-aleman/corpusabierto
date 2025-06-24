@@ -1,10 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
-title: "52_discurso Corintios Final Caps 120 124"
+title: "{{ replace .Name "-" " " | title }}"
 
 # --- CORRECCIÓN CLAVE ---
 # Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
-order: "52"
+order: "{{ index (split .Name "_") 0 }}"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"
@@ -32,9 +32,9 @@ notesEs: |
 
 # --- ENLACES DE DESCARGA (Se auto-generan) ---
 # La ruta se basa en la sección (ej. /guerra-del-peloponeso/txt/...)
-downloadTXT: "/guerra-del-peloponeso/txt/52_discurso-corintios-final-caps-120-124.txt"
-downloadMD: "/guerra-del-peloponeso/md/52_discurso-corintios-final-caps-120-124.md"
-downloadTEI: "/guerra-del-peloponeso/tei/52_discurso-corintios-final-caps-120-124.xml"
+downloadTXT: "/{{ .Section }}/txt/{{ .Name }}.txt"
+downloadMD: "/{{ .Section }}/md/{{ .Name }}.md"
+downloadTEI: "/{{ .Section }}/tei/{{ .Name }}.xml"
 ---
 # El cuerpo del archivo se deja intencionadamente en blanco.
 # Todo el contenido se maneja en el "front matter" de arriba.

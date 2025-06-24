@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "25_discurso Corintios en Esparta Caps 68 72"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "25_discurso-corintios-en-esparta-caps-68-72"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "25"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

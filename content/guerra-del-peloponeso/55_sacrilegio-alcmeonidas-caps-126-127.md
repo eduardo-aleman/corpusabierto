@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "55_sacrilegio Alcmeonidas Caps 126 127"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "55_sacrilegio-alcmeonidas-caps-126-127"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "55"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

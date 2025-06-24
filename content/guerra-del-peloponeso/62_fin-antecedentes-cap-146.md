@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "62_fin Antecedentes Cap 146"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "62_fin-antecedentes-cap-146"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "62"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

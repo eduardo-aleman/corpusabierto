@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "09_alianza Atenas Corcira Caps 44 45"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "09_alianza-atenas-corcira-caps-44-45"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "09"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

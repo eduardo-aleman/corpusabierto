@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "49_paz Treinta Anios Guerra Samos Caps 115 117"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "49_paz-treinta-anios-guerra-samos-caps-115-117"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "49"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

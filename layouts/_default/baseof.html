@@ -11,14 +11,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-  {{ with resources.Get "css/styles.css" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{ end }}
+  {{- /* --- CORRECCIÓN 1: Enlace directo al CSS --- */ -}}
+  {{- /* Usamos una etiqueta <link> estándar porque styles.css está en /static/css/. */ -}}
+  {{- /* La función `relURL` de Hugo asegura que la ruta funcione correctamente aunque el sitio no esté en la raíz de un dominio. */ -}}
+  <link rel="stylesheet" href="{{ "/css/styles.css" | relURL }}">
+  
+  {{- /* Bloque para cargar CSS específico de una página si es necesario */ -}}
+  {{ block "head" . }}{{ end }}
 
   <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | absURL }}" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | absURL }}">
   <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | absURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/icons/apple-touch-icon.png" | absURL }}"> {{/* Corregido para apuntar a la carpeta icons */}}
   <link rel="manifest" href="{{ "site.webmanifest" | absURL }}">
 </head>
 
@@ -34,15 +38,25 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
-  {{ if .IsHome }}
-    {{ with resources.Get "scripts/word-highlighter.js" }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{ end }}
-  {{ else }}
-    {{ with resources.Get "scripts/word-highlighter.js" }}
-      <script src="{{ .RelPermalink }}"></script>
+  {{- /* --- CORRECCIÓN: Carga condicional de scripts --- */ -}}
+{{- /* Usamos la variable .IsHome que es 'true' solo en la página principal */ -}}
+
+{{ if .IsHome }}
+  {{- /* Si estamos en la página de inicio, carga el script para el capítulo 1 */ -}}
+  <script src="{{ "/scripts/word-highlighter-cap1.js" | relURL }}"></script>
+{{ else }}
+  {{- /* Para todas las demás páginas, carga el script general */ -}}
+  <script src="{{ "/scripts/word-highlighter.js" | relURL }}"></script>
+{{ end }}
+
+{{- /* Bloque para cargar scripts específicos de la página si es necesario */ -}}
+{{ block "scripts" . }}
+  {{ with .Params.scripts }}
+    {{ range . }}
+      <script src="{{ . | relURL }}"></script>
     {{ end }}
   {{ end }}
+{{ end }}
 
 </body>
 </html>

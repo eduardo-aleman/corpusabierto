@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "41_guerras Contra Corinto Epidauro Egina Caps 105 106"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "41_guerras-contra-corinto-epidauro-egina-caps-105-106"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "41"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

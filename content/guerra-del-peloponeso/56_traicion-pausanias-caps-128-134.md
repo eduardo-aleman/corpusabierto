@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "56_traicion Pausanias Caps 128 134"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "56_traicion-pausanias-caps-128-134"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "56"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

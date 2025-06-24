@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "44_derrota Ateniense Egipto Caps 109 110"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "44_derrota-ateniense-egipto-caps-109-110"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "44"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "46_tregua Cinco Anios Muerte Cimon Cap 112"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "46_tregua-cinco-anios-muerte-cimon-cap-112"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "46"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

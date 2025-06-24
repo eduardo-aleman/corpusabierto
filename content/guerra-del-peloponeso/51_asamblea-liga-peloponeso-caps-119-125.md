@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "51_asamblea Liga Peloponeso Caps 119 125"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "51_asamblea-liga-peloponeso-caps-119-125"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "51"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "45_atenienses en Tesalia Peloponeso Acarnania Cap 111"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "45_atenienses-en-tesalia-peloponeso-acarnania-cap-111"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "45"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"

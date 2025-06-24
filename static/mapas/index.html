@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mapa de Lugares - CorpusAbierto</title>
 
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/map-styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   
@@ -60,11 +61,12 @@
     }
   </style>
 
-  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="manifest" href="../site.webmanifest">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/icon-192x192.png.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <meta name="description" content="Mapa interactivo de los lugares mencionados en el libro I de la Historia de la Guerra del Peloponeso de Tucídides.">
   <meta name="keywords" content="Mapa, Tucídides, Guerra del Peloponeso, Corpus Abierto, Geografía antigua, Grecia, Atenas, Esparta">
@@ -184,7 +186,7 @@
       }
 
       // La ruta a 'locations.json' es relativa a esta página HTML
-      fetch('locations.json')
+      fetch('/data/locations.json')
         .then(response => {
           if (!response.ok) {
             throw new Error('No se pudo cargar locations.json. Estado: ' + response.status);

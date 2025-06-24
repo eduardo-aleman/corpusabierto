@@ -1,8 +1,10 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
 title: "59_ultimatum Lacedemonio Cap 139"
-# Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "59_ultimatum-lacedemonio-cap-139"
+
+# --- CORRECCIÓN CLAVE ---
+# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
+order: "59"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"
