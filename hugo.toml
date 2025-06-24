@@ -1,12 +1,5 @@
-# URL base del dominio raíz. Hugo añadirá /es/ automáticamente.
-baseURL = "https://corpusabierto.es/"
+baseURL = "https://corpusabierto.com/"
 languageCode = "es-ES"
 title = "CorpusAbierto"
 publishDir = "docs"
-
-# Configuración de idioma para que Hugo gestione el prefijo /es/
-defaultContentLanguage = "es"
-[languages]
-  [languages.es]
-    weight = 1
-    languageName = "Español"
+disableKinds = ["taxonomy"]
