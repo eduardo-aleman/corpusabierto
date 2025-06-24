@@ -1,25 +1,26 @@
 {{ define "main" }}
-  {{/* Bloque de títulos de la obra y capítulo */}}
+  {{/* Bloque de títulos ... */}}
   <div class="mb-3">
     <h1 class="display-4">{{ .Params.work_title | default .Site.Title }}</h1>
     <h2 class="h2">{{ .Params.book }}</h2>
     <p class="lead">{{ .Params.author | default "Autor Desconocido" }}</p>
   </div>
 
-  {{/* --- INICIO: Llamada al Menú Desplegable Reutilizable --- */}}
+  {{/* Menú Desplegable */}}
   {{ partial "chapter-dropdown.html" . }}
-  {{/* --- FIN: Llamada al Menú Desplegable --- */}}
 
-  {{/* Estructura de Dos Columnas para el Contenido */}}
+  {{/* Estructura de Dos Columnas */}}
   <div class="row align-items-stretch">
     {{/* Columna Izquierda */}}
     <div class="col-md-6 d-flex flex-column mb-4">
       <h5>Texto original ({{ .Params.original_language | default "Griego" }})</h5>
       <div id="greekText" class="text-container flex-fill">
-        {{ .Params.original_text | safeHTML }}
+        {{/* 'original_text' en lugar de 'greek_text' según tu plantilla */}}
+        {{ .Params.original_text | markdownify }}
         <div class="notes-container mt-3">
           <h6>Notas críticas</h6>
-          {{ .Params.alberti | markdownify | safeHTML }}
+          {{/* Simplemente markdownify. Ya no necesita safeHTML. */}}
+          {{ .Params.alberti | markdownify }}
         </div>
       </div>
     </div>
@@ -28,55 +29,18 @@
     <div class="col-md-6 d-flex flex-column mb-4">
       <h5>Traducción (español)</h5>
       <div id="spanishText" class="text-container flex-fill">
-        {{ .Params.translation | safeHTML }}
+        {{/* Si 'translation' también tiene Markdown, usa markdownify. */}}
+        {{/* Si contiene HTML que escribes a mano, déjalo como safeHTML. */}}
+        {{ .Params.translation | markdownify }}
         <div class="notes-container mt-3">
           <h6>Notas de {{ .Params.translator }}</h6>
-          {{ .Params.notesEs | markdownify | safeHTML }}
+          {{/* Simplemente markdownify. Ya no necesita safeHTML. */}}
+          {{ .Params.notesEs | markdownify }}
         </div>
       </div>
     </div>
   </div>
 
-  {{/* Bloque estático de Fuentes, idéntico en todos los capítulos */}}
-  <div class="mb-5">
-    <h2 id="fuentes">Fuentes</h2>
-
-    <h4>El texto en griego:</h4>
-    <p>
-      <a href="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3"
-         target="_blank">Perseus</a>
-    </p>
-
-    <h4>Ejemplos del aparato crítico de G. B. Alberti:</h4>
-    <p>
-      A continuación un extracto a manera de ejemplo del aparato crítico de Alberti.  
-      Consúltese G. B. Alberti, <em>Thucydidis Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.  
-      <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>
-    </p>
-
-    <h4>La traducción al español:</h4>
-    <p>
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/" target="_blank">
-        archive.org
-      </a>
-    </p>
-
-    <h4>Notas del traductor Juan José Torres Esbarranch:</h4>
-    <p>
-      Torres Esbarranch, Juan José, ed. and trans. Tucídides.  
-      <em>Historia de la guerra del Peloponeso</em>. Libros I-II. Madrid: Gredos, 1990.  
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/" target="_blank">
-        Ver libro
-      </a>
-    </p>
-  </div>
-
-  {{/* Sección de Descargas */}}
-  <section class="mb-5" id="descargas">
-    <p>Descargar texto original en griego, con traducción y notas:</p>
-    <p>
-      <a href="{{ .Params.downloadTXT | absURL }}" target="_blank">TXT</a> |
-      <a href="{{ .Params.downloadTEI | absURL }}" target="_blank">XML-TEI</a>
-    </p>
-  </section>
+  {{/* Bloque estático de Fuentes ... */}}
+  {{/* ... tu código de fuentes y descargas ... */}}
 {{ end }}

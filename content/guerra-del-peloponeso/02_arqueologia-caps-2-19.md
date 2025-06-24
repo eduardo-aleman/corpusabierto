@@ -7,8 +7,19 @@ book: "Libro I"
 author: "Tucídides"
 translator: "Juan José Torres Esbarranch"
 original_language: "Griego"
-greek_text: |
-  (Pega aquí el texto original...)
+original_text: |
+  
+  φαίνεται γὰρ ἡ νῦν Ἑλλὰς καλουμένη οὐ πάλαι βεβαίως οἰκουμένη, ἀλλὰ μεταναστάσεις τε οὖσαι τὰ πρότερα καὶ ῥᾳδίως ἕκαστοι τὴν ἑαυτῶν ἀπολείποντες βιαζόμενοι ὑπό τινων αἰεὶ πλειόνων.
+  
+  τῆς γὰρ ἐμπορίας οὐκ οὔσης, οὐδ’ ἐπιμειγνύντες ἀδεῶς ἀλλήλοις οὔτε κατὰ γῆν οὔτε διὰ θαλάσσης, νεμόμενοί τε τὰ αὑτῶν ἕκαστοι ὅσον ἀποζῆν καὶ περιουσίαν χρημάτων οὐκ ἔχοντες οὐδὲ γῆν φυτεύοντες, ἄδηλον ὂν ὁπότε τις ἐπελθὼn καὶ ἀτειχίστων ἅμα ὄντων ἄλλος ἀφαιρήσεται, τῆς τε καθ’ ἡμέραν ἀναγκαίου τροφῆς πανταχοῦ ἂν ἡγούμενοι ἐπικρατεῖν, οὐ χαλεπῶς ἀπανίσταντο, καὶ δι’ αὐτὸ οὔτε μεγέθει πόλεων ἴσχυον οὔτε τῇ ἄλλῃ παρασκευῇ.
+  
+  μάλιστα δὲ τῆς γῆς ἡ ἀρίστη αἰεὶ τὰς μεταβολὰς τῶν οἰκητόρων εἶχεν, ἥ τε νῦν Θεσσαλία καλουμένη καὶ Βοιωτία Πελοποννήσου τε τὰ πολλὰ πλὴν Ἀρκαδίας, τῆς τε ἄλλης ὅσα ἦν κράτιστα.
+  
+  διὰ γὰρ ἀρετὴν γῆς αἵ τε δυνάμεις τισὶ μείζους ἐγγιγνόμεναι στάσεις ἐνεποίουν ἐξ ὧν ἐφθείροντο, καὶ ἅμα ὑπὸ ἀλλοφύλων μᾶλλον ἐπεβουλεύοντο.
+  
+  τὴν γοῦν Ἀττικὴν ἐκ τοῦ ἐπὶ πλεῖστον διὰ τὸ λεπτόγεων ἀστασίαστον οὖσαν ἄνθρωποι ᾤκουν οἱ αὐτοὶ αἰεί.
+  
+  καὶ παράδειγμα τόδε τοῦ λόγου οὐκ ἐλάχιστόν ἐστι διὰ τὰς μετοικίας ἐς τὰ ἄλλα μὴ ὁμοίως αὐξηθῆναι· ἐκ γὰρ τῆς ἄλλης Ἑλλάδος οἱ πολέμῳ ἢ στάσει ἐκπίπτοντες παρ Ἀθηναίους οἱ δυνατώτατοι ὡς βέβαιον ὂν ἀνεχώρουν, καὶ πολῖται γιγνόμενοι εὐθὺς ἀπὸ παλαιοῦ μείζω ἔτι ἐποίησαν πλήθει ἀνθρώπων τὴν πόλιν, ὥστε καὶ ἐς Ἰωνίαν ὕστερον ὡς οὐχ ἱκανῆς οὔσης τῆς Ἀττικῆς ἀποικίας ἐξέπεμψαν.
 translation: |
   (Pega aquí la traducción...)
 alberti: |
@@ -18,21 +29,3 @@ notesEs: |
 downloadTXT: "/guerra-del-peloponeso/formatos/tucidides/lib1/txt/02_arqueologia-caps-2-19.txt"
 downloadTEI: "/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/02_arqueologia-caps-2-19.xml"
 ---
-
-#### Fuentes
-
-##### El texto en griego
-
-[Perseus](https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3)
-
-##### Ejemplos del aparato crítico de G. B. Alberti  
-Extracto a manera de ejemplo del aparato crítico de Alberti.  
-G. B. Alberti, _Thucydidis Historiae_ Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.  
-[Ver libro](https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/)
-
-##### Traducción al español  
-[archive.org](https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/)
-
-##### Notas del traductor Juan José Torres Esbarranch  
-Torres Esbarranch, Juan José, ed. and trans. Tucídides. _Historia de la guerra del Peloponeso_. Libros I-II. Madrid: Gredos, 1990.  
-[Ver libro](https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/)
