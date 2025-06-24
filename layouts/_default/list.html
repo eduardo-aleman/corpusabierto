@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div class="container py-4">
+    {{/* El título de la sección, ej: "Guerra del peloponeso" */}}
+    <h1 class="display-5">{{ .Title | humanize }}</h1>
+    <p class="lead">Lista de capítulos disponibles en esta obra.</p>
+    <hr>
+
+    <div class="list-group">
+      {{/* Iteramos sobre las páginas de esta sección y las ordenamos por el campo "order" */}}
+      {{ range .Pages.ByParam "order" }}
+        <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action">
+          {{ .Title }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
