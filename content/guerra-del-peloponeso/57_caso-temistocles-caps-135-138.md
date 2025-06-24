@@ -1,8 +1,8 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
-title: "{{ replace .Name "-" " " | title }}"
+title: "57_caso Temistocles Caps 135 138"
 # Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "{{ .Name }}"
+order: "57_caso-temistocles-caps-135-138"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"
@@ -30,9 +30,9 @@ notesEs: |
 
 # --- ENLACES DE DESCARGA (Se auto-generan) ---
 # La ruta se basa en la sección (ej. /guerra-del-peloponeso/txt/...)
-downloadTXT: "/{{ .Section }}/txt/{{ .Name }}.txt"
-downloadMD: "/{{ .Section }}/md/{{ .Name }}.md"
-downloadTEI: "/{{ .Section }}/tei/{{ .Name }}.xml"
+downloadTXT: "/guerra-del-peloponeso/txt/57_caso-temistocles-caps-135-138.txt"
+downloadMD: "/guerra-del-peloponeso/md/57_caso-temistocles-caps-135-138.md"
+downloadTEI: "/guerra-del-peloponeso/tei/57_caso-temistocles-caps-135-138.xml"
 ---
 # El cuerpo del archivo se deja intencionadamente en blanco.
 # Todo el contenido se maneja en el "front matter" de arriba.

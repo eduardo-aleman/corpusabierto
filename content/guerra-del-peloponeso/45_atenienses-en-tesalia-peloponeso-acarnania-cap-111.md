@@ -1,8 +1,8 @@
 ---
 # Título del capítulo, generado del nombre del archivo.
-title: "{{ replace .Name "-" " " | title }}"
+title: "45_atenienses en Tesalia Peloponeso Acarnania Cap 111"
 # Usa el nombre del archivo para ordenar (ej. 01-prologo.md)
-order: "{{ .Name }}"
+order: "45_atenienses-en-tesalia-peloponeso-acarnania-cap-111"
 
 # --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"
@@ -30,9 +30,9 @@ notesEs: |
 
 # --- ENLACES DE DESCARGA (Se auto-generan) ---
 # La ruta se basa en la sección (ej. /guerra-del-peloponeso/txt/...)
-downloadTXT: "/{{ .Section }}/txt/{{ .Name }}.txt"
-downloadMD: "/{{ .Section }}/md/{{ .Name }}.md"
-downloadTEI: "/{{ .Section }}/tei/{{ .Name }}.xml"
+downloadTXT: "/guerra-del-peloponeso/txt/45_atenienses-en-tesalia-peloponeso-acarnania-cap-111.txt"
+downloadMD: "/guerra-del-peloponeso/md/45_atenienses-en-tesalia-peloponeso-acarnania-cap-111.md"
+downloadTEI: "/guerra-del-peloponeso/tei/45_atenienses-en-tesalia-peloponeso-acarnania-cap-111.xml"
 ---
 # El cuerpo del archivo se deja intencionadamente en blanco.
 # Todo el contenido se maneja en el "front matter" de arriba.

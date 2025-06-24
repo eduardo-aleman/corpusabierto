@@ -1,17 +1,33 @@
 {{ define "main" }}
+  {{/* Bloque de títulos de la obra y capítulo */}}
   <div class="mb-3">
-    <h1 class="display-4">{{ .Params.work_title | default "Historia de la Guerra del Peloponeso" }}</h1>
+    <h1 class="display-4">{{ .Params.work_title | default .Site.Title }}</h1>
     <h2 class="h2">{{ .Params.book }}</h2>
-    <p class="lead">{{ .Params.author | default "Tucídides" }}</p>
+    <p class="lead">{{ .Params.author | default "Autor Desconocido" }}</p>
+    <hr>
+    <h3 class="h4">{{ .Title }}</h3>
   </div>
 
+  {{/* --- Menú Desplegable Inteligente --- */}}
+  {{/* Este menú solo mostrará las páginas de la sección actual (ej. solo capítulos de "guerra-del-peloponeso") */}}
+  <div class="mb-4">
+    <label for="chapterSelect" class="form-label visually-hidden">Seleccionar capítulo:</label>
+    <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
+      {{ range .CurrentSection.Pages.ByParam "order" }}
+        <option value="{{ .RelPermalink }}" {{ if eq .Permalink $.Page.Permalink }}selected{{ end }}>
+          {{ .Title }}
+        </option>
+      {{ end }}
+    </select>
+  </div>
+
+  {{/* --- Estructura de Dos Columnas para el Contenido --- */}}
   <div class="row align-items-stretch">
-    {{/* Columna Izquierda: Texto Griego y Notas Alberti */}}
+    {{/* Columna Izquierda: Texto Original y Notas Críticas */}}
     <div class="col-md-6 d-flex flex-column mb-4">
       <h5>Texto original ({{ .Params.original_language | default "Griego" }})</h5>
       <div id="greekText" class="text-container flex-fill">
-        {{/* CAMBIO CLAVE: Usamos nuestro nuevo parámetro en lugar de .Content */}}
-        {{ .Params.greek_text | safeHTML }}
+        {{ .Params.original_text | safeHTML }}
         <div class="notes-container mt-3">
           <h6>Notas críticas</h6>
           {{ .Params.alberti | markdownify | safeHTML }}
@@ -19,7 +35,7 @@
       </div>
     </div>
 
-    {{/* Columna Derecha: Traducción y Notas Esbarranch */}}
+    {{/* Columna Derecha: Traducción y Notas del Traductor */}}
     <div class="col-md-6 d-flex flex-column mb-4">
       <h5>Traducción (español)</h5>
       <div id="spanishText" class="text-container flex-fill">
@@ -32,7 +48,7 @@
     </div>
   </div>
 
-  {{/* Sección de enlaces de descarga */}}
+  {{/* --- Sección de Descargas --- */}}
   <section class="mb-5" id="downloads-links">
     <p>Descargar texto original en griego, con traducción y notas:</p>
     <p>
@@ -41,4 +57,5 @@
       <a href="{{ .Params.downloadTEI | absURL }}" target="_blank">XML-TEI</a>
     </p>
   </section>
+
 {{ end }}
