@@ -1,5 +1,5 @@
 ---
-title: "1. Prólogo. La importancia de la Guerra del Peloponeso."
+title: "1. Prólogo. La importancia de la Guerra del Peloponeso"
 slug: "cap1"
 order: 1
 work_title: "Historia de la Guerra del Peloponeso"
