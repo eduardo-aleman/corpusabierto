@@ -78,7 +78,7 @@ translation: |
           <span id="t9" class="word" data-map="w9,w10,w11,w12">entre los peloponesios y los atenienses</span>², <span
             id="t10" class="word" data-map="w13,w14,w15,w16">relatando cómo se desarrollaron sus hostilidades</span>³,
           <span id="t11" class="word" data-map="w17">y se puso a ello</span>⁴ <span id="t12" class="word"
-            data-map="w18,w19">tan pronto como se declaró</span>, <span id="t13" class="word" data-map="w20,w21">porque
+            data-map="w18,w19">tan pronto como se declaró</span>, <span id="t13" class="word" data-map="w21">porque
             pensaba</span> <span id="t14" class="word" data-map="w22,w23,w24">que iba a ser importante</span> <span
             id="t15" class="word" data-map="w25,w26">y más memorable</span> <span id="t16" class="word"
             data-map="w27,w28">que las anteriores</span>⁵. <span id="t17" class="word" data-map="w29">Basaba su
@@ -90,23 +90,22 @@ translation: |
             griegos</span>, <span id="t24" class="word" data-map="w48,w49,w50">unos de inmediato</span> <span id="t25"
             class="word" data-map="w51,w52,w53,w54">y otros disponiéndose a ello</span>, <span id="t26" class="word"
             data-map="w45,w46,w47">se alineaban en uno u otro bando</span>. <span id="t27" class="word"
-            data-map="w55">[2]</span> <span id="t28" class="word" data-map="w57,w58,w59,w60">Esta fue, en efecto, la
+            data-map="w55">[2]</span> <span id="t28" class="word" data-map="w56,w57,w58,w59,w60">Esta fue, en efecto, la
             mayor conmoción</span>⁷ <span id="t29" class="word" data-map="w61,w62,w63">que haya afectado a los
             griegos</span> <span id="t30" class="word" data-map="w64,w65,w66,w67,w68">y a buena parte de los
-            bárbaros</span>⁸; <span id="t31" class="word" data-map="w72,w73,w74,w75">alcanzó</span>, <span id="t32"
-            class="word" data-map="w69,w70,w71">por así decirlo</span>, <span id="t33" class="word" data-map="w75">a
-            casi toda la humanidad</span>⁹. <span id="t34" class="word" data-map="w76,w77,w78,w79">Pues los
-            acontecimientos anteriores</span>, <span id="t35" class="word" data-map="w80,w81,w82,w83">y los todavía más
-            antiguos</span>¹⁰, <span id="t36" class="word" data-map="w84,w85,w86,w90,w91">era imposible, ciertamente,
-            conocerlos con precisión</span> <span id="t37" class="word" data-map="w87,w88,w89">a causa de la distancia
-            del tiempo</span>; <span id="t38" class="word" data-map="w92,w93,w94">pero por los indicios</span> <span
-            id="t39" class="word" data-map="w95,w100,w101">a los que puedo dar crédito</span> <span id="t40"
-            class="word" data-map="w96,w97,w98,w99">cuando indago lo más lejos posible</span>, <span id="t41"
-            class="word" data-map="w102,w104,w105">no creo que ocurriera nada importante</span> <span id="t42"
-            class="word" data-map="w103">ni</span> <span id="t43" class="word" data-map="w106,w107,w108,w109">en lo
-            referente a las guerras</span> <span id="t44" class="word" data-map="w110,w111,w112,w113">ni en lo
-            demás</span>.
-
+            bárbaros</span>⁸; <span id="t31" class="word" data-map="w63">alcanzó</span>, <span id="t32" class="word"
+            data-map="w69,w70,w71">por así decirlo</span>, <span id="t33" class="word"
+            data-map="w72,w73,w74,w75">a casi toda la humanidad</span>⁹. <span id="t34" class="word"
+            data-map="w76,w77,w78,w79">Pues los acontecimientos anteriores</span>, <span id="t35" class="word"
+            data-map="w80,w81,w82,w83">y los todavía más antiguos</span>¹⁰, <span id="t36" class="word"
+            data-map="w84,w85,w86,w90,w91">era imposible, ciertamente, conocerlos con precisión</span> <span id="t37"
+            class="word" data-map="w87,w88,w89">a causa de la distancia del tiempo</span>; <span id="t38" class="word"
+            data-map="w92,w93,w94">pero por los indicios</span> <span id="t39" class="word"
+            data-map="w95,w100,w101">a los que puedo dar crédito</span> <span id="t40" class="word"
+            data-map="w96,w97,w98,w99">cuando indago lo más lejos posible</span>, <span id="t41" class="word"
+            data-map="w102,w103,w104,w105">no creo que ocurriera nada importante</span> <span id="t43" class="word"
+            data-map="w106,w107,w108,w109">ni en lo referente a las guerras</span> <span id="t44" class="word"
+            data-map="w110,w111,w112,w113">ni en lo demás</span>.
 # Notas Críticas
 alberti: |
   (A continuación un extracto a manera de ejemplo del aparato crítico de Alberti. Consúltese G. B. Alberti,
