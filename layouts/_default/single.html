@@ -6,17 +6,9 @@
     <p class="lead">{{ .Params.author | default "Autor Desconocido" }}</p>
   </div>
 
-  {{/* Menú Desplegable Inteligente */}}
-  <div class="mb-4">
-    <label for="chapterSelect" class="form-label visually-hidden">Seleccionar capítulo:</label>
-    <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
-      {{ range .CurrentSection.Pages.ByParam "order" }}
-        <option value="{{ .RelPermalink }}" {{ if eq .Permalink $.Page.Permalink }}selected{{ end }}>
-          {{ .Title }}
-        </option>
-      {{ end }}
-    </select>
-  </div>
+  {{/* --- INICIO: Llamada al Menú Desplegable Reutilizable --- */}}
+  {{ partial "chapter-dropdown.html" . }}
+  {{/* --- FIN: Llamada al Menú Desplegable --- */}}
 
   {{/* Estructura de Dos Columnas para el Contenido */}}
   <div class="row align-items-stretch">

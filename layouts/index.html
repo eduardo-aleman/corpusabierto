@@ -5,30 +5,8 @@
     <p class="lead">{{ .Params.author | default "Tucídides" }}</p>
   </div>
 
- {{/* --- INICIO: Menú Desplegable Inteligente (con lógica para Home) --- */}}
-<div class="mb-4">
-  <label for="chapterSelect" class="form-label visually-hidden">Seleccionar capítulo:</label>
-  <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
-    {{/*
-      Bloque de lógica condicional:
-      - Si estamos en la página de inicio (.IsHome), busca las páginas de la sección "guerra-del-peloponeso".
-      - Si no, usa el comportamiento normal de .CurrentSection para las páginas de capítulo.
-    */}}
-    {{ $pages := "" }}
-    {{ if .IsHome }}
-      {{ $pages = (.Site.GetPage "section" "guerra-del-peloponeso").Pages }}
-    {{ else }}
-      {{ $pages = .CurrentSection.Pages }}
-    {{ end }}
-
-    {{/* Itera sobre las páginas que hemos seleccionado, ordenadas por el parámetro 'order' */}}
-    {{ range $pages.ByParam "order" }}
-      <option value="{{ .RelPermalink }}" {{ if eq .Permalink $.Page.Permalink }}selected{{ end }}>
-        {{ .Title }}
-      </option>
-    {{ end }}
-  </select>
-</div>
+ {{/* --- INICIO: Menú Desplegable Inteligente (con lógica para Home y Capítulo 1) --- */}}
+{{ partial "chapter-dropdown.html" . }}
 {{/* --- FIN: Menú Desplegable Inteligente --- */}}
 
   {{/* --- Sección de Texto y Notas --- */}}

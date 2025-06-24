@@ -1,0 +1,24 @@
+<div class="mb-4">
+  <label for="chapterSelect" class="form-label visually-hidden">Seleccionar capítulo:</label>
+  <select id="chapterSelect" class="form-select" onchange="if(this.value) window.location.href=this.value">
+    
+    {{ $pages := .CurrentSection.Pages }}
+    {{ if .IsHome }}
+      {{ $pages = (.Site.GetPage "section" "guerra-del-peloponeso").Pages }}
+    {{ end }}
+
+    {{ range $pages.ByParam "order" }}
+      
+      {{ if eq .Params.order 1 }}
+        <option value="{{ "/" | relLangURL }}" {{ if $.IsHome }}selected{{ end }}>
+          {{ .Title }}
+        </option>
+      {{ else }}
+        <option value="{{ .RelPermalink }}" {{ if eq .Permalink $.Page.Permalink }}selected{{ end }}>
+          {{ .Title }}
+        </option>
+      {{ end }}
+
+    {{ end }}
+    </select>
+</div>

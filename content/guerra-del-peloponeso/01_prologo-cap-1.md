@@ -1,7 +1,7 @@
 ---
 title: "Capítulo 1"
 slug: "cap1"
-order: "01"
+order: 1
 work_title: "Historia de la Guerra del Peloponeso"
 book: "Libro I"
 author: "Tucídides"
