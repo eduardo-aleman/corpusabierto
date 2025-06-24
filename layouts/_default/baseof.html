@@ -35,7 +35,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   {{ if .IsHome }}
-    {{ with resources.Get "scripts/word-highlighter-cap1.js" }}
+    {{ with resources.Get "scripts/word-highlighter.js" }}
       <script src="{{ .RelPermalink }}"></script>
     {{ end }}
   {{ else }}
