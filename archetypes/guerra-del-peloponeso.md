@@ -1,40 +1,37 @@
 ---
-# Título del capítulo, generado del nombre del archivo.
 title: "{{ replace .Name "-" " " | title }}"
-
-# --- CORRECCIÓN CLAVE ---
-# Usa el número al principio del nombre del archivo para ordenar (ej. "05" de "05_conflicto...")
 order: "{{ index (split .Name "_") 0 }}"
-
-# --- DATOS DE LA OBRA (Rellenar para cada capítulo) ---
 work_title: "Título de la Obra"
 book: "Libro/Sección"
 author: "Autor"
 translator: "Traductor"
-
-# --- IDIOMA (Cambiar a "Latín" cuando corresponda) ---
 original_language: "Griego"
-
-# --- CONTENIDO (Rellenar con los textos) ---
-# Texto original (griego, latín, etc.) con sus etiquetas <span> si las tiene.
 original_text: |
   (Pega aquí el texto original...)
-
-# Traducción al español con sus etiquetas <span> si las tiene.
 translation: |
   (Pega aquí la traducción...)
-
-# --- NOTAS (Pueden ser Markdown o HTML) ---
 alberti: |
   (Pega aquí las notas críticas...)
 notesEs: |
   (Pega aquí las notas del traductor...)
-
-# --- ENLACES DE DESCARGA (Se auto-generan) ---
-# La ruta se basa en la sección (ej. /guerra-del-peloponeso/txt/...)
 downloadTXT: "/{{ .Section }}/txt/{{ .Name }}.txt"
-downloadMD: "/{{ .Section }}/md/{{ .Name }}.md"
+downloadMD:  "/{{ .Section }}/md/{{ .Name }}.md"
 downloadTEI: "/{{ .Section }}/tei/{{ .Name }}.xml"
 ---
-# El cuerpo del archivo se deja intencionadamente en blanco.
-# Todo el contenido se maneja en el "front matter" de arriba.
+
+## Fuentes
+
+#### El texto en griego  
+[Perseus](https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3)
+
+#### Ejemplos del aparato crítico de G. B. Alberti  
+Extracto a manera de ejemplo del aparato crítico de Alberti.  
+G. B. Alberti, _Thucydidis Historiae_ Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.  
+[Ver libro](https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/)
+
+#### Traducción al español  
+[archive.org](https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/)
+
+#### Notas del traductor Juan José Torres Esbarranch  
+Torres Esbarranch, Juan José, ed. and trans. Tucídides. _Historia de la guerra del Peloponeso_. Libros I-II. Madrid: Gredos, 1990.  
+[Ver libro](https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/)
