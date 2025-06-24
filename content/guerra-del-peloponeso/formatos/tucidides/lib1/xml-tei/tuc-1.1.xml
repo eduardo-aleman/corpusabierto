@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulo 1</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición del texto griego</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español y notas</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación de textos</resp>
+          <name>CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-22">22 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="orig_src">
+          Alberti, G. B., ed. <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2), Istituto Poligrafico dello Stato, 1972. Disponible en <ref target="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/">Archive.org</ref>.
+        </bibl>
+        <bibl xml:id="trans_src">
+          Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. Disponible en <ref target="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/">Archive.org</ref>.
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del capítulo y actualización para incluir textos completos, alineación explícita y notas completas.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="chapter" n="1">
+        
+        <linkGrp type="alignment">
+          <link target="#t1 #w1"/>
+          <link target="#t2 #w2"/>
+          <link target="#t3 #w3"/>
+          <link target="#t4 #w4"/>
+          <link target="#t5 #w5"/>
+          <link target="#t7 #w6"/>
+          <link target="#t8 #w7 #w8"/>
+          <link target="#t9 #w9 #w10 #w11 #w12"/>
+          <link target="#t10 #w13 #w14 #w15 #w16"/>
+          <link target="#t11 #w17"/>
+          <link target="#t12 #w18 #w19"/>
+          <link target="#t13 #w20 #w21"/>
+          <link target="#t14 #w22 #w23 #w24"/>
+          <link target="#t15 #w25 #w26"/>
+          <link target="#t16 #w27 #w28"/>
+          <link target="#t17 #w29"/>
+          <link target="#t18 #w30"/>
+          <link target="#t19 #w36"/>
+          <link target="#t20 #w31 #w32 #w33 #w34 #w35"/>
+          <link target="#t21 #w37 #w38 #w39"/>
+          <link target="#t22 #w40 #w44"/>
+          <link target="#t23 #w41 #w42 #w43"/>
+          <link target="#t24 #w48 #w49 #w50"/>
+          <link target="#t25 #w51 #w52 #w53 #w54"/>
+          <link target="#t26 #w45 #w46 #w47"/>
+          <link target="#t27 #w55"/>
+          <link target="#t28 #w57 #w58 #w59 #w60"/>
+          <link target="#t29 #w61 #w62 #w63"/>
+          <link target="#t30 #w64 #w65 #w66 #w67 #w68"/>
+          <link target="#t31 #w72 #w73 #w74 #w75"/>
+          <link target="#t32 #w69 #w70 #w71"/>
+          <link target="#t33 #w75"/>
+          <link target="#t34 #w76 #w77 #w78 #w79"/>
+          <link target="#t35 #w80 #w81 #w82 #w83"/>
+          <link target="#t36 #w84 #w85 #w86 #w90 #w91"/>
+          <link target="#t37 #w87 #w88 #w89"/>
+          <link target="#t38 #w92 #w93 #w94"/>
+          <link target="#t39 #w95 #w100 #w101"/>
+          <link target="#t40 #w96 #w97 #w98 #w99"/>
+          <link target="#t41 #w102 #w104 #w105"/>
+          <link target="#t42 #w103"/>
+          <link target="#t43 #w106 #w107 #w108 #w109"/>
+          <link target="#t44 #w110 #w111 #w112 #w113"/>
+        </linkGrp>
+
+        <div type="source" xml:lang="grc">
+          <head><seg xml:id="w1">ΘΟΥΚΥΔΙΔΟΥ</seg><lb/><seg xml:id="w2">ΙΣΤΟΡΙΩΝ</seg> <seg xml:id="w3">Α</seg></head>
+          <p>
+            <seg xml:id="w4">Θουκυδίδης</seg> <seg xml:id="w5">Ἀθηναῖος</seg> <seg xml:id="w6">ξυνέγραψε</seg> <seg xml:id="w7">τὸν</seg> <seg xml:id="w8">πόλεμον</seg> <seg xml:id="w9">τῶν</seg> <seg xml:id="w10">Πελοποννησίων</seg> <seg xml:id="w11">καὶ</seg> <seg xml:id="w12">Ἀθηναίων,</seg> <seg xml:id="w13">ὡς</seg> <seg xml:id="w14">ἐπολέμησαν</seg> <seg xml:id="w15">πρὸς</seg> <seg xml:id="w16">ἀλλήλους,</seg> <seg xml:id="w17">ἀρξάμενος</seg> <seg xml:id="w18">εὐθὺς</seg> <seg xml:id="w19">καθισταμένου</seg> <seg xml:id="w20">καὶ</seg> <seg xml:id="w21">ἐλπίσας</seg> <seg xml:id="w22">μέγαν</seg> <seg xml:id="w23">τε</seg> <seg xml:id="w24">ἔσεσθαι</seg> <seg xml:id="w25">καὶ</seg> <seg xml:id="w26">ἀξιολογώτατον</seg> <seg xml:id="w27">τῶν</seg> <seg xml:id="w28">προγεγενημένων,</seg> <seg xml:id="w29">τεκμαιρόμενος</seg> <seg xml:id="w30">ὅτι</seg> <seg xml:id="w31">ἀκμάζοντές</seg> <seg xml:id="w32">τε</seg> <seg xml:id="w33">ἦσαν</seg> <seg xml:id="w34">ἐς</seg> <seg xml:id="w35">αὐτὸν</seg> <seg xml:id="w36">ἀμφότεροι</seg> <seg xml:id="w37">παρασκευῇ</seg> <seg xml:id="w38">τῇ</seg> <seg xml:id="w39">πάσῃ</seg> <seg xml:id="w40">καὶ</seg> <seg xml:id="w41">τὸ</seg> <seg xml:id="w42">ἄλλο</seg> <seg xml:id="w43">Ἑλληνικὸν</seg> <seg xml:id="w44">ὁρῶν</seg> <seg xml:id="w45">ξυνιστάμενον</seg> <seg xml:id="w46">πρὸς</seg> <seg xml:id="w47">ἑκατέρους,</seg> <seg xml:id="w48">τὸ</seg> <seg xml:id="w49">μὲν</seg> <seg xml:id="w50">εὐθύς,</seg> <seg xml:id="w51">τὸ</seg> <seg xml:id="w52">δὲ</seg> <seg xml:id="w53">καὶ</seg> <seg xml:id="w54">διανοούμενον.</seg> <seg xml:id="w55">[2]</seg> <seg xml:id="w56">κίνησις</seg> <seg xml:id="w57">γὰρ</seg> <seg xml:id="w58">αὕτη</seg> <seg xml:id="w59">μεγίστη</seg> <seg xml:id="w60">δὴ</seg> <seg xml:id="w61">τοῖς</seg> <seg xml:id="w62">Ἕλλησιν</seg> <seg xml:id="w63">ἐγένετο</seg> <seg xml:id="w64">καὶ</seg> <seg xml:id="w65">μέρει</seg> <seg xml:id="w66">τινὶ</seg> <seg xml:id="w67">τῶν</seg> <seg xml:id="w68">βαρβάρων,</seg> <seg xml:id="w69">ὡς</seg> <seg xml:id="w70">δὲ</seg> <seg xml:id="w71">εἰπεῖν</seg> <seg xml:id="w72">καὶ</seg> <seg xml:id="w73">ἐπὶ</seg> <seg xml:id="w74">πλεῖστον</seg> <seg xml:id="w75">ἀνθρώπων.</seg> <seg xml:id="w76">τὰ</seg> <seg xml:id="w77">γὰρ</seg> <seg xml:id="w78">πρὸ</seg> <seg xml:id="w79">αὐτῶν</seg> <seg xml:id="w80">καὶ</seg> <seg xml:id="w81">τὰ</seg> <seg xml:id="w82">ἔτι</seg> <seg xml:id="w83">παλαίτερα</seg> <seg xml:id="w84">σαφῶς</seg> <seg xml:id="w85">μὲν</seg> <seg xml:id="w86">εὑρεῖν</seg> <seg xml:id="w87">διὰ</seg> <seg xml:id="w88">χρόνου</seg> <seg xml:id="w89">πλῆθος</seg> <seg xml:id="w90">ἀδύνατον</seg> <seg xml:id="w91">ἦν,</seg> <seg xml:id="w92">ἐκ</seg> <seg xml:id="w93">δὲ</seg> <seg xml:id="w94">τεκμηρίων</seg> <seg xml:id="w95">ὧν</seg> <seg xml:id="w96">ἐπὶ</seg> <seg xml:id="w97">μακρότατον</seg> <seg xml:id="w98">σκοποῦντί</seg> <seg xml:id="w99">μοι</seg> <seg xml:id="w100">πιστεῦσαι</seg> <seg xml:id="w101">ξυμβαίνει</seg> <seg xml:id="w102">οὐ</seg> <seg xml:id="w103">μεγάλα</seg> <seg xml:id="w104">νομίζω</seg> <seg xml:id="w105">γενέσθαι</seg> <seg xml:id="w106">οὔτε</seg> <seg xml:id="w107">κατὰ</seg> <seg xml:id="w108">τοὺς</seg> <seg xml:id="w109">πολέμους</seg> <seg xml:id="w110">οὔτε</seg> <seg xml:id="w111">ἐς</seg> <seg xml:id="w112">τὰ</seg> <seg xml:id="w113">ἄλλα.</seg>
+          </p>
+        </div>
+
+        <div type="translation" xml:lang="es">
+          <head><seg xml:id="t1_head">de Tucídides</seg>, <seg xml:id="t2_head">Investigaciones</seg>, <seg xml:id="t3_head">Libro A</seg></head>
+          <p>
+            <seg xml:id="t4">Tucídides</seg> <seg xml:id="t5">de Atenas</seg><ref target="#note_es_1">¹</ref> <seg xml:id="t7">escribió</seg> <seg xml:id="t8">la historia de la guerra</seg> <seg xml:id="t9">entre los peloponesios y los atenienses</seg><ref target="#note_es_2">²</ref>, <seg xml:id="t10">relatando cómo se desarrollaron sus hostilidades</seg><ref target="#note_es_3">³</ref>, <seg xml:id="t11">y se puso a ello</seg><ref target="#note_es_4">⁴</ref> <seg xml:id="t12">tan pronto como se declaró</seg>, <seg xml:id="t13">porque pensaba</seg> <seg xml:id="t14">que iba a ser importante</seg> <seg xml:id="t15">y más memorable</seg> <seg xml:id="t16">que las anteriores</seg><ref target="#note_es_5">⁵</ref>. <seg xml:id="t17">Basaba su conjetura</seg> <seg xml:id="t18">en el hecho de que</seg> <seg xml:id="t19">ambos pueblos</seg> <seg xml:id="t20">la emprendían en su mejor momento</seg> <seg xml:id="t21">gracias a sus recursos de todo tipo</seg><ref target="#note_es_6">⁶</ref>, <seg xml:id="t22">y en que veía</seg> <seg xml:id="t23">que los restantes griegos</seg>, <seg xml:id="t24">unos de inmediato</seg> <seg xml:id="t25">y otros disponiéndose a ello</seg>, <seg xml:id="t26">se alineaban en uno u otro bando</seg>. <seg xml:id="t27">[2]</seg> <seg xml:id="t28">Esta fue, en efecto, la mayor conmoción</seg><ref target="#note_es_7">⁷</ref> <seg xml:id="t29">que haya afectado a los griegos</seg> <seg xml:id="t30">y a buena parte de los bárbaros</seg><ref target="#note_es_8">⁸</ref>; <seg xml:id="t31">alcanzó</seg>, <seg xml:id="t32">por así decirlo</seg>, <seg xml:id="t33">a casi toda la humanidad</seg><ref target="#note_es_9">⁹</ref>. <seg xml:id="t34">Pues los acontecimientos anteriores</seg>, <seg xml:id="t35">y los todavía más antiguos</seg><ref target="#note_es_10">¹⁰</ref>, <seg xml:id="t36">era imposible, ciertamente, conocerlos con precisión</seg> <seg xml:id="t37">a causa de la distancia del tiempo</seg>; <seg xml:id="t38">pero por los indicios</seg> <seg xml:id="t39">a los que puedo dar crédito</seg> <seg xml:id="t40">cuando indago lo más lejos posible</seg>, <seg xml:id="t41">no creo que ocurriera nada importante</seg> <seg xml:id="t42">ni</seg> <seg xml:id="t43">en lo referente a las guerras</seg> <seg xml:id="t44">ni en lo demás</seg>.
+          </p>
+        </div>
+
+        <div type="notes">
+          <div type="critical_apparatus">
+            <head>Notas críticas de G. B. Alberti</head>
+            <p>(A continuación un extracto a manera de ejemplo del aparato crítico de Alberti. Consúltese G. B. Alberti, <title>Thucydidis Historiae</title> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.)</p>
+            <p>1 Θουκυδίδης ὁ ᾿Αθηναῖος συνεγράψατο Eust. 1501, 28. 1-2 Θουκυδίδης - ᾿Αθηναίων Plut. <title>De exilio</title> 605 C (Pat.-Pohl.-Siev.), [Demetr.] <title>De eloc.</title> 44 (Rad.), schol. Aristoph. <title>Pac.</title> 212 (Dübner) | Θουκυδίδης - ἐπολέμησαν ἑκάτεροι Anon. <title>De fig.</title> Rhet. Gr. III 120, 17 (Sp.) 1-p. 26, 5 Θουκυδίδης - ἄλλα Dion. Hal. <title>Thuc. iud.</title> 857-58 (Pavano). 1-p. 26, 15 Θουκυδίδης - ἀνίσταντο Dion. Hal. <title>De comp. verb.</title> 162-65 (Us.-Rad.). 2-3 ὡς - συνισταμένου Lucian. <title>Hist. conscr.</title> 15 (Kilburn) . 4-5 ὅτι - αὐτόν Ael. Dion. η 2 (Erbse) • 7-8 κίνησις - δὴ μεγίστη schol. Aristoph. <title>Ach.</title> 1 (Dübner) | κίνησις - ἐγένετο Alex. <title>De fig.</title> Rhet. Gr. III 32, 23 (Sp.), Priscian. XVIII 172 (Hertz) 7-p. 26, 1 κίνησις - ἀνθρώ- πων Anon. <title>Vita</title> 8 - 8 καὶ μέρει τινὶ τῶν βαρβάρων schol. Thuc. II 7, 1 (Hude).</p>
+            <hr/>
+            <p>TITULUS: Θουκυδίδου ἱστοριῶν α (G) Ud: Θ. συγγραφῆς α ABE: Θ. συγγραφῆς πρῶτον F: Θ. α M²: om. C⁴ . 5 ἦσαν 4 FG⁴, Ael. Dion.: ἦσαν ABC⁴GM², Dion. Hal.: ησαν Ε . 6 πρὸς ἑκατέρους ABEGM², Dion. Hal.: om. C⁴ F. 7 post κίνησις add. τε Η². 8 μεγίστη δὴ ABEGM², Dion. Hal. 164, Alex., Priscian.: δὴ μεγίστη C⁴ F, Dion. Hal. 857, Anon. <title>Vita</title>, schol. Aristoph.</p>
+          </div>
+          <div type="translator_notes">
+            <head>Notas de Juan José Torres Esbarranch</head>
+            <list type="ordered">
+              <item xml:id="note_es_1">El historiador no se dirige exclusivamente a sus conciudadanos (cf. pasajes como II 19, 2; 34, 7; VIII 67, 2, con explicaciones superfluas para un ateniense), sino que piensa en un público amplio y en la posteridad. Por eso da su nombre unido al nombre de su ciudad, como habían hecho Hecateo (cf. F. JACOBY, <title>Die Fragmente der griechischen Historiker [FGrHist]</title>, Berlín-Leiden, 1923. . ., 1, F 1) y Heródoto (I, Proemio) en una línea de afirmación de la personalidad que se inició con la lírica. Sin embargo, cuando habla de sí mismo como estratego ateniense (cf. IV 104, 4) se cita con el nombre con el que se le conocía oficialmente en Atenas: Tucídides de Óloro (<foreign xml:lang="grc">Thoukydídēs Olórou</foreign>).</item>
+              <item xml:id="note_es_2">Esta guerra del 431-404 supuso la culminación de la oposición entre Atenas y Esparta.</item>
+              <item xml:id="note_es_3">Es la historia de cómo evolucionó la guerra y de la política relacionada con ella. No se trata de una historia general de la época y otros aspectos pasan a segundo plano. El objetivo de la investigación tucididea es la guerra en sí misma en sus diversas fases y con todas sus causas, implicaciones y consecuencias, y no es la guerra en su aspecto superficial —aunque es un magnífico observador y narrador de los hechos bélicos—, sino que se interesa de forma especial por su trasfondo, sus raíces y derivaciones; le importan las causas profundas y los motivos que se esgrimieron, así como las consecuencias morales que provocó. Y todo ello sabe mirarlo con ojo clínico. Una guerra para un historiador imbuido del método hipocrático era como una enfermedad. Así como en el estado normal de salud no pueden observarse las anomalías fisiológicas, del mismo modo en las épocas de paz no se patentizan los desarreglos y alteraciones del organismo social. Igual que el médico estudia la salud y sus características mediante la observación de cuerpos enfermos, el historiador y el sociólogo pueden entender mejor las leyes que rigen la comunidad humana mediante el análisis de las guerras, las épocas críticas en las que se pone de manifiesto el trasfondo de la salud de los pueblos. Quedan entonces al descubierto todas las alteraciones y las tendencias elementales de la sociedad, el fenómeno del poder, el derecho y la fuerza, la ambición política, etc. Todas esas cuestiones constituyen el centro del interés de la Historia de Tucídides (cf. sobre ello el libro de J. ALSINA, <title>Tucídides: Historia, ética y política</title>, Madrid, 1981). El tema, pues, está perfectamente delimitado desde el principio: «la guerra entre los peloponesios y los atenienses». No es una historia «cultural» de su tiempo, y en función de esto se explican algunos «silencios» del historiador; se ciñe a unos hechos militares y políticos concretos: la guerra y sus causas profundas, los móviles que la desencadenaron, las fuerzas, leyes e ideas subyacentes, su evolución y el papel de los políticos y de los pueblos. . . En resumen, un objetivo restringido, y vasto a la vez, dentro de cuyos límites Tucídides aspira a lograr un <foreign xml:lang="grc">ktêma es aieí</foreign>, es decir, una «adquisición para siempre» (cf. I 22, 4).</item>
+              <item xml:id="note_es_4">Su preocupación por narrar la guerra comenzó con la guerra misma, y su genio lo llevó a analizar con extraordinaria profundidad los sucesos contemporáneos. Desde el principio de la guerra, comenzó, por tanto, a reunir y preparar los materiales de su <title>Historia</title>.</item>
+              <item xml:id="note_es_5">En comparación con el pasado remoto, al que se refiere la <title>Arqueología</title>, y con el pasado reciente y actuante de la <title>Pentecontecia</title>, Tucídides analiza su época y la guerra que le ha tocado vivir; ello le lleva a una afirmación de la importancia y superioridad del presente y a minimizar, en relación con la Guerra del Peloponeso, todas las anteriores, la de Troya inclusive.</item>
+              <item xml:id="note_es_6">Y del mismo modo que sitúa su guerra frente a las que la precedieron, él mismo pretende distanciarse de sus predecesores; su obra quiere ser distinta en concepción y métodos y, a lo largo de sus páginas, encontramos frecuentes pruebas de su voluntad de novedad y singularidad. Su obra, en consonancia con su época, ha de ser <emph>borrón y cuenta nueva</emph> respecto a concepciones y a métodos anteriores, en relación con Homero, con los logógrafos y con Heródoto, y, junto a esta pretensión de novedad y singularidad, se evidencia, asimismo, la voluntad de permanencia de una obra concebida como «adquisición para siempre», como lección y ejemplo para generaciones futuras y con el mismo afán de utilidad en que se inspiran las observaciones clínicas de un médico (cf. II 48, 3). Estas aspiraciones tucidídeas se evidencian a lo largo de una obra tan densa y ardua como atractiva, una obra en la que se reflejan una inteligencia que constantemente relaciona, un pensamiento profundamente analítico y un espíritu apasionado, un intelectual y un artista, una obra llena de tensiones y contrastes donde tan pronto sobresale la época y el ambiente y su formación sofística como la original personalidad del historiador, donde unas veces prima lo racional y otras lo irracional y lo trágico; donde coexiste el científico, su afán de precisión, concisión y su espíritu antitético, con el poeta que quiere atraer la atención sobre la grandiosa y trágica aventura de su patria, sobre una guerra que considera más memorable que las anteriores. Todo ello se refleja perfectamente en su léxico y en su estilo, en los que se conjugan asimismo las influencias de una época y los rasgos únicos de una extraordinaria individualidad, tal como se revela a quien lo lee sin precipitación. Cf. I 19, y 118, 2.</item>
+              <item xml:id="note_es_7"><foreign xml:lang="grc">Kínēsis</foreign>. Sobre este término, cf. H. PATZER, reseña de F. BIZER, <title>Untersuchungen zur Archäologie des Thukydides</title>, tesis, 1937, <title>Gnomon</title> 16 (1940), pág. 350; N. G. L. HAMMOND, «The arrangement of the thought in the proem and in other parts of Thucydides I», <title>The Classical Quarterly</title> 11 (1952), pág. 132.</item>
+              <item xml:id="note_es_8">Los griegos utilizaban el término <emph>bárbaros</emph> para designar al extranjero que no pertenecía a su estirpe, mientras que <foreign xml:lang="grc">xénos</foreign> servía para indicar al extranjero griego (cf. HERÓDOTO, II 160, 4), que era ciudadano de una <foreign xml:lang="grc">pólis</foreign> distinta a la propia. Los espartanos, sin embargo, no hacían distinción alguna (cf. HERÓDOTO, IX 11, 2; 53, 2; 55, 2). <emph>Bárbaros</emph> es una forma onomatopéyica indoeuropea para designar a una persona que tiene dificultad para hablar una lengua, que hace <emph>«bar-bar»</emph> al hablar (piénsese, por ejemplo, en la raíz sánscrita <foreign xml:lang="sa-Latn">barbara</foreign> para significar «tartamudear»); y de ahí la idea de «extranjero». Cf. J. POKORNY, <title>Indogermanisches etymologisches Wörterbuch</title> I, Berna-Berlín, 1959, págs. 91 ss.</item>
+              <item xml:id="note_es_9">Muchos pueblos no griegos, como los epirotas, tracios, macedonios, sículos y, en cierta medida, los persas, se vieron implicados en la contienda. Si la guerra arquidámica (431-421) fue esencialmente griega, después de la Paz de Nicias los horizontes se ampliaron. Cf. A. W. GOMME, <title>A historical commentary on Thucydides</title> I, Oxford, 1945, pág. 91.</item>
+              <item xml:id="note_es_10">Pasaje de dudosa interpretación. Se ha discutido mucho sobre el sentido de «los acontecimientos anteriores, y los todavía más antiguos». Para Stahl, lo primero se refería a la época entre la Guerra de Troya y las Guerras Médicas, y lo segundo a los lejanos tiempos anteriores a Troya. Schadewaldt piensa que «los acontecimientos anteriores» (<foreign xml:lang="grc">tà prò autôn</foreign>) se refieren a las Guerras Médicas y «los todavía más antiguos» (<foreign xml:lang="grc">tà éti palaítera</foreign>), a la Guerra de Troya. Según Classen, en lo primero habría una alusión a los sucesos inmediatamente anteriores a la Guerra del Peloponeso a partir de las Guerras Médicas, y en lo segundo, a los acontecimientos anteriores al enfrentamiento con Persia. Pero resulta chocante que la dificultad señalada por Tucídides para llegar a un conocimiento preciso pueda referirse a los cercanos hechos de la <title>Pentecontecia</title> (años 479-432; cf. I 89-118), de los que no debían de faltar los testimonios. El mismo Tucídides —en I 97, 2— dice que ha estudiado este período de forma más amplia y precisa que Helánico. También se contaba con el testimonio de Heródoto para las Guerras Médicas. Parece, pues, más verosímil que, cuando Tucídides habla de dificultades para conocer los hechos con precisión, piense sobre todo en la historia más antigua, a la que se aproxima mediante indicios menos seguros.</item>
+            </list>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

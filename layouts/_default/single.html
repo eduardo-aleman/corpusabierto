@@ -4,8 +4,6 @@
     <h1 class="display-4">{{ .Params.work_title | default .Site.Title }}</h1>
     <h2 class="h2">{{ .Params.book }}</h2>
     <p class="lead">{{ .Params.author | default "Autor Desconocido" }}</p>
-    <hr>
-    <h3 class="h4">{{ .Title }}</h3>
   </div>
 
   {{/* Menú Desplegable Inteligente */}}
@@ -86,7 +84,6 @@
     <p>Descargar texto original en griego, con traducción y notas:</p>
     <p>
       <a href="{{ .Params.downloadTXT | absURL }}" target="_blank">TXT</a> |
-      <a href="{{ .Params.downloadMD  | absURL }}" target="_blank">MD</a> |
       <a href="{{ .Params.downloadTEI | absURL }}" target="_blank">XML-TEI</a>
     </p>
   </section>
