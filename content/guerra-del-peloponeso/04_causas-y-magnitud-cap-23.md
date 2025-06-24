@@ -1,21 +1,23 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-order: "{{ index (split .Name "_") 0 }}"
+title: "23. La magnitud de la Guerra del Peloponeso. Sus causas"
+order: 4
 work_title: "Historia de la Guerra del Peloponeso"
 book: "Libro I"
 author: "Tucídides"
 translator: "Juan José Torres Esbarranch"
 original_language: "Griego"
 original_text: |
-  (Pega aquí el texto original...)
+  <h4>Capítulo 4</h4>
+          <p><span id="w4_1" class="word">
 translation: |
-  (Pega aquí la traducción...)
+  <h4>Capítulo 4</h4>
+          <p><span id="t4_1" class="word">
 alberti: |
   (Pega aquí las notas críticas...)
 notesEs: |
   (Pega aquí las notas del traductor...)
-downloadTXT: "/{{ .Section }}/formatos/tucidides/lib1/txt/{{ .Name }}.txt"
-downloadTEI: "/{{ .Section }}/formatos/tucidides/lib1/xml-tei/{{ .Name }}.xml"
+downloadTXT: "/guerra-del-peloponeso/formatos/tucidides/lib1/txt/04_causas-y-magnitud-cap-23.txt"
+downloadTEI: "/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/04_causas-y-magnitud-cap-23.xml"
 ---
 
 #### Fuentes
