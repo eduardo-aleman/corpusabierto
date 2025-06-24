@@ -1,0 +1,6 @@
+baseURL = "https://corpusabierto/es/"
+languageCode = "es-ES"
+title = "CorpusAbierto"
+publishDir = "docs"
+defaultContentLanguage = "es"
+disableKinds = ["taxonomy"]

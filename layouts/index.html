@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <div class="mb-3">
+    <h1 class="display-4">{{ .Params.work_title | default "Historia de la Guerra del Peloponeso" }}</h1>
+    <h2 class="h2">{{ .Params.book }}</h2>
+    <p class="lead">{{ .Params.author | default "Tucídides" }}</p>
+  </div>
+
+  <div class="row align-items-stretch">
+    {{/* Columna Izquierda: Texto Griego y Notas Alberti */}}
+    <div class="col-md-6 d-flex flex-column mb-4">
+      <h5>Texto original (griego)</h5>
+      <div id="greekText" class="text-container flex-fill">
+        {{/* CAMBIO CLAVE: Usamos nuestro nuevo parámetro en lugar de .Content */}}
+        {{ .Params.greek_text | safeHTML }}
+        <div class="notes-container mt-3">
+          <h6>Notas críticas</h6>
+          {{ .Params.alberti | markdownify | safeHTML }}
+        </div>
+      </div>
+    </div>
+
+    {{/* Columna Derecha: Traducción y Notas Esbarranch */}}
+    <div class="col-md-6 d-flex flex-column mb-4">
+      <h5>Traducción (español)</h5>
+      <div id="spanishText" class="text-container flex-fill">
+        {{ .Params.translation | safeHTML }}
+        <div class="notes-container mt-3">
+          <h6>Notas de {{ .Params.translator }}</h6>
+          {{ .Params.notesEs | markdownify | safeHTML }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/* Sección de enlaces de descarga */}}
+  <section class="mb-5" id="downloads-links">
+    <p>Descargar texto original en griego, con traducción y notas:</p>
+    <p>
+      <a href="{{ .Params.downloadTXT | absURL }}" target="_blank">TXT</a> |
+      <a href="{{ .Params.downloadMD | absURL }}" target="_blank">MD</a> |
+      <a href="{{ .Params.downloadTEI | absURL }}" target="_blank">XML-TEI</a>
+    </p>
+  </section>
+{{ end }}
