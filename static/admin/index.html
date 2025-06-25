@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>CorpusAbierto CMS</title>
-    <script src="https://unpkg.com/decap-cms@3.1.5/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
     <script>
-      if (typeof CMS === "undefined") {
-        document.body.innerHTML = "<h2>Error: CMS not loaded. Check script URL.</h2>";
-      } else {
-        window.CMS_MANUAL_INIT = true;
-        CMS.init();
-      }
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script>
+      CMS.init();
     </script>
   </body>
 </html>
