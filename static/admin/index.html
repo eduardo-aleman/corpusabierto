@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>CorpusAbierto CMS</title>
-
-    <!-- Load Decap CMS from jsDelivr instead of unpkg -->
     <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.1.5/dist/decap-cms.min.js"></script>
+    <style>
+      html, body, #nc-root {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
+    <!-- This is the required container for the CMS interface -->
+    <div id="nc-root"></div>
+
     <script>
-      // Prevent auto-initialization until library loads
       window.CMS_MANUAL_INIT = true;
 
-      // Wait for DOM and script to be parsed
-      window.addEventListener('DOMContentLoaded', () => {
+      window.addEventListener("DOMContentLoaded", () => {
         if (typeof CMS === "undefined") {
-          document.body.innerHTML = "<h2>Error: Decap CMS failed to load. Check the script source or network.</h2>";
+          document.body.innerHTML = "<h2>Error: CMS failed to load. Check the script source or network.</h2>";
         } else {
           CMS.init();
         }
