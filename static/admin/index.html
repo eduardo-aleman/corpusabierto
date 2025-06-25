@@ -1,28 +1,39 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>CorpusAbierto CMS</title>
-    <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.1.5/dist/decap-cms.min.js"></script>
+
+    <!-- Mount point required by Decap CMS -->
     <style>
       html, body, #nc-root {
         height: 100%;
         margin: 0;
       }
     </style>
+
+    <!-- Load Decap CMS v3 from jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.1.5/dist/decap-cms.min.js"></script>
   </head>
   <body>
-    <!-- Decap CMS target element -->
+    <!-- Decap CMS expects this element -->
     <div id="nc-root"></div>
 
     <script>
       window.CMS_MANUAL_INIT = true;
 
-      window.addEventListener("load", () => {
-        if (typeof CMS === "undefined") {
-          document.body.innerHTML = "<h2>Error: CMS failed to load.</h2>";
-        } else {
-          CMS.init();
+      // Wait until full page + CMS is loaded
+      window.addEventListener("load", function () {
+        try {
+          if (typeof CMS === "undefined") {
+            document.body.innerHTML = "<h2>Error: CMS failed to load. Check script source or CSP policy.</h2>";
+          } else {
+            console.log("Calling CMS.init()");
+            CMS.init();
+          }
+        } catch (e) {
+          document.body.innerHTML = "<h2>CMS init error:</h2><pre>" + e.message + "</pre>";
+          console.error(e);
         }
       });
     </script>
