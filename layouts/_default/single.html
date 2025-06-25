@@ -51,11 +51,11 @@
          target="_blank">Perseus</a>
     </p>
 
-    <h6>Ejemplos del aparato crítico de G. B. Alberti:</h6>
-    <p> 
-      Consúltese G. B. Alberti, <em>Thucydidis Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.  
-      <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>
-    </p>
+    <h4>Notas críticas de G. B. Alberti</h4>
+      <p>(Consúltese G. B. Alberti, <em>Thucydidis
+          Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.
+        <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver
+          libro</a>.)</p>
 
     <h6>La traducción al español:</h6>
     <p>
@@ -72,12 +72,22 @@
     </p>
   </div>
 
-  {{/* Sección de enlaces de descarga */}}
-  <section class="mb-5" id="descargas">
-    <p>Descargar texto original en griego, con traducción y notas:</p>
-    <p>
-      <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/txt/" target="_blank">TXT</a> |
-      <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/" target="_blank">XML-TEI</a>
-    </p>
-  </section>
+    {{/* Asumiendo que este código está dentro de una plantilla de página (single.html, etc.) */}}
+
+{{/* Sección de enlaces de descarga */}}
+<section class="mb-5" id="descargas">
+  <p>Descargar texto original en griego, con traducción y notas:</p>
+  {{/* Se obtiene el nombre base del archivo Markdown (ej: "tuc-1.1.md" -> "tuc-1.1")
+    y se usa para construir las rutas a los archivos TXT y XML.
+  */}}
+  {{ $fileName := .File.BaseFileName }}
+  <p>
+    <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/txt/{{ $fileName }}.txt" target="_blank">TXT</a> |
+    <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/{{ $fileName }}.xml" target="_blank">XML-TEI</a>
+  </p>
+</section>
+{{/* Fin de la sección de enlaces de descarga */}}
+{{/* Fin de la plantilla principal */}}
+
 {{ end }}
+  
