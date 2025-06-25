@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: eduardo-aleman/corpusabierto
+  branch: main
+  base_url: https://identity.decapcms.org
+  auth_endpoint: auth
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "chapters"
+    label: "Capítulos"
+    folder: "content/guerra-del-peloponeso"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Título del capítulo", name: "title", widget: "string" }
+      - { label: "Obra", name: "work_title", widget: "string", required: false }
+      - { label: "Libro", name: "book", widget: "string", required: false }
+      - { label: "Autor", name: "author", widget: "string", required: false }
+      - { label: "Traductor", name: "translator", widget: "string", required: false }
+      - { label: "Idioma original", name: "original_language", widget: "string", required: false }
+      - { label: "Texto original", name: "original_text", widget: "markdown", required: false }
+      - { label: "Traducción", name: "translated_text", widget: "markdown", required: false }
+      - { label: "Notas críticas", name: "notes_critical", widget: "markdown", required: false }
+      - { label: "Notas del traductor", name: "notes_translator", widget: "markdown", required: false }
