@@ -12,15 +12,15 @@
     </style>
   </head>
   <body>
-    <!-- This is the required container for the CMS interface -->
+    <!-- Decap CMS target element -->
     <div id="nc-root"></div>
 
     <script>
       window.CMS_MANUAL_INIT = true;
 
-      window.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("load", () => {
         if (typeof CMS === "undefined") {
-          document.body.innerHTML = "<h2>Error: CMS failed to load. Check the script source or network.</h2>";
+          document.body.innerHTML = "<h2>Error: CMS failed to load.</h2>";
         } else {
           CMS.init();
         }
