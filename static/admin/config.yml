@@ -16,8 +16,8 @@ collections:
     folder: "content/guerra-del-peloponeso"
     create: true
     slug: "{{slug}}"
-    format: "frontmatter"
     extension: "md"
+    format: "yaml"  # Optional — or remove this line
     fields:
       - { label: "Título del capítulo", name: "title", widget: "string" }
       - { label: "Obra", name: "work_title", widget: "string", required: false }
