@@ -9,7 +9,7 @@
         margin: 0;
       }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.1.5/dist/decap-cms.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3/dist/decap-cms.min.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
@@ -17,7 +17,7 @@
       window.CMS_MANUAL_INIT = true;
       window.addEventListener("load", function () {
         if (typeof CMS === "undefined") {
-          document.body.innerHTML = "<h2>Error: CMS not defined. Script was blocked or failed to load.</h2>";
+          document.body.innerHTML = "<h2>Error: CMS not defined. Check script version or CSP policy.</h2>";
         } else {
           CMS.init();
         }
