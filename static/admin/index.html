@@ -3,14 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <title>CorpusAbierto CMS</title>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@3.1.5/dist/decap-cms.min.js"></script>
   </head>
   <body>
     <script>
-      // Set the manual initialization flag
+      // Prevent auto-initialization until we're ready
       window.CMS_MANUAL_INIT = true;
-      // Initialize CMS after setting the flag
-      CMS.init();
+    </script>
+
+    <script>
+      // Wait for the CMS script to load fully before initializing
+      window.addEventListener('load', function () {
+        if (typeof CMS === "undefined") {
+          document.body.innerHTML = "<h2>Error: Decap CMS failed to load. Check script URL or network connection.</h2>";
+        } else {
+          CMS.init(); // Now safe to initialize
+        }
+      });
     </script>
   </body>
 </html>
