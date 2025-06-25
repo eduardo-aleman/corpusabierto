@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>CorpusAbierto CMS</title>
-    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+
+    <!-- Load Decap CMS from jsDelivr instead of unpkg -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.1.5/dist/decap-cms.min.js"></script>
   </head>
   <body>
     <script>
-      // Prevent auto-initialization until we're ready
+      // Prevent auto-initialization until library loads
       window.CMS_MANUAL_INIT = true;
-    </script>
 
-    <script>
-      // Wait for the CMS script to load fully before initializing
-      window.addEventListener('load', function () {
+      // Wait for DOM and script to be parsed
+      window.addEventListener('DOMContentLoaded', () => {
         if (typeof CMS === "undefined") {
-          document.body.innerHTML = "<h2>Error: Decap CMS failed to load. Check script URL or network connection.</h2>";
+          document.body.innerHTML = "<h2>Error: Decap CMS failed to load. Check the script source or network.</h2>";
         } else {
-          CMS.init(); // Now safe to initialize
+          CMS.init();
         }
       });
     </script>
