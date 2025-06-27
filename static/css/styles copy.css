@@ -1,0 +1,176 @@
+/* Archivo: static/css/styles.css */
+
+/* Variables globales */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #212529;
+  --color-border: #dee2e6;
+  --color-container-bg: #fafafa;
+  --color-highlight: #ffeb3b;
+  --color-link: #400a34;
+  --radius: 0.375rem;
+  --spacing: 1.5rem;
+}
+
+/* Reset ligero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía base */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Palabras interactivas */
+.word {
+  display: inline;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+.word:hover,
+.word:focus {
+  background-color: rgba(255, 235, 59, 0.3);
+}
+.highlight {
+  background-color: var(--color-highlight);
+  transition: background-color 0.2s ease;
+}
+
+/* Contenedores de texto (aplicado a #greekText y #spanishText) */
+.text-container {
+  background-color: var(--color-container-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: 2rem; /* Espaciado entre la caja de texto y lo que le siga */
+
+  /* *** MODIFICACIÓN CLAVE: Permite que el elemento se estire en un contenedor flex-column *** */
+  flex: 1;
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedores de notas (los que están debajo del texto principal) */
+.notes-container {
+  background-color: var(--color-container-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-top: var(--spacing); /* Corresponde a la clase mt-3 en el HTML */
+  margin-bottom: 2rem; /* Espaciado entre la caja de notas y lo que le siga */
+
+  /* *** MODIFICACIÓN CLAVE: Quitar display: block !important para que se comporte en flexbox *** */
+  /* NO se añade flex: 1; aquí, para que mantenga su altura de contenido natural */
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Si usas <p> dentro: restaura su margen */
+.text-container p,
+.notes-container p {
+  margin-bottom: 1rem;
+}
+
+/* Espaciado para listas */
+.text-container ul,
+.text-container ol,
+.notes-container ul,
+.notes-container ol {
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Convierte dos <br> consecutivos en un salto de párrafo con espacio */
+.text-container br + br,
+.notes-container br + br {
+  content: "";
+  display: block;
+  margin-bottom: var(--spacing);
+  line-height: 0;
+}
+
+/* Scrollbar personalizado (WebKit) */
+.text-container::-webkit-scrollbar,
+.notes-container::-webkit-scrollbar {
+  width: 8px;
+}
+.text-container::-webkit-scrollbar-track,
+.notes-container::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+.text-container::-webkit-scrollbar-thumb,
+.notes-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-container,
+  .notes-container {
+    padding: 1rem;
+    max-height: 50vh;
+  }
+}
+
+/* Accesibilidad: foco visible */
+.word:focus {
+  outline: 3px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+/* *** MODIFICACIÓN CLAVE: Eliminar esta anulación si existe y no es necesaria *** */
+/* Asegura que .flex-fill no recupere el flex original (si esa clase existiera en el HTML) */
+.text-container.flex-fill {
+  /* display: block !important; */ /* Comentar o eliminar */
+  /* flex: 0 1 auto !important; */ /* Comentar o eliminar */
+}
+
+/* --- REVISIÓN: Anular saltos de línea individuales en los contenedores de texto --- */
+/* Estas reglas deberían estar bien para tu propósito de resaltar palabras */
+.text-container br {
+  /* convierto cada <br> en un espacio en línea */
+  display: inline !important;
+  content: " " !important;
+  margin: 0 !important;
+  line-height: normal !important;
+}
+
+/* los dobles <br><br> vuelven a ser bloque y marcan párrafo */
+.text-container br + br {
+  display: block !important;
+  margin: var(--spacing) 0 !important;
+  line-height: normal !important;
+}
+/* --- Fin de anulación de saltos de línea individuales --- */
