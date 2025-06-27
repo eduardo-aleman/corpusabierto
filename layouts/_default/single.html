@@ -1,93 +1,12 @@
 {{ define "main" }}
-  {{/* Bloque de títulos ... */}}
-  <div class="mb-3">
-    <h1 class="display-4">{{ .Params.work_title | default .Site.Title }}</h1>
-    <h2 class="h2">{{ .Params.book }}</h2>
-    <p class="lead">{{ .Params.author | default "Autor Desconocido" }}</p>
-  </div>
-
-  {{/* Menú Desplegable */}}
-  {{ partial "chapter-dropdown.html" . }}
-
-  {{/* Estructura de Dos Columnas */}}
-  <div class="row align-items-stretch">
-    {{/* Columna Izquierda */}}
-    <div class="col-md-6 d-flex flex-column mb-4">
-      <h5>Texto original ({{ .Params.original_language | default "Griego" }})</h5>
-      <div id="greekText" class="text-container flex-fill">
-        {{/* 'original_text' en lugar de 'greek_text' según tu plantilla */}}
-        {{ .Params.original_text | markdownify }}
-        <div class="notes-container mt-3">
-          <h6>Notas críticas</h6>
-          {{/* Simplemente markdownify. Ya no necesita safeHTML. */}}
-          {{ .Params.alberti | markdownify }}
+<div class="container-wide page-content">
+    <article>
+        <header>
+            <h1>{{ .Title }}</h1>
+        </header>
+        <div class="content-body">
+            {{ .Content }}
         </div>
-      </div>
-    </div>
-
-    {{/* Columna Derecha */}}
-    <div class="col-md-6 d-flex flex-column mb-4">
-      <h5>Traducción (español)</h5>
-      <div id="spanishText" class="text-container flex-fill">
-        {{/* Si 'translation' también tiene Markdown, usa markdownify. */}}
-        {{/* Si contiene HTML que escribes a mano, déjalo como safeHTML. */}}
-        {{ .Params.translation | markdownify | safeHTML}}
-        <div class="notes-container mt-3">
-          <h6>Notas de {{ .Params.translator }}</h6>
-          {{/* Simplemente markdownify. Ya no necesita safeHTML. */}}
-          {{ .Params.notesEs | markdownify }}
-        </div>
-      </div>
-    </div>
-  </div>
-
-{{/* --- Bloque estático de Fuentes (idéntico en todos) --- */}}
-  <div class="mb-5">
-    <h3 id="fuentes">Fuentes</h3>
-
-    <h6>El texto en griego:</h6>
-    <p>
-      <a href="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3"
-         target="_blank">Perseus</a>
-    </p>
-
-    <h4>Notas críticas de G. B. Alberti</h4>
-      <p>(Consúltese G. B. Alberti, <em>Thucydidis
-          Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.
-        <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver
-          libro</a>.)</p>
-
-    <h6>La traducción al español:</h6>
-    <p>
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
-         target="_blank">archive.org</a>
-    </p>
-
-    <h6>Notas del traductor Juan José Torres Esbarranch:</h6>
-    <p>
-      Torres Esbarranch, Juan José, ed. and trans. Tucídides.  
-      <em>Historia de la guerra del Peloponeso</em>. Libros I-II. Madrid: Gredos, 1990.  
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
-         target="_blank">Ver libro</a>
-    </p>
-  </div>
-
-    {{/* Asumiendo que este código está dentro de una plantilla de página (single.html, etc.) */}}
-
-{{/* Sección de enlaces de descarga */}}
-<section class="mb-5" id="descargas">
-  <p>Descargar texto original en griego, con traducción y notas:</p>
-  {{/* Se obtiene el nombre base del archivo Markdown (ej: "tuc-1.1.md" -> "tuc-1.1")
-    y se usa para construir las rutas a los archivos TXT y XML.
-  */}}
-  {{ $fileName := .File.BaseFileName }}
-  <p>
-    <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/txt/{{ $fileName }}.txt" target="_blank">TXT</a> |
-    <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/{{ $fileName }}.xml" target="_blank">XML-TEI</a>
-  </p>
-</section>
-{{/* Fin de la sección de enlaces de descarga */}}
-{{/* Fin de la plantilla principal */}}
-
+    </article>
+</div>
 {{ end }}
-  

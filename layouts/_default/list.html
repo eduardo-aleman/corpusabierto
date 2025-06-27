@@ -1,22 +1,21 @@
 {{ define "main" }}
-  {{/* Título de la sección */}}
-  <h1 class="display-5">{{ .Title | humanize }}</h1>
+<div class="container-wide page-content">
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
 
-  {{/* Contenido libre de index.md (puede ser descripción, guía, etc.) */}}
-  {{ with .Content }}
-    <div class="mb-4">
-      {{ . }}
+    <div class="content-body">
+        <ul>
+            {{ $sortedPages := sort .RegularPages "Weight" }}
+            {{ $paginator := .Paginate $sortedPages }}
+            {{ range $paginator.Pages }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <p>{{ .Summary }}</p>
+            </li>
+            {{ end }}
+        </ul>
+        {{ partial "pagination.html" . }}
     </div>
-  {{ end }}
-
-  <p class="lead">Lista de capítulos disponibles en esta obra.</p>
-  <hr>
-
-  <div class="list-group">
-    {{ range .Pages.ByParam "order" }}
-      <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action">
-        {{ .Title }}
-      </a>
-    {{ end }}
-  </div>
+</div>
 {{ end }}

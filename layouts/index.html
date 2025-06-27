@@ -1,79 +1,26 @@
 {{ define "main" }}
-  <div class="mb-3">
-    <h1 class="display-4">{{ .Params.work_title | default "Historia de la Guerra del Peloponeso" }}</h1>
-    <h2 class="h2">{{ .Params.book }}</h2>
-    <p class="lead">{{ .Params.author | default "Tucídides" }}</p>
-  </div>
+<div class="container-wide">
+  <div class="info-grid">
+    {{/* Filtrar solo las páginas de la sección "features" */}}
+    {{ $pages := where .Site.RegularPages "Section" "features" }}
+    {{ $sortedPages := sort $pages "Weight" }}
 
- {{/* --- INICIO: Menú Desplegable Inteligente (con lógica para Home y Capítulo 1) --- */}}
-{{ partial "chapter-dropdown.html" . }}
-{{/* --- FIN: Menú Desplegable Inteligente --- */}}
-
-  {{/* --- Sección de Texto y Notas --- */}}
-
-  <div class="row align-items-stretch">
-    {{/* Columna Izquierda: Texto Griego y Notas Alberti */}}
-    <div class="col-md-6 d-flex flex-column mb-4">
-      <h5>Texto original ({{ .Params.original_language | default "Griego" }})</h5>
-      <div id="greekText" class="text-container flex-fill">
-        {{ .Params.greek_text | safeHTML }}
-        <div class="notes-container mt-3">
-          <h6>Notas críticas</h6>
-          {{ .Params.alberti | markdownify | safeHTML }}
+    {{/* Iterar sobre todas las páginas ordenadas */}}
+    {{ range $sortedPages }}
+      <div class="info-container">
+        <div class="info-header">
+          <h3>{{ .Title }}</h3>
+          <a href="#" class="expand-icon" title="Ver en pantalla completa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+            </svg>
+          </a>
+        </div>
+        <div class="info-content">
+          {{ .Content }}
         </div>
       </div>
-    </div>
-
-    {{/* Columna Derecha: Traducción y Notas Esbarranch */}}
-    <div class="col-md-6 d-flex flex-column mb-4">
-      <h5>Traducción (español)</h5>
-      <div id="spanishText" class="text-container flex-fill">
-        {{ .Params.translation | safeHTML }}
-        <div class="notes-container mt-3">
-          <h6>Notas de {{ .Params.translator }}</h6>
-          {{ .Params.notesEs | markdownify | safeHTML }}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {{/* --- Bloque estático de Fuentes (idéntico en todos) --- */}}
-  <div class="mb-5">
-    <h3 id="fuentes">Fuentes</h3>
-
-    <h6>El texto en griego:</h6>
-    <p>
-      <a href="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.1.1-1.1.3"
-         target="_blank">Perseus</a>
-    </p>
-
-    <h6>Ejemplos del aparato crítico de G. B. Alberti:</h6>
-    <p> 
-      Consúltese G. B. Alberti, <em>Thucydidis Historiae</em> Vol. 1, Libri 1-2, Istituto Poligrafico dello Stato, 1972.  
-      <a href="https://archive.org/details/thucydidis-historiae-vol.-i-libri-i-ii/" target="_blank">Ver libro</a>
-    </p>
-
-    <h6>La traducción al español:</h6>
-    <p>
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
-         target="_blank">archive.org</a>
-    </p>
-
-    <h6>Notas del traductor Juan José Torres Esbarranch:</h6>
-    <p>
-      Torres Esbarranch, Juan José, ed. and trans. Tucídides.  
-      <em>Historia de la guerra del Peloponeso</em>. Libros I-II. Madrid: Gredos, 1990.  
-      <a href="https://archive.org/details/tucidides.-historia-de-la-guerra-del-peloponeso-1.-libros-i-ii-g-1990/"
-         target="_blank">Ver libro</a>
-    </p>
-  </div>
-
-  {{/* Sección de enlaces de descarga */}}
-  <section class="mb-5" id="descargas">
-    <p>Descargar texto original en griego, con traducción y notas:</p>
-    <p>
-      <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/txt/tuc-1.1.txt" target="_blank">TXT</a> |
-      <a href="/guerra-del-peloponeso/formatos/tucidides/lib1/xml-tei/tuc-1.1.xml" target="_blank">XML-TEI</a>
-    </p>
-  </section>
+    {{ end }}
 {{ end }}
