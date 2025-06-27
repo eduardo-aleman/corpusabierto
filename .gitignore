@@ -27,7 +27,7 @@ yarn.lock
 npm-debug.log*
 # Ignore test output files
 test-output/
-# Ignore build artifacts
+# Ignore build artifacts and Hugo output
 build/
 # Ignore configuration files
 config.json

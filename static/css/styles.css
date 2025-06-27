@@ -1,145 +1,176 @@
-/* ==========================================================================
-   Custom Styles & Main Layout
-   ========================================================================== */
+/* Archivo: static/css/styles.css */
 
-/* --- 1. Global Variables (Dark Mode Ready) --- */
+/* Variables globales */
 :root {
-  --spacing: 1rem;
-  --radius: .5rem;
-
-  /* Light Theme Colors (Default) */
   --color-bg: #ffffff;
-  --color-container-bg: #fafafa;
+  --color-text: #212529;
   --color-border: #dee2e6;
-  --color-text-primary: #212529;
-  --color-text-secondary: #495057;
-  --color-shadow-light: rgba(0,0,0,0.04);
-  --color-shadow-dark: rgba(0,0,0,0.08);
+  --color-container-bg: #fafafa;
+  --color-highlight: #ffeb3b;
+  --color-link: #400a34;
+  --radius: 0.375rem;
+  --spacing: 1.5rem;
 }
 
-/* Dark Theme Colors (Activated by user's OS preference) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #121212;
-    --color-container-bg: #1e1e1e;
-    --color-border: #444;
-    --color-text-primary: #e9ecef;
-    --color-text-secondary: #adb5bd;
-    --color-shadow-light: rgba(0,0,0,0.2);
-    --color-shadow-dark: rgba(0,0,0,0.4);
-  }
+/* Reset ligero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* --- 2. General Styles --- */
-.navbar-logo {
-  height: 80px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-
-/* --- 3. Main Content Grid --- */
-.section-block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: calc(var(--spacing) * 1.5); /* Increased gap for better separation */
-  background-color: var(--color-container-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: calc(var(--spacing) * 1.5);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* --- 4. Inner Content Containers (Texto, Traducción, Notas) --- */
-.section-block .original-text-container,
-.section-block .translation-container,
-.section-block .critical-notes-section,
-.section-block .translator-notes-section {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  padding: var(--spacing) calc(var(--spacing) * 1.25);
-  border-radius: var(--radius);
-  min-height: 200px;
-  /* REMOVED fixed height for flexibility */
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  word-break: break-word;
-
-  /* IMPROVEMENT: Added subtle shadow for depth */
-  box-shadow: 0 1px 3px var(--color-shadow-light), 0 1px 2px var(--color-shadow-light);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.section-block .original-text-container:hover,
-.section-block .translation-container:hover,
-.section-block .critical-notes-section:hover,
-.section-block .translator-notes-section:hover {
-  box-shadow: 0 4px 8px var(--color-shadow-light), 0 2px 4px var(--color-shadow-dark);
-}
-
-/* --- 5. Container Titles --- */
-.section-block h4,
-.section-block h6 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 0.5rem;
-}
-
-.section-block h4 { font-size: 1.25rem; }
-.section-block h6 { font-size: 1rem; color: var(--color-text-secondary); }
-
-
-/* --- 6. Styling for Fetched Markdown Content ("Prose") --- */
-.original-text-container,
-.translation-container,
-.critical-notes-section,
-.translator-notes-section {
-  line-height: 1.7; /* Increased for better readability */
+/* Tipografía base */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
   font-size: 1rem;
-  color: var(--color-text-primary);
+  scroll-behavior: smooth;
 }
 
-.original-text-container p,
-.translation-container p,
-.critical-notes-section p,
-.translator-notes-section p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
-.original-text-container ul,
-.translation-container ul,
-.critical-notes-section ul,
-.translator-notes-section ul,
-.original-text-container ol,
-.translation-container ol,
-.critical-notes-section ol,
-.translator-notes-section ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+/* Palabras interactivas */
+.word {
+  display: inline;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+.word:hover,
+.word:focus {
+  background-color: rgba(255, 235, 59, 0.3);
+}
+.highlight {
+  background-color: var(--color-highlight);
+  transition: background-color 0.2s ease;
 }
 
-.original-text-container blockquote,
-.translation-container blockquote,
-.critical-notes-section blockquote,
-.translator-notes-section blockquote {
-  margin: 0 0 1rem 0;
-  padding: 0.75rem 1.25rem;
-  border-left: 4px solid var(--color-border);
+/* Contenedores de texto (aplicado a #greekText y #spanishText) */
+.text-container {
   background-color: var(--color-container-bg);
-  color: var(--color-text-secondary);
-  font-style: italic;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: 2rem; /* Espaciado entre la caja de texto y lo que le siga */
+
+  /* *** MODIFICACIÓN CLAVE: Permite que el elemento se estire en un contenedor flex-column *** */
+  flex: 1;
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
+/* Contenedores de notas (los que están debajo del texto principal) */
+.notes-container {
+  background-color: var(--color-container-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-top: var(--spacing); /* Corresponde a la clase mt-3 en el HTML */
+  margin-bottom: 2rem; /* Espaciado entre la caja de notas y lo que le siga */
 
-/* --- 7. Responsive: Stack columns on smaller screens --- */
-@media (max-width: 992px) { /* Changed to 992px to stack earlier */
-  .section-block {
-    grid-template-columns: 1fr; /* A single column */
+  /* *** MODIFICACIÓN CLAVE: Quitar display: block !important para que se comporte en flexbox *** */
+  /* NO se añade flex: 1; aquí, para que mantenga su altura de contenido natural */
+
+  /* Mantener para limitar la altura máxima y permitir el scroll */
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /* Asegura mismo ancho mínimo y máximo */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Si usas <p> dentro: restaura su margen */
+.text-container p,
+.notes-container p {
+  margin-bottom: 1rem;
+}
+
+/* Espaciado para listas */
+.text-container ul,
+.text-container ol,
+.notes-container ul,
+.notes-container ol {
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Convierte dos <br> consecutivos en un salto de párrafo con espacio */
+.text-container br + br,
+.notes-container br + br {
+  content: "";
+  display: block;
+  margin-bottom: var(--spacing);
+  line-height: 0;
+}
+
+/* Scrollbar personalizado (WebKit) */
+.text-container::-webkit-scrollbar,
+.notes-container::-webkit-scrollbar {
+  width: 8px;
+}
+.text-container::-webkit-scrollbar-track,
+.notes-container::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+.text-container::-webkit-scrollbar-thumb,
+.notes-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-container,
+  .notes-container {
+    padding: 1rem;
+    max-height: 50vh;
   }
 }
+
+/* Accesibilidad: foco visible */
+.word:focus {
+  outline: 3px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+/* *** MODIFICACIÓN CLAVE: Eliminar esta anulación si existe y no es necesaria *** */
+/* Asegura que .flex-fill no recupere el flex original (si esa clase existiera en el HTML) */
+.text-container.flex-fill {
+  /* display: block !important; */ /* Comentar o eliminar */
+  /* flex: 0 1 auto !important; */ /* Comentar o eliminar */
+}
+
+/* --- REVISIÓN: Anular saltos de línea individuales en los contenedores de texto --- */
+/* Estas reglas deberían estar bien para tu propósito de resaltar palabras */
+.text-container br {
+  /* convierto cada <br> en un espacio en línea */
+  display: inline !important;
+  content: " " !important;
+  margin: 0 !important;
+  line-height: normal !important;
+}
+
+/* los dobles <br><br> vuelven a ser bloque y marcan párrafo */
+.text-container br + br {
+  display: block !important;
+  margin: var(--spacing) 0 !important;
+  line-height: normal !important;
+}
+/* --- Fin de anulación de saltos de línea individuales --- */
