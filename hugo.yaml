@@ -41,7 +41,7 @@ menu:
       weight: 40
     - identifier: visualizations
       name: Visualizaciones
-      url: /#herramientas-y-descargas
+      url: /visualizaciones/
       weight: 50
     - identifier: github
       name: Ir a GitHub

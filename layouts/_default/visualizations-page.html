@@ -1,0 +1,26 @@
+{{/*
+  1. DEFINIMOS EL CONTENIDO PRINCIPAL (EL BLOQUE "main")
+*/}}
+{{ define "main" }}
+<div class="container-wide">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</div>
+{{ end }}
+
+
+{{/*
+  2. DEFINIMOS LOS ESTILOS ESPECÍFICOS PARA ESTA PÁGINA (EL BLOQUE "styles")
+*/}}
+{{ define "styles" }}
+  {{/* Ya no es necesario. Los estilos se han movido a la hoja principal de CSS. */}}
+{{ end }}
+
+
+{{/*
+  3. DEFINIMOS LOS SCRIPTS ESPECÍFICOS PARA ESTA PÁGINA (EL BLOQUE "scripts")
+*/}}
+{{ define "scripts" }}
+  {{/* Cargamos nuestro nuevo script de carga perezosa para las visualizaciones. */}}
+  <script defer src="{{ "/scripts/visualizations-loader.js" | relURL }}"></script>
+{{ end }}
