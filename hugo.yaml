@@ -11,7 +11,6 @@ pagination:
 markup:
   goldmark:
     renderer:
-      # Le dice a Hugo que confíe en el HTML dentro de los archivos de contenido.
       unsafe: true
 
 # ----------------------------------------------------
@@ -34,10 +33,6 @@ menu:
     - identifier: maps
       name: Mapas
       url: /mapas/
-      # url: /mapas/ # <-- CAMBIA ESTO si cambias la ruta del mapa
-      # Si cambias la ruta del mapa, asegúrate de actualizar el
-      # script en layouts/_default/map-page.html
-      # y el archivo de configuración de Leaflet en static/leaflet/
       weight: 40
     - identifier: visualizations
       name: Visualizaciones
@@ -45,12 +40,11 @@ menu:
       weight: 50
     - identifier: github
       name: Ir a GitHub
-      url: "https://github.com/eduardo-aleman/corpusabierto" # <-- CAMBIA ESTO
+      url: "https://github.com/eduardo-aleman/corpusabierto"
       weight: 60
 
 # ----------------------------------------------------
 # PARÁMETROS PARA ALMACENAR LOS ÍCONOS SVG
-# El | permite escribir el código SVG en múltiples líneas.
 # ----------------------------------------------------
 params:
   icons:

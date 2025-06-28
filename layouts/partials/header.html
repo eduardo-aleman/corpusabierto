@@ -22,12 +22,11 @@
       <ul>
         {{- range .Site.Menus.main -}}
           <li>
-            <a href="{{ .URL }}" title="{{ .Name }}"
-              {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+            <a href="{{ .URL }}" title="{{ .Name }}">
               {{ with (index $.Site.Params.icons .Identifier) }}
-                {{ . | safeHTML }}
+              {{ . | safeHTML }}
               {{ else }}
-                {{ .Name }}
+              {{ .Name }}
               {{ end }}
             </a>
           </li>
