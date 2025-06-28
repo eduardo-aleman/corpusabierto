@@ -10,7 +10,7 @@ Suscríbete para recibir noticias y actualizaciones. Rellena los campos a contin
 <div id="mailchimp-form-embed">
     
     <p style="text-align:center; padding: 40px; background-color:#f0f0f0; border: 2px dashed #ccc;">
-        <i>(Área para el formulario de Mailchimp)</i>
+        <i>(Próximamente: Área para el formulario)</i>
     </p>
 
 </div>
