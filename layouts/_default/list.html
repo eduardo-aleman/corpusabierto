@@ -3,18 +3,12 @@
 
     <header>
         <h1>{{ .Title }}</h1>
-        {{/* Muestra el contenido del _index.md de la sección, si existe */}}
         {{ with .Content }}
             <div class="content-body" style="border:none; padding: 1rem 0;">{{ . }}</div>
         {{ end }}
     </header>
 
-    {{/* --- LÓGICA INTELIGENTE --- */}}
-    
-    {{/* Condición: ¿Esta sección tiene páginas de contenido directo (como 1.md, 2.md)? */}}
     {{ if .RegularPages }}
-
-        {{/* Si la respuesta es SÍ (es un Capítulo), muestra el grid de componentes */}}
         <div class="info-grid">
             {{ $sortedPages := .RegularPages.ByWeight }}
             {{ range $sortedPages }}
@@ -22,7 +16,9 @@
                 <div class="info-header">
                   <h3>{{ .Title }}</h3>
                   <a href="#" class="expand-icon" title="Ver en pantalla completa">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
                     </svg>
                   </a>
@@ -32,25 +28,16 @@
                 </div>
               </div>
             {{ end }}
-        </div> {{/* <-- Fin del .info-grid */}}
-
-        {{/* Y después del grid, muestra la navegación entre capítulos */}}
-        {{ partial "chapter-nav.html" . }}
-
+        </div>
     {{ else }}
-
-        {{/* Si la respuesta es NO (es un Libro o Parte de un Libro), muestra una lista de sus sub-secciones */}}
         <div class="content-body">
             <ul>
                 {{ range .Sections.ByTitle }}
-                    <li>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </li>
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
         </div>
-
-    {{ end }} {{/* <-- Fin de la lógica inteligente if/else */}}
+    {{ end }}
 
 </div>
 {{ end }}

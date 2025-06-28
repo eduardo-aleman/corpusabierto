@@ -186,6 +186,8 @@ body {
     margin-top: 2rem;
 }
 
+/* ... (resto de tu CSS global se mantiene igual) ... */
+
 /* --- NAVEGACIÓN DE CAPÍTULOS (ANTERIOR/SIGUIENTE) --- */
 .chapter-navigation {
     display: flex;
@@ -235,8 +237,9 @@ body {
 .chapter-nav-link svg {
     width: 28px;
     height: 28px;
-    flex-shrink: 0; /* Evita que el ícono se encoja */
+    flex-shrink: 0;
 }
+
 
 /* --- ESTILOS PARA LA PÁGINA DE MAPAS --- */
 #corpus-map-container {
