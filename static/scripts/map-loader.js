@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     subdomains: "abcd"
   }).addTo(map);
 
+  // Objeto para agrupar los marcadores por tipo.
+  // Se añaden al mapa desde el principio.
   const featureGroups = {
     "Ciudad": L.featureGroup().addTo(map),
     "Región": L.featureGroup().addTo(map),
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Río": L.featureGroup().addTo(map)
   };
 
+  // Mapeo de tipo de lugar a ícono de Font Awesome
   const iconMapping = {
     'Ciudad': 'university',
     'Región': 'map',
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     'Río': 'tint'
   };
 
+  // Función para determinar el color del marcador según la frecuencia
   function getColorByFreq(freq) {
     if (freq >= 16) return 'red';
     if (freq >= 6) return 'orange';
@@ -33,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return 'blue';
   }
 
+  // Cargar los datos de las localizaciones desde el archivo JSON
   fetch('/data/locations.json')
     .then(response => {
       if (!response.ok) {
@@ -41,18 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then(data => {
+      // Iterar sobre cada localización en los datos
       data.forEach(location => {
         const color = getColorByFreq(location.freq);
-        const iconType = iconMapping[location.type] || 'circle';
+        const iconType = iconMapping[location.type] || 'circle'; // Ícono por defecto
+
+        // Crear el ícono personalizado con AwesomeMarkers
         const awesomeIcon = L.AwesomeMarkers.icon({
           markerColor: color,
           iconColor: 'white',
           icon: iconType,
           prefix: 'fa'
         });
+
+        // Crear el marcador y el popup
         const marker = L.marker([location.lat, location.lng], { icon: awesomeIcon });
         const popupContent = `<b>${location.name}</b> (${location.freq})<br>Tipo: ${location.type}`;
         marker.bindPopup(popupContent);
+
+        // Añadir el marcador al grupo de capas correspondiente
         if (featureGroups[location.type]) {
           featureGroups[location.type].addLayer(marker);
         }
@@ -64,8 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
         `<div class="alert alert-danger m-3">Error: No se ha podido cargar el mapa. Verifique la consola del navegador.</div>`;
     });
 
+  // --- SECCIÓN MODIFICADA ---
+  // Añadir el control de capas al mapa, posicionándolo en la esquina superior izquierda.
   L.control.layers(null, featureGroups, {
-    position: 'topright',
-    collapsed: false
+    position: 'topleft', // Cambiado de 'topright' a 'topleft'
+    collapsed: false // Mantiene la lista de capas desplegada por defecto
   }).addTo(map);
 });
