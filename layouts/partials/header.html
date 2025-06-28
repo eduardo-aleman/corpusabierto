@@ -1,35 +1,40 @@
 <header class="site-header">
-  <!-- Encabezado visible: título/logo -->
   <div class="container-wide header-content">
+
+    <!-- Título del sitio -->
     <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+
+    <!-- Checkbox oculto para activar/desactivar el menú móvil -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+    <!-- Fondo oscuro que se muestra al abrir el menú en móvil -->
+    <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
+
+    <!-- Icono hamburguesa -->
+    <label for="nav-toggle" class="menu-icon" aria-label="Abrir/cerrar menú">
+      <span class="menu-icon-bar"></span>
+      <span class="menu-icon-bar"></span>
+      <span class="menu-icon-bar"></span>
+    </label>
+
+    <!-- Menú principal (única instancia) -->
+    <nav class="main-nav">
+      <ul>
+        {{- range .Site.Menus.main -}}
+          <li>
+            <a href="{{ .URL }}" title="{{ .Name }}"
+              {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+              {{ with (index $.Site.Params.icons .Identifier) }}
+                {{ . | safeHTML }}
+              {{ else }}
+                {{ .Name }}
+              {{ end }}
+            </a>
+          </li>
+        {{- end -}}
+      </ul>
+    </nav>
+
   </div>
-
-  <!-- ✅ Checkbox oculto que controla el estado del menú -->
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-
-  <!-- ✅ Fondo oscuro que cierra el menú al hacer clic -->
-  <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
-
-  <!-- ✅ Botón hamburguesa accesible -->
-  <label for="nav-toggle" class="menu-icon" aria-label="Menú de navegación">
-    <span class="menu-icon-bar"></span>
-    <span class="menu-icon-bar"></span>
-    <span class="menu-icon-bar"></span>
-  </label>
-
-  <!-- ✅ Menú principal -->
-  <nav class="main-nav">
-    <ul>
-      {{- range .Site.Menus.main -}}
-        <li>
-          <a href="{{ .URL }}" title="{{ .Name }}"
-             {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
-            {{ $icon := index $.Site.Params.icons .Identifier }}
-            {{ $icon | safeHTML }}
-          </a>
-        </li>
-      {{- end -}}
-    </ul>
-  </nav>
 </header>
 <!-- Fin del encabezado -->
