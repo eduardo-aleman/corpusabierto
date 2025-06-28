@@ -584,15 +584,20 @@ body.modal-open {
   }
 
   .main-nav {
-    display: none;
-    width: 100%;
-    background-color: var(--bg-white);
-    position: absolute;
-    top: 100%; /* debajo del header */
-    left: 0;
-    padding: 1rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-white);
+  padding-top: 4.5rem; /* espacio para no tapar el encabezado */
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+  overflow-y: auto;
+}
+
 
   .main-nav ul {
     flex-direction: column;
