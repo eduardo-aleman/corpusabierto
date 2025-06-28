@@ -391,3 +391,54 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 }
+
+/* Estilos para la Página de Contacto */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#mailchimp-form-embed {
+    width: 100%;
+}
+
+#mailchimp-form-embed input[type="email"],
+#mailchimp-form-embed input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+#mailchimp-form-embed input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#mailchimp-form-embed input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-alternative {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.contact-alternative a {
+    color: #007bff;
+}
