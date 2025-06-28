@@ -1,7 +1,30 @@
-<div class="pre-footer-column">
-    <h4>Contacto</h4>
-    <p>
-        Visita la <a href="/contacto/">página de contacto</a> o escríbeme directamente a:<br>
-        <a href="mailto:aleman@ealeman.com">aleman@ealeman.com</a>
-    </p>
+{{/* Sección Pre-Footer dividida en tres partes  */}}
+<div class="pre-footer">
+    <div class="container-wide pre-footer-grid">
+        <div class="pre-footer-column">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="/">Próximamente</a></li>
+                <li><a href="/caracteristicas/">Características</a></li>
+                <li><a href="/acerca/">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="pre-footer-column">
+            <h4>Contacto</h4>
+            <p>
+                Visita la <a href="/contacto/">página de contacto</a> o escríbeme directamente a:<br>
+                <a href="mailto:aleman@ealeman.com">aleman@ealeman.com</a>
+            </p>
+        </div>
+        <div class="pre-footer-column">
+            <h4>Descargo de responsabilidad</h4>
+            <p>La información aquí contenida se ofrece únicamente con fines informativos.</p>
+        </div>
+    </div>
 </div>
+
+<footer class="site-footer">
+    <div class="container-wide">
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. Diseñado con <a href="https://gohugo.io/">Hugo</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 4.0</a>.</p>
+    </div>
+</footer>
