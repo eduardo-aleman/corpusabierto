@@ -16,5 +16,5 @@ Suscríbete para recibir noticias y actualizaciones. Rellena los campos a contin
 </div>
 
 <div class="contact-alternative">
-    <p>Para consultas directas, puedes visitar la <a href="https://ealeman.com/" target="_blank" rel="noopener noreferrer">página del autor</a> o escribir a <a href="mailto:aleman@ealeman.com">aleman@ealeman.com</a>.</p>
+    <p>Para consultas directas, puedes visitar la <a href="https://ealeman.com/" target="_blank" rel="noopener noreferrer">página del autor</a>.</p>
 </div>
