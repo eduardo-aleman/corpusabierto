@@ -1,12 +1,14 @@
 {{ define "main" }}
 <div class="container-wide page-content">
-    <article>
-        <header>
-            <h1>{{ .Title }}</h1>
-        </header>
-        <div class="content-body">
-            {{ .Content }}
-        </div>
-    </article>
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ if .Params.subtitle }}
+        <p class="subtitle">{{ .Params.subtitle }}</p>
+        {{ end }}
+    </header>
+
+    <div class="content-body">
+        {{ .Content }}
+    </div>
 </div>
 {{ end }}

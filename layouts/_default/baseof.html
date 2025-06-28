@@ -10,37 +10,44 @@
     <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | absURL }}" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | absURL }}">
     <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/icons/apple-touch-icon.png" | absURL }}"> {{/* Corregido para apuntar a la carpeta icons */}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/icons/apple-touch-icon.png" | absURL }}">
     <link rel="manifest" href="{{ "site.webmanifest" | absURL }}">
+       {{/* ... todo tu meta-contenido existente, como charset, viewport, title, etc. ... */}}
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    {{/* ... todos tus favicons y links de manifest ... */}}
+    
+    {{/* --- INICIO DEL CÓDIGO A AÑADIR --- */}}
+    {{/*
+      Este bloque permitirá a otras plantillas (como la del mapa)
+      inyectar sus propios archivos CSS específicos aquí.
+    */}}
+    {{ block "styles" . }}{{ end }}
+    {{/* --- FIN DEL CÓDIGO A AÑADIR --- */}}
 </head>
 <body>
     
     {{ partial "header.html" . }}
 
     <main>
-
+        {{/* Aquí se renderizará el contenido de las páginas (index.html, single.html, etc.) */}}
         {{ block "main" . }}{{ end }}
-        {{/* Aquí se renderizará el contenido de las páginas */}}
     </main>
 
     {{ partial "footer.html" . }}
 
-    <div id="modal-container" class="modal-container">
-        <div class="modal-content">
-            <button id="modal-close-btn" class="modal-close-btn" title="Cerrar">&times;</button>
-            <h2 id="modal-title"></h2>
-            <div id="modal-body"></div>
-        </div>
-    </div>
-    <script src="{{ "/scripts/main.js" | relURL }}"></script>
-{{- /* Bloque para cargar scripts específicos de la página si es necesario */ -}}
-{{ block "scripts" . }}
-  {{ with .Params.scripts }}
-    {{ range . }}
-      <script src="{{ . | relURL }}"></script>
+    {{/* --- SCRIPTS GLOBALES Y MODAL --- */}}
+    {{/* Movimos el contenido del modal y los scripts a su propio parcial para mayor orden. */}}
+    {{ partial "scripts.html" . }}
+
+    {{/* --- SCRIPTS ESPECÍFICOS DE LA PÁGINA --- */}}
+    {{/* Este bloque es excelente para cargar JS solo en las páginas que lo necesitan. */}}
+    {{ block "scripts" . }}
+      {{ with .Params.scripts }}
+        {{ range . }}
+          <script src="{{ . | relURL }}"></script>
+        {{ end }}
+      {{ end }}
     {{ end }}
-  {{ end }}
-{{ end }}
 
 </body>
 </html>

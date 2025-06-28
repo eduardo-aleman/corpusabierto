@@ -2,8 +2,20 @@
     <div class="container-wide header-content">
         <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
         
-        {{/* Espacio para un menú de navegación futuro */}}
-        <nav>
+        <nav class="main-nav">
+            <ul>
+                {{- range .Site.Menus.main -}}
+                    <li>
+                        <a href="{{ .URL }}" title="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                            {{/* LÍNEA CORREGIDA: Usamos $.Site para acceder al contexto global 
+                                desde dentro del bucle 'range'.
+                            */}}
+                            {{ $icon := index $.Site.Params.icons .Identifier }}
+                            {{ $icon | safeHTML }}
+                        </a>
+                    </li>
+                {{- end -}}
+            </ul>
         </nav>
     </div>
 </header>

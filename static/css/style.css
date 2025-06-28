@@ -1,3 +1,6 @@
+/* La regla @import va PRIMERO */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /* --- ESTILOS GLOBALES Y VARIABLES --- */
 :root {
     --primary-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -7,8 +10,6 @@
     --bg-light-gray: #f8f9fa; /* Fondo no blanco pero claro para contenedores */
     --border-color: #dee2e6;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
     background-color: var(--bg-white); /* Fondo completamente blanco */
@@ -26,7 +27,7 @@ body {
     padding: 0 2rem;
 }
 
-/* --- HEADER --- */
+/* --- HEADER Y NAVEGACIÓN --- */
 .site-header {
     background-color: var(--bg-white);
     border-bottom: 1px solid var(--border-color);
@@ -44,7 +45,39 @@ body {
     text-decoration: none;
 }
 
-/* --- GRID DE CONTENEDORES DE LA PORTADA (RESPONSIVE) --- */
+/* ESTILOS PARA LA NAVEGACIÓN PRINCIPAL CON ÍCONOS */
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Pone los elementos en fila */
+    align-items: center;
+    gap: 0.5rem; /* Espacio ligero entre íconos */
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem; /* Área de clic generosa */
+    color: var(--text-color);
+    background-color: transparent;
+    border-radius: 50%; /* Hace el fondo circular al pasar el cursor */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-light-gray); /* Un fondo sutil al pasar el cursor */
+}
+
+.main-nav svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* --- GRID DE CONTENEDORES DE LA PORTADA --- */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -52,31 +85,10 @@ body {
   padding: 4rem 0;
 }
 
-/* A partir del quinto contenedor, ocupar toda la fila */
+/* A partir del quinto contenedor, hacer que ocupe toda la fila (las 2 columnas) */
 .info-grid > .info-container:nth-child(n + 5) {
   grid-column: span 2;
 }
-
-/* Estilo responsive: una sola columna en pantallas pequeñas */
-@media (max-width: 768px) {
-  .info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* En móvil, los contenedores ya ocupan todo el ancho, así que no necesitas span */
-  .info-grid > .info-container:nth-child(n + 5) {
-    grid-column: auto;
-  }
-}
-
-/* Media Query para la responsividad */
-/* En pantallas con un ancho de 800px o menos, cambia a una sola columna */
-@media (max-width: 800px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 .info-container {
     background-color: var(--bg-light-gray);
@@ -110,7 +122,6 @@ body {
     flex-grow: 1;
 }
 
-/* Estilos para el contenido Markdown dentro del scroll */
 .info-content p:first-child { margin-top: 0; }
 .info-content p:last-child { margin-bottom: 0; }
 .info-content a { color: var(--primary-color); font-weight: 700; text-decoration: none; }
@@ -175,9 +186,100 @@ body {
     margin-top: 2rem;
 }
 
-/* --- ESTILOS PARA EL MODAL DE PANTALLA COMPLETA --- */
+/* --- NAVEGACIÓN DE CAPÍTULOS (ANTERIOR/SIGUIENTE) --- */
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
 
-/* Posicionamiento del ícono expandir */
+.chapter-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chapter-nav-link:hover {
+    background-color: var(--bg-light-gray);
+    border-color: #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.chapter-nav-link.next {
+    text-align: right;
+}
+
+.chapter-nav-link div {
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter-nav-link span {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.chapter-nav-link strong {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.chapter-nav-link svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0; /* Evita que el ícono se encoja */
+}
+
+/* --- ESTILOS PARA LA PÁGINA DE MAPAS --- */
+#corpus-map-container {
+    position: relative;
+}
+
+#corpus-map {
+    height: 650px;
+    width: 100%;
+    background-color: var(--bg-light-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+#map-legend {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 800;
+}
+
+#map-legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#map-legend li {
+    margin-bottom: 0.25rem;
+}
+
+#map-legend .fa {
+    margin-right: 5px;
+}
+
+
+/* --- ESTILOS PARA EL MODAL DE PANTALLA COMPLETA --- */
 .expand-icon {
     position: absolute;
     top: 1rem;
@@ -190,7 +292,6 @@ body {
     color: var(--primary-color);
 }
 
-/* Contenedor principal del modal (la capa oscura) */
 .modal-container {
     position: fixed;
     top: 0;
@@ -206,13 +307,11 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Clase para mostrar el modal */
 .modal-container.is-visible {
     display: flex;
     opacity: 1;
 }
 
-/* Ventana de contenido del modal */
 .modal-content {
     background-color: var(--bg-white);
     padding: 2rem 3rem;
@@ -225,7 +324,6 @@ body {
     flex-direction: column;
 }
 
-/* Botón de cierre */
 .modal-close-btn {
     position: absolute;
     top: 1rem;
@@ -252,23 +350,16 @@ body {
     flex-grow: 1; /* Ocupa el espacio restante */
 }
 
-/* Evita el scroll del body cuando el modal está abierto */
 body.modal-open {
     overflow: hidden;
 }
 
-/* La sección fuentes y descargas */
+/* --- ESTILOS PARA LA SECCIÓN DE FUENTES Y DESCARGAS --- */
 .fuentes-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
-  }
-
-  @media (max-width: 768px) {
-    .fuentes-grid {
-      grid-template-columns: 1fr; /* Colapsa a una sola columna en móviles */
-    }
   }
 
   .fuentes-grid h3, .fuentes-grid h4 {
@@ -280,3 +371,23 @@ body.modal-open {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
   }
+
+/* --- MEDIA QUERIES PARA RESPONSIVIDAD --- */
+
+/* En pantallas con un ancho de 800px o menos */
+@media (max-width: 800px) {
+  /* El grid principal de la portada cambia a una sola columna */
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* La regla de 'span 2' ya no es necesaria en una sola columna */
+  .info-grid > .info-container:nth-child(n + 5) {
+    grid-column: auto;
+  }
+
+  /* El grid de la sección "Fuentes" también cambia a una sola columna */
+  .fuentes-grid {
+    grid-template-columns: 1fr;
+  }
+}
