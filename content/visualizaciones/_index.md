@@ -1,3 +1,3 @@
 ---
-title: "Árboles genealógicos"
+title: "Visualizaciones"
 ---
