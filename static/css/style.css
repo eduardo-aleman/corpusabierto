@@ -305,9 +305,10 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
+/* Eliminada:
 .chapter-nav-link.next {
     text-align: right;
-}
+} */
 
 .chapter-nav-link div {
     display: flex;
@@ -329,6 +330,37 @@ body {
     height: 28px;
     flex-shrink: 0; /* Evita que el ícono se encoja */
 }
+
+/* --- TÍTULOS DE CAPÍTULOS --- */
+.chapter-title {
+  width: auto;
+  max-width: 100%;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: visible;
+}
+
+/* --- ENLACE CONTEXTUAL EN LIBROS Y CAPÍTULOS --- */
+.libro-header-link {
+  margin: 2rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #f5f5f5;
+  border-left: 4px solid var(--primary-color, #007bff);
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.libro-header-link a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.libro-header-link a:hover {
+  text-decoration: underline;
+}
+
 
 /* --- ESTILOS PARA LA PÁGINA DE MAPAS --- */
 #corpus-map-container {
@@ -657,3 +689,93 @@ body.modal-open {
     font-size: 1.6rem;
   }
 }
+
+.chapter-title {
+  display: block;
+  width: 220px;      /* o el valor que necesites para alinear */
+  max-width: 100%;
+  line-height: 1.2;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+/* === AJUSTES DE ESPACIADO VERTICAL EN CABECERAS === */
+
+/* Reduce espacio después del encabezado del sitio */
+.site-header {
+  margin-bottom: 0;
+}
+
+/* Reduce espacio antes del breadcrumb */
+.libro-header-link {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+/* Reduce espacio antes del título principal */
+.page-content header {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-content h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Opcional: subtítulo con menor margen */
+.page-content .subtitle {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  color: #666;
+}
+
+/* --- AJUSTES DE ESPACIADO VERTICAL EN CABECERAS --- */
+
+/* Reduce espacio después del encabezado del sitio */
+.site-header {
+  margin-bottom: 0.5rem;  /* Reduce espacio debajo del header */
+}
+
+/* Reduce espacio antes del breadcrumb */
+.libro-header-link {
+  margin-top: 0.25rem;    /* Espacio superior más pequeño */
+  margin-bottom: 0.25rem; /* Espacio inferior reducido */
+  font-size: 1rem;        /* Reduce ligeramente el tamaño de la fuente */
+  color: var(--text-color);
+}
+
+/* Reduce espacio antes del título principal */
+.page-content header {
+  margin-top: 0.5rem;     /* Reduce espacio superior */
+  margin-bottom: 0.5rem;  /* Reduce espacio inferior */
+}
+
+.page-content h1 {
+  margin-top: 0.5rem;     /* Reduce espacio superior */
+  margin-bottom: 0.5rem;  /* Reduce espacio inferior */
+}
+
+/* Opcional: subtítulo con menor margen */
+.page-content .subtitle {
+  margin-top: 0.25rem;    /* Reduce espacio superior */
+  margin-bottom: 0.75rem; /* Reduce espacio inferior */
+  color: #666;
+}
+
+/* Ajusta el margen de la navegación por capítulos */
+.chapter-navigation {
+    margin-top: 1.5rem;  /* Aumenta este valor si deseas más espacio */
+    margin-bottom: 1.5rem;
+}
+
+/* Ajusta el margen del breadcrumb */
+.libro-header-link {
+    margin-top: 1.5rem;  /* Aumenta este valor si deseas más espacio */
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+

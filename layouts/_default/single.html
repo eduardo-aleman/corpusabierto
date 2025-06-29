@@ -1,17 +1,22 @@
 {{ define "main" }}
 <div class="container-wide page-content">
-    <header>
-        <h1>{{ .Title }}</h1>
-        {{ if .Params.subtitle }}
-        <p class="subtitle">{{ .Params.subtitle }}</p>
-        {{ end }}
-    </header>
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="subtitle">{{ .Params.subtitle }}</p>
+    {{ end }}
+  </header>
 
-    <div class="content-body">
-        {{ .Content }}
-    </div>
+  {{ if .IsSection }}
+  {{ partial "chapter-nav.html" . }}
+  {{ end }}
 
-    {{ partial "chapter-nav.html" . }}
+  <div class="content-body">
+    {{ .Content }}
+  </div>
 
+  {{ if .IsSection }}
+  {{ partial "chapter-nav.html" . }}
+  {{ end }}
 </div>
 {{ end }}

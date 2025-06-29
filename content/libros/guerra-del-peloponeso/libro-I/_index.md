@@ -1,4 +1,4 @@
 ---
-title: "ΘΟΥΚΥΔΙΔΟΥ ἹΣΤΟΡΙΩΝ > Libro I"
+title: "Libro I"
 weight: 2
 ---

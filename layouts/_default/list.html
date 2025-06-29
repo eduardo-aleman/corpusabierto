@@ -1,8 +1,6 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
-  {{ partial "chapter-nav.html" . }}
-
   <header>
     <h1>{{ .Title }}</h1>
     {{ with .Params.subtitle }}
@@ -45,8 +43,6 @@
       </ul>
     </div>
   {{ end }}
-
-  {{ partial "chapter-nav.html" . }}
 
 </div>
 {{ end }}

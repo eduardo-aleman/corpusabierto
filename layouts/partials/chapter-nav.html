@@ -1,56 +1,49 @@
-{{/* Verifica que estamos en una sección (es decir, un _index.md de capítulo) */}}
-{{ if .IsSection }}
+{{ $capitulo := . }}
+{{ $libro := .Parent }}
 
-  {{ $capitulo := . }}
-  {{ $libro := .Parent }}
-  {{ $esLibro := and $libro (strings.HasPrefix $libro.RelPermalink "/libros/") }}
+{{ $esLibro := and $libro (strings.HasPrefix $libro.RelPermalink "/libros/") }}
 
-  {{ if $esLibro }}
+{{ if and $esLibro ($libro.Sections) }}
+  {{ $capitulos := $libro.Sections.ByWeight }}
+  {{ $index := -1 }}
 
-    {{ $capitulos := $libro.Sections.ByWeight }}
-    {{ $index := -1 }}
+  {{ range $i, $c := $capitulos }}
+    {{ if eq $c.RelPermalink $capitulo.RelPermalink }}
+      {{ $index = $i }}
+    {{ end }}
+  {{ end }}
 
-    {{ range $i, $c := $capitulos }}
-      {{ if eq $c.RelPermalink $capitulo.RelPermalink }}
-        {{ $index = $i }}
-      {{ end }}
+  {{ if ge $index 0 }}
+  <nav class="chapter-navigation">
+    {{ with index $capitulos (sub $index 1) }}
+    <a href="{{ .Permalink }}" class="chapter-nav-link prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+           viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"/>
+        <polyline points="12 19 5 12 12 5"/>
+      </svg>
+      <div>
+        <span>Capítulo anterior:</span>
+        <div class="chapter-title"><strong>{{ .Title }}</strong></div>
+      </div>
+    </a>
     {{ end }}
 
-    {{ if ge $index 0 }}
-    <nav class="chapter-navigation">
-
-      {{ with index $capitulos (sub $index 1) }}
-      <a href="{{ .Permalink }}" class="chapter-nav-link prev">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-             viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="19" y1="12" x2="5" y2="12"/>
-          <polyline points="12 19 5 12 12 5"/>
-        </svg>
-        <div>
-          <span>Capítulo anterior:</span>
-          <strong>{{ .Title }}</strong>
-        </div>
-      </a>
-      {{ end }}
-
-      {{ with index $capitulos (add $index 1) }}
-      <a href="{{ .Permalink }}" class="chapter-nav-link next">
-        <div>
-          <span>Capítulo siguiente:</span>
-          <strong>{{ .Title }}</strong>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-             viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"/>
-          <polyline points="12 5 19 12 12 19"/>
-        </svg>
-      </a>
-      {{ end }}
-
-    </nav>
+    {{ with index $capitulos (add $index 1) }}
+    <a href="{{ .Permalink }}" class="chapter-nav-link next">
+      <div>
+        <span>Capítulo siguiente:</span>
+        <div class="chapter-title"><strong>{{ .Title }}</strong></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+           viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
     {{ end }}
-
+  </nav>
   {{ end }}
 {{ end }}

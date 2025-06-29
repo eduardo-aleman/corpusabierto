@@ -1,0 +1,27 @@
+{{ if strings.HasPrefix .RelPermalink "/libros/" }}
+  <div class="libro-header-link">
+
+    <a href="{{ site.BaseURL }}">CorpusAbierto</a>
+
+    {{ $librosURL := "/libros/" }}
+    {{ $esLibrosRoot := eq .RelPermalink $librosURL }}
+    {{ $esLibro := and .IsSection (strings.HasPrefix .RelPermalink "/libros/") (not .Parent) }}
+    {{ $esCapitulo := and .IsSection .Parent (strings.HasPrefix .Parent.RelPermalink "/libros/") }}
+
+    {{ if $esLibrosRoot }}
+      <span> &gt; </span>
+      <strong>Libros</strong>
+
+    {{ else if $esLibro }}
+      <span> &gt; </span>
+      <strong>{{ .Title }}</strong>
+
+    {{ else if $esCapitulo }}
+      <span> &gt; </span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      <span> &gt; </span>
+      <strong>{{ .Title }}</strong>
+    {{ end }}
+
+  </div>
+{{ end }}
