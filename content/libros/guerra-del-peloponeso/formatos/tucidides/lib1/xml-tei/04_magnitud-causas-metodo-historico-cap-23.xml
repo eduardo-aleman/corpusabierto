@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulo 23</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Fuente del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
+        </respStmt>
+        <respStmt>
+          <resp>Fuente de la traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación de textos</resp>
+          <name>CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-29">29 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es"> Esta obra está bajo
+            una Licencia Creative Commons Atribución 4.0 Internacional. </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="grc_src">
+          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory
+          Crane. Disponible en <ref
+            target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.23">Scaife
+          Viewer</ref>. </bibl>
+        <bibl xml:id="trans_src"> Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides.
+          Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-29" who="#CorpusAbierto">Creación del archivo para el capítulo 23
+        con segmentación y alineación completa.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="chapter" n="23">
+        <div type="edition" xml:lang="grc">
+          <ab xml:id="grc-1.23.1">τῶν δὲ πρότερον ἔργων μέγιστον ἐπράχθη τὸ Μηδικόν, καὶ τοῦτο ὅμως δυοῖν ναυμαχίαιν καὶ πεζομαχίαιν ταχεῖαν τὴν κρίσιν ἔσχεν. τούτου δὲ τοῦ πολέμου μῆκός τε μέγα προύβη, παθήματά τε ξυνηνέχθη γενέσθαι ἐν αὐτῷ τῇ Ἑλλάδι οἷα οὐχ ἕτερα ἐν ἴσῳ χρόνῳ.</ab>
+          <ab xml:id="grc-1.23.2">οὔτε γὰρ πόλεις τοσαίδε ληφθεῖσαι ἠρημώθησαν, αἱ μὲν ὑπὸ βαρβάρων, αἱ δ’ ὑπὸ σφῶν αὐτῶν ἀντιπολεμούντων (εἰσὶ δ’ αἳ καὶ οἰκήτορας μετέβαλον ἁλισκόμεναι), οὔτε φυγαὶ τοσαίδε ἀνθρώπων καὶ φόνος, ὁ μὲν κατ’ αὐτὸν τὸν πόλεμον, ὁ δὲ διὰ τὸ στασιάζειν.</ab>
+          <ab xml:id="grc-1.23.3">τά τε πρότερον ἀκοῇ μὲν λεγόμενα, ἔργῳ δὲ σπανιώτερον βεβαιούμενα οὐκ ἄπιστα κατέστη, σεισμῶν τε πέρι, οἳ ἐπὶ πλεῖστον ἅμα μέρος γῆς καὶ ἰσχυρότατοι οἱ αὐτοὶ ἐπέσχον, ἡλίου τε ἐκλείψεις, αἳ πυκνότεραι παρὰ τὰ ἐκ τοῦ πρὶν χρόνου μνημονευόμενα ξυνέβησαν, αὐχμοί τε ἔστι παρ’ οἷς μεγάλοι καὶ ἀπ’ αὐτῶν καὶ λιμοὶ καὶ ἡ οὐχ ἥκιστα βλάψασα καὶ μέρος τι φθείρασα ἡ λοιμώδης νόσος· ταῦτα γὰρ πάντα μετὰ τοῦδε τοῦ πολέμου ἅμα ξυνεπέθετο.</ab>
+          <ab xml:id="grc-1.23.4">ἤρξαντο δὲ αὐτοῦ Ἀθηναῖοι καὶ Πελοποννήσιοι λύσαντες τὰς τριακοντούτεις σπονδὰς αἳ αὐτοῖς ἐγένοντο μετὰ Εὐβοίας ἅλωσιν.</ab>
+          <ab xml:id="grc-1.23.5">διότι δ’ ἔλυσαν, τὰς αἰτίας προύγραψα πρῶτον καὶ τὰς διαφοράς, τοῦ μή τινα ζητῆσαί ποτε ἐξ ὅτου τοσοῦτος πόλεμος τοῖς Ἕλλησι κατέστη.</ab>
+          <ab xml:id="grc-1.23.6">τὴν μὲν γὰρ ἀληθεστάτην πρόφασιν, ἀφανεστάτην δὲ λόγῳ, τοὺς Ἀθηναίους ἡγοῦμαι μεγάλους γιγνομένους καὶ φόβον παρέχοντας τοῖς Λακεδαιμονίοις ἀναγκάσαι ἐς τὸ πολεμεῖν· αἱ δ’ ἐς τὸ φανερὸν λεγόμεναι αἰτίαι αἵδ’ ἦσαν ἑκατέρων, ἀφ’ ὧν λύσαντες τὰς σπονδὰς ἐς τὸν πόλεμον κατέστησαν.</ab>
+        </div>
+        <div type="translation" xml:lang="es">
+          <ab corresp="#grc-1.23.1">De los hechos anteriores el más importante<note n="157"/> fue la guerra contra los medos, a pesar de que ésta se decidió rápidamente en dos batallas navales y dos terrestres<note n="158"/>. La duración de esta guerra nuestra, por el contrario, ha ido mucho más allá, y ha ocurrido que en su transcurso se han producido en Grecia desastres sin parangón en un período igual.</ab>
+          <ab corresp="#grc-1.23.2">Nunca tantas ciudades fueron tomadas y asoladas, unas por los bárbaros<note n="159"/> y otras por los mismos griegos<note n="160"/> luchando unos contra otros (algunas hay incluso que cambiaron de habitantes al ser conquistadas)<note n="161"/>; nunca tampoco había habido tantos destierros y tanta mortandad, bien en la misma guerra bien a causa de las luchas civiles.</ab>
+          <ab corresp="#grc-1.23.3">E historias que antes refería la tradición, pero que raramente encontraban una confirmación en la realidad, dejaron de resultar inverosímiles: historias acerca de terremotos<note n="162"/>, que afectaron a la vez a extensas regiones y que fueron muy violentos; eclipses de sol<note n="163"/>, que ocurrieron con mayor frecuencia de lo que se recordaba en tiempos pasados; y grandes sequías en algunas tierras y hambres como secuela, y, en fin, la calamidad que no menos daños causó y que destruyó a una parte de la población, la peste<note n="164"/>.</ab>
+          <ab corresp="#grc-1.23.4">Todos estos males cayeron sobre Grecia junto con esta guerra. La comenzaron los atenienses y los peloponesios al romper el tratado de paz de treinta años que habían concertado después de la conquista de Eubea<note n="165"/>.</ab>
+          <ab corresp="#grc-1.23.5">Para explicar por qué rompieron he expuesto en primer lugar las razones de esta ruptura y las diferencias que la ocasionaron, a fin de que nunca nadie se pregunte por qué se produjo entre los griegos una guerra tan importante<note n="166"/>.</ab>
+          <ab corresp="#grc-1.23.6">La causa más verdadera<note n="167"/>, aunque la que menos se manifiesta en las declaraciones<note n="168"/>, pienso que la constituye el hecho de que los atenienses al hacerse poderosos e inspirar miedo a los lacedemonios les obligaron a luchar. Pero las razones declaradas públicamente, por las cuales rompieron el tratado y entraron en guerra, fueron las siguientes por parte de cada bando.</ab>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
