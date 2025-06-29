@@ -22,6 +22,12 @@ Es posible que las páginas hospedadas en **GitHub Pages** (el servicio que aloj
 
 Nuestro sitio puede contener enlaces a otros sitios web. **No nos hacemos responsables de las prácticas de privacidad de esos sitios**. Te recomendamos revisar sus políticas de privacidad al visitarlos.
 
+## Servidor de Discord
+
+Contamos con un servidor oficial de Discord para la comunidad de **CorpusAbierto**: [https://discord.gg/FgXNhyjRG3](https://discord.gg/FgXNhyjRG3). La participación en este servidor es completamente opcional.
+
+Ten en cuenta que el uso de Discord está sujeto a sus propios términos y políticas de privacidad. **No tenemos acceso a los datos personales recopilados por Discord**, ni los utilizamos fuera de dicha plataforma. Para más información, consulta la [Política de Privacidad de Discord](https://discord.com/privacy).
+
 ## Cambios en la Política de Privacidad
 
 Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en esta página, con la fecha de la última actualización al final de este documento.
@@ -30,4 +36,4 @@ Si tienes alguna pregunta sobre esta política de privacidad, no dudes en contac
 
 ---
 
-**CorpusAbierto** - Un Proyecto Personal de Humanidades Digitales
+**CorpusAbierto** – Un Proyecto Personal de Humanidades Digitales
