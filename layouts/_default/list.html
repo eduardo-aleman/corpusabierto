@@ -37,7 +37,7 @@
   {{ else }}
     <div class="content-body">
       <ul>
-        {{ range .Sections.ByTitle }}
+        {{ range .Sections.ByWeight }}
           <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
