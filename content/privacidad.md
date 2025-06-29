@@ -30,4 +30,4 @@ Si tienes alguna pregunta sobre esta política de privacidad, no dudes en contac
 
 ---
 
-**CorpusAbierto** - Humanidades Digitales
+**CorpusAbierto** - Un Proyecto Personal de Humanidades Digitales
