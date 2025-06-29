@@ -1,5 +1,45 @@
 {{ define "main" }}
 <div class="container-wide">
+
+  <!-- Sección de introducción en dos columnas -->
+  <section class="intro-grid">
+    <div class="intro-left">
+      <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="vertical-align: middle; margin-right: 0.5rem;">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20"/>
+          <path d="M6.5 7v10"/>
+          <path d="M20 4v16"/>
+        </svg>
+        Bienvenido a CorpusAbierto
+      </h2>
+      <p>
+        Este sitio reúne una colección de textos clásicos en su idioma original junto con traducciones y herramientas para la lectura comparada. Las principales secciones del sitio incluyen:
+      </p>
+      <ul>
+        <li><strong>Índice de Libros</strong>: donde podrás explorar las obras disponibles por autor, título y estructura capitular.</li>
+        <li><strong>Mapas</strong>: con visualizaciones geográficas de los lugares mencionados en las obras.</li>
+        <li><strong>Visualizaciones</strong>: gráficas interactivas para el análisis de los textos.</li>
+        <li><strong>Acerca de</strong> y <strong>Contacto</strong>: información sobre el proyecto y cómo comunicarte.</li>
+      </ul>
+      <p>
+        Para comenzar, puedes hacer clic en <a href="/libros/">Índice de Libros</a> en el menú superior. Allí podrás seleccionar una obra y navegar por sus capítulos. También puedes explorar otras funcionalidades desde el mismo menú.
+      </p>
+    </div>
+    <div class="intro-right">
+      <h3>Obras disponibles</h3>
+      <p><em>Historia de la Guerra del Peloponeso</em> de Tucídides</p>
+      <p><em>Anales</em> de Tácito</p>
+    </div>
+  </section>
+
+      <div style="text-align: center;">Ejemplo de la página del Capítulo primero del Libro I de la Historia de la Guerra del Peloponeso de Tucídides.<p>&darr;</p></div>
+
+  
+  <!-- Grid de características -->
   <div class="info-grid">
     {{/* Filtrar solo las páginas de la sección "features" */}}
     {{ $pages := where .Site.RegularPages "Section" "features" }}

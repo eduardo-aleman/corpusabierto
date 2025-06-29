@@ -573,3 +573,87 @@ body.modal-open {
   height: 100%;
   border: 0;
 }
+/* === Introducción en dos columnas (index.html) === */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  background-color: var(--bg-light-gray);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+  max-width: 1200px;
+  color: var(--text-color);
+}
+
+.intro-left {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.intro-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro-left ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.intro-left ul li {
+  margin-bottom: 0.5rem;
+}
+
+.intro-left a {
+  color: var(--primary-color);
+  text-decoration: underline dotted;
+  transition: color 0.2s ease-in-out;
+}
+
+.intro-left a:hover {
+  color: #0056b3;
+}
+
+.intro-right {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.intro-right h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* === Versión responsiva para móviles === */
+@media (max-width: 800px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .intro-right {
+    margin-top: 2rem;
+  }
+
+  .intro-left h2 {
+    font-size: 1.6rem;
+  }
+}
