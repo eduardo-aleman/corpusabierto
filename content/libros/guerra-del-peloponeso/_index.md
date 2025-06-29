@@ -3,7 +3,7 @@ title: "Historia de la Guerra del Peloponeso"
 listable: true
 ---
 
-## [Continuar al Libro I](/libros/guerra-del-peloponeso/libro-I/)
+## [Continuar al Libro I]({{< relref "libro-I/_index.md" >}})
 
 <br />
 
