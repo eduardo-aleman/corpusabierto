@@ -1,43 +1,52 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
-    <header>
-        <h1>{{ .Title }}</h1>
-        {{ with .Content }}
-            <div class="content-body" style="border:none; padding: 1rem 0;">{{ . }}</div>
-        {{ end }}
-    </header>
+  {{ partial "chapter-nav.html" . }}
 
-    {{ if .RegularPages }}
-        <div class="info-grid">
-            {{ $sortedPages := .RegularPages.ByWeight }}
-            {{ range $sortedPages }}
-              <div class="info-container">
-                <div class="info-header">
-                  <h3>{{ .Title }}</h3>
-                  <a href="#" class="expand-icon" title="Ver en pantalla completa">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-                    </svg>
-                  </a>
-                </div>
-                <div class="info-content">
-                  {{ .Content }}
-                </div>
-              </div>
-            {{ end }}
-        </div>
-    {{ else }}
-        <div class="content-body">
-            <ul>
-                {{ range .Sections.ByTitle }}
-                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="subtitle">{{ . }}</p>
     {{ end }}
+
+    {{ with .Content }}
+      <div class="content-body" style="border:none; padding: 1rem 0;">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+
+  {{ if .RegularPages }}
+    <div class="info-grid">
+      {{ range .RegularPages.ByWeight }}
+        <div class="info-container" id="{{ .File.BaseFileName }}">
+          <div class="info-header">
+            <h3>{{ .Title }}</h3>
+            <a href="#" class="expand-icon" title="Ver en pantalla completa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </a>
+          </div>
+          <div class="info-content">
+            {{ .Content }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="content-body">
+      <ul>
+        {{ range .Sections.ByTitle }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+  {{ partial "chapter-nav.html" . }}
 
 </div>
 {{ end }}
