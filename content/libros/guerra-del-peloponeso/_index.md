@@ -2,12 +2,6 @@
 title: "Historia de la Guerra del Peloponeso"
 listable: true
 ---
-
-## [Continuar al Libro I]({{< relref "libro-I/_index.md" >}})
-## [Continuar al Libro II]({{< relref "libro-II/_index.md" >}})
-
-<br />
-
 ### Introducción
 
 La obra de Tucídides sobre la Guerra del Peloponeso es un relato histórico que atesora una visión profunda de contenido realista acerca de la naturaleza humana, la lógica del poder político, y el rol que juega el azar en la historia. La complejidad del pensamiento de Tucídides y el uso que hace este de elaboradas técnicas literarias, además del estricto uso de la cronología (a expensas de la orientación geográfica), demanda, como se ha de comprobar, de una lectura activa. En aras de orientar al lector y a manera de preámbulo, a continuación se presenta un repaso de la organización narrativa por libros, seguido de un análisis de la estructura literaria (discursos, digresiones, simetrías y encuadres narrativos) y de los grandes temas que atraviesan la obra. Finalmente, se incluye una tabla resumen que relaciona cada libro con sus eventos principales, recursos literarios destacados y temas tratados.
