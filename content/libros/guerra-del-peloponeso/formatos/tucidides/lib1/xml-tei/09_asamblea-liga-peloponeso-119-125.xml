@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 89-118</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>, <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed.
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2).
+          <publisher>Istituto Poligrafico dello Stato</publisher>,
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">Generación del archivo TEI para los capítulos 89-118 a partir de texto plano, aplicando la estructura canónica.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="89">
+          <linkGrp type="alignment">
+            <link target="#t89_1 #w89_1"/>
+            <link target="#t89_2 #w89_2"/>
+            <link target="#t89_3 #w89_3"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="w89_1">οἱ γὰρ Ἀθηναῖοι τρόπῳ τοιῷδε ἦλθον ἐπὶ τὰ πράγματα ἐν οἷς ηὐξήθησαν.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="w89_2">ἐπειδὴ Μῆδοι ἀνεχώρησαν ἐκ τῆς Εὐρώπης νικηθέντες καὶ ναυσὶ καὶ πεζῷ ὑπὸ Ἑλλήνων καὶ οἱ καταφυγόντες αὐτῶν ταῖς ναυσὶν ἐς Μυκάλην διεφθάρησαν, Λεωτυχίδης μὲν ὁ βασιλεὺς τῶν Λακεδαιμονίων, ὅσπερ ἡγεῖτο τῶν ἐν Μυκάλῃ Ἑλλήνων, ἀπεχώρησεν ἐπ’ οἴκου ἔχων τοὺς ἀπὸ Πελοποννήσου ξυμμάχους, οἱ δὲ Ἀθηναῖοι καὶ οἱ ἀπὸ Ἰωνίας καὶ Ἑλλησπόντου ξύμμαχοι ἤδη ἀφεστηκότες ἀπὸ βασιλέως ὑπομείναντες Σηστὸν ἐπολιόρκουν Μήδων ἐχόντων, καὶ ἐπιχειμάσαντες εἷλον αὐτὴν ἐκλιπόντων τῶν βαρβάρων, καὶ μετὰ τοῦτο ἀπέπλευσαν ἐξ Ἑλλησπόντου ὡς ἕκαστοι κατὰ πόλεις.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="w89_3">Ἀθηναίων δὲ τὸ κοινόν, ἐπειδὴ αὐτοῖς οἱ βάρβαροι ἐκ τῆς χώρας ἀπῆλθον, διεκομίζοντο εὐθὺς ὅθεν ὑπεξέθεντο παῖδας καὶ γυναῖκας καὶ τὴν περιοῦσαν κατασκευήν, καὶ τὴν πόλιν ἀνοικοδομεῖν παρεσκευάζοντο καὶ τὰ τείχη· τοῦ τε γὰρ περιβόλου βραχέα εἱστήκει καὶ οἰκίαι αἱ μὲν πολλαὶ ἐπεπτώκεσαν, ὀλίγαι δὲ περιῆσαν, ἐν αἷς αὐτοὶ ἐσκήνωσαν οἱ δυνατοὶ τῶν Περσῶν.</seg></p></div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>89-118. La «Pentecontecia». Historia de Atenas después de las Guerras Médicas. Formación del Imperio ateniense</head>
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="t89_1">Los atenienses llegaron a esta situación de crecimiento del modo siguiente<note n="476" type="explanatory">Comienza aquí la digresión sobre el período comprendido entre las Guerras Médicas y la Guerra del Peloponeso, la llamada «Pentecontecia», los «Cincuenta Años». Con este relato, que enlaza con el final de la obra de HERÓDOTO (IX 114-122: la toma de Sesto en el 478), Tucídides se propone llenar un vacío historiográfico (cf. *infra*, I 97, 2), a la vez que analizar la verdadera causa de la Guerra del Peloponeso.</note>.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="t89_2">Después que los medos se retiraron de Europa, vencidos por mar y por tierra por los griegos, y que el resto de sus fuerzas, que se habían refugiado con las naves en Mícale, fueron derrotadas<note n="477" type="explanatory">Micale es una península que se forma en la costa de Asia Menor frente a la isla de Samos. La batalla tuvo lugar en el 479 a. C. Cf. HERÓDOTO, IX 98-106.</note>, Leotíquidas<note n="478" type="explanatory">Leotíquidas (cf. *supra*, I 79, 2), perteneciente a la familia de los Euripóntidas y nacido hacia el 545 a. C., era hijo de Ménares; se puso de acuerdo con Cleómenes para deponer a Demarato, a quien sucedió hacia el 491 a. C. Cf. HERÓDOTO, VI 65; 71-72; VIII 131.</note>, el rey de los lacedemonios, que mandaba a los griegos en Mícale, regresó a su patria con los aliados del Peloponeso<note n="479" type="explanatory">Cf. HERÓDOTO, IX 106, 4; 114, 2.</note>. Pero los atenienses y los aliados de Jonia y del Helesponto, que ya se habían sublevado contra el Rey<note n="480" type="explanatory">Cf. HERÓDOTO, IX 103-106.</note>, permanecieron y pusieron sitio a Sesto<note n="481" type="explanatory">Ciudad del Quersoneso tracio situada en la costa septentrional del Helesponto. Respecto al asedio, cf. HERÓDOTO, IX 114-119.</note>, que estaba en poder de los medos; y después de pasar el invierno, la tomaron<note n="482" type="explanatory">A comienzos del 478 a. C., probablemente; cf. HERÓDOTO, IX 117.</note> al abandonarla los bárbaros; luego partieron del Helesponto hacia sus ciudades respectivas.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="t89_3">Por su parte, el pueblo de Atenas<note n="483" type="explanatory">*Athēnaíōn dè tò kolnón*: «el pueblo de Atenas», por oposición a los atenienses que actuaban en el Helesponto. La expresión nos hace pensar, además, en que Atenas, en aquellos momentos, sólo era su pueblo, ya que las construcciones de la ciudad habían sido destruidas. Cf. la misma expresión en HERÓDOTO, IX 117.</note>, tan pronto como los bárbaros se hubieron retirado de su tierra<note n="484" type="explanatory">En otoño del 479 a. C.</note>, fue a buscar de los lugares<note n="485" type="explanatory">Salamina, Egina y Trecén. Cf. HERÓDOTO, VIII 41.</note> donde los había puesto a salvo a niños y mujeres y los enseres que quedaban, y se dispuso a reconstruir la ciudad y las murallas. Sólo estaban en pie pequeños trozos del recinto fortificado, y la mayor parte de las casas estaban en ruinas; quedaban unas pocas, aquellas en las que se habían alojado los dignatarios persas<note n="486" type="explanatory">Se piensa que esta afirmación es una corrección a HERÓDOTO (IX 13, 2), según el cual Mardonio destruyó todo lo que quedaba en pie -murallas, edificios privados y santuarios— antes de abandonar Atenas.</note>.</seg></p></div>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="118">
+          <linkGrp type="alignment">
+            <link target="#t118_1 #w118_1"/>
+            <link target="#t118_2 #w118_2"/>
+            <link target="#t118_3 #w118_3"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="w118_1">μετὰ ταῦτα δὲ ἤδη γίγνεται οὐ πολλοῖς ἔτεσιν ὕστερον τὰ προειρημένα, τά τε Κερκυραϊκὰ καὶ τὰ Ποτειδεατικὰ καὶ ὅσα πρόφασις τοῦδε τοῦ πολέμου κατέστη.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="w118_2">ταῦτα δὲ ξύμπαντα ὅσα ἔπραξαν οἱ Ἕλληνες πρός τε ἀλλήλους καὶ τὸν βάρβαρον ἐγένετο ἐν ἔτεσι πεντήκοντα μάλιστα μεταξὺ τῆς τε Ξέρξου ἀναχωρήσεως καὶ τῆς ἀρχῆς τοῦδε τοῦ πολέμου· ἐν οἷς οἱ Ἀθηναῖοι τήν τε ἀρχὴν ἐγκρατεστέραν κατεστήσαντο καὶ αὐτοὶ ἐπὶ μέγα ἐχώρησαν δυνάμεως, οἱ δὲ Λακεδαιμόνιοι αἰσθόμενοι οὔτε ἐκώλυον εἰ μὴ ἐπὶ βραχύ, ἡσύχαζόν τε τὸ πλέον τοῦ χρόνου, ὄντες μὲν καὶ πρὸ τοῦ μὴ ταχεῖς ἰέναι ἐς τοὺς πολέμους, ἢν μὴ ἀναγκάζωνται, τὸ δέ τι καὶ πολέμοις οἰκείοις ἐξειργόμενοι, πρὶν δὴ ἡ δύναμις τῶν Ἀθηναίων σαφῶς ᾔρετο καὶ τῆς ξυμμαχίας αὐτῶν ἥπτοντο. τότε δὲ οὐκέτι ἀνασχετὸν ἐποιοῦντο, ἀλλ’ ἐπιχειρητέα ἐδόκει εἶναι πάσῃ προθυμίᾳ καὶ καθαιρετέα ἡ ἰσχύς, ἢν δύνωνται, ἀραμένοις τόνδε τὸν πόλεμον.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="w118_3">αὐτοῖς μὲν οὖν τοῖς Λακεδαιμονίοις διέγνωστο λελύσθαι τε τὰς σπονδὰς καὶ τοὺς Ἀθηναίους ἀδικεῖν, πέμψαντες δὲ ἐς Δελφοὺς ἐπηρώτων τὸν θεὸν εἰ πολεμοῦσιν ἄμεινον ἔσται· ὁ δὲ ἀνεῖλεν αὐτοῖς, ὡς λέγεται, κατὰ κράτος πολεμοῦσι νίκην ἔσεσθαι, καὶ αὐτὸς ἔφη ξυλλήψεσθαι καὶ παρακαλούμενος καὶ ἄκλητος.</seg></p></div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>118. Fin de la «Pentecontecia». Embajada lacedemonia a Delfos</head>
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="t118_1">A continuación de estos acontecimientos, y no muchos años después, ocurrieron los hechos que ya hemos narrado más arriba: las cuestiones de Corcira y de Potidea y todo lo que constituyó el motivo inmediato de la guerra que nos ocupa<note n="744" type="explanatory">Además de los asuntos de Corcira y Potidea, especialmente analizados por Tucídides (cf. *supra*, I 24-55; 56-66), hay que pensar en el decreto contra Mégara y en el problema de Egina (cf. *supra*, I 67, 2-4). Con la sumisión de Samos (439 a. C.), se cierra el relato que desde el capítulo 89 se ha dedicado a la «Pentecontecia» y se vuelve a los pródromos de la guerra que se desarrollaron entre el 435 y el 432 a. C., «no muchos años después» del final de los acontecimientos narrados en el capítulo anterior. Se recoge, pues, el hilo, que se había dejado en el debate de Esparta (cf. *supra*, I 67-88), antes de iniciar la síntesis de los cincuenta años, período crucial en la historia de Atenas y de Grecia tras el que el mundo griego se ve abocado a la Guerra del Peloponeso.</note>.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="t118_2">Todas las acciones a las que acabamos de referirnos, acciones de los griegos en sus enfrentamientos entre ellos y en su lucha contra el bárbaro, ocurrieron en los cerca de cincuenta años transcurridos entre la retirada de Jerjes y el comienzo de esta guerra<note n="745" type="explanatory">El período comprendido entre el 478, tras el fin de la segunda Guerra Médica, y el 431, inicio de la Guerra del Peloponeso. Son cincuenta años contando desde el 480 al 431, con los años del comienzo de ambas guerras inclusive.</note>. En estos años los atenienses consolidaron su Imperio y ellos mismos alcanzaron un alto grado de poder<note n="746" type="explanatory">El crecimiento del poder de Atenas va unido naturalmente a la consolidación de su Imperio.</note>. Los lacedemonios, aun dándose cuenta, no intentaron impedirlo más que con medidas de corto alcance<note n="747" type="explanatory">Probablemente alude a intervenciones, a las que se ha referido en la *Pentecontecia*, como la expedición en ayuda de la Dóride contra los focenses que les llevó a Beocia y a la batalla de Tanagra (cf. *supra*, I 107-108, 2), o la invasión del Ática conducida por Plistoanacte (cf. *supra*, I 114, 2), hechos de escasas consecuencias y sin importancia frente a la activa política expansiva de Atenas.</note>, y, bien porque antes ya no eran demasiado diligentes para entrar en guerra, si no eran forzados a ello, bien porque entonces estaban metidos en guerras intestinas<note n="748" type="explanatory">Alusión a la guerra contra los hilotas (cf. *supra*, I 101, 2-103, 1).</note>, se inhibieron la mayor parte del tiempo hasta que el crecimiento del poder de los atenienses se hizo evidente y empezaron a poner mano en sus aliados. Entonces estimaron que la situación ya no era tolerable<note n="749" type="explanatory">Las cuestiones recientes de Corcira, Potidea y Mégara, unidas a situaciones como la de Egina (cf. *supra*, I 67, 2; 105, 2-4; *infra*, I<sup>39</sup>, I; 140, 3) y a hechos como los de Eubea (cf. *supra*, 114-115, 1) y Samos (cf. *supra*, 115, 2-116), constituían provocaciones inquietantes.</note> y decidieron que era preciso intervenir con toda energía y destruir, si podían, el poder de Atenas, emprendiendo esta guerra.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="t118_3">Así, pues, los lacedemonios, por su parte, decidieron<note n="750" type="explanatory">Cf. *supra*, I 87-88. En el 432 a. C.</note> que el tratado había sido violado y que los atenienses eran culpables; enviaron entonces una embajada a Delfos para preguntar al dios si hacer la guerra sería lo mejor. El dios les respondió, según se cuenta, que si combatían con todas sus fuerzas obtendrían la victoria y les declaró que él mismo, invocado o no invocado, les prestaría su ayuda<note n="751" type="explanatory">El oráculo de Delfos se inclinaba por los peloponesios. Atenas había apoyado a los focenses contra los delfios (cf. *supra*, I 112, 5, n. 685) y había perdido su influencia en Grecia Central tras la derrota de Coronea (cf. *supra*, I 113, 2-4).</note>.</seg></p></div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

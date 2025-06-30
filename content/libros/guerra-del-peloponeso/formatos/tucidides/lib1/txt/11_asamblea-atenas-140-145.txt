@@ -1,9 +1,13 @@
----
-title: "Español"
-weight: 20
-book: "Libro I"
-work_title: "Historia de la Guerra del Peloponeso"
----
+HISTORIA DE LA GUERRA DEL PELOPONESO: LIBRO I, CAPÍTULOS 140-145
+================================================================
+
+TEXTO GRIEGO
+------------
+
+
+TRADUCCIÓN AL ESPAÑOL
+---------------------
+
 De acuerdo, aquí tienes el texto con la conversión aplicada:
 
 ## 140-144. Discurso de Pericles
