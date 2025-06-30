@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* --- ESTILOS GLOBALES Y VARIABLES --- */
+
+/* -- NUEVO: Corrección del modelo de caja para un layout predecible -- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --text-color: #212529;
@@ -17,12 +25,6 @@ body {
     font-family: var(--primary-font);
     margin: 0;
     line-height: 1.6;
-}
-
-pre {
-    white-space: pre-wrap;   /* Permite que el texto se ajuste y salte a la siguiente línea */
-    word-wrap: break-word;   /* Fuerza el corte de palabras largas si es necesario */
-    overflow-x: auto;        /* Como alternativa, añade un scroll solo a este bloque si no quieres romper el texto */
 }
 
 /* --- LAYOUT Y CONTENEDOR PRINCIPAL --- */
@@ -120,7 +122,6 @@ pre {
 }
 
 /* === NAVEGACIÓN MÓVIL CORREGIDA === */
-
 @media (max-width: 800px) {
   .menu-icon {
     display: flex;
@@ -284,6 +285,12 @@ pre {
     margin-top: 2rem;
 }
 
+/* -- NUEVO: Corrección para evitar desbordamiento de bloques de código -- */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 /* --- NAVEGACIÓN DE CAPÍTULOS (ANTERIOR/SIGUIENTE) --- */
 .chapter-navigation {
     display: flex;
@@ -310,11 +317,6 @@ pre {
     border-color: #ccc;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-
-/* Eliminada:
-.chapter-nav-link.next {
-    text-align: right;
-} */
 
 .chapter-nav-link div {
     display: flex;
@@ -366,7 +368,6 @@ pre {
 .libro-header-link a:hover {
   text-decoration: underline;
 }
-
 
 /* --- ESTILOS PARA LA PÁGINA DE MAPAS --- */
 #corpus-map-container {
@@ -543,7 +544,6 @@ body.modal-open {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; 
 }
 
 #mailchimp-form-embed input[type="submit"] {
@@ -577,32 +577,22 @@ body.modal-open {
 /* == Estilos para la Galería de Visualizaciones == */
 /* ============================================= */
 
-/*
- * Contenedor principal para cada visualización.
- * Le damos un ancho máximo más grande y lo centramos.
- */
 .visualization-wrapper {
-  max-width: 800px; /* Aumenta el ancho máximo */
-  margin: 2rem auto; /* Centra el bloque horizontalmente y añade espacio vertical */
+  max-width: 800px;
+  margin: 2rem auto;
   padding: 1rem;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
 }
 
-/*
- * Mantiene la proporción del iframe para que sea responsive.
- */
 .responsive-iframe-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 125%; /* Proporción de aspecto (alto/ancho) -> 752/600 = 1.25 */
+  padding-top: 125%;
 }
 
-/*
- * Estilos del iframe para que ocupe todo el espacio de su contenedor.
- */
 .responsive-iframe-container iframe {
   position: absolute;
   top: 0;
@@ -706,32 +696,23 @@ body.modal-open {
 }
 
 /* === AJUSTES DE ESPACIADO VERTICAL EN CABECERAS === */
-
-/* Reduce espacio después del encabezado del sitio */
 .site-header {
   margin-bottom: 0;
 }
-
-/* Reduce espacio antes del breadcrumb */
 .libro-header-link {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   color: var(--text-color);
 }
-
-/* Reduce espacio antes del título principal */
 .page-content header {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-
 .page-content h1 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
-/* Opcional: subtítulo con menor margen */
 .page-content .subtitle {
   margin-top: 0.25rem;
   margin-bottom: 0.75rem;
@@ -739,47 +720,34 @@ body.modal-open {
 }
 
 /* --- AJUSTES DE ESPACIADO VERTICAL EN CABECERAS --- */
-
-/* Reduce espacio después del encabezado del sitio */
 .site-header {
-  margin-bottom: 0.5rem;  /* Reduce espacio debajo del header */
+  margin-bottom: 0.5rem;
 }
-
-/* Reduce espacio antes del breadcrumb */
 .libro-header-link {
-  margin-top: 0.25rem;    /* Espacio superior más pequeño */
-  margin-bottom: 0.25rem; /* Espacio inferior reducido */
-  font-size: 1rem;        /* Reduce ligeramente el tamaño de la fuente */
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
   color: var(--text-color);
 }
-
-/* Reduce espacio antes del título principal */
 .page-content header {
-  margin-top: 0.5rem;     /* Reduce espacio superior */
-  margin-bottom: 0.5rem;  /* Reduce espacio inferior */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-
 .page-content h1 {
-  margin-top: 0.5rem;     /* Reduce espacio superior */
-  margin-bottom: 0.5rem;  /* Reduce espacio inferior */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-
-/* Opcional: subtítulo con menor margen */
 .page-content .subtitle {
-  margin-top: 0.25rem;    /* Reduce espacio superior */
-  margin-bottom: 0.75rem; /* Reduce espacio inferior */
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
   color: #666;
 }
-
-/* Ajusta el margen de la navegación por capítulos */
 .chapter-navigation {
-    margin-top: 1.5rem;  /* Aumenta este valor si deseas más espacio */
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
-/* Ajusta el margen del breadcrumb */
 .libro-header-link {
-    margin-top: 1.5rem;  /* Aumenta este valor si deseas más espacio */
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
     color: var(--text-color);
