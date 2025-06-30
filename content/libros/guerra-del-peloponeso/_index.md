@@ -4,6 +4,7 @@ listable: true
 ---
 
 ## [Continuar al Libro I]({{< relref "libro-I/_index.md" >}})
+## [Continuar al Libro II]({{< relref "libro-II/_index.md" >}})
 
 <br />
 
