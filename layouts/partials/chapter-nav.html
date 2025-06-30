@@ -1,42 +1,22 @@
-{{ $capituloActual := . }}
-{{ $libro := .Parent }}
-
-{{/* Asegurarnos que estamos en un capítulo de un libro */}}
-{{ if and $libro (strings.HasPrefix $libro.RelPermalink "/libros/") }}
-  {{/* Obtenemos todos los capítulos (páginas regulares) del libro, ordenados por peso */}}
-  {{ $capitulos := $libro.RegularPages.ByWeight }}
-  {{ $index := -1 }}
-
-  {{/* Buscamos el índice del capítulo actual */}}
-  {{ range $i, $c := $capitulos }}
-    {{ if eq $c.RelPermalink $capituloActual.RelPermalink }}
-      {{ $index = $i }}
-    {{ end }}
+<div class="chapter-navigation">
+  {{ with .PrevInSection }}
+  <a class="chapter-nav-link prev" href="{{ .RelPermalink }}">
+    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+    <div>
+      <span>Anterior</span>
+      <strong class="chapter-title">{{ .Title }}</strong>
+    </div>
+  </a>
   {{ end }}
 
-  {{ if ge $index 0 }}
-  <nav class="chapter-navigation">
-    {{/* Enlace al capítulo anterior */}}
-    {{ with index $capitulos (sub $index 1) }}
-    <a href="{{ .Permalink }}" class="chapter-nav-link prev">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-      <div>
-        <span>Capítulo anterior:</span>
-        <div class="chapter-title"><strong>{{ .Title }}</strong></div>
-      </div>
-    </a>
-    {{ end }}
-
-    {{/* Enlace al capítulo siguiente */}}
-    {{ with index $capitulos (add $index 1) }}
-    <a href="{{ .Permalink }}" class="chapter-nav-link next">
-      <div>
-        <span>Capítulo siguiente:</span>
-        <div class="chapter-title"><strong>{{ .Title }}</strong></div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
-    {{ end }}
-  </nav>
+  {{ with .NextInSection }}
+  <a class="chapter-nav-link next" href="{{ .RelPermalink }}">
+    <div>
+      <span>Siguiente</span>
+      <strong class="chapter-title">{{ .Title }}</strong>
+    </div>
+    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
   {{ end }}
-{{ end }}
+</div>
+<!-- Fin de chapter-nav.html -->

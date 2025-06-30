@@ -95,8 +95,7 @@
       <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del capítulo y actualización
         para incluir textos completos, alineación explícita y notas completas.</change>
     </revisionDesc>
-  </teiHeader>
-</TEI>
+</teiHeader>
 <text>
   <body>
     <div type="chapter" n="1">
@@ -468,6 +467,7 @@
         </div>
       </div>
     </div>
+  
   </body>
-</text>
+  </text>
 </TEI>

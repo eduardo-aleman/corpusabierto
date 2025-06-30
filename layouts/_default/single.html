@@ -1,13 +1,15 @@
 {{ define "main" }}
 <div class="container-wide page-content">
+
   <header>
     <h1>{{ .Title }}</h1>
+
     {{/* Muestra un subtítulo si existe */}}
     {{ if .Params.subtitle }}
     <p class="subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
-    
-    {{/* Opcional: Enlace para volver a la portada del libro */}}
+
+    {{/* Enlace para volver a la portada del libro, si aplica */}}
     {{ with .Parent }}
       {{ if strings.HasPrefix .RelPermalink "/libros/" }}
         <p class="parent-book-link">
@@ -18,12 +20,26 @@
   </header>
 
   <div class="content-body">
-    {{ .Content }}
-  </div>
 
-  {{/* En una página de capítulo, SIEMPRE queremos mostrar la navegación de capítulos.
-    Por lo tanto, eliminamos el `if .IsSection` y llamamos al parcial directamente.
-  */}}
+    {{/* Mostrar partes 1.md a 6.md si existen como recursos */}}
+    {{ if .Resources }}
+      {{ range seq 1 6 }}
+        {{ with $.Resources.GetMatch (printf "%d.md" .) }}
+          <div class="contenedor parte-{{ .Name | plainify }}">
+            {{ .Content }}
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{/* Si no hay recursos, mostrar contenido normal */}}
+      {{ .Content }}
+    {{ end }}
+
+  </div>
+<p><strong>Anterior:</strong> {{ with .PrevInSection }}{{ .Title }}{{ else }}Ninguno{{ end }}</p>
+<p><strong>Siguiente:</strong> {{ with .NextInSection }}{{ .Title }}{{ else }}Ninguno{{ end }}</p>
+
+  {{/* Navegación entre capítulos */}}
   {{ partial "chapter-nav.html" . }}
 
 </div>
