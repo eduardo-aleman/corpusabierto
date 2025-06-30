@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 67-88</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>, <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed.
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2).
+          <publisher>Istituto Poligrafico dello Stato</publisher>,
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">Corregida la estructura del cuerpo del documento para usar el anidamiento canónico (section > p > seg) y la alineación mediante linkGrp.</change>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del archivo para los capítulos 67-88.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="67">
+          <linkGrp type="alignment">
+            <link target="#t67_1 #w67_1"/>
+            <link target="#t67_2 #w67_2"/>
+            <link target="#t67_3 #w67_3"/>
+            <link target="#t67_4 #w67_4"/>
+            <link target="#t67_5 #w67_5"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="w67_1">οἱ δὲ Κορίνθιοι τοῖς τε συμμάχοις παρήγγειλαν ἐς τὴν Λακεδαίμονα ἥκειν καὶ αὐτοὶ ἐλθόντες κατεβόων τῶν Ἀθηναίων, ὅτι τὰς σπονδὰς λελυκότες εἶεν καὶ ἀδικοῖεν τὴν Πελοπόννησον.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="w67_2">Αἰγινῆταί τε φανερῶς μὲν οὐ πρεσβευόμενοι, δείσαντες τοὺς Ἀθηναίους, κρύφα δὲ μάλιστα τοῦ πολέμου ἐνῆγον, λέγοντες οὐκ εἶναι αὐτόνομοι κατὰ τὰς σπονδάς.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="w67_3">οἱ δὲ Λακεδαιμόνιοι προσπαρακαλέσαντες τῶν ξυμμάχων τε καὶ εἴ τίς τι ἄλλο ἔφη ἠδικῆσθαι ὑπὸ Ἀθηναίων, ξύλλογον σφῶν αὐτῶν ποιήσαντες τὸν εἰωθότα λέγειν ἐκέλευον.</seg></p></div>
+            <div type="textpart" subtype="section" n="4"><p><seg xml:id="w67_4">καὶ ἄλλοι τε παριόντες ἐγκλήματα ἐποιοῦντο ὡς ἕκαστοι καὶ Μεγαρῆς, δηλοῦντες μὲν καὶ ἕτερα οὐκ ὀλίγα διάφορα, μάλιστα δὲ λιμένων τε εἴργεσθαι τῶν ἐν τῇ Ἀθηναίων ἀρχῇ καὶ τῆς Ἀττικῆς ἀγορᾶς παρὰ τὰς σπονδάς.</seg></p></div>
+            <div type="textpart" subtype="section" n="5"><p><seg xml:id="w67_5">παρελθόντες δὲ τελευταῖοι Κορίνθιοι καὶ τοὺς ἄλλους ἐάσαντες πρώτους παροξῦναι τοὺς Λακεδαιμονίους, ἐπεῖπον τοιάδε.</seg></p></div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>El debate de Esparta</head>
+            <div type="textpart" subtype="section" n="1"><p><seg xml:id="t67_1">El asedio de Potidea mantenía en movimiento a los corintios, porque allí estaban encerradas sus tropas y también porque temían por la plaza. Sin demora, convocaron a los aliados<note n="380"/> a Esparta y, una vez allí, cubrieron de improperios a los atenienses acusándolos de haber roto el tratado y de cometer agresión contra el Peloponeso.</seg></p></div>
+            <div type="textpart" subtype="section" n="2"><p><seg xml:id="t67_2">Los eginetas, por miedo a los atenienses<note n="381"/>, no enviaron embajadores abiertamente, sino en secreto, y se distinguieron, juntamente con los corintios, por su incitación a la guerra, alegando que no eran autónomos de acuerdo con lo estipulado en el tratado<note n="382"/>.</seg></p></div>
+            <div type="textpart" subtype="section" n="3"><p><seg xml:id="t67_3">Los lacedemonios también citaron a quien quisiera de sus aliados que declarara haber sufrido algún otro daño de parte de los atenienses y, reuniendo su asamblea ordinaria, les invitaron a hablar.</seg></p></div>
+            <div type="textpart" subtype="section" n="4"><p><seg xml:id="t67_4">Otros varios tomaron la palabra y cada uno expuso sus propias acusaciones, y sobresalió la intervención de los megareos que, entre otros considerables motivos de discordia, destacaron el hecho de que, en contra del tratado, se les impedía el acceso a los puertos del Imperio ateniense y al mercado ático<note n="383"/>.</seg></p></div>
+            <div type="textpart" subtype="section" n="5"><p><seg xml:id="t67_5">Finalmente tomaron la palabra los corintios, después de dejar que los otros enardecieran primero los ánimos de los lacedemonios, y hablaron de este modo:</seg></p></div>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="88">
+          <linkGrp type="alignment">
+            <link target="#t88_1 #w88_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w88_1">ἐψηφίσαντο δὲ οἱ Λακεδαιμόνιοι τὰς σπονδὰς λελύσθαι καὶ πολεμητέα εἶναι οὐ τοσοῦτον τῶν ξυμμάχων τοῖς λόγοις πεισθέντες ὅσον φοβούμενοι τοὺς Ἀθηναίους μὴ ἐπὶ μεῖζον δυνηθῶσιν, ὁρῶντες αὐτοῖς τὰ πολλὰ τῆς Ἑλλάδος ὑποχείρια ἤδη ὄντα.</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>El miedo de Esparta al poderío de Atenas. La verdadera causa</head>
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t88_1">Los lacedemonios votaron que el tratado había sido violado y que se debía hacer la guerra, no tanto La verdadera causa porque hubieran sido persuadidos por los discursos de sus aliados como porque temían que los atenienses se hicieran más poderosos<note n="475"/>, al ver que la mayor parte de Grecia estaba ya bajo su dominio.</seg></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

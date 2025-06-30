@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulo 23</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>, <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed.
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2).
+          <publisher>Istituto Poligrafico dello Stato</publisher>,
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">Corregida la estructura del teiHeader para completar las fuentes y detallar el historial de cambios.</change>
+      <change when="2025-06-29" who="#CorpusAbierto">Creación del archivo para el capítulo 23 a partir de la fuente HTML.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="23">
+          <linkGrp type="alignment">
+            <link target="#t23_1 #w23_1"/>
+            <link target="#t23_2 #w23_2"/>
+            <link target="#t23_3 #w23_3"/>
+            <link target="#t23_4 #w23_4"/>
+            <link target="#t23_5 #w23_5"/>
+            <link target="#t23_6 #w23_6"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <seg xml:id="w23_1">τῶν δὲ πρότερον ἔργων μέγιστον ἐπράχθη τὸ Μηδικόν, καὶ τοῦτο ὅμως δυοῖν ναυμαχίαιν καὶ πεζομαχίαιν ταχεῖαν τὴν κρίσιν ἔσχεν. τούτου δὲ τοῦ πολέμου μῆκός τε μέγα προύβη, παθήματά τε ξυνηνέχθη γενέσθαι ἐν αὐτῷ τῇ Ἑλλάδι οἷα οὐχ ἕτερα ἐν ἴσῳ χρόνῳ.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <seg xml:id="w23_2">οὔτε γὰρ πόλεις τοσαίδε ληφθεῖσαι ἠρημώθησαν, αἱ μὲν ὑπὸ βαρβάρων, αἱ δ’ ὑπὸ σφῶν αὐτῶν ἀντιπολεμούντων (εἰσὶ δ’ αἳ καὶ οἰκήτορας μετέβαλον ἁλισκόμεναι), οὔτε φυγαὶ τοσαίδε ἀνθρώπων καὶ φόνος, ὁ μὲν κατ’ αὐτὸν τὸν πόλεμον, ὁ δὲ διὰ τὸ στασιάζειν.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <seg xml:id="w23_3">τά τε πρότερον ἀκοῇ μὲν λεγόμενα, ἔργῳ δὲ σπανιώτερον βεβαιούμενα οὐκ ἄπιστα κατέστη, σεισμῶν τε πέρι, οἳ ἐπὶ πλεῖστον ἅμα μέρος γῆς καὶ ἰσχυρότατοι οἱ αὐτοὶ ἐπέσχον, ἡλίου τε ἐκλείψεις, αἳ πυκνότεραι παρὰ τὰ ἐκ τοῦ πρὶν χρόνου μνημονευόμενα ξυνέβησαν, αὐχμοί τε ἔστι παρ’ οἷς μεγάλοι καὶ ἀπ’ αὐτῶν καὶ λιμοὶ καὶ ἡ οὐχ ἥκιστα βλάψασα καὶ μέρος τι φθείρασα ἡ λοιμώδης νόσος· ταῦτα γὰρ πάντα μετὰ τοῦδε τοῦ πολέμου ἅμα ξυνεπέθετο.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <seg xml:id="w23_4">ἤρξαντο δὲ αὐτοῦ Ἀθηναῖοι καὶ Πελοποννήσιοι λύσαντες τὰς τριακοντούτεις σπονδὰς αἳ αὐτοῖς ἐγένοντο μετὰ Εὐβοίας ἅλωσιν.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p>
+                <seg xml:id="w23_5">διότι δ’ ἔλυσαν, τὰς αἰτίας προύγραψα πρῶτον καὶ τὰς διαφοράς, τοῦ μή τινα ζητῆσαί ποτε ἐξ ὅτου τοσοῦτος πόλεμος τοῖς Ἕλλησι κατέστη.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="6">
+              <p>
+                <seg xml:id="w23_6">τὴν μὲν γὰρ ἀληθεστάτην πρόφασιν, ἀφανεστάτην δὲ λόγῳ, τοὺς Ἀθηναίους ἡγοῦμαι μεγάλους γιγνομένους καὶ φόβον παρέχοντας τοῖς Λακεδαιμονίοις ἀναγκάσαι ἐς τὸ πολεμεῖν· αἱ δ’ ἐς τὸ φανερὸν λεγόμεναι αἰτίαι αἵδ’ ἦσαν ἑκατέρων, ἀφ’ ὧν λύσαντες τὰς σπονδὰς ἐς τὸν πόλεμον κατέστησαν.</seg>
+              </p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <seg xml:id="t23_1">De los hechos anteriores el más importante<note n="157" type="explanatory">La magnitud o importancia de los acontecimientos era para Tucídides una categoría fundamental del conocimiento histórico. Cf. supra, I 1, 2; n. 11.</note> fue la guerra contra los medos, a pesar de que ésta se decidió rápidamente en dos batallas navales y dos terrestres<note n="158" type="explanatory">La «guerra contra los medos»: tò Mēdikón. Tucídides se refiere probablemente, tal como anotaba el escoliasta, a Artemisio y Salamina (480 a. C.) y a las Termopilas (480 a. C.) y Platea (479 a. C.). Piensa que el enfrentamiento contra los persas en la Segunda Guerra Médica se decidió en Europa y por ello no alude a la batalla de Mícale (a fines del otoño del 479 a. C.), cuyo escenario ya fue el Asia Menor. Esta «guerra contra los medos» se refiere sólo a la expedición de Jerjes. Cf. infra, I 90, 1; 97, 1; HERÓDOTO, VII 61-100.</note>. La duración de esta guerra nuestra, por el contrario, ha ido mucho más allá, y ha ocurrido que en su transcurso se han producido en Grecia desastres sin parangón en un período igual.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <seg xml:id="t23_2">Nunca tantas ciudades fueron tomadas y asoladas, unas por los bárbaros<note n="159" type="explanatory">Tal fue el caso de Colofón (cf. infra, III 34) y de Micaleso (cf. infra, VII 29-30).</note> y otras por los mismos griegos<note n="160" type="explanatory">Como lo fueron, por ejemplo, Platea (cf. infra, III 68, 3) y Tirea (cf. infra, IV 57).</note> luchando unos contra otros (algunas hay incluso que cambiaron de habitantes al ser conquistadas)<note n="161" type="explanatory">Como Solio (cf. infra, II 30), Potidea (cf. infra, II 70), Anactorio (cf. infra, IV 49), Escione (cf. infra, V 32, I) y Melos (cf. infra, V 114-116).</note>; nunca tampoco había habido tantos destierros y tanta mortandad, bien en la misma guerra bien a causa de las luchas civiles.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <seg xml:id="t23_3">E historias que antes refería la tradición, pero que raramente encontraban una confirmación en la realidad, dejaron de resultar inverosímiles: historias acerca de terremotos<note n="162" type="explanatory">Cf. infra, II 8; III 87, 4; 89, 1-5; IV 52, 1; V 45, 4 y 50, 5; VIII 6, 5; 41, 2. En las creencias populares había una conexión entre la guerra y estas catástrofes naturales que agravaban los efectos de aquélla.</note>, que afectaron a la vez a extensas regiones y que fueron muy violentos; eclipses de sol<note n="163" type="explanatory">La Historia de Tucídides hace mención de dos: el del 3 de agosto del 431 a. C. (cf. II 28) y el del 21 de marzo del 424 (cf. IV 52, 1). Ha llamado la atención que Tucídides no mencionara aquí los eclipses de luna, uno de los cuales —el del 413 descrito en VII 50, 4— fue importante para las tropas atenienses en Sicilia.</note>, que ocurrieron con mayor frecuencia de lo que se recordaba en tiempos pasados; y grandes sequías en algunas tierras y hambres como secuela, y, en fin, la calamidad que no menos daños causó y que destruyó a una parte de la población, la peste<note n="164" type="explanatory">La peste que afectó principalmente a Atenas. Cf. infra, II 47-54, y III 87.</note>.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <seg xml:id="t23_4">Todos estos males cayeron sobre Grecia junto con esta guerra. La comenzaron los atenienses y los peloponesios al romper el tratado de paz de treinta años que habían concertado después de la conquista de Eubea<note n="165" type="explanatory">La revuelta de Eubea tuvo lugar en el 446 a. C.; fue inmediatamente sofocada por los atenienses, que en el invierno del 446-445 concluyeron un tratado de paz con Esparta, tratado aí que se alude con frecuencia a lo largo del libro I (cf. infra, I 35, 1; 36, 1; 40, 2; etc. C.). Sobre la conclusión de este tratado (spondaí), cf. infra, I 115, 1.</note>.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p>
+                <seg xml:id="t23_5">Para explicar por qué rompieron he expuesto en primer lugar las razones de esta ruptura y las diferencias que la ocasionaron, a fin de que nunca nadie se pregunte por qué se produjo entre los griegos una guerra tan importante<note n="166" type="explanatory">Nótese el mismo espíritu que inspira la descripción médica de la peste en II 48, 3.</note>.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="6">
+              <p>
+                <seg xml:id="t23_6">La causa más verdadera<note n="167" type="explanatory">Tucídides distingue aquí entre «la causa más verdadera» (tḗn mén alēthestátēn próphasin), es decir, la causa profunda, y «las razones declaradas» (hai d’es tò phaneròn legómenai aitíai), los motivos inmediatos (aitíai en este caso) frente a la verdadera causa (expresada aquí con el término próphasis): el motivo psicológico profundo, que no era otro que el temor que inspiraba a los lacedemonios el poderío de Atenas. Por un lado, las cuestiones de Corcira y Potidea (cf. infra, I 24-66), con la breve referencia al decreto contra Mégara (cf. infra, I 67, 4); por el otro, el extraordinario crecimiento del poder de Atenas (cf. infra, I 89-117). El término próphasis, sin embargo, utilizado en este pasaje para referirse a la «causa profunda», tiene con mayor frecuencia el valor de «pretexto» (opuesto a menudo a aitíai, «causa»), sentido con el que suele emplearlo Tucídides a partir del libro III (cf. P. HUART, Le vocabulaire de l’analyse psychologique dans l’oeuvre de Thucydide, París, 1968, pág. 259; sobre el doble valor de próphasis, cf. K. WEIDAUER, op. cit., pág. 14).</note>, aunque la que menos se manifiesta en las declaraciones<note n="168" type="explanatory">La idea del temor inspirado por la expansión de Atenas no era nueva (cf. nota anterior) y estaba presente en discursos y comentarios. Sin embargo, la próphasis no se sacaba a relucir en las embajadas (cf. infra, I 126, 1-2; 139, 1-3), en las que se esgrimían las aitíai; la causa más verdadera era la menos aparente en las declaraciones, y también debía aparecer menos que las aitíai en los comentarios populares. Atenas, además, no confesaría que su propia expansión fuera la causa de la guerra.</note>, pienso que la constituye el hecho de que los atenienses al hacerse poderosos e inspirar miedo a los lacedemonios les obligaron a luchar. Pero las razones declaradas públicamente, por las cuales rompieron el tratado y entraron en guerra, fueron las siguientes por parte de cada bando.</seg>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

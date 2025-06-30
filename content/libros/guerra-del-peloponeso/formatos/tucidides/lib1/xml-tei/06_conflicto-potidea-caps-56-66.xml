@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 56-66</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>, <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed.
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2).
+          <publisher>Istituto Poligrafico dello Stato</publisher>,
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+        <change when="2025-06-30" who="#CorpusAbierto">Corregida la estructura del cuerpo del documento para separar los capítulos y usar el anidamiento canónico (section > p > seg) y la alineación mediante linkGrp.</change>
+        <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del archivo para los capítulos 56-66.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="56">
+          <linkGrp type="alignment">
+            <link target="#t56_1 #w56_1"/>
+            <link target="#t56_2 #w56_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w56_1">μετὰ ταῦτα δ’ εὐθὺς καὶ τάδε ξυνέβη γενέσθαι τοῖς Ἀθηναίοις καὶ Πελοποννησίοις διάφορα ἐς τὸ πολεμεῖν.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="w56_2">τῶν γὰρ Κορινθίων πρασσόντων ὅπως τιμωρήσονται αὐτούς, ὑποτοπήσαντες τὴν ἔχθραν αὐτῶν οἱ Ἀθηναῖοι Ποτειδεάτας, οἳ οἰκοῦσιν ἐπὶ τῷ ἰσθμῷ τῆς Παλλήνης, Κορινθίων ἀποίκους, ἑαυτῶν δὲ ξυμμάχους φόρου ὑποτελεῖς, ἐκέλευον τὸ ἐς Παλλήνην τεῖχος καθελεῖν καὶ ὁμήρους δοῦναι, τούς τε ἐπιδημιουργοὺς ἐκπέμπειν καὶ τὸ λοιπὸν μὴ δέχεσθαι οὓς κατὰ ἔτος ἕκαστον Κορίνθιοι ἔπεμπον, δείσαντες μὴ ἀποστῶσιν ὑπό τε Περδίκκου πειθόμενοι καὶ Κορινθίων, τούς τε ἄλλους τοὺς ἐπὶ Θρᾴκης ξυναποστήσωσι ξυμμάχους.</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t56_1">Inmediatamente después de estos acontecimientos<note n="317"/>, sobrevinieron nuevas diferencias entre atenienses y peloponesios conducentes a la guerra. Fueron las siguientes.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="t56_2">Mientras los corintios hacían por vengarse de los atenienses, éstos, que sospechaban su enemistad, ordenaron a los potideatas<note n="318"/> —que habitan en el Istmo de Palene, y que, aun siendo colonos de los corintios, eran aliados tributarios de Atenas<note n="319"/>— que demolieran la muralla por el lado que mira a Palene<note n="320"/>, que les entregaran rehenes, y que despacharan y no recibieran en el futuro a los *epidemiurgos*<note n="321"/> que todos los años les enviaban los corintios, pues temían que, persuadidos por Perdicas<note n="322"/> y los corintios, se rebelasen e incitasen a la rebelión a los demás aliados de la costa de Tracia<note n="323"/>.</seg></p>
+            </div>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="57">
+            <linkGrp type="alignment">
+                <link target="#t57_1 #w57_1"/>
+                <link target="#t57_2 #w57_2"/>
+                <link target="#t57_3 #w57_3"/>
+                <link target="#t57_4 #w57_4"/>
+                <link target="#t57_5 #w57_5"/>
+                <link target="#t57_6 #w57_6"/>
+            </linkGrp>
+            <div type="source" xml:lang="grc">
+                <div type="textpart" subtype="section" n="1"><p><seg xml:id="w57_1">ταῦτα δὲ περὶ τοὺς Ποτειδεάτας οἱ Ἀθηναῖοι προπαρεσκευάζοντο εὐθὺς μετὰ τὴν ἐν Κερκύρᾳ ναυμαχίαν·</seg></p></div>
+                <div type="textpart" subtype="section" n="2"><p><seg xml:id="w57_2">οἵ τε γὰρ Κορίνθιοι φανερῶς ἤδη διάφοροι ἦσαν, Περδίκκας τε ὁ Ἀλεξάνδρου Μακεδόνων βασιλεὺς ἐπεπολέμωτο ξύμμαχος πρότερον καὶ φίλος ὤν.</seg></p></div>
+                <div type="textpart" subtype="section" n="3"><p><seg xml:id="w57_3">ἐπολεμώθη δὲ ὅτι Φιλίππῳ τῷ ἑαυτοῦ ἀδελφῷ καὶ Δέρδᾳ κοινῇ πρὸς αὐτὸν ἐναντιουμένοις οἱ Ἀθηναῖοι ξυμμαχίαν ἐποιήσαντο.</seg></p></div>
+                <div type="textpart" subtype="section" n="4"><p><seg xml:id="w57_4">δεδιώς τε ἔπρασσεν ἔς τε τὴν Λακεδαίμονα πέμπων ὅπως πόλεμος γένηται αὐτοῖς πρὸς Πελοποννησίους, καὶ τοὺς Κορινθίους προσεποιεῖτο τῆς Ποτειδαίας ἕνεκα ἀποστάσεως·</seg></p></div>
+                <div type="textpart" subtype="section" n="5"><p><seg xml:id="w57_5">προσέφερε δὲ λόγους καὶ τοῖς ἐπὶ Θρᾴκης Χαλκιδεῦσι καὶ Βοττιαίοις ξυναποστῆναι, νομίζων, εἰ ξύμμαχα ταῦτα ἔχοι ὅμορα ὄντα τὰ χωρία, ῥᾷον ἂν τὸν πόλεμον μετ’ αὐτῶν ποιεῖσθαι.</seg></p></div>
+                <div type="textpart" subtype="section" n="6"><p><seg xml:id="w57_6">ὧν οἱ Ἀθηναῖοι αἰσθόμενοι καὶ βουλόμενοι προκαταλαμβάνειν τῶν πόλεων τὰς ἀποστάσεις (ἔτυχον γὰρ τριάκοντα ναῦς ἀποστέλλοντες καὶ χιλίους ὁπλίτας ἐπὶ τὴν γῆν αὐτοῦ, Ἀρχεστράτου τοῦ Λυκομήδους μετ’ ἄλλων † δέκα † στρατηγοῦντος) ἐπιστέλλουσι τοῖς ἄρχουσι τῶν νεῶν Ποτειδεατῶν τε ὁμήρους λαβεῖν καὶ τὸ τεῖχος καθελεῖν, τῶν τε πλησίον πόλεων φυλακὴν ἔχειν ὅπως μὴ ἀποστήσονται.</seg></p></div>
+            </div>
+            <div type="translation" xml:lang="es">
+                <div type="textpart" subtype="section" n="1"><p><seg xml:id="t57_1">Éstas fueron las precauciones que tomaron los atenienses inmediatamente después de la batalla naval de Corcira;</seg></p></div>
+                <div type="textpart" subtype="section" n="2"><p><seg xml:id="t57_2">pues la hostilidad de los corintios ya era manifiesta, y Perdicas, hijo de Alejandro y rey de los macedonios, que antes había sido aliado y amigo, se había convertido en enemigo<note n="324"/>.</seg></p></div>
+                <div type="textpart" subtype="section" n="3"><p><seg xml:id="t57_3">Se había enemistado porque los atenienses habían concertado una alianza con Filipo<note n="325"/>, su hermano, y con Derdas<note n="326"/>, que de común acuerdo le hacían frente.</seg></p></div>
+                <div type="textpart" subtype="section" n="4"><p><seg xml:id="t57_4">Movido por el miedo, enviando embajadores a Esparta, hacía por provocar una guerra entre atenienses y peloponesios, y procuraba ganarse a los corintios con vistas a la sublevación de Potidea.</seg></p></div>
+                <div type="textpart" subtype="section" n="5"><p><seg xml:id="t57_5">También entraba en negociaciones con los calcideos<note n="327"/>, limítrofes con Tracia, y con los botieos<note n="328"/>, a fin de que se unieran a la sublevación, pues pensaba que, si contaba con la alianza de estos pueblos cuyo territorio era contiguo, haría la guerra más fácilmente con su ayuda.</seg></p></div>
+                <div type="textpart" subtype="section" n="6"><p><seg xml:id="t57_6">Al enterarse los atenienses de estas intrigas, queriendo anticiparse a la sublevación de las ciudades, dieron orden a sus almirantes (pues precisamente entonces se disponían a enviar contra el territorio de Perdicas una expedición de treinta naves y mil hoplitas bajo el mando de Arquéstrato<note n="329"/>, hijo de Licomedes, y de otros cuatro estrategos)<note n="330"/> de tomar rehenes entre los potideatas y demoler la muralla, y de mantener la vigilancia sobre las ciudades vecinas para que no se sublevaran.</seg></p></div>
+            </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="66">
+          <linkGrp type="alignment">
+            <link target="#t66_1 #w66_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w66_1">τοῖς δ’ Ἀθηναίοις καὶ Πελοποννησίοις αἰτίαι μὲν αὗται προυγεγένηντο ἐς ἀλλήλους, τοῖς μὲν Κορινθίοις ὅτι τὴν Ποτείδαιαν ἑαυτῶν οὖσαν ἀποικίαν καὶ ἄνδρας Κορινθίων τε καὶ Πελοποννησίων ἐν αὐτῇ ὄντας ἐπολιόρκουν, τοῖς δὲ Ἀθηναίοις ἐς τοὺς Πελοποννησίους ὅτι ἑαυτῶν τε πόλιν ξυμμαχίδα καὶ φόρου ὑποτελῆ ἀπέστησαν, καὶ ἐλθόντες σφίσιν ἀπὸ τοῦ προφανοῦς ἐμάχοντο μετὰ Ποτειδεατῶν. οὐ μέντοι ὅ γε πόλεμός πω ξυνερρώγει, ἀλλ’ ἔτι ἀνοκωχὴ ἦν· ἰδίᾳ γὰρ ταῦτα οἱ Κορίνθιοι ἔπραξαν.</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t66_1">De esta forma los atenienses y los peloponesios se encontraron con nuevos motivos de enfrentamiento: los corintios los tenían porque los atenienses estaban sitiando Potidea, que era colonia suya, con corintios y peloponesios dentro de ella, y los atenienses con respecto a los peloponesios, porque éstos habían instigado la sublevación de una ciudad que era su aliada y les pagaba tributo, y porque habían ido allí y habían combatido abiertamente contra ellos al lado de los potideatas. La verdadera guerra, sin embargo, todavía no había estallado, sino que aún seguía vigente la tregua, pues los corintios habían actuado por su cuenta<note n="379"/>.</seg></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

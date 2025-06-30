@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 24-55</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>, <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed.
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2).
+          <publisher>Istituto Poligrafico dello Stato</publisher>,
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">Corregida la estructura del cuerpo del documento para usar el anidamiento canónico (section > p > seg) y la alineación mediante linkGrp.</change>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del archivo para los capítulos 24-55.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="24">
+          <linkGrp type="alignment">
+            <link target="#t24_1 #w24_1"/>
+            <link target="#t24_2 #w24_2"/>
+            <link target="#t24_3 #w24_3"/>
+            <link target="#t24_4 #w24_4"/>
+            <link target="#t24_5 #w24_5"/>
+            <link target="#t24_6 #w24_6"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w24_1">Ἐπίδαμνός ἐστι πόλις ἐν δεξιᾷ ἐσπλέοντι ἐς τὸν Ἰόνιον κόλπον· προσοικοῦσι δ’ αὐτὴν Ταυλάντιοι βάρβαροι, Ἰλλυρικὸν ἔθνος.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="w24_2">ταύτην ἀπῴκισαν μὲν Κερκυραῖοι, οἰκιστὴς δ’ ἐγένετο Φαλίος Ἐρατοκλείδου Κορίνθιος γένος τῶν ἀφ’ Ἡρακλέους, κατὰ δὴ τὸν παλαιὸν νόμον ἐκ τῆς μητροπόλεως κατακληθείς. ξυνῴκισαν δὲ καὶ Κορινθίων τινὲς καὶ τοῦ ἄλλου Δωρικοῦ γένους.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p><seg xml:id="w24_3">προελθόντος δὲ τοῦ χρόνου ἐγένετο ἡ τῶν Ἐπιδαμνίων δύναμις μεγάλη καὶ πολυάνθρωπος·</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p><seg xml:id="w24_4">στασιάσαντες δὲ ἐν ἀλλήλοις ἔτη πολλά, ὡς λέγεται, ἀπὸ πολέμου τινὸς τῶν προσοίκων βαρβάρων ἐφθάρησαν καὶ τῆς δυνάμεως τῆς πολλῆς ἐστερήθησαν.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p><seg xml:id="w24_5">τὰ δὲ τελευταῖα πρὸ τοῦδε τοῦ πολέμου ὁ δῆμος αὐτῶν ἐξεδίωξε τοὺς δυνατούς, οἱ δὲ ἐπελθόντες μετὰ τῶν βαρβάρων ἐλῄζοντο τοὺς ἐν τῇ πόλει κατά τε γῆν καὶ κατὰ θάλασσαν.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="6">
+              <p><seg xml:id="w24_6">οἱ δὲ ἐν τῇ πόλει ὄντες Ἐπιδάμνιοι ἐπειδὴ ἐπιέζοντο, πέμπουσιν ἐς τὴν Κέρκυραν πρέσβεις ὡς μητρόπολιν οὖσαν, δεόμενοι μὴ σφᾶς περιορᾶν φθειρομένους, ἀλλὰ τούς τε φεύγοντας ξυναλλάξαι σφίσι καὶ τὸν τῶν βαρβάρων πόλεμον καταλῦσαι. ταῦτα δὲ ἱκέται καθεζόμενοι ἐς τὸ Ἥραιον ἐδέοντο. οἱ δὲ Κερκυραῖοι τὴν ἱκετείαν οὐκ ἐδέξαντο, ἀλλ’ ἀπράκτους ἀπέπεμψαν.</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>24-55. Conflicto de Corcira</head>
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t24_1">Epidamno<note n="169"/> es una ciudad situada a la derecha para el que entra en el golfo Jonio<note n="170"/>. Vecinos suyos son los taulantios<note n="171"/>, bárbaros de raza iliria.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="t24_2">La fundaron los corcireos<note n="172"/>, pero el fundador fue Falio, hijo de Eratóclides, corintio de nacimiento, del linaje de los Heráclidas, que, según la costumbre antigua, había sido traído de la metrópoli<note n="173"/>. Participaron también en la fundación algunos corintios y otras gentes de estirpe dórica.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p><seg xml:id="t24_3">Con el paso del tiempo, la ciudad de los epidamnios se hizo grande y populosa.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p><seg xml:id="t24_4">Pero, tras muchos años de disensiones internas, según se cuenta, a consecuencia de una guerra con sus vecinos bárbaros, se encontraron en la ruina y privados de la mayor parte de su fuerza.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p><seg xml:id="t24_5">Finalmente, antes de esta guerra nuestra<note n="174"/>, el pueblo expulsó a los aristócratas, y éstos, atacando en compañía de los bárbaros, se dedicaron a saquear a los de la ciudad tanto por tierra como por mar.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="6">
+              <p><seg xml:id="t24_6">Cuando los epidamnios que estaban en la ciudad se vieron en apuros, enviaron embajadores a Corcira, como metrópoli que era, pidiendo que no miraran con indiferencia su destrucción, sino que los reconciliaran con los exiliados y pusieran fin a la guerra con los bárbaros. Formularon esta petición sentándose en el templo de Hera<note n="175"/> como suplicantes. Pero los corcireos no atendieron a la súplica, sino que los despidieron sin conseguir nada.</seg></p>
+            </div>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="25">
+          <linkGrp type="alignment">
+            <link target="#t25_1 #w25_1"/>
+            <link target="#t25_2 #w25_2"/>
+            <link target="#t25_3 #w25_3"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w25_1">γνόντες δὲ οἱ Ἐπιδάμνιοι οὐδεμίαν σφίσιν ἀπὸ Κερκύρας τιμωρίαν οὖσαν ἐν ἀπόρῳ εἴχοντο θέσθαι τὸ παρόν, καὶ πέμψαντες ἐς Δελφοὺς τὸν θεὸν ἐπήροντο εἰ παραδοῖεν Κορινθίοις τὴν πόλιν ὡς οἰκισταῖς καὶ τιμωρίαν τινὰ πειρῷντ’ ἀπ αὐτῶν ποιεῖσθαι. ὁ δ’ αὐτοῖς ἀνεῖλε παραδοῦναι καὶ ἡγεμόνας ποιεῖσθαι.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="w25_2">ἐλθόντες δὲ οἱ Ἐπιδάμνιοι ἐς τὴν Κόρινθον κατὰ τὸ μαντεῖον παρέδοσαν τὴν ἀποικίαν, τόν τε οἰκιστὴν ἀποδεικνύντες σφῶν ἐκ Κορίνθου ὄντα καὶ τὸ χρηστήριον δηλοῦντες, ἐδέοντό τε μὴ σφᾶς περιορᾶν φθειρομένους, ἀλλ’ ἐπαμῦναι.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p><seg xml:id="w25_3">Κορίνθιοι δὲ κατά τε τὸ δίκαιον ὑπεδέξαντο τὴν τιμωρίαν, νομίζοντες οὐχ ἧσσον ἑαυτῶν εἶναι τὴν ἀποικίαν ἢ Κερκυραίων, ἅμα δὲ καὶ μίσει τῶν Κερκυραίων, ὅτι αὐτῶν παρημέλουν ὄντες ἄποικοι· οὔτε γὰρ ἐν πανηγύρεσι ταῖς κοιναῖς διδόντες γέρα τὰ νομιζόμενα οὔτε Κορινθίῳ ἀνδρὶ προκαταρχόμενοι τῶν ἱερῶν ὥσπερ αἱ ἄλλαι ἀποικίαι, περιφρονοῦντες δὲ αὐτοὺς καὶ χρημάτων δυνάμει ὄντες κατ’ ἐκεῖνον τὸν χρόνον ὁμοῖα τοῖς Ἑλλήνων πλουσιωτάτοις καὶ τῇ ἐς πόλεμον παρασκευῇ δυνατώτεροι, ναυτικῷ δὲ καὶ πολὺ προύχειν ἔστιν ὅτε ἐπαιρόμενοι καὶ κατὰ τὴν Φαιάκων προενοίκησιν τῆς Κερκύρας κλέος ἐχόντων τὰ περὶ τὰς ναῦς (ᾗ καὶ μᾶλλον ἐξηρτύοντο τὸ ναυτικὸν καὶ ἦσαν οὐκ ἀδύνατοι· τριήρεις γὰρ εἴκοσι καὶ ἑκατὸν ὑπῆρχον αὐτοῖς ὅτε ἤρχοντο πολεμεῖν),</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t25_1">Cuando los epidamnios supieron que no tendrían ninguna ayuda por parte de Corcira, se encontraron en la dificultad de resolver la situación, y, enviando una embajada a Delfos, preguntaron al dios<note n="176"/> si debían entregar su ciudad a los corintios en su condición de fundadores y tratar de obtener de ellos alguna ayuda. El dios les respondió que entregaran la ciudad y se pusieran bajo la protección de los corintios.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="t25_2">Los epidamnios marcharon, pues, a Corinto y, de acuerdo con el oráculo, entregaron la colonia, explicando que su fundador era de Corinto<note n="177"/> y comunicándoles la respuesta del oráculo<note n="178"/>, y les pidieron que no miraran con indiferencia su destrucción<note n="179"/>, sino que los defendieran.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p><seg xml:id="t25_3">Los corintios accedieron a prestarles ayuda<note n="180"/>, en parte por razones de justicia, ya que consideraban que la colonia era tan suya como de los corcireos, pero también por odio a éstos porque, a pesar de ser colonos suyos, les hacían poco caso, pues ni les ofrecían los presentes tradicionales<note n="181"/> en las fiestas comunes<note n="182"/> ni concedían a un corintio las primicias de los sacrificios<note n="183"/>, como las otras colonias, sino que los trataban con desprecio porque su potencia económica era en aquel tiempo comparable a la de las más ricas ciudades griegas y porque por sus recursos militares eran más poderosos<note n="184"/>, y, en cuanto a su flota, se vanagloriaban a veces no sólo de ser muy superiores, sino también por la anterior ocupación de Corcira por los feacios<note n="185"/>, cuya fama giraba en torno a sus naves<note n="186"/>. Por esta razón se preocupaban todavía más de equipar su flota, en la que precisamente no eran débiles, pues poseían ciento veinte trirremes cuando entraron en guerra.</seg></p>
+            </div>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="55">
+          <linkGrp type="alignment">
+            <link target="#t55_1 #w55_1"/>
+            <link target="#t55_2 #w55_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="w55_1">οἱ δὲ Κορίνθιοι ἀποπλέοντες ἐπ’ οἴκου Ἀνακτόριον, ὅ ἐστιν ἐπὶ τῷ στόματι τοῦ Ἀμπρακικοῦ κόλπου, εἷλον ἀπάτῃ (ἦν δὲ κοινὸν Κερκυραίων καὶ ἐκείνων) καὶ καταστήσαντες ἐν αὐτῷ Κορινθίους οἰκήτορας ἀνεχώρησαν ἐπ’ οἴκου, καὶ τῶν Κερκυραίων ὀκτακοσίους μὲν οἳ ἦσαν δοῦλοι ἀπέδοντο, πεντήκοντα δὲ καὶ διακοσίους δήσαντες ἐφύλασσον καὶ ἐν θεραπείᾳ εἶχον πολλῇ, ὅπως αὐτοῖς τὴν Κέρκυραν ἀναχωρήσαντες προσποιήσειαν· ἐτύγχανον δὲ καὶ δυνάμει αὐτῶν οἱ πλείους πρῶτοι ὄντες τῆς πόλεως.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="w55_2">ἡ μὲν οὖν Κέρκυρα οὕτω περιγίγνεται τῷ πολέμῳ τῶν Κορινθίων, καὶ αἱ νῆες τῶν Ἀθηναίων ἀνεχώρησαν ἐξ αὐτῆς· αἰτία δὲ αὕτη πρώτη ἐγένετο τοῦ πολέμου τοῖς Κορινθίοις ἐς τοὺς Ἀθηναίους, ὅτι σφίσιν ἐν σπονδαῖς μετὰ Κερκυραίων ἐναυμάχουν.</seg></p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="es">
+            <head>55. Los corintios y los atenienses regresan a su patria</head>
+            <div type="textpart" subtype="section" n="1">
+              <p><seg xml:id="t55_1">Los corintios, en la travesía de regreso, tomaron, por medio de una estratagema, Anactorio<note n="313"/>, que está situada en la embocadura del Golfo de Ampracia (era de ellos y de los corcireos en común), y, tras establecer en ella colonos corintios, se retiraron hacia su patria; y de los prisioneros corcireos vendieron ochocientos, que eran esclavos<note n="314"/>, y guardaron en prisión doscientos cincuenta, tratándolos con gran consideración a fin de que al repatriarse ganasen Corcira para su causa<note n="315"/>; pues se daba la circunstancia de que en su mayor parte eran, por su influencia, los primeros de su ciudad.</seg></p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p><seg xml:id="t55_2">Así, pues, Corcira aventajó en esta guerra a los corintios<note n="316"/>, y las naves de los atenienses se retiraron de la isla. Este fue el primer motivo de guerra que tuvieron los corintios contra los atenienses: el hecho de que, estando vigente el tratado de paz, habían participado en compañía de los corcireos en un combate naval contra ellos.</seg></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
