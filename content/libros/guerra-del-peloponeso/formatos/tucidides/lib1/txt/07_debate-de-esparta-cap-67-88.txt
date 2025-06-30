@@ -1,14 +1,89 @@
----
-title: "Español"
-weight: 20
-book: "Libro I"
-work_title: "Historia de la Guerra del Peloponeso"
----
-## 67-88. El debate de Esparta
+HISTORIA DE LA GUERRA DEL PELOPONESO: LIBRO I, CAPÍTULOS 56-66
+=============================================================
+
+TEXTO GRIEGO
+------------
+
+μετὰ ταῦτα δ’ εὐθὺς καὶ τάδε ξυνέβη γενέσθαι τοῖς Ἀθηναίοις καὶ Πελοποννησίοις διάφορα ἐς τὸ πολεμεῖν.
+
+τῶν γὰρ Κορινθίων πρασσόντων ὅπως τιμωρήσονται αὐτούς, ὑποτοπήσαντες τὴν ἔχθραν αὐτῶν οἱ Ἀθηναῖοι Ποτειδεάτας, οἳ οἰκοῦσιν ἐπὶ τῷ ἰσθμῷ τῆς Παλλήνης, Κορινθίων ἀποίκους, ἑαυτῶν δὲ ξυμμάχους φόρου ὑποτελεῖς, ἐκέλευον τὸ ἐς Παλλήνην τεῖχος καθελεῖν καὶ ὁμήρους δοῦναι, τούς τε ἐπιδημιουργοὺς ἐκπέμπειν καὶ τὸ λοιπὸν μὴ δέχεσθαι οὓς κατὰ ἔτος ἕκαστον Κορίνθιοι ἔπεμπον, δείσαντες μὴ ἀποστῶσιν ὑπό τε Περδίκκου πειθόμενοι καὶ Κορινθίων, τούς τε ἄλλους τοὺς ἐπὶ Θρᾴκης ξυναποστήσωσι ξυμμάχους.
+
+ταῦτα δὲ περὶ τοὺς Ποτειδεάτας οἱ Ἀθηναῖοι προπαρεσκευάζοντο εὐθὺς μετὰ τὴν ἐν Κερκύρᾳ ναυμαχίαν·
+
+οἵ τε γὰρ Κορίνθιοι φανερῶς ἤδη διάφοροι ἦσαν, Περδίκκας τε ὁ Ἀλεξάνδρου Μακεδόνων βασιλεὺς ἐπεπολέμωτο ξύμμαχος πρότερον καὶ φίλος ὤν.
+
+ἐπολεμώθη δὲ ὅτι Φιλίππῳ τῷ ἑαυτοῦ ἀδελφῷ καὶ Δέρδᾳ κοινῇ πρὸς αὐτὸν ἐναντιουμένοις οἱ Ἀθηναῖοι ξυμμαχίαν ἐποιήσαντο.
+
+δεδιώς τε ἔπρασσεν ἔς τε τὴν Λακεδαίμονα πέμπων ὅπως πόλεμος γένηται αὐτοῖς πρὸς Πελοποννησίους, καὶ τοὺς Κορινθίους προσεποιεῖτο τῆς Ποτειδαίας ἕνεκα ἀποστάσεως·
+
+προσέφερε δὲ λόγους καὶ τοῖς ἐπὶ Θρᾴκης Χαλκιδεῦσι καὶ Βοττιαίοις ξυναποστῆναι, νομίζων, εἰ ξύμμαχα ταῦτα ἔχοι ὅμορα ὄντα τὰ χωρία, ῥᾷον ἂν τὸν πόλεμον μετ’ αὐτῶν ποιεῖσθαι.
+
+ὧν οἱ Ἀθηναῖοι αἰσθόμενοι καὶ βουλόμενοι προκαταλαμβάνειν τῶν πόλεων τὰς ἀποστάσεις (ἔτυχον γὰρ τριάκοντα ναῦς ἀποστέλλοντες καὶ χιλίους ὁπλίτας ἐπὶ τὴν γῆν αὐτοῦ, Ἀρχεστράτου τοῦ Λυκομήδους μετ’ ἄλλων † δέκα † στρατηγοῦντος) ἐπιστέλλουσι τοῖς ἄρχουσι τῶν νεῶν Ποτειδεατῶν τε ὁμήρους λαβεῖν καὶ τὸ τεῖχος καθελεῖν, τῶν τε πλησίον πόλεων φυλακὴν ἔχειν ὅπως μὴ ἀποστήσονται.
+
+Ποτειδεᾶται δὲ πέμψαντες μὲν καὶ παρ’ Ἀθηναίους πρέσβεις, εἴ πως πείσειαν μὴ σφῶν πέρι νεωτερίζειν μηδέν, ἐλθόντες δὲ καὶ ἐς τὴν Λακεδαίμονα μετὰ Κορινθίων, [ἔπρασσον] ὅπως ἑτοιμάσαιντο τιμωρίαν, ἢν δέῃ, ἐπειδὴ ἔκ τε Ἀθηνῶν ἐκ πολλοῦ πράσσοντες οὐδὲν ηὕροντο ἐπιτήδειον, ἀλλ’ αἱ νῆες αἱ ἐπὶ Μακεδονίαν καὶ ἐπὶ σφᾶς ὁμοίως ἔπλεον, καὶ τὰ τέλη τῶν Λακεδαιμονίων ὑπέσχετο αὐτοῖς, ἢν ἐπὶ Ποτείδαιαν ἴωσιν Ἀθηναῖοι, ἐς τὴν Ἀττικὴν ἐσβαλεῖν, τότε δὴ κατὰ τὸν καιρὸν τοῦτον ἀφίστανται μετὰ Χαλκιδέων καὶ Βοττιαίων κοινῇ ξυνομόσαντες.
+
+καὶ Περδίκκας πείθει Χαλκιδέας τὰς ἐπὶ θαλάσσῃ πόλεις ἐκλιπόντας καὶ καταβαλόντας ἀνοικίσασθαι ἐς Ὄλυνθον μίαν τε πόλιν ταύτην ἰσχυρὰν ποιήσασθαι· τοῖς τ’ ἐκλιποῦσι τούτοις τῆς ἑαυτοῦ γῆς τῆς Μυγδονίας περὶ τὴν Βόλβην λίμνην ἔδωκε νέμεσθαι, ἕως ἂν ὁ πρὸς Ἀθηναίους πόλεμος ᾖ. καὶ οἱ μὲν ἀνῳκίζοντό τε καθαιροῦντες τὰς πόλεις καὶ ἐς πόλεμον παρεσκευάζοντο·
+
+αἱ δὲ τριάκοντα νῆες τῶν Ἀθηναίων ἀφικνοῦνται ἐς τὰ ἐπὶ Θρᾴκης, καὶ καταλαμβάνουσι τήν τε Ποτείδαιαν καὶ τἆλλα ἀφεστηκότα.
+
+νομίσαντες δὲ οἱ στρατηγοὶ ἀδύνατα εἶναι πρός τε Περδίκκαν πολεμεῖν τῇ παρούσῃ δυνάμει καὶ τὰ ξυναφεστῶτα χωρία τρέπονται ἐπὶ τὴν Μακεδονίαν, ἐφ’ ὅπερ καὶ τὸ πρῶτον ἐξεπέμποντο, καὶ καταστάντες ἐπολέμουν μετὰ Φιλίππου καὶ τῶν Δέρδου ἀδελφῶν ἄνωθεν στρατιᾷ ἐσβεβληκότων.
+
+καὶ ἐν τούτῳ οἱ Κορίνθιοι, τῆς Ποτειδαίας ἀφεστηκυίας καὶ τῶν Ἀττικῶν νεῶν περὶ Μακεδονίαν οὐσῶν, δεδιότες περὶ τῷ χωρίῳ καὶ οἰκεῖον τὸν κίνδυνον ἡγούμενοι πέμπουσιν ἑαυτῶν τε ἐθελοντὰς καὶ τῶν ἄλλων Πελοποννησίων μισθῷ πείσαντες ἑξακοσίους καὶ χιλίους τοὺς πάντας ὁπλίτας καὶ ψιλοὺς τετρακοσίους.
+
+ἐστρατήγει δὲ αὐτῶν Ἀριστεὺς ὁ Ἀδειμάντου, κατὰ φιλίαν τε αὐτοῦ οὐχ ἥκιστα οἱ πλεῖστοι ἐκ Κορίνθου στρατιῶται ἐθελονταὶ ξυνέσποντο· ἦν γὰρ τοῖς Ποτειδεάταις αἰεί ποτε ἐπιτήδειος.
+
+καὶ ἀφικνοῦνται τεσσαρακοστῇ ἡμέρᾳ ὕστερον ἐπὶ Θρᾴκης ἢ Ποτείδαια ἀπέστη.
+
+ἦλθε δὲ καὶ τοῖς Ἀθηναίοις εὐθὺς ἡ ἀγγελία τῶν πόλεων ὅτι ἀφεστᾶσι, καὶ πέμπουσιν, ὡς ᾔσθοντο καὶ τοὺς μετ’ Ἀριστέως ἐπιπαριόντας, δισχιλίους ἑαυτῶν ὁπλίτας καὶ τεσσαράκοντα ναῦς πρὸς τὰ ἀφεστῶτα, καὶ Καλλίαν τὸν Καλλιάδου πέμπτον αὐτὸν στρατηγόν,
+
+οἳ ἀφικόμενοι ἐς Μακεδονίαν πρῶτον καταλαμβάνουσι τοὺς προτέρους χιλίους Θέρμην ἄρτι ᾑρηκότας καὶ Πύδναν πολιορκοῦντας.
+
+προσκαθεζόμενοι δὲ καὶ αὐτοὶ τὴν Πύδναν ἐπολιόρκησαν μέν, ἔπειτα δὲ ξύμβασιν ποιησάμενοι καὶ ξυμμαχίαν ἀναγκαίαν πρὸς τὸν Περδίκκαν, ὡς αὐτοὺς κατήπειγεν ἡ Ποτείδαια καὶ ὁ Ἀριστεὺς παρεληλυθώς, ἀπανίστανται ἐκ τῆς Μακεδονίας,
+
+καὶ ἀφικόμενοι ἐς Βέροιαν κἀκεῖθεν ἐπὶ Στρέψαν καὶ πειράσαντες πρῶτον τοῦ χωρίου καὶ οὐχ ἑλόντες ἐπορεύοντο κατὰ γῆν πρὸς τὴν Ποτείδαιαν, τρισχιλίοις μὲν ὁπλίταις ἑαυτῶν, χωρὶς δὲ τῶν ξυμμάχων πολλοῖς, ἱππεῦσι δὲ ἑξακοσίοις Μακεδόνων τοῖς μετὰ Φιλίππου καὶ Παυσανίου· ἅμα δὲ νῆες παρέπλεον ἑβδομήκοντα.
+
+κατ’ ὀλίγον δὲ προϊόντες τριταῖοι ἀφίκοντο ἐς Γίγωνον καὶ ἐστρατοπεδεύσαντο.
+
+Ποτειδεᾶται δὲ καὶ οἱ μετὰ Ἀριστέως Πελοποννήσιοι προσδεχόμενοι τοὺς Ἀθηναίους ἐστρατοπεδεύοντο πρὸς Ὀλύνθου ἐν τῷ ἰσθμῷ, καὶ ἀγορὰν ἔξω τῆς πόλεως ἐπεποίηντο.
+
+στρατηγὸν μὲν οὖν τοῦ πεζοῦ παντὸς οἱ ξύμμαχοι ᾕρηντο Ἀριστέα, τῆς δὲ ἵππου Περδίκκαν· ἀπέστη γὰρ εὐθὺς πάλιν τῶν Ἀθηναίων καὶ ξυνεμάχει τοῖς Ποτειδεάταις, Ἰόλαον ἀνθ’ αὑτοῦ καταστήσας ἄρχοντα.
+
+ἦν δὲ ἡ γνώμη τοῦ Ἀριστέως τὸ μὲν μεθ’ ἑαυτοῦ στρατόπεδον ἔχοντι ἐν τῷ ἰσθμῷ ἐπιτηρεῖν τοὺς Ἀθηναίους, ἢν ἐπίωσι, Χαλκιδέας δὲ καὶ τοὺς ἔξω ἰσθμοῦ ξυμμάχους καὶ τὴν παρὰ Περδίκκου διακοσίαν ἵππον ἐν Ὀλύνθῳ μένειν, καὶ ὅταν Ἀθηναῖοι ἐπὶ σφᾶς χωρῶσι, κατὰ νώτου βοηθοῦντας ἐν μέσῳ ποιεῖν αὑτῶν τοὺς πολεμίους.
+
+Καλλίας δ’ αὖ ὁ τῶν Ἀθηναίων στρατηγὸς καὶ οἱ ξυνάρχοντες τοὺς μὲν Μακεδόνας ἱππέας καὶ τῶν ξυμμάχων ὀλίγους ἐπὶ Ὀλύνθου ἀποπέμπουσιν, ὅπως εἴργωσι τοὺς ἐκεῖθεν ἐπιβοηθεῖν, αὐτοὶ δὲ ἀναστήσαντες τὸ στρατόπεδον ἐχώρουν ἐπὶ τὴν Ποτείδαιαν.
+
+καὶ ἐπειδὴ πρὸς τῷ ἰσθμῷ ἐγένοντο καὶ εἶδον τοὺς ἐναντίους παρασκευαζομένους ὡς ἐς μάχην, ἀντικαθίσταντο καὶ αὐτοί, καὶ οὐ πολὺ ὕστερον ξυνέμισγον.
+
+καὶ αὐτὸ μὲν τὸ τοῦ Ἀριστέως κέρας καὶ ὅσοι περὶ ἐκεῖνον ἦσαν Κορινθίων τε καὶ τῶν ἄλλων λογάδες ἔτρεψαν τὸ καθ’ ἑαυτοὺς καὶ ἐπεξῆλθον διώκοντες ἐπὶ πολύ· τὸ δὲ ἄλλο στρατόπεδον Ποτειδεατῶν καὶ Πελοποννησίων ἡσσᾶτο ὑπὸ τῶν Ἀθηναίων καὶ ἐς τὸ τεῖχος κατέφυγεν.
+
+ἐπαναχωρῶν δὲ ὁ Ἀριστεὺς ἀπὸ τῆς διώξεως, ὡς ὁρᾷ τὸ ἄλλο στράτευμα ἡσσημένον, ἠπόρησε μὲν ὁποτέρωσε διακινδυνεύσῃ χωρήσας, ἢ ἐπὶ τῆς Ὀλύνθου ἢ ἐς τὴν Ποτείδαιαν· ἔδοξε δ’ οὖν ξυναγαγόντι τοὺς μεθ’ αὑτοῦ ὡς ἐς ἐλάχιστον χωρίον δρόμῳ βιάσασθαι ἐς τὴν Ποτείδαιαν, καὶ παρῆλθε παρὰ τὴν χηλὴν διὰ τῆς θαλάσσης βαλλόμενός τε καὶ χαλεπῶς, ὀλίγους μέν τινας ἀποβαλών, τοὺς δὲ πλείους σώσας.
+
+οἱ δ’ ἀπὸ τῆς Ὀλύνθου τοῖς Ποτειδεάταις βοηθοί (ἀπέχει δὲ ἑξήκοντα μάλιστα σταδίους καὶ ἔστι καταφανές), ὡς ἡ μάχη ἐγίγνετο καὶ τὰ σημεῖα ἤρθη, βραχὺ μέν τι προῆλθον ὡς βοηθήσοντες, καὶ οἱ Μακεδόνες ἱππῆς ἀντιπαρετάξαντο ὡς κωλύσοντες· ἐπειδὴ δὲ διὰ τάχους ἡ νίκη τῶν Ἀθηναίων ἐγίγνετο καὶ τὰ σημεῖα κατεσπάσθη, πάλιν ἐπανεχώρουν ἐς τὸ τεῖχος καὶ οἱ Μακεδόνες παρὰ τοὺς Ἀθηναίους· ἱππῆς δ’ οὐδετέροις παρεγένοντο.
+
+μετὰ δὲ τὴν μάχην τροπαῖον ἔστησαν οἱ Ἀθηναῖοι καὶ τοὺς νεκροὺς ὑποσπόνδους ἀπέδοσαν τοῖς Ποτειδεάταις· ἀπέθανον δὲ Ποτειδεατῶν μὲν καὶ τῶν ξυμμάχων ὀλίγῳ ἐλάσσους τριακοσίων, Ἀθηναίων δὲ αὐτῶν πεντήκοντα καὶ ἑκατὸν καὶ Καλλίας ὁ στρατηγός.
+
+τὸ δὲ ἐκ τοῦ ἰσθμοῦ [τεῖχος ] εὐθὺς οἱ Ἀθηναῖοι ἀποτειχίσαντες ἐφρούρουν· τὸ δ’ ἐς τὴν Παλλήνην ἀτείχιστον ἦν· οὐ γὰρ ἱκανοὶ ἐνόμιζον εἶναι ἔν τε τῷ ἰσθμῷ φρουρεῖν καὶ ἐς τὴν Παλλήνην διαβάντες τειχίζειν, δεδιότες μὴ σφίσιν οἱ Ποτειδεᾶται καὶ οἱ ξύμμαχοι γενομένοις δίχα ἐπίθωνται.
+
+καὶ πυνθανόμενοι οἱ ἐν τῇ πόλει Ἀθηναῖοι τὴν Παλλήνην ἀτείχιστον οὖσαν, χρόνῳ ὕστερον πέμπουσιν ἑξακοσίους καὶ χιλίους ὁπλίτας ἑαυτῶν καὶ Φορμίωνα τὸν Ἀσωπίου στρατηγόν· ὃς ἀφικόμενος ἐς τὴν Παλλήνην καὶ ἐξ Ἀφύτιος ὁρμώμενος προσήγαγε τῇ Ποτειδαίᾳ τὸν στρατὸν κατὰ βραχὺ προϊὼν καὶ κείρων ἅμα τὴν γῆν, ὡς δὲ οὐδεὶς ἐπεξῄει ἐς μάχην, ἀπετείχισε τὸ ἐκ τῆς Παλλήνης [τεῖχος ].
+
+καὶ οὕτως ἤδη κατὰ κράτος ἡ Ποτείδαια ἀμφοτέρωθεν ἐπολιορκεῖτο καὶ ἐκ θαλάσσης ναυσὶν ἅμα ἐφορμούσαις.
+
+Ἀριστεὺς δὲ ἀποτειχισθείσης αὐτῆς καὶ ἐλπίδα οὐδεμίαν ἔχων σωτηρίας, ἢν μή τι ἀπὸ Πελοποννήσου ἢ ἄλλο παρὰ λόγον γίγνηται, ξυνεβούλευε μὲν πλὴν πεντακοσίων ἄνεμον τηρήσασι τοῖς ἄλλοις ἐκπλεῦσαι, ὅπως ἐπὶ πλέον ὁ σῖτος ἀντίσχῃ, καὶ αὐτὸς ἤθελε τῶν μενόντων εἶναι· ὡς δ’ οὐκ ἔπειθε, βουλόμενος τὰ ἐπὶ τούτοις παρασκευάζειν καὶ ὅπως τὰ ἔξωθεν ἕξει ὡς ἄριστα, ἔκπλουν ποιεῖται λαθὼν τὴν φυλακὴν τῶν Ἀθηναίων.
+
+καὶ παραμένων ἐν Χαλκιδεῦσι τά τε ἄλλα ξυνεπολέμει καὶ Σερμυλιῶν λοχήσας πρὸς τῇ πόλει πολλοὺς διέφθειρεν, ἔς τε τὴν Πελοπόννησον ἔπρασσεν ὅπῃ ὠφελία τις γενήσεται. μετὰ δὲ τῆς Ποτειδαίας τὴν ἀποτείχισιν Φορμίων μὲν ἔχων τοὺς ἑξακοσίους καὶ χιλίους τὴν Χαλκιδικὴν καὶ Βοττικὴν ἐδῄου καὶ ἔστιν ἃ καὶ πολίσματα εἷλεν.
+
+μετὰ δὲ τῆς Ποτειδαίας τὴν ἀποτείχισιν Φορμίων μὲν ἔχων τοὺς ἑξακοσίους καὶ χιλίους τὴν Χαλκιδικὴν καὶ Βοττικὴν ἐδῄου καὶ ἔστιν ἃ καὶ πολίσματα εἷλεν.
+
+τοῖς δ’ Ἀθηναίοις καὶ Πελοποννησίοις αἰτίαι μὲν αὗται προυγεγένηντο ἐς ἀλλήλους, τοῖς μὲν Κορινθίοις ὅτι τὴν Ποτείδαιαν ἑαυτῶν οὖσαν ἀποικίαν καὶ ἄνδρας Κορινθίων τε καὶ Πελοποννησίων ἐν αὐτῇ ὄντας ἐπολιόρκουν, τοῖς δὲ Ἀθηναίοις ἐς τοὺς Πελοποννησίους ὅτι ἑαυτῶν τε πόλιν ξυμμαχίδα καὶ φόρου ὑποτελῆ ἀπέστησαν, καὶ ἐλθόντες σφίσιν ἀπὸ τοῦ προφανοῦς ἐμάχοντο μετὰ Ποτειδεατῶν. οὐ μέντοι ὅ γε πόλεμός πω ξυνερρώγει, ἀλλ’ ἔτι ἀνοκωχὴ ἦν· ἰδίᾳ γὰρ ταῦτα οἱ Κορίνθιοι ἔπραξαν.
+
+TRADUCCIÓN AL ESPAÑOL
+---------------------
+
+67-88. El debate de Esparta
 
 67. El asedio de Potidea mantenía en movimiento a los corintios, porque allí estaban encerradas sus tropas y también porque temían por la plaza. Sin demora, convocaron a los aliados³⁸⁰ a Esparta y, una vez allí, cubrieron de improperios a los atenienses acusándolos de haber roto el tratado y de cometer agresión contra el Peloponeso. [2] Los eginetas, por miedo a los atenienses³⁸¹, no enviaron embajadores abiertamente, sino en secreto, y se distinguieron, juntamente con los corintios, por su incitación a la guerra, alegando que no eran autónomos de acuerdo con lo estipulado en el tratado³⁸². [3] Los lacedemonios también citaron a quien quisiera de sus aliados que declarara haber sufrido algún otro daño de parte de los atenienses y, reuniendo su asamblea ordinaria, les invitaron a hablar. [4] Otros varios tomaron la palabra y cada uno expuso sus propias acusaciones, y sobresalió la intervención de los megareos que, entre otros considerables motivos de discordia, destacaron el hecho de que, en contra del tratado, se les impedía el acceso a los puertos del Imperio ateniense y al mercado ático³⁸³. [5] Finalmente tomaron la palabra los corintios, después de dejar que los otros enardecieran primero los ánimos de los lacedemonios, y hablaron de este modo:
 
-## 68-72. Discurso de los corintios
+68-72. Discurso de los corintios
 
 68. «La buena fe que preside vuestras relaciones interiores, tanto públicas como privadas, os hace, lacedemonios, más incrédulos respecto a los de fuera cuando formulamos alguna acusación³⁸⁴; y si por un lado probáis vuestro buen sentido, en los asuntos exteriores adolecéis más bien de falta de agudeza³⁸⁵. [2] Muchas veces, en efecto, os hemos advertido sobre los daños que iban a ocasionarnos los atenienses, pero vosotros nunca habéis prestado atención a nuestras informaciones; preferíais sospechar de quienes formulaban la acusación suponiendo que os hablaban movidos por sus intereses particulares; y por esta razón, no antes de sufrir daños, sino cuando ya estamos ante hechos consumados, habéis convocado a los aliados aquí presentes, entre los que nos corresponde a nosotros más que a nadie tomar la palabra, tanto más cuanto tenemos los motivos de queja más graves, puesto que los atenienses nos injurian y vosotros nos abandonáis.
 [3] Si los atenienses cometieran sus agresiones contra Grecia de alguna forma encubierta, sería preciso que se os diera información como a gente que no está al corriente; pero ahora, ¿qué necesidad hay de largos discursos cuando veis que a unos³⁸⁶ los tienen sometidos y que tienden asechanzas contra otros³⁸⁷, principalmente contra nuestros aliados, y que están preparados desde hace mucho tiempo por si se da el caso de que han de entrar en guerra? [4] Si no fuese así, no nos habrían robado Corcira ni la retendrían contra nuestra voluntad, ni estarían asediando Potidea. De ellas, ésta es la plaza mejor situada para utilizarla como base de operaciones en la costa de Tracia, y aquélla habría proporcionado a los peloponesios la flota más importante.
@@ -20,7 +95,7 @@ work_title: "Historia de la Guerra del Peloponeso"
 
 72. Así hablaron los corintios. Una embajada ateniense se encontraba precisamente en Esparta desde hacía unos días para discutir otros asuntos, y cuando se enteraron de los discursos, resolvieron que debían presentarse ante la asamblea de los lacedemonios y, sin pretender defenderse de ninguna de las acusaciones que formulaban las ciudades, hacer ver que no les convenía una deliberación apresurada sobre la cuestión en su conjunto, sino que debían examinarla más detalladamente. Querían, al mismo tiempo, destacar la importancia del poderío de su ciudad, y recordar a los viejos lo que ya sabían e informar a los jóvenes sobre hechos que no habían vivido⁴¹⁵; pensaban que gracias a sus palabras se inclinarían a la paz más que a la guerra. Se personaron, pues, ante los lacedemonios y les dijeron que ellos también querían dirigir la palabra a su asamblea, si no había ningún inconveniente. Aquéllos les invitaron a comparecer y los atenienses se presentaron y dijeron lo siguiente:
 
-## 73-79. Discurso de los atenienses
+73-79. Discurso de los atenienses
 
 73. «La misión de nuestra embajada no era el debate con vuestros aliados, sino la negociación para la que nuestra ciudad nos envió; pero al enterarnos de que un considerable clamor se había levantado contra nosotros, nos hemos presentado, no para replicar a las acusaciones de las ciudades (puesto que vosotros no sois los jueces ante quienes nuestros alegatos y los suyos pueden ser expuestos), sino para evitar que, fácilmente convencidos por vuestros aliados en cuestiones trascendentales, toméis una decisión menos acertada. Queremos, además, dejar claro, a propósito de toda la cuestión suscitada respecto a nosotros, que no tenemos nuestras posesiones indebidamente; y que nuestra ciudad es digna de consideración. [2] ¿Para qué hablar de hechos muy antiguos, atestiguados por los relatos a los que se presta oído más que por la vista del auditorio? En cambio, de las Guerras Médicas y de hechos que vosotros mismos conocéis, aunque pueda resultar un tanto enojoso que los aduzcamos siempre como argumento, es preciso que hablemos. Pues lo cierto es que, en el curso de aquellas acciones, se corrió un riesgo para prestar un servicio, y si vosotros participasteis de los efectos de ese servicio, nosotros no debemos ser privados de toda posibilidad de hablar de ello, si nos resulta útil. [3] Nuestro discurso no será tanto un discurso de justificación como de testimonio y de aclaración, para que os deis cuenta de contra qué ciudad tendrá lugar la contienda si no deliberáis bien. [4] Afirmamos, ciertamente, que en Maratón nosotros solos afrontamos el peligro ante los bárbaros⁴¹⁶, y que cuando más tarde volvieron, al no poder defendernos por tierra, nos embarcamos con todo el pueblo en las naves⁴¹⁷ y participamos en la batalla de Salamina; esto fue; precisamente, lo que impidió que aquéllos atacaran por mar y saquearan, ciudad tras ciudad, el Peloponeso, pues no hubiera sido posible una ayuda mutua contra tantas naves⁴¹⁸. [5] Y la mayor prueba de esto la dieron los mismos bárbaros: al ser vencidos por mar, consideraron que sus fuerzas ya no eran iguales y se retiraron a toda prisa con el grueso de su ejército⁴¹⁹.
 
@@ -34,7 +109,7 @@ work_title: "Historia de la Guerra del Peloponeso"
 
 79. Así hablaron los atenienses. Cuando los lacedemonios hubieron escuchado las acusaciones de sus aliados contra los atenienses y lo que dijeron los atenienses, los hicieron salir a todos y se pusieron a deliberar ellos solos sobrela situación. [2] Las opiniones de la mayoría coincidían: los atenienses ya eran culpables y se debía entrar en guerra cuanto antes; pero Arquidamo⁴⁴¹, el rey de los lacedemonios, que tenía fama de hombre inteligente y sensato, se adelantó y les habló de este modo:
 
-## 80-85. Discurso de Arquidamo
+80-85. Discurso de Arquidamo
 
 80. «Yo mismo, lacedemonios, ya tengo experiencia de muchas guerras⁴⁴², y veo entre vosotros a algunos que son de mi misma edad, razón suficiente para no desear la guerra por inexperiencia⁴⁴³, como podría ocurrir a la mayoría, o por considerarla buena y segura. [2] Descubriríais que ésta sobre la que ahora deliberáis no sería de poca importancia, si se procediera a un cálculo sensato sobre ella. [3] Frente a peloponesios y a los pueblos vecinos⁴⁴⁴, nuestra fuerza es muy semejante⁴⁴⁵, y podemos llegar rápidamente a cualquier objetivo; pero contra unos hombres cuyo país está lejos⁴⁴⁶, y que, además, son expertísimos marinos y están muy bien provistos de todo lo demás —riqueza privada y pública⁴⁴⁷, naves, caballos, armas y una población numerosa como no se encuentra en ningún otro lugar de Grecia—, y que, por si fuera poco, cuentan con muchos aliados sujetos a tributo, ¿cómo se puede emprender una guerra a la ligera contra hombres como éstos y en qué hay que confiar para precipitarse sin estar preparados? [4] ¿En la flota? Pero somos inferiores; y si hemos de adiestrarnos y equiparnos contra ellos, será necesario tiempo. ¿En el dinero, tal vez?⁴⁴⁸. En esto todavía nos quedamos mucho más atrás, y no lo tenemos en el tesoro público ni estamos en condiciones de obtenerlo fácilmente de los recursos privados⁴⁴⁹.
 
@@ -48,14 +123,14 @@ work_title: "Historia de la Guerra del Peloponeso"
 
 85. No abandonemos, pues, estas costumbres que nuestros padres nos dejaron y que nosotros hemos mantenido siempre con provecho, y no tomemos con prisas, en una breve fracción de día, una decisión que afecta a muchas vidas, bienes, ciudades y reputaciones; decidamos con calma. Podemos hacerlo más que otros gracias a nuestra fuerza. [2] Enviad una embajada a los atenienses para tratar el asunto de Potidea, enviadla también para el asunto de las injusticias que dicen haber sufrido nuestros aliados, tanto más que los atenienses están dispuestos a someterse a un arbitraje⁴⁶⁴; y cuando uno se somete a juicio, no es justo que se comience por marchar contra él como si fuera culpable. Al mismo tiempo preparad la guerra. Una decisión en este sentido será, sin duda, la mejor, y la que más intimidará a nuestros adversarios. » [3] Así fue el discurso de Arquidamo. Se adelantó finalmente Estenelaidas⁴⁶⁵, que era entonces uno de los éforos⁴⁶⁶, y habló a los lacedemonios de esta manera:
 
-## 86. Discurso de Estenelaidas
+86. Discurso de Estenelaidas
 
 86. «No llego a entender los largos discursos de los atenienses; se han alabado largamente a sí mismos, pero en ninguna parte han replicado que ellos no cometen injusticias contra nuestros aliados y contra el Peloponeso. Sin embargo, si entonces frente a los Medos su actuación fue buena, y ahora respecto a nosotros es mala, son merecedores de un castigo doble, porque de buenos han pasado a ser malos⁴⁶⁷. [2] Nosotros, entonces y ahora, somos los mismos, y no toleraremos, si somos sensatos, que nuestros aliados sean víctimas de la injusticia, ni aplazaremos nuestra venganza, puesto que los males que ellos sufren de ningún modo se aplazan. [3] Otros tienen, en efecto, muchas riquezas, naves y caballos⁴⁶⁸, pero nosotros contamos con unos buenos aliados, que no deben ser entregados a los atenienses, y no hay que evaluar con juicios y palabras los daños que no hemos sufrido de palabra, sino que es preciso tomar venganza rápidamente y con todas nuestras fuerzas. [4] Y que nadie nos explique, cuando somos víctimas de sus injusticias, que nos conviene deliberar⁴⁶⁹; es más conveniente que deliberen largo tiempo quienes van a cometer la injusticia. [5] Votad pues, lacedemonios, la guerra, en una votación digna de Esparta; no permitáis que los atenienses se engrandezcan, y no traicionemos a nuestros aliados; por el contrario, con la ayuda de los dioses, marchemos contra los culpables⁴⁷⁰.
 
-## 87. El tratado ha sido violado
+87. El tratado ha sido violado
 
 87. Después de hablar así, él mismo, como éforo que era, sometió el asunto a la votación de la asamblea de los lacedemonios. [2] Afirmó luego (dado que toman las decisiones por aclamación y no mediante escrutinio)⁴⁷¹ que no podía distinguir cuál de las dos aclamaciones era la más fuerte; quería incitarles más a la guerra, al tener que manifestar claramente su opinión, y les dijo: «Aquellos de vosotros, lacedemonios, que piensen que el tratado ha sido violado y que los atenienses son culpables, que se levanten y se sitúen en aquel lado», —y les señaló un lugar determinado- «y los que piensen lo contrario en el otro lado». [3] Procedieron a levantarse y se dirigieron a uno u otro lado, y fueron muchos más los que pensaban que el tratado había sido violado. [4] Llamaron entonces a sus aliados y les dijeron que en su opinión los atenienses eran culpables, pero que querían convocar una asamblea de todos los aliados⁴⁷² y someter la cuestión a votación, a fin de tomar en común la decisión de emprender la guerra, si eran de esta opinión. [5] Después de llegar a este resultado, los aliados regresaron a su patria, y también lo hicieron los embajadores de los atenienses, una vez que hubieron negociado los asuntos que habían motivado su viaje. [6] Esta decisión de la asamblea, de que el tratado había sido violado, fue tomada en el año catorce⁴⁷³ desde el comienzo de la tregua de treinta años que se había acordado después de los sucesos de Eubea⁴⁷⁴.
 
-## 88. El miedo de Esparta al poderío de Atenas. La verdadera causa
+88. El miedo de Esparta al poderío de Atenas. La verdadera causa
 
 88. Los lacedemonios votaron que el tratado había sido violado y que se debía hacer la guerra, no tanto La verdadera causa porque hubieran sido persuadidos por los discursos de sus aliados como porque temían que los atenienses se hicieran más poderosos⁴⁷⁵, al ver que la mayor parte de Grecia estaba ya bajo su dominio.
