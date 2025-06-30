@@ -290,53 +290,95 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+/* ============================================= */
+/* == NAVEGACIÓN DE LIBROS Y CAPÍTULOS == */
+/* ============================================= */
 
-/* --- NAVEGACIÓN DE CAPÍTULOS (ANTERIOR/SIGUIENTE) --- */
-.chapter-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.chapter-nav-link {
+/* --- 1. Breadcrumbs / Migas de Pan (Contexto) --- */
+/* Reemplaza y mejora el estilo de .libro-header-link */
+.libro-contexto {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 1rem 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chapter-nav-link:hover {
+    flex-wrap: wrap; /* Para que se ajuste en móviles */
+    gap: 0.5rem;
     background-color: var(--bg-light-gray);
-    border-color: #ccc;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
 }
 
-.chapter-nav-link div {
+.libro-contexto a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.libro-contexto a:hover {
+    text-decoration: underline;
+}
+
+.libro-contexto span {
+    color: #6c757d; /* Un gris suave para los separadores */
+}
+
+.libro-contexto strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+/* --- 2. Navegación Lateral de Capítulos --- */
+.chapter-nav {
+    /* El contenedor <aside> */
+    border: 1px solid var(--border-color);
+    background-color: #fcfcfc; /* Un fondo casi blanco */
+    border-radius: 8px;
+    padding: 1.5rem;
+    /* Para que se quede fijo al hacer scroll en pantallas grandes */
+    position: sticky;
+    top: 2rem;
+}
+
+.chapter-nav h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    gap: 0.25rem; /* Espacio entre elementos */
 }
 
-.chapter-nav-link span {
-    font-size: 0.9rem;
-    color: #6c757d;
+.chapter-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: 500;
 }
 
-.chapter-nav-link strong {
-    font-size: 1.1rem;
+.chapter-nav a:hover {
+    background-color: #e9ecef; /* Un gris un poco más oscuro que el fondo */
+    color: var(--text-color);
+}
+
+/* Estado activo: para el capítulo que se está viendo */
+.chapter-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
     font-weight: 700;
-}
-
-.chapter-nav-link svg {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0; /* Evita que el ícono se encoja */
 }
 
 /* --- TÍTULOS DE CAPÍTULOS --- */

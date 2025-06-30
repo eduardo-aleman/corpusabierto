@@ -1,48 +1,68 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
+  {{/* 1. Añadimos el partial de contexto/breadcrumbs para consistencia */}}
+  {{ partial "libro-contexto.html" . }}
+
   <header>
     <h1>{{ .Title }}</h1>
     {{ with .Params.subtitle }}
       <p class="subtitle">{{ . }}</p>
     {{ end }}
-
-    {{ with .Content }}
-      <div class="content-body" style="border:none; padding: 1rem 0;">
-        {{ . }}
-      </div>
-    {{ end }}
   </header>
 
-  {{ if .RegularPages }}
-    <div class="info-grid">
-      {{ range .RegularPages.ByWeight }}
-        <div class="info-container" id="{{ .File.BaseFileName }}">
-          <div class="info-header">
-            <h3>{{ .Title }}</h3>
-            <a href="#" class="expand-icon" title="Ver en pantalla completa">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-              </svg>
-            </a>
-          </div>
-          <div class="info-content">
-            {{ .Content }}
-          </div>
+  <div class="flex flex-col lg:flex-row lg:space-x-8 mt-4">
+
+    {{/* --- Columna de Navegación de Capítulos (Sidebar) --- */}}
+    {{/* Se mostrará solo cuando estemos dentro de un libro, gracias a la lógica del partial */}}
+    <div class="w-full lg:w-1/4 order-last lg:order-first">
+      {{ partial "chapter-nav.html" . }}
+    </div>
+
+    {{/* --- Columna de Contenido Principal --- */}}
+    <div class="w-full lg:w-3/4">
+      {{/* Muestra el contenido del _index.md si existe */}}
+      {{ with .Content }}
+        <div class="content-body prose max-w-none mb-8">
+          {{ . }}
+        </div>
+      {{ end }}
+
+      {{/*
+        Esta es tu lógica original:
+        - Si hay páginas regulares, las muestra en una rejilla.
+        - Si no, muestra una lista de las sub-secciones.
+      */}}
+      {{ if .RegularPages }}
+        <div class="info-grid">
+          {{ range .RegularPages.ByWeight }}
+            <div class="info-container" id="{{ .File.BaseFileName }}">
+              <div class="info-header">
+                <h3>{{ .Title }}</h3>
+                <a href="#" class="expand-icon" title="Ver en pantalla completa">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                       viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="info-content">
+                {{ .Content }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      {{ else if .Sections }}
+        <div class="content-body">
+          <ul class="list-disc list-inside space-y-2">
+            {{ range .Sections.ByWeight }}
+              <li><a href="{{ .Permalink }}" class="text-blue-600 hover:underline">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
         </div>
       {{ end }}
     </div>
-  {{ else }}
-    <div class="content-body">
-      <ul>
-        {{ range .Sections.ByWeight }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-    </div>
-  {{ end }}
-
+  </div>
 </div>
 {{ end }}

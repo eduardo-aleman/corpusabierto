@@ -20,16 +20,12 @@
     {{ partial "header.html" . }}
 
     <main>
-
-        {{/* BLOQUE DE CONTEXTO PARA LIBROS Y CAPÍTULOS */}}
-        {{ partial "libro-contexto.html" . }}
-
-        {{/* MOSTRAR NAVEGACIÓN SOLO EN CAPÍTULOS */}}
-        {{ $padre := .Parent }}
-        {{ if and .IsSection $padre (strings.HasPrefix $padre.RelPermalink "/libros/") }}
-          {{ partial "chapter-nav.html" . }}
-        {{ end }}
-
+        {{/*
+          El bloque 'main' es el contenedor principal.
+          Hugo lo llenará con el contenido de 'single.html' o 'list.html'.
+          Se han eliminado las llamadas a los partials 'libro-contexto.html' y 'chapter-nav.html'
+          de este archivo para evitar la duplicación.
+        */}}
         {{ block "main" . }}{{ end }}
     </main>
 

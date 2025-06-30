@@ -1,42 +1,38 @@
-{{/* Solo ejecutar este bloque para la sección de libros */}}
-{{ if strings.HasPrefix .RelPermalink "/libros/" }}
-  <div class="libro-header-link">
+{{/*
+  layouts/partials/libro-contexto.html
+  Genera una navegación de "migas de pan" (breadcrumb) para la sección de libros.
+  Funciona para cualquier nivel de profundidad (libros > capítulos > sub-páginas).
+*/}}
 
-    <a href="{{ site.BaseURL }}">CorpusAbierto</a>
+{{ $currentPage := . }}
 
-    {{/* --- Definiciones de variables corregidas --- */}}
+{{/* Solo ejecutar este bloque si estamos dentro de la sección "libros" */}}
+{{ if eq $currentPage.Section "libros" }}
+  <nav class="libro-contexto" aria-label="breadcrumb">
+    
+    {{/* 1. Enlace a la página de inicio */}}
+    <a href="{{ site.Home.RelPermalink }}">CorpusAbierto</a>
 
-    {{ $esListadoPrincipalLibros := eq .RelPermalink "/libros/" }}
-
-    {{/* Un libro es una SECCIÓN cuyo padre es la sección "libros" */}}
-    {{ $esPaginaDeLibro := and .IsSection (eq .Parent.RelPermalink "/libros/") }}
-
-    {{/* Un capítulo es una PÁGINA REGULAR cuyo padre es la página de un libro */}}
-    {{ $esPaginaDeCapitulo := and .IsPage .Parent (strings.HasPrefix .Parent.RelPermalink "/libros/") }}
-
-
-    {{/* --- Lógica de renderizado --- */}}
-
-    {{ if $esListadoPrincipalLibros }}
+    {{/* 2. Enlace a la sección principal de Libros (si no estamos ya en ella) */}}
+    {{ $librosSection := .Site.GetPage "section" "libros" }}
+    {{ if not (eq $currentPage $librosSection) }}
       <span> &gt; </span>
-      <strong>Libros</strong>
-
-    {{ else if $esPaginaDeLibro }}
-      <span> &gt; </span>
-      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
-      <span> &gt; </span>
-      <strong>{{ .Title }}</strong>
-
-    {{ else if $esPaginaDeCapitulo }}
-      <span> &gt; </span>
-      <a href="{{ .Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Title }}</a>
-      <span> &gt; </span>
-      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
-      <span> &gt; </span>
-      <strong>{{ .Title }}</strong>
+      <a href="{{ $librosSection.RelPermalink }}">{{ $librosSection.Title }}</a>
     {{ end }}
 
-  </div>
-{{ end }}
+    {{/* 3. Itera sobre los ancestros para crear los enlaces intermedios */}}
+    {{/* Usamos .Ancestors.Reverse para que el orden sea correcto: Libro > Capítulo */}}
+    {{ range .Ancestors.Reverse }}
+      {{/* Nos aseguramos de no repetir la sección "libros" o la página de inicio */}}
+      {{ if and (ne . $librosSection) (ne .Kind "home") }}
+        <span> &gt; </span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
+    {{ end }}
 
-{{/* Fin del bloque para la sección de libros */}}
+    {{/* 4. Muestra el título de la página actual como texto (sin enlace) */}}
+    <span> &gt; </span>
+    <strong>{{ $currentPage.Title }}</strong>
+
+  </nav>
+{{ end }}

@@ -1,6 +1,9 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
+  {{/* Incluimos el contexto/breadcrumb aquí arriba */}}
+  {{ partial "libro-contexto.html" . }}
+
   <header>
     <h1>{{ .Title }}</h1>
 
@@ -9,19 +12,13 @@
     <p class="subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
 
-    {{/* Enlace para volver a la portada del libro, si aplica */}}
-    {{ with .Parent }}
-      {{ if strings.HasPrefix .RelPermalink "/libros/" }}
-        <p class="parent-book-link">
-          Volver a la obra: <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </p>
-      {{ end }}
-    {{ end }}
+    {{/* El bloque "Volver a la obra" se puede eliminar,
+       ya que "libro-contexto.html" ya lo gestiona. */}}
+
   </header>
 
   <div class="content-body">
-
-    {{/* Mostrar partes 1.md a 6.md si existen como recursos */}}
+    {{/* ... tu lógica de .Resources o .Content ... */}}
     {{ if .Resources }}
       {{ range seq 1 6 }}
         {{ with $.Resources.GetMatch (printf "%d.md" .) }}
@@ -31,10 +28,8 @@
         {{ end }}
       {{ end }}
     {{ else }}
-      {{/* Si no hay recursos, mostrar contenido normal */}}
       {{ .Content }}
     {{ end }}
-
   </div>
 
   {{/* Navegación entre capítulos */}}

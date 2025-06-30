@@ -1,31 +1,60 @@
-<div class="chapter-navigation">
+{{/*
+layouts/partials/chapter-nav.html
+Este partial genera la navegación para los capítulos dentro de un libro.
+*/}}
 
-  {{/* Usamos .Page.PrevInSection en lugar de solo .PrevInSection.
-    .Page es una variable global que siempre apunta al contexto de la página actual.
-    Esto previene errores si este parcial es llamado desde un shortcode, 
-    donde el contexto (el punto ".") podría haber cambiado.
+{{ $currentPage := . }}
+{{ $bookPage := "" }}
+
+{{/*
+  Solo ejecutar esta lógica si estamos en la sección "libros".
+*/}}
+{{ if eq .Section "libros" }}
+
+  {{/*
+    Encontrar la página del "libro". Un libro es una sección de primer nivel dentro de "libros".
+    Subimos por el árbol de padres desde la página actual hasta encontrar la página
+    cuyo padre sea la sección principal "libros".
   */}}
-  {{ with .Page.PrevInSection }}
-    <a class="chapter-nav-link prev" href="{{ .RelPermalink }}">
-      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-      <div>
-        <span>Anterior</span>
-        <strong class="chapter-title">{{ .Title }}</strong>
-      </div>
-    </a>
+  {{ $ancestor := . }}
+  {{ range seq 5 }} {{/* Limita la profundidad a 5 para evitar bucles infinitos */}}
+    {{ if and $ancestor.Parent (not $ancestor.Parent.IsHome) }}
+      {{ if eq $ancestor.Parent.RelPermalink "/libros/" }}
+        {{ $bookPage = $ancestor }}
+        {{ break }}
+      {{ else }}
+        {{ $ancestor = $ancestor.Parent }}
+      {{ end }}
+    {{ else }}
+      {{ break }}
+    {{ end }}
   {{ end }}
 
-  {{/* Hacemos lo mismo para .NextInSection, usando .Page.NextInSection 
-    para garantizar que obtenemos la página siguiente de la sección correcta.
-  */}}
-  {{ with .Page.NextInSection }}
-    <a class="chapter-nav-link next" href="{{ .RelPermalink }}">
-      <div>
-        <span>Siguiente</span>
-        <strong class="chapter-title">{{ .Title }}</strong>
-      </div>
-      <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
-    </a>
-  {{ end }}
+{{ end }}
 
-</div>
+
+{{/*
+  Ahora, si encontramos una página de libro, renderizamos la navegación.
+  Esta condición también previene que se renderice en la página de listado /libros/.
+*/}}
+{{ if $bookPage }}
+  <aside class="chapter-nav">
+    <h3>Capítulos de {{ $bookPage.Title }}</h3>
+    <nav>
+      <ul>
+        {{/* Itera sobre las secciones hijas del libro (los capítulos) */}}
+        {{ range $bookPage.Sections.ByWeight }}
+          <li>
+            {{/*
+              Se eliminaron las clases de Tailwind y se reemplazaron
+              con una clase 'active' para ser estilizada desde el CSS.
+            */}}
+            <a href="{{ .Permalink }}" class="{{ if or ($currentPage.IsDescendant .) (eq $currentPage .) }}active{{ end }}">
+              {{ .Title }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </aside>
+{{ end }}
