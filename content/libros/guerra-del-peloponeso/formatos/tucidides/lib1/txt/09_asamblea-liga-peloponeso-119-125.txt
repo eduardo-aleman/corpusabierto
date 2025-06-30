@@ -50,9 +50,6 @@ TEXTO GRIEGO
 
 TRADUCCIÓN AL ESPAÑOL
 ---------------------
-
-Claro, aquí está el texto con los números en superíndice convertidos a caracteres Unicode y las etiquetas eliminadas:
-
 ## 119-125. Asamblea de la Liga del Peloponeso en Esparta
 
 ## 120-124. Discurso de los corintios
