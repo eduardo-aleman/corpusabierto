@@ -2,21 +2,29 @@
 <div class="container-wide page-content">
   <header>
     <h1>{{ .Title }}</h1>
+    {{/* Muestra un subtítulo si existe */}}
     {{ if .Params.subtitle }}
     <p class="subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
+    
+    {{/* Opcional: Enlace para volver a la portada del libro */}}
+    {{ with .Parent }}
+      {{ if strings.HasPrefix .RelPermalink "/libros/" }}
+        <p class="parent-book-link">
+          Volver a la obra: <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </p>
+      {{ end }}
+    {{ end }}
   </header>
-
-  {{ if .IsSection }}
-  {{ partial "chapter-nav.html" . }}
-  {{ end }}
 
   <div class="content-body">
     {{ .Content }}
   </div>
 
-  {{ if .IsSection }}
+  {{/* En una página de capítulo, SIEMPRE queremos mostrar la navegación de capítulos.
+    Por lo tanto, eliminamos el `if .IsSection` y llamamos al parcial directamente.
+  */}}
   {{ partial "chapter-nav.html" . }}
-  {{ end }}
+
 </div>
 {{ end }}

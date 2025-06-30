@@ -6,5 +6,15 @@
     </div>
 </div>
 
-{{/* Nota que uso /scripts/main.js para que coincida con tu baseof.html original */}}
+{{/* Nota que uso /scripts/main.js para que coincida con el baseof.html original */}}
 <script src="{{ "/scripts/main.js" | relURL }}"></script>
+
+{{/* Si hay scripts adicionales, los carga aquí */}}
+{{ with .Params.scripts }}
+    {{ range . }}
+        <script src="{{ . | relURL }}"></script>
+    {{ end }}
+{{ end }}
+
+
+

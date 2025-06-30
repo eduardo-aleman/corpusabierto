@@ -1,0 +1,42 @@
+{{ $libroActual := . }}
+{{ $seccionLibros := .Parent }}
+
+{{/* Asegurarnos que estamos en la sección correcta, como /libros/ */}}
+{{ if and (eq $seccionLibros.RelPermalink "/libros/") $libroActual.IsSection }}
+  {{/* Obtenemos todas las obras (las subsecciones de /libros/) ordenadas por peso */}}
+  {{ $todasLasObras := $seccionLibros.Sections.ByWeight }}
+  {{ $index := -1 }}
+
+  {{/* Buscamos el índice de la obra actual en la lista de todas las obras */}}
+  {{ range $i, $obra := $todasLasObras }}
+    {{ if eq $obra.RelPermalink $libroActual.RelPermalink }}
+      {{ $index = $i }}
+    {{ end }}
+  {{ end }}
+
+  {{ if ge $index 0 }}
+  <nav class="book-navigation">
+    {{/* Enlace a la obra anterior */}}
+    {{ with index $todasLasObras (sub $index 1) }}
+    <a href="{{ .Permalink }}" class="book-nav-link prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <div>
+        <span>Obra anterior:</span>
+        <div class="book-title"><strong>{{ .Title }}</strong></div>
+      </div>
+    </a>
+    {{ end }}
+
+    {{/* Enlace a la obra siguiente */}}
+    {{ with index $todasLasObras (add $index 1) }}
+    <a href="{{ .Permalink }}" class="book-nav-link next">
+      <div>
+        <span>Obra siguiente:</span>
+        <div class="book-title"><strong>{{ .Title }}</strong></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    {{ end }}
+  </nav>
+  {{ end }}
+{{ end }}
