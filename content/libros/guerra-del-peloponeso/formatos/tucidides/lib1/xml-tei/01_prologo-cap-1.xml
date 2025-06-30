@@ -91,6 +91,7 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">Reestructurado el texto griego para seguir el modelo de citación jerárquico de Perseus (libro/capítulo/sección).</change>
       <change when="2025-06-30" who="#CorpusAbierto">Se actualizó el teiHeader para reflejar con precisión las múltiples fuentes del texto y las notas.</change>
       <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del capítulo y actualización
         para incluir textos completos, alineación explícita y notas completas.</change>
@@ -101,9 +102,9 @@
     <div type="chapter" n="1">
 
       <linkGrp type="alignment">
-        <link target="#t1 #w1" />
-        <link target="#t2 #w2" />
-        <link target="#t3 #w3" />
+        <link target="#t1_head #w1" />
+        <link target="#t2_head #w2" />
+        <link target="#t3_head #w3" />
         <link target="#t4 #w4" />
         <link target="#t5 #w5" />
         <link target="#t7 #w6" />
@@ -127,7 +128,7 @@
         <link target="#t25 #w51 #w52 #w53 #w54" />
         <link target="#t26 #w45 #w46 #w47" />
         <link target="#t27 #w55" />
-        <link target="#t28 #w57 #w58 #w59 #w60" />
+        <link target="#t28 #w56 #w57 #w58 #w59 #w60" />
         <link target="#t29 #w61 #w62 #w63" />
         <link target="#t30 #w64 #w65 #w66 #w67 #w68" />
         <link target="#t31 #w72 #w73 #w74 #w75" />
@@ -147,124 +148,137 @@
       </linkGrp>
 
       <div type="source" xml:lang="grc">
-        <head>
-          <seg xml:id="w1">ΘΟΥΚΥΔΙΔΟΥ</seg>
-          <lb />
-          <seg xml:id="w2">ΙΣΤΟΡΙΩΝ</seg>
-          <seg xml:id="w3">Α</seg>
-        </head>
-        <p>
-          <seg xml:id="w4">Θουκυδίδης</seg>
-          <seg xml:id="w5">Ἀθηναῖος</seg>
-          <seg xml:id="w6">ξυνέγραψε</seg>
-          <seg xml:id="w7">τὸν</seg>
-          <seg xml:id="w8">πόλεμον</seg>
-          <seg xml:id="w9">τῶν</seg>
-          <seg xml:id="w10">Πελοποννησίων</seg>
-          <seg xml:id="w11">καὶ</seg>
-          <seg xml:id="w12">Ἀθηναίων,</seg>
-          <seg xml:id="w13">ὡς</seg>
-          <seg xml:id="w14">ἐπολέμησαν</seg>
-          <seg xml:id="w15">πρὸς</seg>
-          <seg xml:id="w16">ἀλλήλους,</seg>
-          <seg xml:id="w17">ἀρξάμενος</seg>
-          <seg xml:id="w18">εὐθὺς</seg>
-          <seg xml:id="w19">καθισταμένου</seg>
-          <seg xml:id="w20">καὶ</seg>
-          <seg xml:id="w21">ἐλπίσας</seg>
-          <seg xml:id="w22">μέγαν</seg>
-          <seg xml:id="w23">τε</seg>
-          <seg xml:id="w24">ἔσεσθαι</seg>
-          <seg xml:id="w25">καὶ</seg>
-          <seg xml:id="w26">ἀξιολογώτατον</seg>
-          <seg xml:id="w27">τῶν</seg>
-          <seg xml:id="w28">προγεγενημένων,</seg>
-          <seg xml:id="w29">τεκμαιρόμενος</seg>
-          <seg xml:id="w30">ὅτι</seg>
-          <seg xml:id="w31">ἀκμάζοντές</seg>
-          <seg xml:id="w32">τε</seg>
-          <seg xml:id="w33">ἦσαν</seg>
-          <seg xml:id="w34">ἐς</seg>
-          <seg xml:id="w35">αὐτὸν</seg>
-          <seg xml:id="w36">ἀμφότεροι</seg>
-          <seg xml:id="w37">παρασκευῇ</seg>
-          <seg xml:id="w38">τῇ</seg>
-          <seg xml:id="w39">πάσῃ</seg>
-          <seg xml:id="w40">καὶ</seg>
-          <seg xml:id="w41">τὸ</seg>
-          <seg xml:id="w42">ἄλλο</seg>
-          <seg xml:id="w43">Ἑλληνικὸν</seg>
-          <seg xml:id="w44">ὁρῶν</seg>
-          <seg xml:id="w45">ξυνιστάμενον</seg>
-          <seg xml:id="w46">πρὸς</seg>
-          <seg xml:id="w47">ἑκατέρους,</seg>
-          <seg xml:id="w48">τὸ</seg>
-          <seg xml:id="w49">μὲν</seg>
-          <seg xml:id="w50">εὐθύς,</seg>
-          <seg xml:id="w51">τὸ</seg>
-          <seg xml:id="w52">δὲ</seg>
-          <seg xml:id="w53">καὶ</seg>
-          <seg xml:id="w54">διανοούμενον.</seg>
-          <seg xml:id="w55">[2]</seg>
-          <seg xml:id="w56">κίνησις</seg>
-          <seg xml:id="w57">γὰρ</seg>
-          <seg xml:id="w58">αὕτη</seg>
-          <seg xml:id="w59">μεγίστη</seg>
-          <seg xml:id="w60">δὴ</seg>
-          <seg xml:id="w61">τοῖς</seg>
-          <seg xml:id="w62">Ἕλλησιν</seg>
-          <seg xml:id="w63">ἐγένετο</seg>
-          <seg xml:id="w64">καὶ</seg>
-          <seg xml:id="w65">μέρει</seg>
-          <seg xml:id="w66">τινὶ</seg>
-          <seg xml:id="w67">τῶν</seg>
-          <seg xml:id="w68">βαρβάρων,</seg>
-          <seg xml:id="w69">ὡς</seg>
-          <seg xml:id="w70">δὲ</seg>
-          <seg xml:id="w71">εἰπεῖν</seg>
-          <seg xml:id="w72">καὶ</seg>
-          <seg xml:id="w73">ἐπὶ</seg>
-          <seg xml:id="w74">πλεῖστον</seg>
-          <seg xml:id="w75">ἀνθρώπων.</seg>
-          <seg xml:id="w76">τὰ</seg>
-          <seg xml:id="w77">γὰρ</seg>
-          <seg xml:id="w78">πρὸ</seg>
-          <seg xml:id="w79">αὐτῶν</seg>
-          <seg xml:id="w80">καὶ</seg>
-          <seg xml:id="w81">τὰ</seg>
-          <seg xml:id="w82">ἔτι</seg>
-          <seg xml:id="w83">παλαίτερα</seg>
-          <seg xml:id="w84">σαφῶς</seg>
-          <seg xml:id="w85">μὲν</seg>
-          <seg xml:id="w86">εὑρεῖν</seg>
-          <seg xml:id="w87">διὰ</seg>
-          <seg xml:id="w88">χρόνου</seg>
-          <seg xml:id="w89">πλῆθος</seg>
-          <seg xml:id="w90">ἀδύνατον</seg>
-          <seg xml:id="w91">ἦν,</seg>
-          <seg xml:id="w92">ἐκ</seg>
-          <seg xml:id="w93">δὲ</seg>
-          <seg xml:id="w94">τεκμηρίων</seg>
-          <seg xml:id="w95">ὧν</seg>
-          <seg xml:id="w96">ἐπὶ</seg>
-          <seg xml:id="w97">μακρότατον</seg>
-          <seg xml:id="w98">σκοποῦντί</seg>
-          <seg xml:id="w99">μοι</seg>
-          <seg xml:id="w100">πιστεῦσαι</seg>
-          <seg xml:id="w101">ξυμβαίνει</seg>
-          <seg xml:id="w102">οὐ</seg>
-          <seg xml:id="w103">μεγάλα</seg>
-          <seg xml:id="w104">νομίζω</seg>
-          <seg xml:id="w105">γενέσθαι</seg>
-          <seg xml:id="w106">οὔτε</seg>
-          <seg xml:id="w107">κατὰ</seg>
-          <seg xml:id="w108">τοὺς</seg>
-          <seg xml:id="w109">πολέμους</seg>
-          <seg xml:id="w110">οὔτε</seg>
-          <seg xml:id="w111">ἐς</seg>
-          <seg xml:id="w112">τὰ</seg>
-          <seg xml:id="w113">ἄλλα.</seg>
-        </p>
+        <div type="textpart" subtype="book" n="1">
+          <div type="textpart" subtype="chapter" n="1">
+            <head>
+              <seg xml:id="w1">ΘΟΥΚΥΔΙΔΟΥ</seg>
+              <lb />
+              <seg xml:id="w2">ΙΣΤΟΡΙΩΝ</seg>
+              <seg xml:id="w3">Α</seg>
+            </head>
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <seg xml:id="w4">Θουκυδίδης</seg>
+                <seg xml:id="w5">Ἀθηναῖος</seg>
+                <seg xml:id="w6">ξυνέγραψε</seg>
+                <seg xml:id="w7">τὸν</seg>
+                <seg xml:id="w8">πόλεμον</seg>
+                <seg xml:id="w9">τῶν</seg>
+                <seg xml:id="w10">Πελοποννησίων</seg>
+                <seg xml:id="w11">καὶ</seg>
+                <seg xml:id="w12">Ἀθηναίων,</seg>
+                <seg xml:id="w13">ὡς</seg>
+                <seg xml:id="w14">ἐπολέμησαν</seg>
+                <seg xml:id="w15">πρὸς</seg>
+                <seg xml:id="w16">ἀλλήλους,</seg>
+                <seg xml:id="w17">ἀρξάμενος</seg>
+                <seg xml:id="w18">εὐθὺς</seg>
+                <seg xml:id="w19">καθισταμένου</seg>
+                <seg xml:id="w20">καὶ</seg>
+                <seg xml:id="w21">ἐλπίσας</seg>
+                <seg xml:id="w22">μέγαν</seg>
+                <seg xml:id="w23">τε</seg>
+                <seg xml:id="w24">ἔσεσθαι</seg>
+                <seg xml:id="w25">καὶ</seg>
+                <seg xml:id="w26">ἀξιολογώτατον</seg>
+                <seg xml:id="w27">τῶν</seg>
+                <seg xml:id="w28">προγεγενημένων,</seg>
+                <seg xml:id="w29">τεκμαιρόμενος</seg>
+                <seg xml:id="w30">ὅτι</seg>
+                <seg xml:id="w31">ἀκμάζοντές</seg>
+                <seg xml:id="w32">τε</seg>
+                <seg xml:id="w33">ἦσαν</seg>
+                <seg xml:id="w34">ἐς</seg>
+                <seg xml:id="w35">αὐτὸν</seg>
+                <seg xml:id="w36">ἀμφότεροι</seg>
+                <seg xml:id="w37">παρασκευῇ</seg>
+                <seg xml:id="w38">τῇ</seg>
+                <seg xml:id="w39">πάσῃ</seg>
+                <seg xml:id="w40">καὶ</seg>
+                <seg xml:id="w41">τὸ</seg>
+                <seg xml:id="w42">ἄλλο</seg>
+                <seg xml:id="w43">Ἑλληνικὸν</seg>
+                <seg xml:id="w44">ὁρῶν</seg>
+                <seg xml:id="w45">ξυνιστάμενον</seg>
+                <seg xml:id="w46">πρὸς</seg>
+                <seg xml:id="w47">ἑκατέρους,</seg>
+                <seg xml:id="w48">τὸ</seg>
+                <seg xml:id="w49">μὲν</seg>
+                <seg xml:id="w50">εὐθύς,</seg>
+                <seg xml:id="w51">τὸ</seg>
+                <seg xml:id="w52">δὲ</seg>
+                <seg xml:id="w53">καὶ</seg>
+                <seg xml:id="w54">διανοούμενον.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <seg xml:id="w56">κίνησις</seg>
+                <seg xml:id="w57">γὰρ</seg>
+                <seg xml:id="w58">αὕτη</seg>
+                <seg xml:id="w59">μεγίστη</seg>
+                <seg xml:id="w60">δὴ</seg>
+                <seg xml:id="w61">τοῖς</seg>
+                <seg xml:id="w62">Ἕλλησιν</seg>
+                <seg xml:id="w63">ἐγένετο</seg>
+                <seg xml:id="w64">καὶ</seg>
+                <seg xml:id="w65">μέρει</seg>
+                <seg xml:id="w66">τινὶ</seg>
+                <seg xml:id="w67">τῶν</seg>
+                <seg xml:id="w68">βαρβάρων,</seg>
+                <seg xml:id="w69">ὡς</seg>
+                <seg xml:id="w70">δὲ</seg>
+                <seg xml:id="w71">εἰπεῖν</seg>
+                <seg xml:id="w72">καὶ</seg>
+                <seg xml:id="w73">ἐπὶ</seg>
+                <seg xml:id="w74">πλεῖστον</seg>
+                <seg xml:id="w75">ἀνθρώπων.</seg>
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <seg xml:id="w76">τὰ</seg>
+                <seg xml:id="w77">γὰρ</seg>
+                <seg xml:id="w78">πρὸ</seg>
+                <seg xml:id="w79">αὐτῶν</seg>
+                <seg xml:id="w80">καὶ</seg>
+                <seg xml:id="w81">τὰ</seg>
+                <seg xml:id="w82">ἔτι</seg>
+                <seg xml:id="w83">παλαίτερα</seg>
+                <seg xml:id="w84">σαφῶς</seg>
+                <seg xml:id="w85">μὲν</seg>
+                <seg xml:id="w86">εὑρεῖν</seg>
+                <seg xml:id="w87">διὰ</seg>
+                <seg xml:id="w88">χρόνου</seg>
+                <seg xml:id="w89">πλῆθος</seg>
+                <seg xml:id="w90">ἀδύνατον</seg>
+                <seg xml:id="w91">ἦν,</seg>
+                <seg xml:id="w92">ἐκ</seg>
+                <seg xml:id="w93">δὲ</seg>
+                <seg xml:id="w94">τεκμηρίων</seg>
+                <seg xml:id="w95">ὧν</seg>
+                <seg xml:id="w96">ἐπὶ</seg>
+                <seg xml:id="w97">μακρότατον</seg>
+                <seg xml:id="w98">σκοποῦντί</seg>
+                <seg xml:id="w99">μοι</seg>
+                <seg xml:id="w100">πιστεῦσαι</seg>
+                <seg xml:id="w101">ξυμβαίνει</seg>
+                <seg xml:id="w102">οὐ</seg>
+                <seg xml:id="w103">μεγάλα</seg>
+                <seg xml:id="w104">νομίζω</seg>
+                <seg xml:id="w105">γενέσθαι</seg>
+                <seg xml:id="w106">οὔτε</seg>
+                <seg xml:id="w107">κατὰ</seg>
+                <seg xml:id="w108">τοὺς</seg>
+                <seg xml:id="w109">πολέμους</seg>
+                <seg xml:id="w110">οὔτε</seg>
+                <seg xml:id="w111">ἐς</seg>
+                <seg xml:id="w112">τὰ</seg>
+                <seg xml:id="w113">ἄλλα.</seg>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div type="translation" xml:lang="es">
@@ -420,7 +434,7 @@
                 personalidad del historiador, donde unas veces prima lo racional y otras lo
                 irracional y lo trágico; donde coexiste el científico, su afán de precisión,
                 concisión y su espíritu antitético, con el poeta que quiere atraer la atención sobre
-                la grandiosa y trágica aventura de su patria, sobre una guerra que considera más
+                la grandiosa y trággica aventura de su patria, sobre una guerra que considera más
                 memorable que las anteriores. Todo ello se refleja perfectamente en su léxico y en
                 su estilo, en los que se conjugan asimismo las influencias de una época y los rasgos
                 únicos de una extraordinaria individualidad, tal como se revela a quien lo lee sin
