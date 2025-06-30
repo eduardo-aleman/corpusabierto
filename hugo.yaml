@@ -6,7 +6,7 @@ disableKinds:
   - "taxonomy"
 
 # Añade esta línea para aumentar el timeout a 2 minutos
-timeout: "120s"
+# timeout: "120s"
 
 pagination:
   pagerSize: 6

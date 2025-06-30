@@ -19,6 +19,12 @@ body {
     line-height: 1.6;
 }
 
+pre {
+    white-space: pre-wrap;   /* Permite que el texto se ajuste y salte a la siguiente línea */
+    word-wrap: break-word;   /* Fuerza el corte de palabras largas si es necesario */
+    overflow-x: auto;        /* Como alternativa, añade un scroll solo a este bloque si no quieres romper el texto */
+}
+
 /* --- LAYOUT Y CONTENEDOR PRINCIPAL --- */
 .container-wide {
     width: 90%;
