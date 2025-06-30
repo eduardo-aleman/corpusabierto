@@ -1,5 +1,5 @@
 ---
-title: "Anales"
+title: "Anales de Tácito"
 listable: true
 ---
 ### Estructura y alcance de los Anales
