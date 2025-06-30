@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 56-66</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Fuente del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
+        </respStmt>
+        <respStmt>
+          <resp>Fuente de la traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación de textos</resp>
+          <name>CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-29">29 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es"> Esta obra está bajo
+            una Licencia Creative Commons Atribución 4.0 Internacional. </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="grc_src">
+          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory
+          Crane. Disponible en <ref
+            target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.56">Scaife
+          Viewer</ref>. </bibl>
+        <bibl xml:id="trans_src"> Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides.
+          Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
+          textual, notas críticas y herramientas de estudio.</p>
+      </projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-29" who="#CorpusAbierto">Creación del archivo para los capítulos 56-66
+        con segmentación y alineación completa.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textpart" subtype="chapter" n="56-66">
+        <div type="edition" xml:lang="grc">
+          <ab xml:id="grc-1.56.1">μετὰ ταῦτα δ’ εὐθὺς καὶ τάδε ξυνέβη γενέσθαι τοῖς Ἀθηναίοις καὶ Πελοποννησίοις διάφορα ἐς τὸ πολεμεῖν.</ab>
+          <ab xml:id="grc-1.56.2">τῶν γὰρ Κορινθίων πρασσόντων ὅπως τιμωρήσονται αὐτούς, ὑποτοπήσαντες τὴν ἔχθραν αὐτῶν οἱ Ἀθηναῖοι Ποτειδεάτας, οἳ οἰκοῦσιν ἐπὶ τῷ ἰσθμῷ τῆς Παλλήνης, Κορινθίων ἀποίκους, ἑαυτῶν δὲ ξυμμάχους φόρου ὑποτελεῖς, ἐκέλευον τὸ ἐς Παλλήνην τεῖχος καθελεῖν καὶ ὁμήρους δοῦναι, τούς τε ἐπιδημιουργοὺς ἐκπέμπειν καὶ τὸ λοιπὸν μὴ δέχεσθαι οὓς κατὰ ἔτος ἕκαστον Κορίνθιοι ἔπεμπον, δείσαντες μὴ ἀποστῶσιν ὑπό τε Περδίκκου πειθόμενοι καὶ Κορινθίων, τούς τε ἄλλους τοὺς ἐπὶ Θρᾴκης ξυναποστήσωσι ξυμμάχους.</ab>
+          <ab xml:id="grc-1.57.1">ταῦτα δὲ περὶ τοὺς Ποτειδεάτας οἱ Ἀθηναῖοι προπαρεσκευάζοντο εὐθὺς μετὰ τὴν ἐν Κερκύρᾳ ναυμαχίαν·</ab>
+          <ab xml:id="grc-1.57.2">οἵ τε γὰρ Κορίνθιοι φανερῶς ἤδη διάφοροι ἦσαν, Περδίκκας τε ὁ Ἀλεξάνδρου Μακεδόνων βασιλεὺς ἐπεπολέμωτο ξύμμαχος πρότερον καὶ φίλος ὤν.</ab>
+          <ab xml:id="grc-1.57.3">ἐπολεμώθη δὲ ὅτι Φιλίππῳ τῷ ἑαυτοῦ ἀδελφῷ καὶ Δέρδᾳ κοινῇ πρὸς αὐτὸν ἐναντιουμένοις οἱ Ἀθηναῖοι ξυμμαχίαν ἐποιήσαντο.</ab>
+          <ab xml:id="grc-1.57.4">δεδιώς τε ἔπρασσεν ἔς τε τὴν Λακεδαίμονα πέμπων ὅπως πόλεμος γένηται αὐτοῖς πρὸς Πελοποννησίους, καὶ τοὺς Κορινθίους προσεποιεῖτο τῆς Ποτειδαίας ἕνεκα ἀποστάσεως·</ab>
+          <ab xml:id="grc-1.57.5">προσέφερε δὲ λόγους καὶ τοῖς ἐπὶ Θρᾴκης Χαλκιδεῦσι καὶ Βοττιαίοις ξυναποστῆναι, νομίζων, εἰ ξύμμαχα ταῦτα ἔχοι ὅμορα ὄντα τὰ χωρία, ῥᾷον ἂν τὸν πόλεμον μετ’ αὐτῶν ποιεῖσθαι.</ab>
+          <ab xml:id="grc-1.57.6">ὧν οἱ Ἀθηναῖοι αἰσθόμενοι καὶ βουλόμενοι προκαταλαμβάνειν τῶν πόλεων τὰς ἀποστάσεις (ἔτυχον γὰρ τριάκοντα ναῦς ἀποστέλλοντες καὶ χιλίους ὁπλίτας ἐπὶ τὴν γῆν αὐτοῦ, Ἀρχεστράτου τοῦ Λυκομήδους μετ’ ἄλλων † δέκα † στρατηγοῦντος) ἐπιστέλλουσι τοῖς ἄρχουσι τῶν νεῶν Ποτειδεατῶν τε ὁμήρους λαβεῖν καὶ τὸ τεῖχος καθελεῖν, τῶν τε πλησίον πόλεων φυλακὴν ἔχειν ὅπως μὴ ἀποστήσονται.</ab>
+          <ab xml:id="grc-1.58.1">Ποτειδεᾶται δὲ πέμψαντες μὲν καὶ παρ’ Ἀθηναίους πρέσβεις, εἴ πως πείσειαν μὴ σφῶν πέρι νεωτερίζειν μηδέν, ἐλθόντες δὲ καὶ ἐς τὴν Λακεδαίμονα μετὰ Κορινθίων, [ἔπρασσον] ὅπως ἑτοιμάσαιντο τιμωρίαν, ἢν δέῃ, ἐπειδὴ ἔκ τε Ἀθηνῶν ἐκ πολλοῦ πράσσοντες οὐδὲν ηὕροντο ἐπιτήδειον, ἀλλ’ αἱ νῆες αἱ ἐπὶ Μακεδονίαν καὶ ἐπὶ σφᾶς ὁμοίως ἔπλεον, καὶ τὰ τέλη τῶν Λακεδαιμονίων ὑπέσχετο αὐτοῖς, ἢν ἐπὶ Ποτείδαιαν ἴωσιν Ἀθηναῖοι, ἐς τὴν Ἀττικὴν ἐσβαλεῖν, τότε δὴ κατὰ τὸν καιρὸν τοῦτον ἀφίστανται μετὰ Χαλκιδέων καὶ Βοττιαίων κοινῇ ξυνομόσαντες.</ab>
+          <ab xml:id="grc-1.58.2">καὶ Περδίκκας πείθει Χαλκιδέας τὰς ἐπὶ θαλάσσῃ πόλεις ἐκλιπόντας καὶ καταβαλόντας ἀνοικίσασθαι ἐς Ὄλυνθον μίαν τε πόλιν ταύτην ἰσχυρὰν ποιήσασθαι· τοῖς τ’ ἐκλιποῦσι τούτοις τῆς ἑαυτοῦ γῆς τῆς Μυγδονίας περὶ τὴν Βόλβην λίμνην ἔδωκε νέμεσθαι, ἕως ἂν ὁ πρὸς Ἀθηναίους πόλεμος ᾖ. καὶ οἱ μὲν ἀνῳκίζοντό τε καθαιροῦντες τὰς πόλεις καὶ ἐς πόλεμον παρεσκευάζοντο·</ab>
+          <ab xml:id="grc-1.59.1">αἱ δὲ τριάκοντα νῆες τῶν Ἀθηναίων ἀφικνοῦνται ἐς τὰ ἐπὶ Θρᾴκης, καὶ καταλαμβάνουσι τήν τε Ποτείδαιαν καὶ τἆλλα ἀφεστηκότα.</ab>
+          <ab xml:id="grc-1.59.2">νομίσαντες δὲ οἱ στρατηγοὶ ἀδύνατα εἶναι πρός τε Περδίκκαν πολεμεῖν τῇ παρούσῃ δυνάμει καὶ τὰ ξυναφεστῶτα χωρία τρέπονται ἐπὶ τὴν Μακεδονίαν, ἐφ’ ὅπερ καὶ τὸ πρῶτον ἐξεπέμποντο, καὶ καταστάντες ἐπολέμουν μετὰ Φιλίππου καὶ τῶν Δέρδου ἀδελφῶν ἄνωθεν στρατιᾷ ἐσβεβληκότων.</ab>
+          <ab xml:id="grc-1.60.1">καὶ ἐν τούτῳ οἱ Κορίνθιοι, τῆς Ποτειδαίας ἀφεστηκυίας καὶ τῶν Ἀττικῶν νεῶν περὶ Μακεδονίαν οὐσῶν, δεδιότες περὶ τῷ χωρίῳ καὶ οἰκεῖον τὸν κίνδυνον ἡγούμενοι πέμπουσιν ἑαυτῶν τε ἐθελοντὰς καὶ τῶν ἄλλων Πελοποννησίων μισθῷ πείσαντες ἑξακοσίους καὶ χιλίους τοὺς πάντας ὁπλίτας καὶ ψιλοὺς τετρακοσίους.</ab>
+          <ab xml:id="grc-1.60.2">ἐστρατήγει δὲ αὐτῶν Ἀριστεὺς ὁ Ἀδειμάντου, κατὰ φιλίαν τε αὐτοῦ οὐχ ἥκιστα οἱ πλεῖστοι ἐκ Κορίνθου στρατιῶται ἐθελονταὶ ξυνέσποντο· ἦν γὰρ τοῖς Ποτειδεάταις αἰεί ποτε ἐπιτήδειος.</ab>
+          <ab xml:id="grc-1.60.3">καὶ ἀφικνοῦνται τεσσαρακοστῇ ἡμέρᾳ ὕστερον ἐπὶ Θρᾴκης ἢ Ποτείδαια ἀπέστη.</ab>
+          <ab xml:id="grc-1.61.1">ἦλθε δὲ καὶ τοῖς Ἀθηναίοις εὐθὺς ἡ ἀγγελία τῶν πόλεων ὅτι ἀφεστᾶσι, καὶ πέμπουσιν, ὡς ᾔσθοντο καὶ τοὺς μετ’ Ἀριστέως ἐπιπαριόντας, δισχιλίους ἑαυτῶν ὁπλίτας καὶ τεσσαράκοντα ναῦς πρὸς τὰ ἀφεστῶτα, καὶ Καλλίαν τὸν Καλλιάδου πέμπτον αὐτὸν στρατηγόν,</ab>
+          <ab xml:id="grc-1.61.2">οἳ ἀφικόμενοι ἐς Μακεδονίαν πρῶτον καταλαμβάνουσι τοὺς προτέρους χιλίους Θέρμην ἄρτι ᾑρηκότας καὶ Πύδναν πολιορκοῦντας.</ab>
+          <ab xml:id="grc-1.61.3">προσκαθεζόμενοι δὲ καὶ αὐτοὶ τὴν Πύδναν ἐπολιόρκησαν μέν, ἔπειτα δὲ ξύμβασιν ποιησάμενοι καὶ ξυμμαχίαν ἀναγκαίαν πρὸς τὸν Περδίκκαν, ὡς αὐτοὺς κατήπειγεν ἡ Ποτείδαια καὶ ὁ Ἀριστεὺς παρεληλυθώς, ἀπανίστανται ἐκ τῆς Μακεδονίας,</ab>
+          <ab xml:id="grc-1.61.4">καὶ ἀφικόμενοι ἐς Βέροιαν κἀκεῖθεν ἐπὶ Στρέψαν καὶ πειράσαντες πρῶτον τοῦ χωρίου καὶ οὐχ ἑλόντες ἐπορεύοντο κατὰ γῆν πρὸς τὴν Ποτείδαιαν, τρισχιλίοις μὲν ὁπλίταις ἑαυτῶν, χωρὶς δὲ τῶν ξυμμάχων πολλοῖς, ἱππεῦσι δὲ ἑξακοσίοις Μακεδόνων τοῖς μετὰ Φιλίππου καὶ Παυσανίου· ἅμα δὲ νῆες παρέπλεον ἑβδομήκοντα.</ab>
+          <ab xml:id="grc-1.61.5">κατ’ ὀλίγον δὲ προϊόντες τριταῖοι ἀφίκοντο ἐς Γίγωνον καὶ ἐστρατοπεδεύσαντο.</ab>
+          <ab xml:id="grc-1.62.1">Ποτειδεᾶται δὲ καὶ οἱ μετὰ Ἀριστέως Πελοποννήσιοι προσδεχόμενοι τοὺς Ἀθηναίους ἐστρατοπεδεύοντο πρὸς Ὀλύνθου ἐν τῷ ἰσθμῷ, καὶ ἀγορὰν ἔξω τῆς πόλεως ἐπεποίηντο.</ab>
+          <ab xml:id="grc-1.62.2">στρατηγὸν μὲν οὖν τοῦ πεζοῦ παντὸς οἱ ξύμμαχοι ᾕρηντο Ἀριστέα, τῆς δὲ ἵππου Περδίκκαν· ἀπέστη γὰρ εὐθὺς πάλιν τῶν Ἀθηναίων καὶ ξυνεμάχει τοῖς Ποτειδεάταις, Ἰόλαον ἀνθ’ αὑτοῦ καταστήσας ἄρχοντα.</ab>
+          <ab xml:id="grc-1.62.3">ἦν δὲ ἡ γνώμη τοῦ Ἀριστέως τὸ μὲν μεθ’ ἑαυτοῦ στρατόπεδον ἔχοντι ἐν τῷ ἰσθμῷ ἐπιτηρεῖν τοὺς Ἀθηναίους, ἢν ἐπίωσι, Χαλκιδέας δὲ καὶ τοὺς ἔξω ἰσθμοῦ ξυμμάχους καὶ τὴν παρὰ Περδίκκου διακοσίαν ἵππον ἐν Ὀλύνθῳ μένειν, καὶ ὅταν Ἀθηναῖοι ἐπὶ σφᾶς χωρῶσι, κατὰ νώτου βοηθοῦντας ἐν μέσῳ ποιεῖν αὑτῶν τοὺς πολεμίους.</ab>
+          <ab xml:id="grc-1.62.4">Καλλίας δ’ αὖ ὁ τῶν Ἀθηναίων στρατηγὸς καὶ οἱ ξυνάρχοντες τοὺς μὲν Μακεδόνας ἱππέας καὶ τῶν ξυμμάχων ὀλίγους ἐπὶ Ὀλύνθου ἀποπέμπουσιν, ὅπως εἴργωσι τοὺς ἐκεῖθεν ἐπιβοηθεῖν, αὐτοὶ δὲ ἀναστήσαντες τὸ στρατόπεδον ἐχώρουν ἐπὶ τὴν Ποτείδαιαν.</ab>
+          <ab xml:id="grc-1.62.5">καὶ ἐπειδὴ πρὸς τῷ ἰσθμῷ ἐγένοντο καὶ εἶδον τοὺς ἐναντίους παρασκευαζομένους ὡς ἐς μάχην, ἀντικαθίσταντο καὶ αὐτοί, καὶ οὐ πολὺ ὕστερον ξυνέμισγον.</ab>
+          <ab xml:id="grc-1.62.6">καὶ αὐτὸ μὲν τὸ τοῦ Ἀριστέως κέρας καὶ ὅσοι περὶ ἐκεῖνον ἦσαν Κορινθίων τε καὶ τῶν ἄλλων λογάδες ἔτρεψαν τὸ καθ’ ἑαυτοὺς καὶ ἐπεξῆλθον διώκοντες ἐπὶ πολύ· τὸ δὲ ἄλλο στρατόπεδον Ποτειδεατῶν καὶ Πελοποννησίων ἡσσᾶτο ὑπὸ τῶν Ἀθηναίων καὶ ἐς τὸ τεῖχος κατέφυγεν.</ab>
+          <ab xml:id="grc-1.63.1">ἐπαναχωρῶν δὲ ὁ Ἀριστεὺς ἀπὸ τῆς διώξεως, ὡς ὁρᾷ τὸ ἄλλο στράτευμα ἡσσημένον, ἠπόρησε μὲν ὁποτέρωσε διακινδυνεύσῃ χωρήσας, ἢ ἐπὶ τῆς Ὀλύνθου ἢ ἐς τὴν Ποτείδαιαν· ἔδοξε δ’ οὖν ξυναγαγόντι τοὺς μεθ’ αὑτοῦ ὡς ἐς ἐλάχιστον χωρίον δρόμῳ βιάσασθαι ἐς τὴν Ποτείδαιαν, καὶ παρῆλθε παρὰ τὴν χηλὴν διὰ τῆς θαλάσσης βαλλόμενός τε καὶ χαλεπῶς, ὀλίγους μέν τινας ἀποβαλών, τοὺς δὲ πλείους σώσας.</ab>
+          <ab xml:id="grc-1.63.2">οἱ δ’ ἀπὸ τῆς Ὀλύνθου τοῖς Ποτειδεάταις βοηθοί (ἀπέχει δὲ ἑξήκοντα μάλιστα σταδίους καὶ ἔστι καταφανές), ὡς ἡ μάχη ἐγίγνετο καὶ τὰ σημεῖα ἤρθη, βραχὺ μέν τι προῆλθον ὡς βοηθήσοντες, καὶ οἱ Μακεδόνες ἱππῆς ἀντιπαρετάξαντο ὡς κωλύσοντες· ἐπειδὴ δὲ διὰ τάχους ἡ νίκη τῶν Ἀθηναίων ἐγίγνετο καὶ τὰ σημεῖα κατεσπάσθη, πάλιν ἐπανεχώρουν ἐς τὸ τεῖχος καὶ οἱ Μακεδόνες παρὰ τοὺς Ἀθηναίους· ἱππῆς δ’ οὐδετέροις παρεγένοντο.</ab>
+          <ab xml:id="grc-1.63.3">μετὰ δὲ τὴν μάχην τροπαῖον ἔστησαν οἱ Ἀθηναῖοι καὶ τοὺς νεκροὺς ὑποσπόνδους ἀπέδοσαν τοῖς Ποτειδεάταις· ἀπέθανον δὲ Ποτειδεατῶν μὲν καὶ τῶν ξυμμάχων ὀλίγῳ ἐλάσσους τριακοσίων, Ἀθηναίων δὲ αὐτῶν πεντήκοντα καὶ ἑκατὸν καὶ Καλλίας ὁ στρατηγός.</ab>
+          <ab xml:id="grc-1.64.1">τὸ δὲ ἐκ τοῦ ἰσθμοῦ [τεῖχος ] εὐθὺς οἱ Ἀθηναῖοι ἀποτειχίσαντες ἐφρούρουν· τὸ δ’ ἐς τὴν Παλλήνην ἀτείχιστον ἦν· οὐ γὰρ ἱκανοὶ ἐνόμιζον εἶναι ἔν τε τῷ ἰσθμῷ φρουρεῖν καὶ ἐς τὴν Παλλήνην διαβάντες τειχίζειν, δεδιότες μὴ σφίσιν οἱ Ποτειδεᾶται καὶ οἱ ξύμμαχοι γενομένοις δίχα ἐπίθωνται.</ab>
+          <ab xml:id="grc-1.64.2">καὶ πυνθανόμενοι οἱ ἐν τῇ πόλει Ἀθηναῖοι τὴν Παλλήνην ἀτείχιστον οὖσαν, χρόνῳ ὕστερον πέμπουσιν ἑξακοσίους καὶ χιλίους ὁπλίτας ἑαυτῶν καὶ Φορμίωνα τὸν Ἀσωπίου στρατηγόν· ὃς ἀφικόμενος ἐς τὴν Παλλήνην καὶ ἐξ Ἀφύτιος ὁρμώμενος προσήγαγε τῇ Ποτειδαίᾳ τὸν στρατὸν κατὰ βραχὺ προϊὼν καὶ κείρων ἅμα τὴν γῆν,</ab>
+          <ab xml:id="grc-1.64.3">ὡς δὲ οὐδεὶς ἐπεξῄει ἐς μάχην, ἀπετείχισε τὸ ἐκ τῆς Παλλήνης [τεῖχος ]. καὶ οὕτως ἤδη κατὰ κράτος ἡ Ποτείδαια ἀμφοτέρωθεν ἐπολιορκεῖτο καὶ ἐκ θαλάσσης ναυσὶν ἅμα ἐφορμούσαις.</ab>
+          <ab xml:id="grc-1.65.1">Ἀριστεὺς δὲ ἀποτειχισθείσης αὐτῆς καὶ ἐλπίδα οὐδεμίαν ἔχων σωτηρίας, ἢν μή τι ἀπὸ Πελοποννήσου ἢ ἄλλο παρὰ λόγον γίγνηται, ξυνεβούλευε μὲν πλὴν πεντακοσίων ἄνεμον τηρήσασι τοῖς ἄλλοις ἐκπλεῦσαι, ὅπως ἐπὶ πλέον ὁ σῖτος ἀντίσχῃ, καὶ αὐτὸς ἤθελε τῶν μενόντων εἶναι· ὡς δ’ οὐκ ἔπειθε, βουλόμενος τὰ ἐπὶ τούτοις παρασκευάζειν καὶ ὅπως τὰ ἔξωθεν ἕξει ὡς ἄριστα, ἔκπλουν ποιεῖται λαθὼν τὴν φυλακὴν τῶν Ἀθηναίων.</ab>
+          <ab xml:id="grc-1.65.2">καὶ παραμένων ἐν Χαλκιδεῦσι τά τε ἄλλα ξυνεπολέμει καὶ Σερμυλιῶν λοχήσας πρὸς τῇ πόλει πολλοὺς διέφθειρεν, ἔς τε τὴν Πελοπόννησον ἔπρασσεν ὅπῃ ὠφελία τις γενήσεται.</ab>
+          <ab xml:id="grc-1.65.3">μετὰ δὲ τῆς Ποτειδαίας τὴν ἀποτείχισιν Φορμίων μὲν ἔχων τοὺς ἑξακοσίους καὶ χιλίους τὴν Χαλκιδικὴν καὶ Βοττικὴν ἐδῄου καὶ ἔστιν ἃ καὶ πολίσματα εἷλεν.</ab>
+          <ab xml:id="grc-1.66.1">τοῖς δ’ Ἀθηναίοις καὶ Πελοποννησίοις αἰτίαι μὲν αὗται προυγεγένηντο ἐς ἀλλήλους, τοῖς μὲν Κορινθίοις ὅτι τὴν Ποτείδαιαν ἑαυτῶν οὖσαν ἀποικίαν καὶ ἄνδρας Κορινθίων τε καὶ Πελοποννησίων ἐν αὐτῇ ὄντας ἐπολιόρκουν, τοῖς δὲ Ἀθηναίοις ἐς τοὺς Πελοποννησίους ὅτι ἑαυτῶν τε πόλιν ξυμμαχίδα καὶ φόρου ὑποτελῆ ἀπέστησαν, καὶ ἐλθόντες σφίσιν ἀπὸ τοῦ προφανοῦς ἐμάχοντο μετὰ Ποτειδεατῶν. οὐ μέντοι ὅ γε πόλεμός πω ξυνερρώγει, ἀλλ’ ἔτι ἀνοκωχὴ ἦν· ἰδίᾳ γὰρ ταῦτα οἱ Κορίνθιοι ἔπραξαν.</ab>
+        </div>
+        <div type="translation" xml:lang="es">
+          <ab corresp="#grc-1.56.1">56. Inmediatamente después de estos acontecimientos<note n="317"/>, sobrevinieron nuevas diferencias entre atenienses y peloponesios conducentes a la guerra. Fueron las siguientes.</ab>
+          <ab corresp="#grc-1.56.2">Mientras los corintios hacían por vengarse de los atenienses, éstos, que sospechaban su enemistad, ordenaron a los potideatas<note n="318"/> —que habitan en el Istmo de Palene, y que, aun siendo colonos de los corintios, eran aliados tributarios de Atenas<note n="319"/>— que demolieran la muralla por el lado que mira a Palene<note n="320"/>, que les entregaran rehenes, y que despacharan y no recibieran en el futuro a los *epidemiurgos*<note n="321"/> que todos los años les enviaban los corintios, pues temían que, persuadidos por Perdicas<note n="322"/> y los corintios, se rebelasen e incitasen a la rebelión a los demás aliados de la costa de Tracia<note n="323"/>.</ab>
+          <ab corresp="#grc-1.57.1">57. Éstas fueron las precauciones que tomaron los atenienses inmediatamente después de la batalla naval de Corcira;</ab>
+          <ab corresp="#grc-1.57.2">[2] pues la hostilidad de los corintios ya era manifiesta, y Perdicas, hijo de Alejandro y rey de los macedonios, que antes había sido aliado y amigo, se había convertido en enemigo<note n="324"/>.</ab>
+          <ab corresp="#grc-1.57.3">[3] Se había enemistado porque los atenienses habían concertado una alianza con Filipo<note n="325"/>, su hermano, y con Derdas<note n="326"/>, que de común acuerdo le hacían frente.</ab>
+          <ab corresp="#grc-1.57.4">[4] Movido por el miedo, enviando embajadores a Esparta, hacía por provocar una guerra entre atenienses y peloponesios, y procuraba ganarse a los corintios con vistas a la sublevación de Potidea.</ab>
+          <ab corresp="#grc-1.57.5">[5] También entraba en negociaciones con los calcideos<note n="327"/>, limítrofes con Tracia, y con los botieos<note n="328"/>, a fin de que se unieran a la sublevación, pues pensaba que, si contaba con la alianza de estos pueblos cuyo territorio era contiguo, haría la guerra más fácilmente con su ayuda.</ab>
+          <ab corresp="#grc-1.57.6">[6] Al enterarse los atenienses de estas intrigas, queriendo anticiparse a la sublevación de las ciudades, dieron orden a sus almirantes (pues precisamente entonces se disponían a enviar contra el territorio de Perdicas una expedición de treinta naves y mil hoplitas bajo el mando de Arquéstrato<note n="329"/>, hijo de Licomedes, y de otros cuatro estrategos)<note n="330"/> de tomar rehenes entre los potideatas y demoler la muralla, y de mantener la vigilancia sobre las ciudades vecinas para que no se sublevaran.</ab>
+          <ab corresp="#grc-1.58.1">58. Los potideatas habían enviado embajadores a los atenienses por si podían inducirlos a no tomar ninguna medida con respecto a ellos, y también habían ido a Esparta en compañía de los corintios para procurarse una asistencia en caso de necesidad; pero una vez que, después de mucho empeño, no consiguieron de los atenienses ningún resultado positivo, sino que, por el contrario, las naves destinadas contra Macedonia se dirigieron también contra ellos mismos, y que las autoridades de los lacedemonios les prometieron que, si los atenienses atacaban Potidea, invadirían el Ática<note n="331"/>, entonces precisamente, aprovechando estas circunstancias, juramentándose de común acuerdo con los calcideos y los botieos<note n="332"/>, se sublevaron<note n="333"/>.</ab>
+          <ab corresp="#grc-1.58.2">[2] Perdicas, por su parte, indujo a los calcideos a abandonar y destruir sus ciudades de la costa<note n="334"/> para ir a establecerse tierra adentro, en Olinto<note n="335"/>, y fortificar esta única ciudad. Y a estos pueblos que abandonaban sus ciudades les concedió para que las cultivasen, mientras durara la guerra contra los atenienses, tierras de su territorio de Migdonia, en torno al lago Bolbe<note n="336"/>. Fueron, pues, a establecerse en el interior<note n="337"/>, destruyendo sus ciudades, y se prepararon para la guerra.</ab>
+          <ab corresp="#grc-1.59.1">59. Cuando las treinta naves de los atenienses llegaron a las costas de Tracia, se encontraron con que Potidea y las otras ciudades ya se habían sublevado.</ab>
+          <ab corresp="#grc-1.59.2">[2] Los estrategos, considerando que, con las fuerzas que tenían, era imposible hacer la guerra a la vez contra Perdicas y contra las regiones sublevadas, cambiaron de rumbo, dirigiéndose a Macedonia, contra la que habían sido enviados primero, y, una vez allí, se pusieron a hacer la guerra de acuerdo con Filipo y los hermanos de Derdas<note n="338"/>, que, procedentes del interior<note n="339"/>, habían invadido el país con su ejército.</ab>
+          <ab corresp="#grc-1.60.1">60. En estas circunstancias, con la sublevación de Potidea y la presencia de las naves áticas en MacedonIa, los corintios, temiendo por la región y considerando el peligro como propio, enviaron voluntarios<note n="340"/> del mismo Corinto y mercenarios del resto del Peloponeso en un total de mil seiscientos hoplitas y cuatrocientos soldados de infantería ligera<note n="341"/>.</ab>
+          <ab corresp="#grc-1.60.2">[2] Los mandaba Aristeo<note n="342"/>, hijo de Adimanto<note n="343"/> (y fue sobre todo por afecto hacia su persona por lo que le siguieron la mayoría de los voluntarios de Corinto), pues siempre había sido amigo de los potideatas.</ab>
+          <ab corresp="#grc-1.60.3">[3] Estas tropas llegaron a Tracia cuarenta días después de la sublevación de Potidea.</ab>
+          <ab corresp="#grc-1.61.1">61. La noticia de que las ciudades se habían sublevado también llegó enseguida a los atenienses, que, al enterarse de que las tropas de socorro de Aristeo ya estaban en camino<note n="344"/>, enviaron contra las ciudades sublevadas dos mil hoplitas de la misma Atenas y cuarenta naves, bajo el mando de Calías<note n="345"/>, hijo de Calíades, y de otros cuatro estrategos<note n="346"/>.</ab>
+          <ab corresp="#grc-1.61.2">[2] Estas fuerzas llegaron primero a Macedonia y se encontraron con que los mil hombres enviados anteriormente<note n="347"/> acababan de tomar Terme<note n="348"/> y estaban sitiando Pidna<note n="349"/>.</ab>
+          <ab corresp="#grc-1.61.3">[3] Después de acampar frente a la ciudad también ellos intervinieron en el asedio de Pidna; pero luego llegaron a un acuerdo con Perdicas<note n="350"/> y, concertando una alianza forzada por la necesidad, puesto que Potidea y la llegada de Aristeo los reclamaban urgentemente, se retiraron de Macedonia.</ab>
+          <ab corresp="#grc-1.61.4">[4] Llegaron al territorio de Berea y de allí a Estrepsa<note n="351"/>, y, tras hacer una intentona contra la plaza sin conseguir tomarla, marcharon por tierra contra Potidea, con tres mil hoplitas propios, además de muchos aliados y de seiscientos jinetes de los macedonios, conducidos por Filipo y Pausanias<note n="352"/>; simultáneamente setenta naves bordeaban la costa.</ab>
+          <ab corresp="#grc-1.61.5">[5] Avanzaron despacio y al tercer día llegaron a Gigono<note n="353"/> y acamparon<note n="354"/>.</ab>
+          <ab corresp="#grc-1.62.1">62. Los potideatas y los peloponesios de Aristeo, en espera de los atenienses, estaban acampados en el istmo por la parte que mira a Olinto, y habían puesto un mercado en las afueras de la ciudad<note n="355"/>.</ab>
+          <ab corresp="#grc-1.62.2">[2] Los aliados habían elegido General de toda la infantería a Aristeo, y de la caballería a Perdicas, que se había apresurado a abandonar de nuevo a los atenienses<note n="356"/> y combatía al lado de los potideatas, después de haber puesto a Yolao<note n="357"/> en su lugar al frente de Macedonia.</ab>
+          <ab corresp="#grc-1.62.3">[3] El Plan de Aristeo era mantener su propio ejército en el Istmo para vigilar a los atenienses, por si atacaban, mientras que los calcideos, los aliados de fuera del istmo<note n="358"/> y los doscientos jinetes de Perdicas permanecerían en Olinto; y cuando los atenienses avanzasen contra él, las fuerzas de Olinto acudirían en su auxilio por la espalda y encerrarían al enemigo en medio de los dos ejércitos<note n="359"/>.</ab>
+          <ab corresp="#grc-1.62.4">[4] Pero, a su vez, Calías, el estratego de los atenienses, y sus colegas enviaron hacia Olinto a la caballería macedonia<note n="360"/> y a un pequeño número de aliados para impedir a los de allí que acudieran en auxilio de Aristeo, mientras que ellos levantaron el campamento y se dirigieron contra Potidea.</ab>
+          <ab corresp="#grc-1.62.5">[5] Y cuando se aproximaron al Istmo y vieron que sus adversarios se preparaban para la batalla, también ellos se situaron enfrente en formación de combate, y no mucho después entablaron la lucha.</ab>
+          <ab corresp="#grc-1.62.6">[6] La misma ala de Aristeo y las tropas de élite de Corinto y de otras ciudades que estaban en torno a él pusieron en fuga al ala que estaba enfrente y recorrieron largo trecho persiguiéndola; pero el resto del ejército de los potideatas y peloponesios fue derrotado por los atenienses<note n="361"/> y se refugió detrás de las murallas.</ab>
+          <ab corresp="#grc-1.63.1">63. Al volver Aristeo de la persecución, cuando vio que el resto del ejército había sido derrotado, estuvo en duda respecto al camino que se arriesgaría a tomar<note n="362"/>, si el del lado de Olinto o el que conducía a Potidea; decidió, finalmente, reunir a sus hombres en una formación lo más compacta posible y a la carrera abrirse paso hasta entrar en Potidea, y consiguió pasar por el rompeolas<note n="363"/> de la muralla a través del mar, hostigado por los proyectiles y con dificultades, perdiendo unos pocos hombres, pero salvando a la mayor parte.</ab>
+          <ab corresp="#grc-1.63.2">[2] Las tropas que, partiendo de Olinto, debían auxiliar a los potideatas (la ciudad dista unos sesenta estadios<note n="364"/> y es visible desde Olinto)<note n="365"/>, cuando comenzó la batalla y las señales fueron alzadas<note n="366"/>, avanzaron un trecho con la intención de acudir a prestar su ayuda, y la caballería macedonia se situó enfrente para impedírselo; pero una vez que se produjo enseguida la victoria de los atenienses y que las señales fueron bajadas, se retiraron detrás de las murallas, y los macedonios se reunieron con los atenienses; y la caballería no entró en combate<note n="367"/> en ninguno de los dos bandos.</ab>
+          <ab corresp="#grc-1.63.3">[3] Después de la batalla los atenienses levantaron un trofeo y, en virtud de una tregua, devolvieron a los potideatas sus muertos; murieron poco menos de trescientos hombres de los potideatas y sus aliados, y de los atenienses ciento cincuenta<note n="368"/>, entre los que estaba el estratego Calías.</ab>
+          <ab corresp="#grc-1.64.1">64. Acto seguido, los atenienses construyeron un muro de bloqueo frente a la muralla de la ciudad por el lado del Istmo<note n="369"/> y montaron la guardia; pero la parte que mira a Palene<note n="370"/> no fue bloqueada, pues no se consideraban bastante fuertes para mantener la guardia en el Istmo y, a la vez, pasar a Palene para construir otro muro; temían que, al dividir sus fuerzas, los potideatas y sus aliados los atacasen.</ab>
+          <ab corresp="#grc-1.64.2">[2] Luego, cuando supieron en Atenas que Palene no tenía muro de bloqueo, enviaron mil seiscientos hoplitas atenienses a las órdenes de Formión<note n="371"/>, hijo de Asopio; éste llegó a Palene y, partiendo de Afitis<note n="372"/>, condujo su ejército contra Potidea, avanzando lentamente a la vez que arrasaba el territorio;</ab>
+          <ab corresp="#grc-1.64.3">[3] y como nadie salía a presentar batalla, construyó un muro frente a la muralla del lado de Palene. Así, Potidea ya estaba fuertemente sitiada por ambos lados y por la parte del mar, gracias al bloqueo conjunto de las naves.</ab>
+          <ab corresp="#grc-1.65.1">65. Aristeo, con la ciudad bloqueada y sin ninguna esperanza de salvación, a no ser que contra toda previsión viniera algún auxilio del Peloponeso o cualquier otra ayuda, propuso que todos los defensores, salvo quinientos, aguardaran un viento favorable y se hicieran a la vela, a fin de que los víveres duraran más tiempo<note n="373"/>, y él mismo se ofrecía para ser uno de los que se quedasen; pero como no consiguió convencerlos, queriendo buscar las salidas que todavía quedaban y con la intención de que los asuntos del exterior estuvieran dispuestos de la manera más favorable, se escapó por mar burlando la vigilancia de los atenienses.</ab>
+          <ab corresp="#grc-1.65.2">[2] Permaneció entre los calcideos y, además de colaborar en otras acciones de guerra, mató a muchos sermilios tendiéndoles una emboscada junto a su ciudad<note n="374"/>; y negoció en el Peloponeso la forma en que podría obtener alguna ayuda.</ab>
+          <ab corresp="#grc-1.65.3">[3] Formión, por su parte, después de finalizar los muros de bloqueo de Potidea<note n="375"/>, se puso a devastar la Calcídica<note n="376"/> y la Botica<note n="377"/> con sus mil seiscientos hoplitas, y tomó algunas plazas<note n="378"/>.</ab>
+          <ab corresp="#grc-1.66.1">66. De esta forma los atenienses y los peloponesios se encontraron con nuevos motivos de enfrentamiento: los corintios los tenían porque los atenienses estaban sitiando Potidea, que era colonia suya, con corintios y peloponesios dentro de ella, y los atenienses con respecto a los peloponesios, porque éstos habían instigado la sublevación de una ciudad que era su aliada y les pagaba tributo, y porque habían ido allí y habían combatido abiertamente contra ellos al lado de los potideatas. La verdadera guerra, sin embargo, todavía no había estallado, sino que aún seguía vigente la tregua, pues los corintios habían actuado por su cuenta<note n="379"/>.</ab>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
