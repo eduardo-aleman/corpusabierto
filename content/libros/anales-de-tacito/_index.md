@@ -2,8 +2,6 @@
 title: "Anales"
 listable: true
 ---
-## [Continuar al Libro I]({{< relref "libro-I/_index.md" >}})
-
 ### Estructura y alcance de los Anales
 
 Los Anales de Publio Cornelio Tácito constituyen una de las cumbres de la historiografía romana y una obra fundacional para la tradición crítica de la historia política. Escritos en los primeros años del siglo II d. C., probablemente bajo los reinados de Trajano y Adriano, los Anales abarcan el periodo comprendido entre la muerte de Augusto (14 d. C.) y el final del reinado de Nerón (68 d. C.). Esta cronología abarca el auge y consolidación del principado julio-claudio, pero no está preservada en su totalidad: han sobrevivido los libros 1 a 4, parte del 5, el 6, y los libros 11 al 16, dejando un vacío importante entre los años 30 y 47 d. C.
