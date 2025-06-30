@@ -7,35 +7,73 @@
       <titleStmt>
         <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 2-19</title>
         <author>Tucídides</author>
+
         <respStmt>
-          <resp>Fuente del texto griego</resp>
-          <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
         </respStmt>
+
         <respStmt>
-          <resp>Fuente de la traducción al español</resp>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+
+        <respStmt>
+          <resp>Traducción al español</resp>
           <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
         </respStmt>
+
         <respStmt>
-          <resp>Codificación TEI y alineación de textos</resp>
-          <name>CorpusAbierto</name>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
         </respStmt>
+
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+
       </titleStmt>
       <publicationStmt>
         <publisher>CorpusAbierto</publisher>
-        <date when="2025-06-23">23 de junio de 2025</date>
+        <date when="2025-06-30">30 de junio de 2025</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es"> Esta obra está bajo
-            una Licencia Creative Commons Atribución 4.0 Internacional. </licence>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
         </availability>
       </publicationStmt>
+
       <sourceDesc>
-        <bibl xml:id="grc_src">
-          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory
-          Crane. Disponible en <ref
-            target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.2.1-1.19.3">Scaife
-          Viewer</ref>. </bibl>
-        <bibl xml:id="trans_src"> Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides.
-          Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. </bibl>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>,          <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed. 
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2). 
+          <publisher>Istituto Poligrafico dello Stato</publisher>, 
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -43,15 +81,25 @@
         <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
           textual, notas críticas y herramientas de estudio.</p>
       </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
     </encodingDesc>
     <revisionDesc>
-      <change when="2025-06-23" who="#CorpusAbierto">Creación del archivo para los capítulos 2-19
-        con segmentación y alineación completa.</change>
+      <change when="2025-06-30" who="#CorpusAbierto">Se actualizó el teiHeader para reflejar con precisión las múltiples fuentes del texto y las notas.</change>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del capítulo y actualización
+        para incluir textos completos, alineación explícita y notas completas.</change>
     </revisionDesc>
   </teiHeader>
-  <text>
-    <body>
-      <div type="textpart" subtype="book" n="1">
+</TEI>
+<text>
+  <body>
+    <div type="textpart" subtype="book" n="1">
       <div type="textpart" subtype="chapter" n="2">
         <linkGrp type="alignment">
           <link target="#t2_1 #w2_1" />
@@ -545,7 +593,8 @@
             <seg xml:id="t9_4">[4] Y, además, en la transmisión del cetro dice de él que «reinaba en
               muchas islas y en toda Argos». Ahora bien, viviendo en el continente, si no hubiese
               tenido una flota, no hubiera podido ejercer su dominio sobre otras islas que no fueran
-              las vecinas (y esas no serían <em>muchas</em>).</seg>
+              las vecinas (y esas no serían <em>muchas</em>).
+            </seg>
           </p>
           <p>
             <seg xml:id="t9_5">[5] Por esta expedición, asimismo, hay que conjeturar cómo eran las
@@ -1097,10 +1146,10 @@
                 militares que ellos tenían separadamente al comienzo de esta guerra eran mayores que
                 los de la época de mayor esplendor con la fuerza de la alianza intacta.</seg>
             </p>
-            </div>
           </div>
         </div>
       </div>
-    </body>
-  </text>
+    </div>
+  </body>
+</text>
 </TEI>

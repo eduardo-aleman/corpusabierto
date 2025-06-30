@@ -7,35 +7,73 @@
       <titleStmt>
         <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 20-22</title>
         <author>Tucídides</author>
+
         <respStmt>
-          <resp>Fuente del texto griego</resp>
-          <name xml:id="Perseus">Perseus Digital Library (Scaife Viewer)</name>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
         </respStmt>
+
         <respStmt>
-          <resp>Fuente de la traducción al español</resp>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+
+        <respStmt>
+          <resp>Traducción al español</resp>
           <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
         </respStmt>
+
         <respStmt>
-          <resp>Codificación TEI y alineación de textos</resp>
-          <name>CorpusAbierto</name>
+          <resp>Notas del traductor</resp>
+          <name ref="#Esbarranch">Torres Esbarranch, Juan José</name>
         </respStmt>
+
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+
       </titleStmt>
       <publicationStmt>
         <publisher>CorpusAbierto</publisher>
-        <date when="2025-06-28">28 de junio de 2025</date>
+        <date when="2025-06-30">30 de junio de 2025</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es"> Esta obra está bajo
-            una Licencia Creative Commons Atribución 4.0 Internacional. </licence>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
         </availability>
       </publicationStmt>
+
       <sourceDesc>
-        <bibl xml:id="grc_src">
-          <title>Thucydides, The Peloponnesian War</title>. Perseus Digital Library. Editor: Gregory
-          Crane. Disponible en <ref
-            target="https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0003.tlg001.perseus-grc2:1.20.1-1.22.4">Scaife
-          Viewer</ref>. </bibl>
-        <bibl xml:id="trans_src"> Torres Esbarranch, Juan José, ed. y trad. <title>Tucídides.
-          Historia de la guerra del Peloponeso. Libros I–II</title>. Madrid: Gredos, 1990. </bibl>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>.
+          <editor>Henry Stuart Jones</editor>,          <editor>Johannes Enoch Powell</editor>.
+          <publisher>Perseus Digital Library</publisher>.
+          <note>Este es el texto base para la versión griega.</note>
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%201.1.1">Perseus Hopper</ref>
+        </bibl>
+
+        <bibl xml:id="alberti_src" type="print">
+          <author>Alberti, G. B.</author>, ed. 
+          <title>Thucydidis Historiae</title>. Vol. 1 (Libros 1–2). 
+          <publisher>Istituto Poligrafico dello Stato</publisher>, 
+          <pubPlace>Roma</pubPlace>,
+          <date>1972</date>.
+          <note>Esta es la fuente para las notas del aparato crítico.</note>
+        </bibl>
+
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>, ed. y trad.
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>.
+          <publisher>Gredos</publisher>,
+          <pubPlace>Madrid</pubPlace>,
+          <date>1990</date>.
+          <note>Esta es la fuente para la traducción al español y las notas del traductor.</note>
+        </bibl>
+
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -43,73 +81,89 @@
         <p>Proyecto de acceso libre a textos clásicos en griego o latín y español, con alineación
           textual, notas críticas y herramientas de estudio.</p>
       </projectDesc>
+      <appInfo>
+        <application version="1.0" ident="word-highlighter">
+          <label>Word Highlighter Script</label>
+          <p>El presente archivo TEI está estructurado para ser compatible con el script de
+            resaltado de palabras de la página web, utilizando los xml:id de los segmentos para la
+            alineación.</p>
+        </application>
+      </appInfo>
     </encodingDesc>
     <revisionDesc>
-      <change when="2025-06-28" who="#CorpusAbierto">Creación del archivo para los capítulos 20-22
-        con segmentación y alineación completa.</change>
+      <change when="2025-06-30" who="#CorpusAbierto">Se actualizó el teiHeader para reflejar con precisión las múltiples fuentes del texto y las notas.</change>
+      <change when="2025-06-22" who="#CorpusAbierto">Creación inicial del capítulo y actualización
+        para incluir textos completos, alineación explícita y notas completas.</change>
     </revisionDesc>
   </teiHeader>
-  <text>
-    <body>
-      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0003.tlg001.perseus-grc2">
-        <div type="textpart" subtype="book" n="1">
-          <div type="textpart" subtype="chapter" n="20">
-            <p>
-                            <seg xml:id="grc.1.20.1">Ἀθηναίων γοῦν τὸ πλῆθος Ἵππαρχον οἴονται ὑφ’ Ἁρμοδίου καὶ Ἀριστογείτονος τύραννον ὄντα ἀποθανεῖν, καὶ οὐκ ἴσασιν ὅτι Ἱππίας μὲν πρεσβύτατος ὢν ἦρχε τῶν Πεισιστράτου υἱέων, Ἵππαρχος δὲ καὶ Θεσσαλὸς ἀδελφοὶ ἦσαν αὐτοῦ, ὑποτοπήσαντες δέ τι ἐκείνῃ τῇ ἡμέρᾳ καὶ παραχρῆμα Ἁρμόδιος καὶ Ἀριστογείτων ἐκ τῶν ξυνειδότων σφίσιν Ἱππίᾳ μεμηνῦσθαι τοῦ μὲν ἀπέσχοντο ὡς προειδότος, βουλόμενοι δὲ πρὶν ξυλληφθῆναι δράσαντές τι καὶ κινδυνεῦσαι, τῷ Ἱππάρχῳ περιτυχόντες περὶ τὸ Λεωκόρειον καλούμενον τὴν Παναθηναϊκὴν πομπὴν διακοσμοῦντι ἀπέκτειναν.</seg>
-                            <seg xml:id="grc.1.20.2">πολλὰ δὲ καὶ ἄλλα ἔτι καὶ νῦν ὄντα καὶ οὐ χρόνῳ ἀμνηστούμενα καὶ οἱ ἄλλοι Ἕλληνες οὐκ ὀρθῶς οἴονται, ὥσπερ τούς τε Λακεδαιμονίων βασιλέας μὴ μιᾷ ψήφῳ προστίθεσθαι ἑκάτερον, ἀλλὰ δυοῖν, καὶ τὸν Πιτανάτην λόχον αὐτοῖς εἶναι, ὃς οὐδ’ ἐγένετο πώποτε. οὕτως ἀταλαίπωρος τοῖς πολλοῖς ἡ ζήτησις τῆς ἀληθείας, καὶ ἐπὶ τὰ ἑτοῖμα μᾶλλον τρέπονται.</seg>
-            </p>
-          </div>
-          <div type="textpart" subtype="chapter" n="21">
-            <p>
-                            <seg xml:id="grc.1.21.1">ἐκ δὲ τῶν εἰρημένων τεκμηρίων ὅμως τοιαῦτα ἄν τις νομίζων μάλιστα ἃ διῆλθον οὐχ ἁμαρτάνοι, καὶ οὔτε ὡς ποιηταὶ ὑμνήκασι περὶ αὐτῶν ἐπὶ τὸ μεῖζον κοσμοῦντες μᾶλλον πιστεύων, οὔτε ὡς λογογράφοι ξυνέθεσαν ἐπὶ τὸ προσαγωγότερον τῇ ἀκροάσει ἢ ἀληθέστερον, ὄντα ἀνεξέλεγκτα καὶ τὰ πολλὰ ὑπὸ χρόνου αὐτῶν ἀπίστως ἐπὶ τὸ μυθῶδες ἐκνενικηκότα, ηὑρῆσθαι δὲ ἡγησάμενος ἐκ τῶν ἐπιφανεστάτων σημείων ὡς παλαιὰ εἶναι ἀποχρώντως.</seg>
-                            <seg xml:id="grc.1.21.2">καὶ ὁ πόλεμος οὗτος, καίπερ τῶν ἀνθρώπων ἐν ᾧ μὲν ἂν πολεμῶσι τὸν παρόντα αἰεὶ μέγιστον κρινόντων, παυσαμένων δὲ τὰ ἀρχαῖα μᾶλλον θαυμαζόντων, ἀπ’ αὐτῶν τῶν ἔργων σκοποῦσι δηλώσει ὅμως μείζων γεγενημένος αὐτῶν.</seg>
-            </p>
-          </div>
-          <div type="textpart" subtype="chapter" n="22">
-            <p>
-                            <seg xml:id="grc.1.22.1">καὶ ὅσα μὲν λόγῳ εἶπον ἕκαστοι ἢ μέλλοντες πολεμήσειν ἢ ἐν αὐτῷ ἤδη ὄντες, χαλεπὸν τὴν ἀκρίβειαν αὐτὴν τῶν λεχθέντων διαμνημονεῦσαι ἦν ἐμοί τε ὧν αὐτὸς ἤκουσα καὶ τοῖς ἄλλοθέν ποθεν ἐμοὶ ἀπαγγέλλουσιν· ὡς δ’ ἂν ἐδόκουν ἐμοὶ ἕκαστοι περὶ τῶν αἰεὶ παρόντων τὰ δέοντα μάλιστ’ εἰπεῖν, ἐχομένῳ ὅτι ἐγγύτατα τῆς ξυμπάσης γνώμης τῶν ἀληθῶς λεχθέντων, οὕτως εἴρηται.</seg>
-                            <seg xml:id="grc.1.22.2">τὰ δ’ ἔργα τῶν πραχθέντων ἐν τῷ πολέμῳ οὐκ ἐκ τοῦ παρατυχόντος πυνθανόμενος ἠξίωσα γράφειν, οὐδ’ ὡς ἐμοὶ ἐδόκει, ἀλλ’ οἷς τε αὐτὸς παρῆν καὶ παρὰ τῶν ἄλλων ὅσον δυνατὸν ἀκριβείᾳ περὶ ἑκάστου ἐπεξελθών.</seg>
-                            <seg xml:id="grc.1.22.3">ἐπιπόνως δὲ ηὑρίσκετο, διότι οἱ παρόντες τοῖς ἔργοις ἑκάστοις οὐ ταὐτὰ περὶ τῶν αὐτῶν ἔλεγον, ἀλλ’ ὡς ἑκατέρων τις εὐνοίας ἢ μνήμης ἔχοι.</seg>
-                            <seg xml:id="grc.1.22.4">καὶ ἐς μὲν ἀκρόασιν ἴσως τὸ μὴ μυθῶδες αὐτῶν ἀτερπέστερον φανεῖται· ὅσοι δὲ βουλήσονται τῶν τε γενομένων τὸ σαφὲς σκοπεῖν καὶ τῶν μελλόντων ποτὲ αὖθις κατὰ τὸ ἀνθρώπινον τοιούτων καὶ παραπλησίων ἔσεσθαι, ὠφέλιμα κρίνειν αὐτὰ ἀρκούντως ἕξει. κτῆμά τε ἐς αἰεὶ μᾶλλον ἢ ἀγώνισμα ἐς τὸ παραχρῆμα ἀκούειν ξύγκειται.</seg>
-            </p>
-          </div>
+</TEI>
+<text>
+  <body>
+    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0003.tlg001.perseus-grc2">
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="20">
+          <p>
+            <seg xml:id="grc.1.20.1">Ἀθηναίων γοῦν τὸ πλῆθος Ἵππαρχον οἴονται ὑφ’ Ἁρμοδίου καὶ Ἀριστογείτονος τύραννον ὄντα ἀποθανεῖν, καὶ οὐκ ἴσασιν ὅτι Ἱππίας μὲν πρεσβύτατος ὢν ἦρχε τῶν Πεισιστράτου υἱέων, Ἵππαρχος δὲ καὶ Θεσσαλὸς ἀδελφοὶ ἦσαν αὐτοῦ, ὑποτοπήσαντες δέ τι ἐκείνῃ τῇ ἡμέρᾳ καὶ παραχρῆμα Ἁρμόδιος καὶ Ἀριστογείτων ἐκ τῶν ξυνειδότων σφίσιν Ἱππίᾳ μεμηνῦσθαι τοῦ μὲν ἀπέσχοντο ὡς προειδότος, βουλόμενοι δὲ πρὶν ξυλληφθῆναι δράσαντές τι καὶ κινδυνεῦσαι, τῷ Ἱππάρχῳ περιτυχόντες περὶ τὸ Λεωκόρειον καλούμενον τὴν Παναθηναϊκὴν πομπὴν διακοσμοῦντι ἀπέκτειναν.</seg>
+            <seg xml:id="grc.1.20.2">πολλὰ δὲ καὶ ἄλλα ἔτι καὶ νῦν ὄντα καὶ οὐ χρόνῳ ἀμνηστούμενα καὶ οἱ ἄλλοι Ἕλληνες οὐκ ὀρθῶς οἴονται, ὥσπερ τούς τε Λακεδαιμονίων βασιλέας μὴ μιᾷ ψήφῳ προστίθεσθαι ἑκάτερον, ἀλλὰ δυοῖν, καὶ τὸν Πιτανάτην λόχον αὐτοῖς εἶναι, ὃς οὐδ’ ἐγένετο πώποτε. οὕτως ἀταλαίπωρος τοῖς πολλοῖς ἡ ζήτησις τῆς ἀληθείας, καὶ ἐπὶ τὰ ἑτοῖμα μᾶλλον τρέπονται.</seg>
+          </p>
+        </div>
+        <div type="textpart" subtype="chapter" n="21">
+          <p>
+            <seg xml:id="grc.1.21.1">ἐκ δὲ τῶν εἰρημένων τεκμηρίων ὅμως τοιαῦτα ἄν τις νομίζων μάλιστα ἃ διῆλθον οὐχ ἁμαρτάνοι, καὶ οὔτε ὡς ποιηταὶ ὑμνήκασι περὶ αὐτῶν ἐπὶ τὸ μεῖζον κοσμοῦντες μᾶλλον πιστεύων, οὔτε ὡς λογογράφοι ξυνέθεσαν ἐπὶ τὸ προσαγωγότερον τῇ ἀκροάσει ἢ ἀληθέστερον, ὄντα ἀνεξέλεγκτα καὶ τὰ πολλὰ ὑπὸ χρόνου αὐτῶν ἀπίστως ἐπὶ τὸ μυθῶδες ἐκνενικηκότα, ηὑρῆσθαι δὲ ἡγησάμενος ἐκ τῶν ἐπιφανεστάτων σημείων ὡς παλαιὰ εἶναι ἀποχρώντως.</seg>
+            <seg xml:id="grc.1.21.2">καὶ ὁ πόλεμος οὗτος, καίπερ τῶν ἀνθρώπων ἐν ᾧ μὲν ἂν πολεμῶσι τὸν παρόντα αἰεὶ μέγιστον κρινόντων, παυσαμένων δὲ τὰ ἀρχαῖα μᾶλλον θαυμαζόντων, ἀπ’ αὐτῶν τῶν ἔργων σκοποῦσι δηλώσει ὅμως μείζων γεγενημένος αὐτῶν.</seg>
+          </p>
+        </div>
+        <div type="textpart" subtype="chapter" n="22">
+          <p>
+            <seg xml:id="grc.1.22.1">καὶ ὅσα μὲν λόγῳ εἶπον ἕκαστοι ἢ μέλλοντες πολεμήσειν ἢ ἐν αὐτῷ ἤδη ὄντες, χαλεπὸν τὴν ἀκρίβειαν αὐτὴν τῶν λεχθέντων διαμνημονεῦσαι ἦν ἐμοί τε ὧν αὐτὸς ἤκουσα καὶ τοῖς ἄλλοθέν ποθεν ἐμοὶ ἀπαγγέλλουσιν· ὡς δ’ ἂν ἐδόκουν ἐμοὶ ἕκαστοι περὶ τῶν αἰεὶ παρόντων τὰ δέοντα μάλιστ’ εἰπεῖν, ἐχομένῳ ὅτι ἐγγύτατα τῆς ξυμπάσης γνώμης τῶν ἀληθῶς λεχθέντων, οὕτως εἴρηται.</seg>
+            <seg xml:id="grc.1.22.2">τὰ δ’ ἔργα τῶν πραχθέντων ἐν τῷ πολέμῳ οὐκ ἐκ τοῦ παρατυχόντος πυνθανόμενος ἠξίωσα γράφειν, οὐδ’ ὡς ἐμοὶ ἐδόκει, ἀλλ’ οἷς τε αὐτὸς παρῆν καὶ παρὰ τῶν ἄλλων ὅσον δυνατὸν ἀκριβείᾳ περὶ ἑκάστου ἐπεξελθών.</seg>
+            <seg xml:id="grc.1.22.3">ἐπιπόνως δὲ ηὑρίσκετο, διότι οἱ παρόντες τοῖς ἔργοις ἑκάστοις οὐ ταὐτὰ περὶ τῶν αὐτῶν ἔλεγον, ἀλλ’ ὡς ἑκατέρων τις εὐνοίας ἢ μνήμης ἔχοι.</seg>
+            <seg xml:id="grc.1.22.4">καὶ ἐς μὲν ἀκρόασιν ἴσως τὸ μὴ μυθῶδες αὐτῶν ἀτερπέστερον φανεῖται· ὅσοι δὲ βουλήσονται τῶν τε γενομένων τὸ σαφὲς σκοπεῖν καὶ τῶν μελλόντων ποτὲ αὖθις κατὰ τὸ ἀνθρώπινον τοιούτων καὶ παραπλησίων ἔσεσθαι, ὠφέλιμα κρίνειν αὐτὰ ἀρκούντως ἕξει. κτῆμά τε ἐς αἰεὶ μᾶλλον ἢ ἀγώνισμα ἐς τὸ παραχρῆμα ἀκούειν ξύγκειται.</seg>
+          </p>
         </div>
       </div>
-      <div type="translation" xml:lang="es" n="urn:cts:greekLit:tlg0003.tlg001">
-        <div type="textpart" subtype="book" n="1">
-          <div type="textpart" subtype="chapter" n="20">
-            <p>
-                            <seg xml:id="es.1.20.1">Así fueron, pues, según mi investigación, los tiempos antiguos, materia complicada por la dificultad de dar crédito a todos los indicios tal como se presentan, pues los hombres reciben unos de otros las tradiciones del pasado sin comprobarlas, aunque se trate de las de su propio país.</seg>
-                            <seg xml:id="es.1.20.2">La mayoría de los atenienses, por ejemplo, cree que <persName>Hiparco</persName> era el tirano<note n="140" type="explanatory">Nota 140: ...</note> cuando fue asesinado por <persName>Harmodio</persName> y <persName>Aristogitón</persName><note n="141" type="explanatory">Nota 141: ...</note>, y no saben que era <persName>Hipias</persName>, por ser el mayor de los hijos de <persName>Pisístrato</persName>, quien gobernaba, y que <persName>Hiparco</persName> y <persName>Tésalo</persName> eran sus hermanos, y que, al sospechar <persName>Harmodio</persName> y <persName>Aristogitón</persName>, en el día fijado y en el último momento, que algo había sido revelado a <persName>Hipias</persName> por sus propios cómplices, se apartaron de él creyéndolo advertido; pero, queriendo, antes de ser apresados, arriesgarse en la realización de alguna hazaña, encontraron a <persName>Hiparco</persName> junto al llamado <placeName>Leocorio</placeName><note n="142" type="explanatory">Nota 142: ...</note> mientras organizaba la procesión de las Panateneas<note n="143" type="explanatory">Nota 143: ...</note> y lo mataron<note n="144" type="explanatory">Nota 144: ...</note>.</seg>
-                            <seg xml:id="es.1.20.3">Hay muchos otros hechos, incluso contemporáneos y no olvidados por el tiempo, sobre los cuales los demás griegos tienen ideas inexactas, como la creencia de que los reyes de los lacedemonios dan, cada uno, no un solo voto sino dos, y la de que tienen una <emph>compañía de Pitana</emph>, la cual no ha existido jamás<note n="145" type="explanatory">Nota 145: ...</note>. ¡Tan poco importa a la mayoría la búsqueda de la verdad y cuánto más se inclinan por lo primero que encuentran!</seg>
-            </p>
-          </div>
-          <div type="textpart" subtype="chapter" n="21">
-            <p>
-                            <seg xml:id="es.1.21.1">Sin embargo, no se equivocará quien, de cuerdo con los indicios expuestos, crea que los hechos a los que me he referido fueron poco más o menos como he dicho y no dé más fe a lo que sobre estos hechos, embelleciéndolos para engrandecerlos, han cantado los poetas, ni a lo que los logógrafos<note n="146" type="explanatory">Nota 146: ...</note> han compuesto, más atentos a cautivar a su auditorio<note n="147" type="explanatory">Nota 147: ...</note> que a la verdad, pues son hechos sin pruebas y, en su mayor parte, debido al paso del tiempo, increíbles e inmersos en el mito<note n="148" type="explanatory">Nota 148: ...</note>. Que piense que los resultados de mi investigación obedecen a los indicios más evidentes y resultan bastante satisfactorios para tratarse de hechos antiguos.</seg>
-                            <seg xml:id="es.1.21.2">Y esta guerra de ahora, aunque los hombres siempre suelen creer que aquella en la que se encuentran ellos combatiendo es la mayor y, una vez acabada, admiran más las antiguas, esta guerra, sin embargo, demostrará a quien la estudie atendiendo exclusivamente a los hechos que ha sido más importante que las precedentes<note n="149" type="explanatory">Nota 149: ...</note>.</seg>
-            </p>
-          </div>
-          <div type="textpart" subtype="chapter" n="22">
-            <p>
-                            <seg xml:id="es.1.22.1">En cuanto a los discursos<note n="150" type="explanatory">Nota 150: ...</note> que pronunciaron los de cada bando, bien cuando iban a entrar en guerra bien cuando ya estaban en ella, era difícil recordar la literalidad misma de las palabras pronunciadas, tanto para mí mismo en los casos en los que los había escuchado como para mis comunicantes a partir de otras fuentes. Tal como me parecía que cada orador habría hablado, con las palabras más adecuadas a las circunstancias de cada momento, ciñiéndome lo más posible a la idea global de las palabras verdaderamente pronunciadas, en este sentido están redactados los discursos de mi obra.</seg>
-                            <seg xml:id="es.1.22.2">Y en cuanto a los hechos acaecidos en el curso de la guerra, he considerado que no era conveniente relatarlos a partir de la primera información que caía en mis manos, ni como a mí me parecía, sino escribiendo sobre aquellos que yo mismo he presenciado<note n="151" type="explanatory">Nota 151: ...</note> o que, cuando otros me han informado, he investigado caso por caso, con toda la exactitud posible<note n="152" type="explanatory">Nota 152: ...</note>.</seg>
-                            <seg xml:id="es.1.22.3">La investigación ha sido laboriosa porque los testigos no han dado las mismas versiones de los mismos hechos, sino según las simpatías por unos o por otros o según la memoria de cada uno.</seg>
-                            <seg xml:id="es.1.22.4">Tal vez la falta del elemento mítico<note n="153" type="explanatory">Nota 153: ...</note> en la narración de estos hechos restará encanto a mi obra ante un auditorio, pero si cuantos quieren tener un conocimiento exacto de los hechos del pasado y de los que en el futuro serán iguales o semejantes<note n="154" type="explanatory">Nota 154: ...</note>, de acuerdo con las leyes de la naturaleza humana<note n="155" type="explanatory">Nota 155: ...</note>, si éstos la consideran útil, será suficiente. En resumen, mi obra ha sido compuesta como una adquisición para siempre más que como una pieza de concurso para escuchar un momento<note n="156" type="explanatory">Nota 156: ...</note>.</seg>
-            </p>
-          </div>
+    </div>
+    <div type="translation" xml:lang="es" n="urn:cts:greekLit:tlg0003.tlg001">
+      <div type="textpart" subtype="book" n="1">
+        <div type="textpart" subtype="chapter" n="20">
+          <p>
+            <seg xml:id="es.1.20.1">Así fueron, pues, según mi investigación, los tiempos antiguos, materia complicada por la dificultad de dar crédito a todos los indicios tal como se presentan, pues los hombres reciben unos de otros las tradiciones del pasado sin comprobarlas, aunque se trate de las de su propio país.</seg>
+            <seg xml:id="es.1.20.2">La mayoría de los atenienses, por ejemplo, cree que <persName>Hiparco</persName> era el tirano<note n="140" type="explanatory">Nota 140: ...</note> cuando fue asesinado por <persName>Harmodio</persName> y <persName>Aristogitón</persName>
+              <note n="141" type="explanatory">Nota 141: ...</note>, y no saben que era <persName>Hipias</persName>, por ser el mayor de los hijos de <persName>Pisístrato</persName>, quien gobernaba, y que <persName>Hiparco</persName> y <persName>Tésalo</persName> eran sus hermanos, y que, al sospechar <persName>Harmodio</persName> y <persName>Aristogitón</persName>, en el día fijado y en el último momento, que algo había sido revelado a <persName>Hipias</persName> por sus propios cómplices, se apartaron de él creyéndolo advertido; pero, queriendo, antes de ser apresados, arriesgarse en la realización de alguna hazaña, encontraron a <persName>Hiparco</persName> junto al llamado <placeName>Leocorio</placeName>
+              <note n="142" type="explanatory">Nota 142: ...</note> mientras organizaba la procesión de las Panateneas<note n="143" type="explanatory">Nota 143: ...</note> y lo mataron<note n="144" type="explanatory">Nota 144: ...</note>.
+            </seg>
+            <seg xml:id="es.1.20.3">Hay muchos otros hechos, incluso contemporáneos y no olvidados por el tiempo, sobre los cuales los demás griegos tienen ideas inexactas, como la creencia de que los reyes de los lacedemonios dan, cada uno, no un solo voto sino dos, y la de que tienen una <emph>compañía de Pitana</emph>, la cual no ha existido jamás<note n="145" type="explanatory">Nota 145: ...</note>. ¡Tan poco importa a la mayoría la búsqueda de la verdad y cuánto más se inclinan por lo primero que encuentran!</seg>
+          </p>
+        </div>
+        <div type="textpart" subtype="chapter" n="21">
+          <p>
+            <seg xml:id="es.1.21.1">Sin embargo, no se equivocará quien, de cuerdo con los indicios expuestos, crea que los hechos a los que me he referido fueron poco más o menos como he dicho y no dé más fe a lo que sobre estos hechos, embelleciéndolos para engrandecerlos, han cantado los poetas, ni a lo que los logógrafos<note n="146" type="explanatory">Nota 146: ...</note> han compuesto, más atentos a cautivar a su auditorio<note n="147" type="explanatory">Nota 147: ...</note> que a la verdad, pues son hechos sin pruebas y, en su mayor parte, debido al paso del tiempo, increíbles e inmersos en el mito<note n="148" type="explanatory">Nota 148: ...</note>. Que piense que los resultados de mi investigación obedecen a los indicios más evidentes y resultan bastante satisfactorios para tratarse de hechos antiguos.</seg>
+            <seg xml:id="es.1.21.2">Y esta guerra de ahora, aunque los hombres siempre suelen creer que aquella en la que se encuentran ellos combatiendo es la mayor y, una vez acabada, admiran más las antiguas, esta guerra, sin embargo, demostrará a quien la estudie atendiendo exclusivamente a los hechos que ha sido más importante que las precedentes<note n="149" type="explanatory">Nota 149: ...</note>.
+            </seg>
+          </p>
+        </div>
+        <div type="textpart" subtype="chapter" n="22">
+          <p>
+            <seg xml:id="es.1.22.1">En cuanto a los discursos<note n="150" type="explanatory">Nota 150: ...</note> que pronunciaron los de cada bando, bien cuando iban a entrar en guerra bien cuando ya estaban en ella, era difícil recordar la literalidad misma de las palabras pronunciadas, tanto para mí mismo en los casos en los que los había escuchado como para mis comunicantes a partir de otras fuentes. Tal como me parecía que cada orador habría hablado, con las palabras más adecuadas a las circunstancias de cada momento, ciñiéndome lo más posible a la idea global de las palabras verdaderamente pronunciadas, en este sentido están redactados los discursos de mi obra.</seg>
+            <seg xml:id="es.1.22.2">Y en cuanto a los hechos acaecidos en el curso de la guerra, he considerado que no era conveniente relatarlos a partir de la primera información que caía en mis manos, ni como a mí me parecía, sino escribiendo sobre aquellos que yo mismo he presenciado<note n="151" type="explanatory">Nota 151: ...</note> o que, cuando otros me han informado, he investigado caso por caso, con toda la exactitud posible<note n="152" type="explanatory">Nota 152: ...</note>.
+            </seg>
+            <seg xml:id="es.1.22.3">La investigación ha sido laboriosa porque los testigos no han dado las mismas versiones de los mismos hechos, sino según las simpatías por unos o por otros o según la memoria de cada uno.</seg>
+            <seg xml:id="es.1.22.4">Tal vez la falta del elemento mítico<note n="153" type="explanatory">Nota 153: ...</note> en la narración de estos hechos restará encanto a mi obra ante un auditorio, pero si cuantos quieren tener un conocimiento exacto de los hechos del pasado y de los que en el futuro serán iguales o semejantes<note n="154" type="explanatory">Nota 154: ...</note>, de acuerdo con las leyes de la naturaleza humana<note n="155" type="explanatory">Nota 155: ...</note>, si éstos la consideran útil, será suficiente. En resumen, mi obra ha sido compuesta como una adquisición para siempre más que como una pieza de concurso para escuchar un momento<note n="156" type="explanatory">Nota 156: ...</note>.
+            </seg>
+          </p>
         </div>
       </div>
-    </body>
-    <linkGrp type="alignment">
-      <link targets="grc.1.20.1 es.1.20.1 es.1.20.2"/>
-      <link targets="grc.1.20.2 es.1.20.3"/>
-      <link targets="grc.1.21.1 es.1.21.1"/>
-      <link targets="grc.1.21.2 es.1.21.2"/>
-      <link targets="grc.1.22.1 es.1.22.1"/>
-      <link targets="grc.1.22.2 es.1.22.2"/>
-      <link targets="grc.1.22.3 es.1.22.3"/>
-      <link targets="grc.1.22.4 es.1.22.4"/>
-    </linkGrp>
-  </text>
+    </div>
+  </body>
+  <linkGrp type="alignment">
+    <link targets="grc.1.20.1 es.1.20.1 es.1.20.2"/>
+    <link targets="grc.1.20.2 es.1.20.3"/>
+    <link targets="grc.1.21.1 es.1.21.1"/>
+    <link targets="grc.1.21.2 es.1.21.2"/>
+    <link targets="grc.1.22.1 es.1.22.1"/>
+    <link targets="grc.1.22.2 es.1.22.2"/>
+    <link targets="grc.1.22.3 es.1.22.3"/>
+    <link targets="grc.1.22.4 es.1.22.4"/>
+  </linkGrp>
+</text>
 </TEI>
