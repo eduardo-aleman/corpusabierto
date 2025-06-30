@@ -36,8 +36,6 @@
     {{ end }}
 
   </div>
-<p><strong>Anterior:</strong> {{ with .PrevInSection }}{{ .Title }}{{ else }}Ninguno{{ end }}</p>
-<p><strong>Siguiente:</strong> {{ with .NextInSection }}{{ .Title }}{{ else }}Ninguno{{ end }}</p>
 
   {{/* Navegación entre capítulos */}}
   {{ partial "chapter-nav.html" . }}

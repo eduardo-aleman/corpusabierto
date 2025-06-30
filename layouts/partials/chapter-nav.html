@@ -1,22 +1,31 @@
 <div class="chapter-navigation">
-  {{ with .PrevInSection }}
-  <a class="chapter-nav-link prev" href="{{ .RelPermalink }}">
-    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-    <div>
-      <span>Anterior</span>
-      <strong class="chapter-title">{{ .Title }}</strong>
-    </div>
-  </a>
+
+  {{/* Usamos .Page.PrevInSection en lugar de solo .PrevInSection.
+    .Page es una variable global que siempre apunta al contexto de la página actual.
+    Esto previene errores si este parcial es llamado desde un shortcode, 
+    donde el contexto (el punto ".") podría haber cambiado.
+  */}}
+  {{ with .Page.PrevInSection }}
+    <a class="chapter-nav-link prev" href="{{ .RelPermalink }}">
+      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      <div>
+        <span>Anterior</span>
+        <strong class="chapter-title">{{ .Title }}</strong>
+      </div>
+    </a>
   {{ end }}
 
-  {{ with .NextInSection }}
-  <a class="chapter-nav-link next" href="{{ .RelPermalink }}">
-    <div>
-      <span>Siguiente</span>
-      <strong class="chapter-title">{{ .Title }}</strong>
-    </div>
-    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
-  </a>
+  {{/* Hacemos lo mismo para .NextInSection, usando .Page.NextInSection 
+    para garantizar que obtenemos la página siguiente de la sección correcta.
+  */}}
+  {{ with .Page.NextInSection }}
+    <a class="chapter-nav-link next" href="{{ .RelPermalink }}">
+      <div>
+        <span>Siguiente</span>
+        <strong class="chapter-title">{{ .Title }}</strong>
+      </div>
+      <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
   {{ end }}
+
 </div>
-<!-- Fin de chapter-nav.html -->
