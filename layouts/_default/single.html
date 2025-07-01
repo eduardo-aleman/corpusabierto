@@ -1,26 +1,71 @@
 {{ define "main" }}
-<div class="container-wide page-content">
-
-  {{ partial "libro-contexto.html" . }}
-
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ if .Params.subtitle }}
-      <p class="subtitle">{{ .Params.subtitle }}</p>
-    {{ end }}
-  </header>
-
-  <div class="content-body">
-    {{ .Content }}
-  </div>
+<main class="page-content">
 
   {{/*
-    ========================================================
-    ==      AQUÍ ESTÁ EL CAMBIO IMPORTANTE      ==
-    ========================================================
-    Llamamos al nuevo partial solo para las flechas de navegación.
+    Sección 1: Migas de Pan (Breadcrumbs)
+    Solo se muestra en las páginas que pertenecen a la sección "libros".
   */}}
-  {{ partial "chapter-arrows.html" . }}
+  {{ if eq .Section "libros" }}
+    <div class="container-wide">
+      {{ partial "libro-contexto.html" . }}
+    </div>
+  {{ end }}
 
-</div>
+  {{/*
+    Sección 2: Cabecera Principal
+    Muestra el título y el subtítulo de la página actual.
+  */}}
+  <div class="container-wide">
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ if .Params.subtitle }}
+        <p class="subtitle">{{ .Params.subtitle }}</p>
+      {{ end }}
+    </header>
+  </div>
+  
+  {{/*
+    Sección 3: Navegación de Capítulos (Anterior/Siguiente)
+    También se muestra solo en la sección "libros".
+  */}}
+  {{ if eq .Section "libros" }}
+    <div class="container-wide">
+      {{ partial "chapter-arrows.html" . }}
+    </div>
+  {{ end }}
+
+  {{/*
+    Sección 4: Contenido Principal (con lógica condicional)
+  */}}
+  <div class="container-wide">
+    
+    {{ if .Resources.ByType "page" }}
+      {{/*
+        CASO A: Página Compleja (un capítulo con bloques de contenido)
+        Muestra el layout de dos columnas.
+      */}}
+      <div class="flex flex-col lg:flex-row lg:space-x-8 mt-4">
+
+        <div class="w-full lg:w-1/4 order-last lg:order-first">
+          {{ partial "chapter-nav.html" . }}
+        </div>
+
+        <div class="w-full lg:w-3/4">
+          {{ partial "content-render.html" . }}
+        </div>
+        
+      </div>
+    {{ else }}
+      {{/*
+        CASO B: Página Simple (como "Contacto", "Acerca de", etc.)
+        Muestra el contenido del archivo Markdown directamente. ESTO ARREGLA EL ERROR.
+      */}}
+      <div class="content-body">
+        {{ .Content }}
+      </div>
+    {{ end }}
+
+  </div>
+
+</main>
 {{ end }}

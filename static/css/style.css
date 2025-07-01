@@ -3,7 +3,6 @@
 
 /* --- ESTILOS GLOBALES Y VARIABLES --- */
 
-/* -- NUEVO: Corrección del modelo de caja para un layout predecible -- */
 *,
 *::before,
 *::after {
@@ -20,7 +19,7 @@
 }
 
 body {
-    background-color: var(--bg-white); /* Fondo completamente blanco */
+    background-color: var(--bg-white);
     color: var(--text-color);
     font-family: var(--primary-font);
     margin: 0;
@@ -30,7 +29,7 @@ body {
 /* --- LAYOUT Y CONTENEDOR PRINCIPAL --- */
 .container-wide {
     width: 90%;
-    max-width: 1600px; /* Ocupa más pantalla */
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -58,25 +57,25 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex; /* Pone los elementos en fila */
+    display: flex;
     align-items: center;
-    gap: 0.5rem; /* Espacio ligero entre íconos */
+    gap: 0.5rem;
 }
 
 .main-nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem; /* Área de clic generosa */
+    padding: 0.75rem;
     color: var(--text-color);
     background-color: transparent;
-    border-radius: 50%; /* Hace el fondo circular al pasar el cursor */
+    border-radius: 50%;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .main-nav a:hover {
     color: var(--primary-color);
-    background-color: var(--bg-light-gray); /* Un fondo sutil al pasar el cursor */
+    background-color: var(--bg-light-gray);
 }
 
 .main-nav svg {
@@ -121,7 +120,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* === NAVEGACIÓN MÓVIL CORREGIDA === */
+/* === NAVEGACIÓN MÓVIL === */
 @media (max-width: 800px) {
   .menu-icon {
     display: flex;
@@ -159,19 +158,19 @@ body {
     opacity: 1;
   }
 
-  .nav-toggle:checked + .nav-overlay + .menu-icon + .main-nav {
+  .nav-toggle:checked ~ .main-nav {
     display: block;
   }
 
-  .nav-toggle:checked + .nav-overlay + .menu-icon .menu-icon-bar:nth-child(1) {
+  .nav-toggle:checked ~ .menu-icon .menu-icon-bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
 
-  .nav-toggle:checked + .nav-overlay + .menu-icon .menu-icon-bar:nth-child(2) {
+  .nav-toggle:checked ~ .menu-icon .menu-icon-bar:nth-child(2) {
     opacity: 0;
   }
 
-  .nav-toggle:checked + .nav-overlay + .menu-icon .menu-icon-bar:nth-child(3) {
+  .nav-toggle:checked ~ .menu-icon .menu-icon-bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
 }
@@ -179,12 +178,11 @@ body {
 /* --- GRID DE CONTENEDORES DE LA PORTADA --- */
 .info-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr; /* CORREGIDO: Usa fr en lugar de % para más seguridad con gaps */
   gap: 2.5rem;
   padding: 4rem 0;
 }
 
-/* A partir del quinto contenedor, hacer que ocupe toda la fila (las 2 columnas) */
 .info-grid > .info-container:nth-child(n + 5) {
   grid-column: span 2;
 }
@@ -195,7 +193,7 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    height: 450px; /* Dimensión exacta */
+    height: 450px;
     transition: box-shadow 0.3s ease;
 }
 .info-container:hover {
@@ -205,7 +203,7 @@ body {
 .info-header {
     padding: 1.5rem;
     border-bottom: 1px solid var(--border-color);
-    position: relative; /* Necesario para posicionar el ícono */
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,8 +215,9 @@ body {
 
 .info-content {
     padding: 1.5rem;
-    overflow-y: auto; /* Scroll si el contenido es muy largo */
+    overflow-y: auto;
     flex-grow: 1;
+    overflow-wrap: break-word; /* Clave para prevenir desbordamiento de texto */
 }
 
 .info-content p:first-child { margin-top: 0; }
@@ -226,7 +225,67 @@ body {
 .info-content a { color: var(--primary-color); font-weight: 700; text-decoration: none; }
 .info-content a:hover { text-decoration: underline; }
 
-/* --- SECCIÓN PRE-FOOTER --- */
+/* --- INTRODUCCIÓN EN DOS COLUMNAS (PORTADA) --- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  background-color: var(--bg-light-gray);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+  max-width: 1200px;
+  color: var(--text-color);
+}
+.intro-left {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.intro-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.intro-left ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.intro-left ul li {
+  margin-bottom: 0.5rem;
+}
+.intro-left a {
+  color: var(--primary-color);
+  text-decoration: underline dotted;
+  transition: color 0.2s ease-in-out;
+}
+.intro-left a:hover {
+  color: #0056b3;
+}
+.intro-right {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+.intro-right h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* --- PRE-FOOTER Y FOOTER --- */
 .pre-footer {
     background-color: var(--bg-light-gray);
     border-top: 1px solid var(--border-color);
@@ -259,8 +318,6 @@ body {
 .pre-footer-column ul li a:hover {
     color: var(--primary-color);
 }
-
-/* --- FOOTER --- */
 .site-footer {
     text-align: center;
     padding: 2rem 0;
@@ -272,75 +329,57 @@ body {
     color: var(--bg-white);
 }
 
-/* --- Estilos para páginas 'single' y 'list' --- */
+/* --- ESTILOS PARA PÁGINAS DE CONTENIDO (SINGLE/LIST) --- */
 .page-content {
     padding: 3rem 0;
-}
-.page-content h1 {
-    font-size: 3rem;
 }
 .content-body {
     background-color: var(--bg-white);
     padding: 2rem;
     margin-top: 2rem;
 }
-
-/* -- NUEVO: Corrección para evitar desbordamiento de bloques de código -- */
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-/* ============================================= */
-/* == NAVEGACIÓN DE LIBROS Y CAPÍTULOS == */
-/* ============================================= */
 
-/* --- 1. Breadcrumbs / Migas de Pan (Contexto) --- */
-/* Reemplaza y mejora el estilo de .libro-header-link */
+/* --- COMPONENTES DE PÁGINAS DE LIBROS --- */
+
 .libro-contexto {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Para que se ajuste en móviles */
+    flex-wrap: wrap;
     gap: 0.5rem;
     background-color: var(--bg-light-gray);
     padding: 0.75rem 1.25rem;
     border-radius: 6px;
     font-size: 0.95rem;
-    margin-bottom: 2rem;
     border: 1px solid var(--border-color);
 }
-
 .libro-contexto a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
 }
-
 .libro-contexto a:hover {
     text-decoration: underline;
 }
-
 .libro-contexto span {
-    color: #6c757d; /* Un gris suave para los separadores */
+    color: #6c757d;
 }
-
 .libro-contexto strong {
     color: var(--text-color);
     font-weight: 600;
 }
 
-
-/* --- 2. Navegación Lateral de Capítulos --- */
 .chapter-nav {
-    /* El contenedor <aside> */
     border: 1px solid var(--border-color);
-    background-color: #fcfcfc; /* Un fondo casi blanco */
+    background-color: #fcfcfc;
     border-radius: 8px;
     padding: 1.5rem;
-    /* Para que se quede fijo al hacer scroll en pantallas grandes */
     position: sticky;
     top: 2rem;
 }
-
 .chapter-nav h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -349,16 +388,14 @@ pre {
     padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border-color);
 }
-
 .chapter-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem; /* Espacio entre elementos */
+    gap: 0.25rem;
 }
-
 .chapter-nav a {
     display: block;
     padding: 0.75rem 1rem;
@@ -368,54 +405,50 @@ pre {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-weight: 500;
 }
-
 .chapter-nav a:hover {
-    background-color: #e9ecef; /* Un gris un poco más oscuro que el fondo */
+    background-color: #e9ecef;
     color: var(--text-color);
 }
-
-/* Estado activo: para el capítulo que se está viendo */
 .chapter-nav a.active {
     background-color: var(--primary-color);
     color: var(--bg-white);
     font-weight: 700;
 }
 
-/* --- TÍTULOS DE CAPÍTULOS --- */
 .chapter-title {
-  width: auto;
+  display: block;
+  width: 220px;
   max-width: 100%;
-  line-height: 1.3;
-  overflow-wrap: break-word;
-  white-space: normal;
-  overflow: visible;
+  line-height: 1.2;
+  word-wrap: break-word;
+  text-align: left;
 }
 
-/* --- ENLACE CONTEXTUAL EN LIBROS Y CAPÍTULOS --- */
-.libro-header-link {
-  margin: 2rem 0 1.5rem;
-  padding: 0.75rem 1rem;
-  background-color: #f5f5f5;
-  border-left: 4px solid var(--primary-color, #007bff);
-  font-size: 1.05rem;
-  font-weight: 600;
-  display: inline-block;
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0 0.5rem;
+}
+.chapter-navigation .nav-link {
+    font-weight: 600;
+    text-decoration: none;
+}
+.chapter-navigation .nav-link.prev {
+    text-align: left;
+}
+.chapter-navigation .nav-link.next {
+    text-align: right;
 }
 
-.libro-header-link a {
-  text-decoration: none;
-  color: var(--text-color);
-}
+/* --- ESTILOS DE COMPONENTES ADICIONALES --- */
 
-.libro-header-link a:hover {
-  text-decoration: underline;
-}
-
-/* --- ESTILOS PARA LA PÁGINA DE MAPAS --- */
+/* Mapa */
 #corpus-map-container {
     position: relative;
 }
-
 #corpus-map {
     height: 650px;
     width: 100%;
@@ -423,7 +456,6 @@ pre {
     border: 1px solid var(--border-color);
     border-radius: 8px;
 }
-
 #map-legend {
     position: absolute;
     top: 10px;
@@ -435,24 +467,17 @@ pre {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 800;
 }
-
 #map-legend ul {
     list-style: none;
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
 }
-
 #map-legend li {
     margin-bottom: 0.25rem;
 }
 
-#map-legend .fa {
-    margin-right: 5px;
-}
-
-
-/* --- ESTILOS PARA EL MODAL DE PANTALLA COMPLETA --- */
+/* Modal */
 .expand-icon {
     position: absolute;
     top: 1rem;
@@ -464,7 +489,6 @@ pre {
 .expand-icon:hover {
     color: var(--primary-color);
 }
-
 .modal-container {
     position: fixed;
     top: 0;
@@ -472,31 +496,28 @@ pre {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    display: none; /* Oculto por defecto */
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 .modal-container.is-visible {
     display: flex;
     opacity: 1;
 }
-
 .modal-content {
     background-color: var(--bg-white);
     padding: 2rem 3rem;
     border-radius: 8px;
     width: 90%;
     max-width: 800px;
-    height: 80vh; /* 80% de la altura de la pantalla */
+    height: 80vh;
     position: relative;
     display: flex;
     flex-direction: column;
 }
-
 .modal-close-btn {
     position: absolute;
     top: 1rem;
@@ -511,61 +532,36 @@ pre {
 .modal-close-btn:hover {
     color: var(--text-color);
 }
-
 #modal-title {
     margin-top: 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);
 }
-
 #modal-body {
-    overflow-y: auto; /* Scroll para el contenido si es largo */
-    flex-grow: 1; /* Ocupa el espacio restante */
+    overflow-y: auto;
+    flex-grow: 1;
 }
-
 body.modal-open {
     overflow: hidden;
 }
 
-/* --- ESTILOS PARA LA SECCIÓN DE FUENTES Y DESCARGAS --- */
+/* Sección Fuentes y Descargas */
 .fuentes-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
-  }
-
-  .fuentes-grid h3, .fuentes-grid h4 {
+}
+.fuentes-grid h3, .fuentes-grid h4 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-  }
-
-  .fuentes-grid p {
+}
+.fuentes-grid p {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
-  }
-
-/* --- MEDIA QUERIES PARA RESPONSIVIDAD --- */
-
-/* En pantallas con un ancho de 800px o menos */
-@media (max-width: 800px) {
-  /* El grid principal de la portada cambia a una sola columna */
-  .info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* La regla de 'span 2' ya no es necesaria en una sola columna */
-  .info-grid > .info-container:nth-child(n + 5) {
-    grid-column: auto;
-  }
-
-  /* El grid de la sección "Fuentes" también cambia a una sola columna */
-  .fuentes-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-/* Estilos para la Página de Contacto */
+/* Formulario de Contacto */
 .contact-container {
     max-width: 600px;
     margin: 40px auto;
@@ -574,11 +570,6 @@ body.modal-open {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
-#mailchimp-form-embed {
-    width: 100%;
-}
-
 #mailchimp-form-embed input[type="email"],
 #mailchimp-form-embed input[type="text"] {
     width: 100%;
@@ -587,11 +578,10 @@ body.modal-open {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 #mailchimp-form-embed input[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -599,26 +589,20 @@ body.modal-open {
     font-size: 16px;
     font-weight: bold;
 }
-
 #mailchimp-form-embed input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
 .contact-alternative {
     text-align: center;
     margin-top: 25px;
     font-size: 0.9em;
     color: #666;
 }
-
 .contact-alternative a {
     color: #007bff;
 }
 
-/* ============================================= */
-/* == Estilos para la Galería de Visualizaciones == */
-/* ============================================= */
-
+/* Galería de Visualizaciones */
 .visualization-wrapper {
   max-width: 800px;
   margin: 2rem auto;
@@ -627,14 +611,12 @@ body.modal-open {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
 }
-
 .responsive-iframe-container {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 125%;
 }
-
 .responsive-iframe-container iframe {
   position: absolute;
   top: 0;
@@ -643,115 +625,25 @@ body.modal-open {
   height: 100%;
   border: 0;
 }
-/* === Introducción en dos columnas (index.html) === */
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  margin: 4rem auto 2rem auto;
-  padding: 2rem;
-  background-color: var(--bg-light-gray);
-  border-left: 4px solid var(--primary-color);
-  border-radius: 4px;
-  max-width: 1200px;
-  color: var(--text-color);
-}
-
-.intro-left {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.intro-left h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.intro-left ul {
-  padding-left: 1.5rem;
-  margin: 1rem 0;
-}
-
-.intro-left ul li {
-  margin-bottom: 0.5rem;
-}
-
-.intro-left a {
-  color: var(--primary-color);
-  text-decoration: underline dotted;
-  transition: color 0.2s ease-in-out;
-}
-
-.intro-left a:hover {
-  color: #0056b3;
-}
-
-.intro-right {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #666;
-  background-color: var(--bg-white);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-}
-
-.intro-right h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-/* === Versión responsiva para móviles === */
-@media (max-width: 800px) {
-  .intro-grid {
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-  }
-
-  .intro-right {
-    margin-top: 2rem;
-  }
-
-  .intro-left h2 {
-    font-size: 1.6rem;
-  }
-}
-
-.chapter-title {
-  display: block;
-  width: 220px;      /* o el valor que necesites para alinear */
-  max-width: 100%;
-  line-height: 1.2;
-  word-wrap: break-word;
-  text-align: left;
-}
-
-/* === AJUSTES DE ESPACIADO VERTICAL EN CABECERAS === */
+/* --- AJUSTES FINALES Y UNIFICADOS DE ESPACIADO --- */
+/* CONSOLIDADO: Bloque único para evitar conflictos */
 .site-header {
-  margin-bottom: 0;
-}
-.libro-header-link {
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+}
+.libro-header-link,
+.libro-contexto { /* Unificando con el nuevo breadcrumb */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
   color: var(--text-color);
 }
 .page-content header {
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .page-content h1 {
+  font-size: 3rem; /* Restaurado desde el original */
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -761,41 +653,7 @@ body.modal-open {
   color: #666;
 }
 
-/* --- AJUSTES DE ESPACIADO VERTICAL EN CABECERAS --- */
-.site-header {
-  margin-bottom: 0.5rem;
-}
-.libro-header-link {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  font-size: 1rem;
-  color: var(--text-color);
-}
-.page-content header {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.page-content h1 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.page-content .subtitle {
-  margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
-  color: #666;
-}
-.chapter-navigation {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.libro-header-link {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.05rem;
-    color: var(--text-color);
-}
-
-/* Mostrar botón Discord solo en pantallas >= 768px */
+/* Botón Discord */
 .discord-desktop-only {
     display: none;
 }
@@ -805,29 +663,26 @@ body.modal-open {
     }
 }
 
-/* ============================================= */
-/*   Posicionamiento de flechas Anterior/Siguiente   */
-/* ============================================= */
-.chapter-navigation {
-    display: flex;
-    justify-content: space-between; /* separa al máximo los items */
-    align-items: center;
-    width: 100%;
-    margin: 1.5rem 0; /* ya tenías algo similar, ajústalo si quieres más/menos espacio */
-    padding: 0 0.5rem; /* opcional, para dar un poquito de separación hacia los bordes */
-}
+/* --- MEDIA QUERIES GLOBALES PARA RESPONSIVIDAD --- */
+@media (max-width: 800px) {
+  .info-grid,
+  .fuentes-grid,
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
 
-.chapter-navigation .nav-link {
-    font-weight: 600;
-    text-decoration: none;
-}
+  .info-grid > .info-container:nth-child(n + 5) {
+    grid-column: auto;
+  }
 
-.chapter-navigation .nav-link.prev {
-    /* asegúrate de que esté alineado a la izquierda */
-    text-align: left;
-}
+  .intro-right {
+    margin-top: 2rem;
+  }
+  .intro-left h2 {
+    font-size: 1.6rem;
+  }
 
-.chapter-navigation .nav-link.next {
-    /* y este a la derecha */
-    text-align: right;
+  .page-content h1 {
+    font-size: 2.2rem; /* Ajuste para móviles */
+  }
 }

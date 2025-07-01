@@ -1,0 +1,35 @@
+{{/* layouts/partials/content-render.html */}}
+
+{{/*
+  PASO 1 (AÑADIDO): Renderiza el contenido principal de la página (ej: index.md).
+  Esta sección asegura que el texto principal del capítulo aparezca primero.
+*/}}
+{{ if .Content }}
+  <div class="content-body">
+    {{ .Content }}
+  </div>
+{{ end }}
+
+{{/*
+  PASO 2 (CÓDIGO ORIGINAL): Renderiza los bloques de contenido.
+  Este parcial busca todas las "páginas recurso", las ordena y las muestra.
+*/}}
+{{ $contentBlocks := .Resources.ByType "page" | sort ".Params.order" }}
+
+{{ with $contentBlocks }}
+  <div class="content-blocks-container">
+    {{ range . }}
+      <div class="info-container" id="{{ .Params.order | default .File.BaseFileName }}">
+        <div class="info-header">
+          <h3>{{ .Title }}</h3>
+          <a href="#" class="expand-icon" title="Ver en pantalla completa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+          </a>
+        </div>
+        <div class="info-content">
+          {{ .Content }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
