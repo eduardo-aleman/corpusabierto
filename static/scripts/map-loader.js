@@ -1,9 +1,11 @@
 // static/scripts/map-loader.js
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Coordenadas y zoom fijos
+  // (CAMBIO) Las coordenadas y el zoom ahora se leen de las variables globales
+  // en lugar de estar fijos en el código.
   const map = L.map("corpus-map", {
-    center: [38.0, 24.0],
-    zoom: 5.5,
+    center: window.MAP_CENTER,
+    zoom: window.MAP_ZOOM,
     zoomControl: true
   });
 

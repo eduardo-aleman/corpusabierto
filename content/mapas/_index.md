@@ -1,6 +1,8 @@
 ---
 title: "Mapas"
-layout: "map-page" # <-- Le decimos a Hugo que use un layout especial para esta página
+layout: "map-page"
+mapCenter: [38.0, 24.0]
+mapZoom: 5.5
 ---
 
 ## Historia de la Guerra del Peloponeso

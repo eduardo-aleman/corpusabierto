@@ -1,5 +1,6 @@
-{{/* 
-  1. DEFINIMOS EL CONTENIDO PRINCIPAL (EL BLOQUE "main") 
+{{/* layouts/_default/map--page.html */}}
+
+{{/* 1. DEFINIMOS EL CONTENIDO PRINCIPAL (EL BLOQUE "main") 
 */}}
 {{ define "main" }}
 <div class="container-wide">
@@ -47,9 +48,13 @@
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
 
-  <!-- Inyectamos la URL de datos; si no hay frontmatter dataFile, usamos default locations.json -->
   <script>
-    window.MAP_DATA_URL = "{{ with .Params.dataFile }}{{ . | relURL }}{{ else }}{{ "data/locations.json" | relURL }}{{ end }}";
+    // Se obtiene la URL del JSON desde el front matter (o se usa un valor por defecto)
+    window.MAP_DATA_URL = "{{ .Params.dataFile | default "data/locations.json" | relURL }}";
+    
+    // (CAMBIO) Se obtienen el centro y zoom desde el front matter (o se usan valores por defecto)
+    window.MAP_CENTER = {{ .Params.mapCenter | default (slice 38.0 24.0) }};
+    window.MAP_ZOOM = {{ .Params.mapZoom | default 5.5 }};
   </script>
 
   <script src="{{ "/scripts/map-loader.js" | relURL }}"></script>
