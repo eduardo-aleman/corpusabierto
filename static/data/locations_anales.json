@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Roma",
+    "freq": 14,
+    "type": "Ciudad",
+    "lat": 41.9028,
+    "lng": 12.4964
+  },
+  {
+    "name": "Rávena",
+    "freq": 2,
+    "type": "Ciudad",
+    "lat": 44.4184,
+    "lng": 12.2035
+  },
+  {
+    "name": "Lugdunum (Lyon)",
+    "freq": 2,
+    "type": "Ciudad",
+    "lat": 45.764,
+    "lng": 4.8357
+  },
+  {
+    "name": "Panonia",
+    "freq": 7,
+    "type": "Región",
+    "lat": 46.0,
+    "lng": 19.0
+  },
+  {
+    "name": "Germania",
+    "freq": 6,
+    "type": "Región",
+    "lat": 51.0,
+    "lng": 10.0
+  },
+  {
+    "name": "Iliria",
+    "freq": 5,
+    "type": "Región",
+    "lat": 44.0,
+    "lng": 17.0
+  },
+  {
+    "name": "Siria",
+    "freq": 4,
+    "type": "Región",
+    "lat": 34.8021,
+    "lng": 38.9968
+  },
+  {
+    "name": "Egipto",
+    "freq": 3,
+    "type": "Región",
+    "lat": 26.8206,
+    "lng": 30.8025
+  },
+  {
+    "name": "Armenia",
+    "freq": 3,
+    "type": "Región",
+    "lat": 40.0691,
+    "lng": 45.0382
+  },
+  {
+    "name": "Dalmacia",
+    "freq": 2,
+    "type": "Región",
+    "lat": 44.0,
+    "lng": 17.0
+  },
+  {
+    "name": "Asia Menor",
+    "freq": 2,
+    "type": "Región",
+    "lat": 39.0,
+    "lng": 35.0
+  },
+  {
+    "name": "Hispania",
+    "freq": 2,
+    "type": "Región",
+    "lat": 40.0,
+    "lng": -4.0
+  },
+  {
+    "name": "Alpes",
+    "freq": 1,
+    "type": "Región",
+    "lat": 46.0,
+    "lng": 10.0
+  },
+  {
+    "name": "Tracia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 41.0,
+    "lng": 26.0
+  },
+  {
+    "name": "Bitinia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 40.0,
+    "lng": 30.0
+  },
+  {
+    "name": "Capadocia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 38.0,
+    "lng": 35.0
+  },
+  {
+    "name": "Galacia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 39.0,
+    "lng": 35.0
+  },
+  {
+    "name": "Cilicia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 37.0,
+    "lng": 34.0
+  },
+  {
+    "name": "Judea",
+    "freq": 1,
+    "type": "Región",
+    "lat": 31.7683,
+    "lng": 35.2137
+  },
+  {
+    "name": "Partia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 35.0,
+    "lng": 50.0
+  },
+  {
+    "name": "Germania Inferior",
+    "freq": 1,
+    "type": "Región",
+    "lat": 51.0,
+    "lng": 6.0
+  },
+  {
+    "name": "Germania Superior",
+    "freq": 1,
+    "type": "Región",
+    "lat": 49.0,
+    "lng": 8.0
+  },
+  {
+    "name": "Norico",
+    "freq": 1,
+    "type": "Región",
+    "lat": 47.0,
+    "lng": 15.0
+  },
+  {
+    "name": "Recia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 46.0,
+    "lng": 10.0
+  },
+  {
+    "name": "Vindelicia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 48.0,
+    "lng": 10.0
+  },
+  {
+    "name": "Helvecia",
+    "freq": 1,
+    "type": "Región",
+    "lat": 47.0,
+    "lng": 8.0
+  },
+  {
+    "name": "Capri",
+    "freq": 1,
+    "type": "Isla",
+    "lat": 40.5532,
+    "lng": 14.2222
+  },
+  {
+    "name": "Ródano",
+    "freq": 1,
+    "type": "Río",
+    "lat": 45.0,
+    "lng": 4.0
+  },
+  {
+    "name": "Rin",
+    "freq": 1,
+    "type": "Río",
+    "lat": 50.0,
+    "lng": 7.0
+  },
+  {
+    "name": "Danubio",
+    "freq": 1,
+    "type": "Río",
+    "lat": 45.0,
+    "lng": 15.0
+  }
+]

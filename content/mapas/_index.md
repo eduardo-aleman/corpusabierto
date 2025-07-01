@@ -5,4 +5,4 @@ layout: "map-page" # <-- Le decimos a Hugo que use un layout especial para esta 
 
 ## Historia de la Guerra del Peloponeso
 
-### Mapa de los lugares mencionados en el libro
+### Mapa de los lugares mencionados en el libro I

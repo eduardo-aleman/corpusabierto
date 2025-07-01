@@ -1,4 +1,6 @@
+// static/scripts/map-loader.js
 document.addEventListener("DOMContentLoaded", function () {
+  // Coordenadas y zoom fijos
   const map = L.map("corpus-map", {
     center: [38.0, 24.0],
     zoom: 5.5,
@@ -12,24 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     subdomains: "abcd"
   }).addTo(map);
 
-  // Objeto para agrupar los marcadores por tipo.
-  // Se añaden al mapa desde el principio.
   const featureGroups = {
     "Ciudad": L.featureGroup().addTo(map),
     "Región": L.featureGroup().addTo(map),
-    "Isla": L.featureGroup().addTo(map),
-    "Río": L.featureGroup().addTo(map)
+    "Isla":   L.featureGroup().addTo(map),
+    "Río":    L.featureGroup().addTo(map)
   };
 
-  // Mapeo de tipo de lugar a ícono de Font Awesome
   const iconMapping = {
     'Ciudad': 'university',
     'Región': 'map',
-    'Isla': 'tree',
-    'Río': 'tint'
+    'Isla':   'tree',
+    'Río':    'tint'
   };
 
-  // Función para determinar el color del marcador según la frecuencia
   function getColorByFreq(freq) {
     if (freq >= 16) return 'red';
     if (freq >= 6) return 'orange';
@@ -37,21 +35,16 @@ document.addEventListener("DOMContentLoaded", function () {
     return 'blue';
   }
 
-  // Cargar los datos de las localizaciones desde el archivo JSON
-  fetch('/data/locations.json')
+  fetch(window.MAP_DATA_URL)
     .then(response => {
-      if (!response.ok) {
-        throw new Error('No se pudo cargar locations.json. Estado: ' + response.status);
-      }
+      if (!response.ok) throw new Error('Error al cargar ' + window.MAP_DATA_URL + ' (status ' + response.status + ')');
       return response.json();
     })
     .then(data => {
-      // Iterar sobre cada localización en los datos
       data.forEach(location => {
         const color = getColorByFreq(location.freq);
-        const iconType = iconMapping[location.type] || 'circle'; // Ícono por defecto
+        const iconType = iconMapping[location.type] || 'circle';
 
-        // Crear el ícono personalizado con AwesomeMarkers
         const awesomeIcon = L.AwesomeMarkers.icon({
           markerColor: color,
           iconColor: 'white',
@@ -59,27 +52,19 @@ document.addEventListener("DOMContentLoaded", function () {
           prefix: 'fa'
         });
 
-        // Crear el marcador y el popup
-        const marker = L.marker([location.lat, location.lng], { icon: awesomeIcon });
-        const popupContent = `<b>${location.name}</b> (${location.freq})<br>Tipo: ${location.type}`;
-        marker.bindPopup(popupContent);
-
-        // Añadir el marcador al grupo de capas correspondiente
-        if (featureGroups[location.type]) {
-          featureGroups[location.type].addLayer(marker);
-        }
+        L.marker([location.lat, location.lng], { icon: awesomeIcon })
+          .bindPopup(`<b>${location.name}</b> (${location.freq})<br>Tipo: ${location.type}`)
+          .addTo(featureGroups[location.type] || featureGroups["Ciudad"]);
       });
+
+      L.control.layers(null, featureGroups, {
+        position: 'topleft',
+        collapsed: false
+      }).addTo(map);
     })
     .catch(error => {
       console.error('Error al procesar el mapa:', error);
       document.getElementById('corpus-map').innerHTML =
-        `<div class="alert alert-danger m-3">Error: No se ha podido cargar el mapa. Verifique la consola del navegador.</div>`;
+        `<div class="alert alert-danger m-3">Error: no se pudo cargar el mapa. Revisa la consola.</div>`;
     });
-
-  // --- SECCIÓN MODIFICADA ---
-  // Añadir el control de capas al mapa, posicionándolo en la esquina superior izquierda.
-  L.control.layers(null, featureGroups, {
-    position: 'topleft', // Cambiado de 'topright' a 'topleft'
-    collapsed: false // Mantiene la lista de capas desplegada por defecto
-  }).addTo(map);
 });

@@ -1,9 +1,9 @@
-{{/*
-  1. DEFINIMOS EL CONTENIDO PRINCIPAL (EL BLOQUE "main")
+{{/* 
+  1. DEFINIMOS EL CONTENIDO PRINCIPAL (EL BLOQUE "main") 
 */}}
 {{ define "main" }}
 <div class="container-wide">
-  
+
   {{/* Aquí se insertará el HTML de tu mapas/_index.md */}}
   {{ .Content }}
 
@@ -20,7 +20,6 @@
       </ul>
       <strong>Tipo de lugar (ícono)</strong>
       <ul>
-        {{/* Usamos la etiqueta <i> para los íconos de Font Awesome */}}
         <li><i class="fa fa-university"></i> Ciudad</li>
         <li><i class="fa fa-map"></i> Región</li>
         <li><i class="fa fa-tree"></i> Isla</li>
@@ -35,13 +34,10 @@
   2. DEFINIMOS LOS ESTILOS ESPECÍFICOS PARA ESTA PÁGINA (EL BLOQUE "styles")
 */}}
 {{ define "styles" }}
-  {{/* --- ARCHIVOS CSS NECESARIOS PARA LEAFLET Y EL MAPA --- */}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-  {{/* Font Awesome es necesario para los íconos de los marcadores (fa-university, fa-map, etc.) */}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {{ end }}
-
 
 {{/*
   3. DEFINIMOS LOS SCRIPTS ESPECÍFICOS PARA ESTA PÁGINA (EL BLOQUE "scripts")
@@ -50,6 +46,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+  <!-- Inyectamos la URL de datos; si no hay frontmatter dataFile, usamos default locations.json -->
+  <script>
+    window.MAP_DATA_URL = "{{ with .Params.dataFile }}{{ . | relURL }}{{ else }}{{ "data/locations.json" | relURL }}{{ end }}";
+  </script>
 
   <script src="{{ "/scripts/map-loader.js" | relURL }}"></script>
 {{ end }}
