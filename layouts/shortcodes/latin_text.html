@@ -1,0 +1,78 @@
+{{/* layouts/shortcodes/latin_text.html */}}
+
+{{/* Get the parameters from the markdown file. */}}
+{{ $filePath := .Get 0 }}
+{{ $chapterParam := .Get 1 | default "" }}
+
+{{/* Default to an empty string for the content to display */}}
+{{ $contentToDisplay := "" }}
+{{/* Default error message */}}
+{{ $errorMessage := "" }}
+
+{{ if $filePath }}
+  {{ $fileContents := readFile $filePath }}
+
+  {{/* Check if a chapter parameter was passed */}}
+  {{ if ne $chapterParam "" }}
+    {{/* Check if the parameter is a range (e.g., "1-2") */}}
+    {{ if findRE "-" $chapterParam }}
+      {{ $range := split $chapterParam "-" }}
+      {{ $startChapter := index $range 0 }}
+      {{ $endChapter := index $range 1 }}
+
+      {{/*
+        Regex to find a range of chapters. It captures the entire block from the
+        start milestone to the end of the last chapter's content.
+        It uses a non-capturing group (?:...) to find the end boundary.
+      */}}
+      {{ $regex := printf `(?s)(<milestone n="%s" unit="chapter" />.*?<milestone n="%s" unit="chapter" />.*?)(?:<milestone|<\/div1>)` $startChapter $endChapter }}
+      {{ $matches := findRESubmatch $regex $fileContents }}
+
+      {{ if $matches }}
+        {{/* We need the first captured group from the submatch. */}}
+        {{ $contentToDisplay = index (index $matches 0) 1 }}
+      {{ else }}
+        {{ $errorMessage = printf "Error: Chapter range '%s' not found in '%s'." $chapterParam $filePath }}
+      {{ end }}
+
+    {{ else }}
+      {{/* Handle a single chapter */}}
+      {{/*
+        Regex to find a single chapter's content. It captures the text (.*?)
+        between a milestone and the next boundary.
+        The boundary is defined by a non-capturing group (?:...) which is either
+        the next milestone or the closing div1 tag.
+      */}}
+      {{ $regex := printf `(?s)<milestone n="%s" unit="chapter" />(.*?)(?:<milestone|<\/div1>)` $chapterParam }}
+      {{ $matches := findRESubmatch $regex $fileContents }}
+
+      {{ if $matches }}
+        {{/*
+          findRESubmatch returns a slice of slices.
+          e.g., [[full_match, submatch1], [..]]
+          We want the first submatch of the first match.
+        */}}
+        {{ $contentToDisplay = index (index $matches 0) 1 }}
+      {{ else }}
+        {{ $errorMessage = printf "Error: Chapter '%s' not found in '%s'." $chapterParam $filePath }}
+      {{ end }}
+    {{ end }}
+
+  {{ else }}
+    {{/* No chapter parameter, so display the full file contents. */}}
+    {{ $contentToDisplay = $fileContents }}
+  {{ end }}
+
+{{ else }}
+  {{ $errorMessage = "Error: No file path provided to the latin_text shortcode." }}
+{{ end }}
+
+
+{{/* Final rendering logic */}}
+{{ if $contentToDisplay }}
+  <div class="greek-text-container">
+    {{ $contentToDisplay | safeHTML }}
+  </div>
+{{ else if $errorMessage }}
+  <p style="color: red;">{{ $errorMessage }}</p>
+{{ end }}
