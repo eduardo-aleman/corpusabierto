@@ -11,28 +11,24 @@
     {{ end }}
   </header>
 
+  {{/* 2. Navegación entre capítulos: flechas Anterior / Siguiente justo tras el header */}}
+  {{ partial "chapter-arrows.html" . }}
+
   <div class="flex flex-col lg:flex-row lg:space-x-8 mt-4">
 
     {{/* --- Columna de Navegación de Capítulos (Sidebar) --- */}}
-    {{/* Se mostrará solo cuando estemos dentro de un libro, gracias a la lógica del partial */}}
     <div class="w-full lg:w-1/4 order-last lg:order-first">
       {{ partial "chapter-nav.html" . }}
     </div>
 
     {{/* --- Columna de Contenido Principal --- */}}
     <div class="w-full lg:w-3/4">
-      {{/* Muestra el contenido del _index.md si existe */}}
       {{ with .Content }}
         <div class="content-body prose max-w-none mb-8">
           {{ . }}
         </div>
       {{ end }}
 
-      {{/*
-        Esta es tu lógica original:
-        - Si hay páginas regulares, las muestra en una rejilla.
-        - Si no, muestra una lista de las sub-secciones.
-      */}}
       {{ if .RegularPages }}
         <div class="info-grid">
           {{ range .RegularPages.ByWeight }}
@@ -62,6 +58,7 @@
           </ul>
         </div>
       {{ end }}
+
     </div>
   </div>
 </div>

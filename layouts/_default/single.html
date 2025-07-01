@@ -1,39 +1,26 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
-  {{/* Incluimos el contexto/breadcrumb aquí arriba */}}
   {{ partial "libro-contexto.html" . }}
 
   <header>
     <h1>{{ .Title }}</h1>
-
-    {{/* Muestra un subtítulo si existe */}}
     {{ if .Params.subtitle }}
-    <p class="subtitle">{{ .Params.subtitle }}</p>
+      <p class="subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
-
-    {{/* El bloque "Volver a la obra" se puede eliminar,
-       ya que "libro-contexto.html" ya lo gestiona. */}}
-
   </header>
 
   <div class="content-body">
-    {{/* ... tu lógica de .Resources o .Content ... */}}
-    {{ if .Resources }}
-      {{ range seq 1 6 }}
-        {{ with $.Resources.GetMatch (printf "%d.md" .) }}
-          <div class="contenedor parte-{{ .Name | plainify }}">
-            {{ .Content }}
-          </div>
-        {{ end }}
-      {{ end }}
-    {{ else }}
-      {{ .Content }}
-    {{ end }}
+    {{ .Content }}
   </div>
 
-  {{/* Navegación entre capítulos */}}
-  {{ partial "chapter-nav.html" . }}
+  {{/*
+    ========================================================
+    ==      AQUÍ ESTÁ EL CAMBIO IMPORTANTE      ==
+    ========================================================
+    Llamamos al nuevo partial solo para las flechas de navegación.
+  */}}
+  {{ partial "chapter-arrows.html" . }}
 
 </div>
 {{ end }}

@@ -804,3 +804,30 @@ body.modal-open {
         display: block;
     }
 }
+
+/* ============================================= */
+/*   Posicionamiento de flechas Anterior/Siguiente   */
+/* ============================================= */
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between; /* separa al máximo los items */
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem 0; /* ya tenías algo similar, ajústalo si quieres más/menos espacio */
+    padding: 0 0.5rem; /* opcional, para dar un poquito de separación hacia los bordes */
+}
+
+.chapter-navigation .nav-link {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.chapter-navigation .nav-link.prev {
+    /* asegúrate de que esté alineado a la izquierda */
+    text-align: left;
+}
+
+.chapter-navigation .nav-link.next {
+    /* y este a la derecha */
+    text-align: right;
+}

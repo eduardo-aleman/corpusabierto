@@ -1,0 +1,56 @@
+{{/* layouts/partials/chapter-arrows.html */}}
+
+{{/* 1) Encuentra la “página libro” (subsección directa de /libros/) */}}
+{{ $bookPage := "" }}
+{{ $ancestor := . }}
+{{ range seq 5 }}
+  {{ if and $ancestor.Parent (not $ancestor.Parent.IsHome) }}
+    {{ if eq $ancestor.Parent.RelPermalink "/libros/" }}
+      {{ $bookPage = $ancestor }}
+      {{ break }}
+    {{ else }}
+      {{ $ancestor = $ancestor.Parent }}
+    {{ end }}
+  {{ else }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+{{/* 2) Solo si hay bookPage y el flag está activo */}}
+{{ if and $bookPage ($bookPage.Params.enableNextPrevPages) }}
+
+  {{/* 3) Determina el “capítulo” actual: si es sección, es .; si es page, tomamos el bundle padre */}}
+  {{ $chapterSection := . }}
+  {{ if .IsPage }}
+    {{ $chapterSection = .Parent }}
+  {{ end }}
+
+  {{/* 4) Lista de capítulos dentro del libro */}}
+  {{ $chapters := $chapterSection.Parent.Sections.ByWeight }}
+
+  {{/* 5) Índice del capítulo actual */}}
+  {{ $currentIndex := -1 }}
+  {{ range $i, $c := $chapters }}
+    {{ if eq $c.RelPermalink $chapterSection.RelPermalink }}
+      {{ $currentIndex = $i }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="chapter-navigation">
+    {{/* Anterior */}}
+    {{ if ge $currentIndex 1 }}
+      {{ $prev := index $chapters (sub $currentIndex 1) }}
+      <a href="{{ $prev.Permalink }}" class="nav-link prev" aria-label="Capítulo anterior">
+        «« Anterior
+      </a>
+    {{ end }}
+
+    {{/* Siguiente */}}
+    {{ if lt $currentIndex (sub (len $chapters) 1) }}
+      {{ $next := index $chapters (add $currentIndex 1) }}
+      <a href="{{ $next.Permalink }}" class="nav-link next" aria-label="Capítulo siguiente">
+        Siguiente »»
+      </a>
+    {{ end }}
+  </nav>
+{{ end }}
