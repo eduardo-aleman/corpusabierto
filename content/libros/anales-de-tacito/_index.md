@@ -1,6 +1,8 @@
 ---
 title: "Anales de Tácito"
 listable: true
+params:
+  enableNextPrevPages: true
 ---
 ### Estructura y alcance de los Anales
 
