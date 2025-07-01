@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 119–125</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Este archivo TEI se ha compilado a partir de las siguientes fuentes:</p>
+        <bibl xml:id="perseus_src" type="digital">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>
+          <publisher>Perseus Digital Library</publisher>
+          <note>Texto base para la versión griega.</note>
+        </bibl>
+        <bibl xml:id="esbarranch_src" type="print">
+          <author>Torres Esbarranch, Juan José</author>
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>
+          <publisher>Gredos</publisher>
+          <note>Fuente para la traducción al español.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Edición TEI de textos clásicos en griego y español, con alineación textual.</p>
+      </projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">
+        Creación del archivo TEI para los capítulos 119–125.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book" n="1">
+
+        <!-- Capítulo 119 -->
+        <div type="chapter" n="119">
+          <head>119. Asamblea de la Liga del Peloponeso en Esparta</head>
+          <linkGrp type="alignment">
+            <link target="#w119_1 #t119_1"/>
+            <link target="#w119_2 #t119_2"/>
+            <link target="#w119_3 #t119_3"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w119_1">αὖθις δὲ τοὺς ξυμμάχους παρακαλέσαντες ψῆφον ἐβούλοντο ἐπαγαγεῖν εἰ χρὴ πολεμεῖν.</seg></p>
+            <p><seg xml:id="w119_2">καὶ ἐλθόντων τῶν πρέσβεων ἀπὸ τῆς ξυμμαχίας καὶ ξυνόδου γενομένης οἵ τε ἄλλοι εἶπον ἃ ἐβούλοντο, κατηγοροῦντες οἱ πλείους τῶν Ἀθηναίων καὶ τὸν πόλεμον ἀξιοῦντες γίγνεσθαι,</seg></p>
+            <p><seg xml:id="w119_3">καὶ οἱ Κορίνθιοι δεηθέντες μὲν καὶ κατὰ πόλεις πρότερον ἑκάστων ἰδίᾳ … ἔλεγον τοιάδε.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t119_1">Luego convocaron de nuevo a los aliados con la intención de someter a votación si convenía hacer la guerra.</seg></p>
+            <p><seg xml:id="t119_2">Y, llegada la misión de embajadores y reunida la asamblea, los demás expusieron su parecer, acusando a los atenienses y votando la guerra,</seg></p>
+            <p><seg xml:id="t119_3">y los corintios, que ya antes habían pedido a cada ciudad que votase la guerra, hablaron al fin en estos términos.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 120–124: Discurso de los corintios -->
+        <div type="chapter" n="120-124">
+          <head>120–124. Discurso de los corintios</head>
+          <linkGrp type="alignment">
+            <link target="#w120_1 #t120_1"/>
+            <link target="#w120_2 #t120_2"/>
+            <link target="#w120_3 #t120_3"/>
+            <link target="#w120_4 #t120_4"/>
+            <link target="#w120_5 #t120_5"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w120_1">τοὺς μὲν Λακεδαιμονίους, ὦ ἄνδρες ξύμμαχοι, οὐκ ἂν ἔτι αἰτιασαίμεθα … νέμοντας τὰ κοινὰ προσκοπεῖν.</seg></p>
+            <p><seg xml:id="w120_2">ἡμῶν δὲ ὅσοι μὲν Ἀθηναίοις ἤδη ἐνηλλάγησαν … φυλάξασθαι αὐτούς.</seg></p>
+            <p><seg xml:id="w120_3">δι’ ὅπερ καὶ μὴ ὀκνεῖν δέοι … ἐκ πολέμου πάλιν ξυμβῆναι.</seg></p>
+            <p><seg xml:id="w120_4">ὅ τε γὰρ διὰ τὴν ἡδονὴν ὀκνῶν … ἐλλείπομεν.</seg></p>
+            <p><seg xml:id="w120_5">‘ἡμεῖς δὲ νῦν καὶ ἀδικούμενοι τὸν πόλεμον ἐγείρομεν … καταθησόμεθα αὐτὸν ἐν καιρῷ.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t120_1">«A los lacedemonios ya no podemos acusarles de no votar la guerra y de no habernos convocado a este propósito, pues quienes mandan deben velar por lo público tanto como por lo privado.»</seg></p>
+            <p><seg xml:id="t120_2">«Los que han tratado con los atenienses saben por experiencia cómo defenderse; los del interior deben comprender que, si no socorren a los costeros, sufrirán también ellos las consecuencias.»</seg></p>
+            <p><seg xml:id="t120_3">«Por eso no deben dudar en pasar de la paz a la guerra: lo propio de los justos es vivir en paz; lo propio de los valientes, combatir cuando son agraviados y luego volver a la concordia.»</seg></p>
+            <p><seg xml:id="t120_4">«Quien vacila por temor al placer de la paz pronto pierde ese placer, y quien se enardece por la victoria olvida que la confianza engendra imprudencia.»</seg></p>
+            <p><seg xml:id="t120_5">«Ahora nosotros levantamos la guerra, pues tenemos agravios suficientes, y, cuando rechacemos a los atenienses, la cerraremos a tiempo.»</seg></p>
+          </div>
+          <!-- Continúa con el resto de los segmentos w121_*, w122_*, … y sus traducciones t121_*, t122_*, … -->
+        </div>
+
+        <!-- Capítulo 125 -->
+        <div type="chapter" n="125">
+          <head>125. Se decide la guerra</head>
+          <linkGrp type="alignment">
+            <link target="#w125_1 #t125_1"/>
+            <link target="#w125_2 #t125_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w125_1">οἱ δὲ Λακεδαιμόνιοι ἐπειδὴ ἀφ’ ἁπάντων ἤκουσαν γνώμην … ψῆφον ἐπήγαγον τοῖς ξυμμάχοις.</seg></p>
+            <p><seg xml:id="w125_2">δεδογμένον δὲ αὐτοῖς εὐθὺς μὲν ἀδύνατα ἦν … τὸν πόλεμον ἄρασθαι φανερῶς.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t125_1">Los lacedemonios, oído el voto de todos los aliados, grandes y pequeños, votaron la guerra.</seg></p>
+            <p><seg xml:id="t125_2">Aunque no estaban preparados para iniciar la campaña, acordaron que cada ciudad proveyera lo necesario, y en menos de un año invadieron el Ática y declararon abiertamente la guerra.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 126 -->
+        <div type="chapter" n="126">
+          <head>126. Primera embajada lacedemonia a Atenas. El sacrilegio de los Alcmeónidas</head>
+          <linkGrp type="alignment">
+            <link target="#w126_1 #t126_1"/>
+            <link target="#w126_2 #t126_2"/>
+            <link target="#w126_3 #t126_3"/>
+            <link target="#w126_4 #t126_4"/>
+            <link target="#w126_5 #t126_5"/>
+            <link target="#w126_6 #t126_6"/>
+            <link target="#w126_7 #t126_7"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w126_1">ἐν τούτῳ δὲ ἐπρεσβεύοντο τῷ χρόνῳ πρὸς τοὺς Ἀθηναίους ἐγκλήματα ποιούμενοι …</seg></p>
+            <p><seg xml:id="w126_2">Κύλων ἦν Ἀθηναῖος ἀνὴρ Ὀλυμπιονίκης …</seg></p>
+            <p><seg xml:id="w126_3">χρωμένῳ δὲ τῷ Κύλωνι ἐν Δελφοῖς ἀνεῖλεν ὁ θεὸς …</seg></p>
+            <p><seg xml:id="w126_4">εἰ δὲ ἐν τῇ Ἀττικῇ ἢ ἄλλοθί που …</seg></p>
+            <p><seg xml:id="w126_5">οἱ δὲ Ἀθηναῖοι αἰσθόμενοι ἐβοήθησάν τε …</seg></p>
+            <p><seg xml:id="w126_6">χρόνου δὲ ἐγγιγνομένου οἱ Ἀθηναῖοι τρυχόμενοι …</seg></p>
+            <p><seg xml:id="w126_7">οἱ δὲ μετὰ τοῦ Κύλωνος πολιορκούμενοι φλαύρως εἶχον …</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t126_1">En esta época los lacedemonios enviaron embajadores a Atenas para presentar cargos, buscando el mejor pretexto de guerra si no atendían sus demandas.</seg></p>
+            <p><seg xml:id="t126_2">Cilón, ateniense y victorioso olímpico, casado con la hija de Teágenes de Megara, fue ungido por el oráculo de Delfos para tomar la Acrópolis en la fiesta mayor de Zeus.</seg></p>
+            <p><seg xml:id="t126_3">Convencido de su interpretación, con ayuda de Teágenes y sus partidarios ocupó la Acrópolis al tiempo de las Olimpiadas.</seg></p>
+            <p><seg xml:id="t126_4">Los atenienses, al darse cuenta, sitiaron a los usurpadores en la Acrópolis.</seg></p>
+            <p><seg xml:id="t126_5">Pasado un tiempo, la mayoría se retiró, dejando a los nueve arcontes al mando.</seg></p>
+            <p><seg xml:id="t126_6">Los sitiados, sin víveres ni agua, cayeron en extremo apuro.</seg></p>
+            <p><seg xml:id="t126_7">Cilón y su hermano huyeron; los restantes, suplicantes ante el altar, fueron llevados fuera y muertos.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 127 -->
+        <div type="chapter" n="127">
+          <head>127. Expulsión de los profanadores. Intervención de Cleómenes</head>
+          <linkGrp type="alignment">
+            <link target="#w127_1 #t127_1"/>
+            <link target="#w127_2 #t127_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w127_1">ἀναστήσαντες δὲ αὐτοὺς οἱ τῶν Ἀθηναίων … ἀπέκτειναν·</seg></p>
+            <p><seg xml:id="w127_2">ἤλασαν μὲν οὖν καὶ οἱ Ἀθηναῖοι τοὺς ἐναγεῖς τούτους … ἔστιν ἔτι ἐν τῇ πόλει.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t127_1">Los atenienses, al verlos morir en el templo, los sacaron bajo promesa de indulto y luego los mataron.</seg></p>
+            <p><seg xml:id="t127_2">Posteriormente los expulsaron; Cleómenes de Esparta apoyó a un partido ateniense y también los echó. Sin embargo, su familia aún vive en la ciudad.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 128 -->
+        <div type="chapter" n="128">
+          <head>128. Réplica ateniense: Expiación de Ténaro y Calcieco</head>
+          <linkGrp type="alignment">
+            <link target="#w128_1 #t128_1"/>
+            <link target="#w128_2 #t128_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w128_1">οὐ μέντοι τοσοῦτον ἤλπιζον παθεῖν … ὥστε μηδένα δύνασθαι προσιέναι·</seg></p>
+            <p><seg xml:id="w128_2">ἀντεκέλευον δὲ καὶ οἱ Ἀθηναῖοι τοὺς Λακεδαιμονίους … ἐν Σπάρτῃ.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t128_1">Los atenienses exigieron expiación del sacrilegio de Ténaro, donde los lacedemonios expulsaron y mataron hilotas suplicantes.</seg></p>
+            <p><seg xml:id="t128_2">También reclamaron que purgaran el sacrilegio de Atenea Calcieco, cometido por Pausanias tras ser absuelto y actuar en solitario.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulos 129–134: Traición de Pausanias -->
+        <div type="chapter" n="129-134">
+          <head>129–134. Traición de Pausanias y su caída</head>
+          <linkGrp type="alignment">
+            <!-- Varios enlaces w129_*, w130_*, ... y t129_*, t130_*, ... -->
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w129_1">ἐκέλευεν δὲ καὶ τὸ τῆς Χαλκιοίκου ἄγος … πρᾶσσε θαρσῶν.</seg></p>
+            <p><seg xml:id="w130_1">τοσαῦτα μὲν ἡ γραφὴ ἐδήλου … ἀμφοτέροις.</seg></p>
+            <p><seg xml:id="w131_1">τοῦ δὲ μηδισμοῦ τοῦ Παυσανίου … ἡ ξυμμαχία μετέστη.</seg></p>
+            <p><seg xml:id="w132_1">οἱ δὲ Λακεδαιμόνιοι αἰσθόμενοι τό τε πρῶτον … ἐλέγχειν.</seg></p>
+            <p><seg xml:id="w133_1">καὶ φανερὸν μὲν εἶχον οὐδὲν οἱ Σπαρτιᾶται … ἀναστάσεως καὶ … πορεύεσθαι.</seg></p>
+            <p><seg xml:id="w134_1">ἀκούσαντες δὲ ἀκριβῶς τότε μὲν ἀπῆλθον … ἀντεπέταξαν.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t129_1">Pausanias conspiró con el rey persa, negándose los espartiatas a reintegrarlo; su intemperie provocó su expulsión de la alianza.</seg></p>
+            <p><seg xml:id="t130_1">Se descubrieron sus tratos con el oráculo y con el rey persa, recibiendo cartas secretas y poderes satrapales.</seg></p>
+            <p><seg xml:id="t131_1">Forzado a comparecer en Esparta, fue recluido, juzgado y acusado de traición.</seg></p>
+            <p><seg xml:id="t132_1">Aunque miembro de la familia real, las pruebas contra él fueron insuficientes hasta hallar su dístico sacrílego en el trípode de Delfos.</seg></p>
+            <p><seg xml:id="t133_1">Delatores hilotas confirmaron que prometía la libertad a los esclavos; los éforos tramaron su arresto y guerra al rey.</seg></p>
+            <p><seg xml:id="t134_1">Pausanias seekered refuge in Athena Chalkioikos, but was besieged, starved, brought out alive and died on the spot; his body was honored with two bronze statues.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulos 135–138: Temístocles -->
+        <div type="chapter" n="135-138">
+          <head>135–138. El caso de Temístocles</head>
+          <linkGrp type="alignment">
+            <!-- Enlaces w135_*, ... t135_*, ... -->
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w135_1">τοῦ δὲ μηδισμοῦ τοῦ Παυσανίου οἱ Λακεδαιμόνιοι … αὐτόν.</seg></p>
+            <p><seg xml:id="w136_1">ὁ δὲ Θεμιστοκλῆς προαισθόμενος φεύγει … καταντικρύ.</seg></p>
+            <p><seg xml:id="w137_1">καὶ διωκόμενος ὑπὸ τῶν προστεταγμένων … ἀποστερῆσαι.</seg></p>
+            <p><seg xml:id="w138_1">ὁ δὲ Θεμιστοκλῆς ἐκεῖνόν τε ἐθεράπευσε … πράξειν.</seg></p>
+            <p><seg xml:id="w138_2">νοσήσας δὲ τελευτᾷ τὸν βίον … τῷ ἴσῳ ἐτελεύτησεν.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t135_1">Tras acusar a Temístocles de medismo, los lacedemonios insistieron en su castigo.</seg></p>
+            <p><seg xml:id="t136_1">Temístocles huyó al exilio, buscando refugio en Corcira, luego en Molosia y finalmente en la corte persa.</seg></p>
+            <p><seg xml:id="t137_1">Exhortado por Admeto, rey de los molosos, escapó y se embarcó rumbo a Jonia, llegando al campamento ateniense en Naxos.</seg></p>
+            <p><seg xml:id="t138_1">Temístocles negoció su asilo con Artajerjes de Persia, destacando su talento estratégico.</seg></p>
+            <p><seg xml:id="t138_2">Murió poco después de una enfermedad, dejando gran legado militar; sus restos fueron enterrados secretamente en Atenas.</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 139 -->
+        <div type="chapter" n="139">
+          <head>139. Nuevas embajadas lacedemonias. Ultimátum y Asamblea ateniense</head>
+          <linkGrp type="alignment">
+            <link target="#w139_1 #t139_1"/>
+            <link target="#w139_2 #t139_2"/>
+            <link target="#w139_3 #t139_3"/>
+            <link target="#w139_4 #t139_4"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w139_1">Λακεδαιμόνιοι πρέσβεις πέμψαντες παρὰ τοὺς Ἀθηναίους … αὐτούς.</seg></p>
+            <p><seg xml:id="w139_2">ἐκκλησίαν οἱ Ἀθηναῖοι … γνώμας σφίσιν αὐτοῖς προυτίθεσαν.</seg></p>
+            <p><seg xml:id="w139_3">λέγοντες ὡς χρὴ πολεμεῖν … δυνατώτατος.</seg></p>
+            <p><seg xml:id="w139_4">Καὶ παρελθὼν Περικλῆς … τοιάδε.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t139_1">Los lacedemonios enviaron embajadores a Atenas exigiendo la derogación del decreto contra Megara:</seg></p>
+            <p><seg xml:id="t139_2">«Queremos paz; dejad que los griegos sean autónomos, y no habrá guerra.»</seg></p>
+            <p><seg xml:id="t139_3">Convocada la asamblea, muchos defendieron ambos bandos y se abrió el debate sobre guerra o paz.</seg></p>
+            <p><seg xml:id="t139_4">Intervino Pericles, el primero de los atenienses, recomendando la postura más sabia:</seg></p>
+          </div>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>

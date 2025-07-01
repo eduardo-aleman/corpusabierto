@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 119-125</title>
+        <author>Tucídides</author>
+        <respStmt>
+          <resp>Edición base del texto griego</resp>
+          <name xml:id="Perseus">Perseus Digital Library</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edición de las notas críticas</resp>
+          <name xml:id="Alberti">Alberti, G. B.</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traducción al español</resp>
+          <name xml:id="Esbarranch">Torres Esbarranch, Juan José</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codificación TEI y alineación</resp>
+          <name xml:id="CorpusAbierto">CorpusAbierto</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Esta obra está bajo una Licencia Creative Commons Atribución 4.0 Internacional.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Compilado a partir de:</p>
+        <bibl xml:id="perseus_src">
+          <author>Thucydides</author>
+          <title>History of the Peloponnesian War</title>
+          <publisher>Perseus Digital Library</publisher>
+        </bibl>
+        <bibl xml:id="esbarranch_src">
+          <author>Torres Esbarranch, Juan José</author>
+          <title>Tucídides. Historia de la guerra del Peloponeso. Libros I–II</title>
+          <publisher>Gredos</publisher>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Proyecto CorpusAbierto: edición TEI de clásicos griegos en español.</p>
+      </projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-30" who="#CorpusAbierto">
+        Creación del archivo TEI para los capítulos 119-125.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book" n="1">
+
+        <!-- Capítulo 119 -->
+        <div type="chapter" n="119">
+          <head>119. Asamblea de la Liga del Peloponeso en Esparta</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w119_1">αὖθις δὲ τοὺς ξυμμάχους παρακαλέσαντες ψῆφον ἐβούλοντο ἐπαγαγεῖν εἰ χρὴ πολεμεῖν.</seg></p>
+            <p><seg xml:id="w119_2">καὶ ἐλθόντων τῶν πρέσβεων ἀπὸ τῆς ξυμμαχίας... ξυνόδου γενομένης...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t119_1">Luego convocaron de nuevo a los aliados con la intención de someter a votación la cuestión de si se debía hacer la guerra.</seg></p>
+            <p><seg xml:id="t119_2">Y una vez llegados los embajadores de la alianza y reunida la asamblea...</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 120 -->
+        <div type="chapter" n="120">
+          <head>120. Discurso de los corintios (I)</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w120_1">τοὺς μὲν Λακεδαιμονίους, ὦ ἄνδρες ξύμμαχοι...</seg></p>
+            <p><seg xml:id="w120_2">ἡμῶν δὲ ὅσοι μὲν Ἀθηναίοις ἤδη...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t120_1">«A los lacedemonios, aliados, ya no podemos acusarlos de no haber votado la guerra...</seg></p>
+            <p><seg xml:id="t120_2">«Por nuestra parte, cuantos ya han tenido tratos con los atenienses...</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 121 -->
+        <div type="chapter" n="121">
+          <head>121. Discurso de los corintios (II)</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w121_1">ἡμεῖς δὲ νῦν καὶ ἀδικούμενοι τὸν πόλεμον ἐγείρομεν...</seg></p>
+            <p><seg xml:id="w121_2">κατὰ πολλὰ δὲ ἡμᾶς εἰκὸς ἐπικρατῆσαι...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t121_1">Nosotros promovemos ahora la guerra porque hemos sufrido injusticias...</seg></p>
+            <p><seg xml:id="t121_2">Por muchas razones hemos de confiar en la victoria...</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 122 -->
+        <div type="chapter" n="122">
+          <head>122. Discurso de los corintios (III)</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w122_1">ὑπάρχουσι δὲ καὶ ἄλλαι ὁδοὶ τοῦ πολέμου ἡμῖν...</seg></p>
+            <p><seg xml:id="w122_2">δι’ ὅπερ καὶ μὴ ὀκνεῖν δεῖ...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t122_1">Están también a nuestra disposición otros métodos de guerra...</seg></p>
+            <p><seg xml:id="t122_2">Advirtamos asimismo que si se tratara de divergencias por fronteras...</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 123 -->
+        <div type="chapter" n="123">
+          <head>123. Discurso de los corintios (IV)</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w123_1">ἀλλ’ ὅπερ τῷ νῦν ξυμφέρει τοῦ παρεξηγημένου...</seg></p>
+            <p><seg xml:id="w123_2">τὰ μὲν οὖν προγεγενημένα τί δεῖ μακρότερον...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t123_1">Pero, ¿qué necesidad hay de seguir reprochando el pasado?</seg></p>
+            <p><seg xml:id="t123_2">Hay que entrar en guerra con confianza...</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 124 -->
+        <div type="chapter" n="124">
+          <head>124. Discurso de los corintios (V)</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w124_1">ὥστε πανταχόθεν καλῶς ὑπάρχον ὑμῖν πολεμεῖν...</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t124_1">«Que permitiremos que los megareos utilicen nuestros puertos si los lacedemonios renuncian...»</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 125 -->
+        <div type="chapter" n="125">
+          <head>125. Se decide la guerra</head>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w125_1">οἱ δὲ Λακεδαιμόνιοι… ψῆφον ἐπήγαγον τοῖς ξυμμάχοις…</seg></p>
+            <p><seg xml:id="w125_2">δεδογμένον δὲ αὐτοῖς… ἐπιχειρεῖν ἀπαρασκεύοις…</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t125_1">Los lacedemonios hicieron votar a los aliados presentes; y la mayoría votó la guerra.</seg></p>
+            <p><seg xml:id="t125_2">Pero, una vez decidida, no estaban preparados para emprenderla inmediatamente...</seg></p>
+          </div>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>

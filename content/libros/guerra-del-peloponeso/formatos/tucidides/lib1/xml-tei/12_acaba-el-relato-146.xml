@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulo 146</title>
+        <author>Tucídides</author>
+        <respStmt><resp>Edición base del texto griego</resp><name xml:id="Perseus">Perseus Digital Library</name></respStmt>
+        <respStmt><resp>Traducción al español</resp><name xml:id="Esbarranch">Torres Esbarranch, Juan José</name></respStmt>
+        <respStmt><resp>Codificación TEI y alineación</resp><name xml:id="CorpusAbierto">CorpusAbierto</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.es">
+            Creative Commons Atribución 4.0 Internacional
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Compilado de Perseus Digital Library y Torres Esbarranch (1990).</p>
+      </sourceDesc>
+      <revisionDesc>
+        <change when="2025-06-30" who="#CorpusAbierto">Añadido Capítulo 146.</change>
+      </revisionDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book" n="1">
+        <div type="chapter" n="146">
+          <head>146. Causas y antecedentes de la Guerra del Peloponeso</head>
+          <linkGrp type="alignment">
+            <link target="#w146_1 #t146_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w146_1">αἰτίαι δὲ αὗται καὶ διαφοραὶ ἐγένοντο ἀμφοτέροις πρὸ τοῦ πολέμου, ἀρξάμεναι εὐθὺς ἀπὸ τῶν ἐν Ἐπιδάμνῳ καὶ Κερκύρᾳ· ἐπεμείγνυντο δὲ ὅμως ἐν αὐταῖς καὶ παρ’ ἀλλήλους ἐφοίτων ἀκηρύκτως μέν, ἀνυπόπτως δὲ οὔ· σπονδῶν γὰρ ξύγχυσις τὰ γιγνόμενα ἦν καὶ πρόφασις τοῦ πολεμεῖν.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t146_1">Tales fueron las acusaciones y las diferencias que surgieron entre los dos bandos antes de la guerra, iniciadas inmediatamente tras los sucesos de Epidamno y Corcira. Sin embargo, durante ese periodo mantuvieron relaciones yendo de un país a otro sin heraldo, aunque no sin sospechas. En efecto, lo que allí ocurría implicaba la violación del tratado y constituía un pretexto para emprender la guerra.</seg></p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

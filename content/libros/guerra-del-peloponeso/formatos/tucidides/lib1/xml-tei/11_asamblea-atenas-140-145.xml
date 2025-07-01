@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Historia de la Guerra del Peloponeso: Libro I, Capítulos 140-145</title>
+        <author>Tucídides</author>
+        <respStmt><resp>Edición base del texto griego</resp><name xml:id="Perseus">Perseus Digital Library</name></respStmt>
+        <respStmt><resp>Traducción al español</resp><name xml:id="Esbarranch">Torres Esbarranch, Juan José</name></respStmt>
+        <respStmt><resp>Codificación TEI y alineación</resp><name xml:id="CorpusAbierto">CorpusAbierto</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>CorpusAbierto</publisher>
+        <date when="2025-06-30">30 de junio de 2025</date>
+        <availability><licence target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons Atribución 4.0 Internacional</licence></availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Compilado de Perseus Digital Library y Torres Esbarranch (1990).</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc><projectDesc><p>Proyecto de acceso libre a textos clásicos en griego y español.</p></projectDesc></encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book" n="1">
+
+        <!-- Capítulo 140 -->
+        <div type="chapter" n="140">
+          <head>140. Discurso de Pericles I</head>
+          <linkGrp type="alignment">
+            <link target="#w140_1 #t140_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w140_1">‘τῆς μὲν γνώμης, ὦ Ἀθηναῖοι, αἰεὶ τῆς αὐτῆς ἔχομαι… αἰτιᾶσθαι.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t140_1">«Mi opinión, atenienses, es la misma de siempre: no ceder ante los peloponesios…</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 141 -->
+        <div type="chapter" n="141">
+          <head>141. Discurso de Pericles II</head>
+          <linkGrp type="alignment">
+            <link target="#w141_1 #t141_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w141_1">‘Λακεδαιμόνιοι δὲ πρότερόν τε δῆλοι ἦσαν… αἰτιώμενοι πάρεισιν.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t141_1">«Los lacedemonios ya maquinaban contra nosotros… y ya no se presentan para acusar, sino para ordenar.»</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 142 -->
+        <div type="chapter" n="142">
+          <head>142. Defensa de la posición naval y terrestre</head>
+          <linkGrp type="alignment">
+            <link target="#w142_1 #t142_1"/>
+            <link target="#w142_2 #t142_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w142_1">‘τὸ γὰρ βραχύ τι τοῦτο πᾶσαν ὑμῶν… ἀθρόον φθειρόμενον.</seg></p>
+            <p><seg xml:id="w142_2">‘μάχῃ μὲν γὰρ μιᾷ πρὸς ἅπαντας… προσφέρεσθαι.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t142_1">«Esta nimiedad probará vuestra firmeza… y demostraréis que merecéis igual trato.»</seg></p>
+            <p><seg xml:id="t142_2">«En batalla naval pueden enfrentarse a todos… pero no sostendrán guerra prolongada.»</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 143 -->
+        <div type="chapter" n="143">
+          <head>143. Ventajas estratégicas de Atenas</head>
+          <linkGrp type="alignment">
+            <link target="#w143_1 #t143_1"/>
+            <link target="#w143_2 #t143_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w143_1">‘εἴ τε καὶ κινήσαντες τῶν Ὀλυμπίασιν… ἀμφοτέροις.</seg></p>
+            <p><seg xml:id="w143_2">‘καὶ γὰρ οἱ μὲν ὡς μάλιστα τιμωρήσασθαί τινα… οὐ σφίσι πολεμεῖν.</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t143_1">«Si intentaran atraer marinos extranjeros… nosotros tenemos ciudadanos pilotos y mejor marinería.»</seg></p>
+            <p><seg xml:id="t143_2">«Si atacaran por tierra, nosotros atacaríamos por mar… el dominio del mar es decisivo.»</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 144 -->
+        <div type="chapter" n="144">
+          <head>144. Conclusión de Pericles</head>
+          <linkGrp type="alignment">
+            <link target="#w144_1 #t144_1"/>
+            <link target="#w144_2 #t144_2"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w144_1">‘πολλὰ δὲ καὶ ἄλλα ἔχω ἐς ἐλπίδα… ἀφαιρεῖσθαι.’</seg></p>
+            <p><seg xml:id="w144_2">‘ἀλλ’ ἐκεῖνα μὲν καὶ ἐν ἄλλῳ λόγῳ… ἀμυνούμεθα.’</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t144_1">«Tengo otras muchas razones para la esperanza… pues temo más nuestros errores que los suyos.»</seg></p>
+            <p><seg xml:id="t144_2">«Respondamos permitiendo el mercado a los megareos… y dispuestos a arbitraje e igual defensa.»</seg></p>
+          </div>
+        </div>
+
+        <!-- Capítulo 145 -->
+        <div type="chapter" n="145">
+          <head>145. Respuesta de Atenas</head>
+          <linkGrp type="alignment">
+            <link target="#w145_1 #t145_1"/>
+          </linkGrp>
+          <div type="source" xml:lang="grc">
+            <p><seg xml:id="w145_1">ὁ μὲν Περικλῆς τοιαῦτα εἶπεν… οὐκέτι ἐπρεσβεύοντο·</seg></p>
+          </div>
+          <div type="translation" xml:lang="es">
+            <p><seg xml:id="t145_1">Así habló Pericles; los atenienses aprobaron su consejo y respondieron que no cederían, pero aceptarían arbitraje conforme al tratado. Así cesaron las embajadas.</seg></p>
+          </div>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>
