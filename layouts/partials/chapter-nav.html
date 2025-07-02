@@ -39,7 +39,7 @@ Este partial genera la navegación para los capítulos dentro de un libro.
 */}}
 {{ if $bookPage }}
   <aside class="chapter-nav">
-    <h3>Capítulos de {{ $bookPage.Title }}</h3>
+    <h3>{{ $bookPage.Title }}</h3>
     <nav>
       <ul>
         {{/* Itera sobre las secciones hijas del libro (los capítulos) */}}
