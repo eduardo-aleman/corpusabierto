@@ -1,6 +1,6 @@
 ---
-title: "Libro XXXII"
-weight: 21
+title: "El Anónimo Valesiano, última parte: La historia del rey Teodorico"
+weight: 20
 params:
   enableNextPrevPages: true
 ---
