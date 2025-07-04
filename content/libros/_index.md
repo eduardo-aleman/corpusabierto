@@ -2,13 +2,15 @@
 title: "Obras Disponibles"
 # No necesita un 'weight' aquí, pero sí un título.
 ---
-<figure><img src="/libros/guerra-del-peloponeso/carta_2r.webp" alt="Plut. 69.2" width="128" height="182">  <figcaption>Plut. 69.2</figcaption>
-</figure>
 
-| | | |
-| :--- | :--- | :--- |
-| _La Orestíada_ de Esquilo | _La República_ de Platón | |
-| _Antígona_ de Sófocles | [_Ética nicomáquea_](etica-nicomaquea) de Aristóteles | |
-| [_Las troyanas_](troyanas-euripides) de Eurípides | [_Anales_](anales-de-tacito/) de Tácito | |
-| _Lisístrata_ de Aristófanes | [_Res gestae_](res-gestae) de Amiano Marcelino | |
-| [_Historia de la Guerra del Peloponeso_](guerra-del-peloponeso/) de Tucídides | | |
+
+<div class="intro-right">
+<div class="intro-right">
+  <p><a href="troyanas-euripides"><em>Las troyanas</em></a> de Eurípides</p>
+  <p><em>Lisístrata</em> de Aristófanes</p>
+  <p><a href="guerra-del-peloponeso/"><em>Historia de la Guerra del Peloponeso</em></a> de Tucídides</p>
+  <p><a href="etica-nicomaquea"><em>Ética nicomáquea</em></a> de Aristóteles</p>
+  <p><a href="anales-de-tacito/"><em>Anales</em></a> de Tácito</p>
+  <p><a href="res-gestae/"><em>Res gestae</em></a> de Amiano Marcelino</p>
+</div>
+</div>
