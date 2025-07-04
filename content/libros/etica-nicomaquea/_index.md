@@ -1,5 +1,5 @@
 ---
-title: "Historia de la Guerra del Peloponeso"
+title: "Ética Nicomáquea"
 listable: true
 params:
   enableNextPrevPages: true
