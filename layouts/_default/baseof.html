@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/icons/apple-touch-icon.png" | absURL }}">
     <link rel="manifest" href="{{ "site.webmanifest" | absURL }}">
 
+    {{/* Bloque para estilos adicionales desde otras plantillas si es necesario */}}
     {{ block "styles" . }}{{ end }}
 </head>
 <body>
@@ -20,26 +21,29 @@
     {{ partial "header.html" . }}
 
     <main>
-        {{/*
-          El bloque 'main' es el contenedor principal.
-          Hugo lo llenará con el contenido de 'single.html' o 'list.html'.
-          Se han eliminado las llamadas a los partials 'libro-contexto.html' y 'chapter-nav.html'
-          de este archivo para evitar la duplicación.
-        */}}
+        {{/* Hugo llenará este bloque con el contenido de single.html, list.html, etc. */}}
         {{ block "main" . }}{{ end }}
     </main>
 
+    {{/*
+      El HTML del modal se coloca aquí, ya que es un elemento estructural
+      que estará disponible en todo el sitio, pero no es un script.
+    */}}
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn" title="Cerrar">&times;</button>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
     {{ partial "footer.html" . }}
 
+    {{/*
+      Llamada única y centralizada al parcial que maneja todos los scripts.
+      El bloque de scripts duplicado ha sido eliminado.
+    */}}
     {{ partial "scripts.html" . }}
-
-    {{ block "scripts" . }}
-      {{ with .Params.scripts }}
-        {{ range . }}
-          <script src="{{ . | relURL }}"></script>
-        {{ end }}
-      {{ end }}
-    {{ end }}
 
 </body>
 </html>

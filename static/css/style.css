@@ -380,6 +380,8 @@ pre {
     position: sticky;
     top: 2rem;
 }
+
+/* MODIFICADO: h3 ahora alinea el título y el botón */
 .chapter-nav h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -387,7 +389,30 @@ pre {
     margin-bottom: 1rem;
     padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* NUEVO: Estilos para el botón de colapso */
+#toggle-nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NUEVO: Transición para el ícono SVG dentro del botón */
+#toggle-nav-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* MODIFICADO: ul ahora tiene propiedades para la animación */
 .chapter-nav ul {
     list-style: none;
     padding: 0;
@@ -395,7 +420,21 @@ pre {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    max-height: 1000px; /* Un valor alto para asegurar que todo el contenido quepa */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
 }
+
+/* NUEVO: Clase para el estado colapsado */
+.chapter-nav.collapsed ul {
+    max-height: 0;
+}
+
+/* NUEVO: Gira el ícono cuando el menú está colapsado */
+.chapter-nav.collapsed #toggle-nav-btn svg {
+    transform: rotate(-90deg);
+}
+
 .chapter-nav a {
     display: block;
     padding: 0.75rem 1rem;

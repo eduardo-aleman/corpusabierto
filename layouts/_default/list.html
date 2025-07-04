@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container-wide page-content">
 
-  {{/* 1. Añadimos el partial de contexto/breadcrumbs para consistencia */}}
+  {{/* Muestra el breadcrumb de contexto */}}
   {{ partial "libro-contexto.html" . }}
 
   <header>
@@ -11,7 +11,7 @@
     {{ end }}
   </header>
 
-  {{/* 2. Navegación entre capítulos: flechas Anterior / Siguiente justo tras el header */}}
+  {{/* Muestra las flechas de navegación Anterior / Siguiente entre capítulos */}}
   {{ partial "chapter-arrows.html" . }}
 
   <div class="flex flex-col lg:flex-row lg:space-x-8 mt-4">
@@ -23,12 +23,15 @@
 
     {{/* --- Columna de Contenido Principal --- */}}
     <div class="w-full lg:w-3/4">
+      
+      {{/* Muestra el contenido principal de la página (del archivo .md) */}}
       {{ with .Content }}
         <div class="content-body prose max-w-none mb-8">
           {{ . }}
         </div>
       {{ end }}
 
+      {{/* Si la página tiene sub-páginas (como paneles de Griego/Español), las muestra en una cuadrícula */}}
       {{ if .RegularPages }}
         <div class="info-grid">
           {{ range .RegularPages.ByWeight }}
@@ -49,16 +52,13 @@
             </div>
           {{ end }}
         </div>
-      {{ else if .Sections }}
-        <div class="content-body">
-          <ul class="list-disc list-inside space-y-2">
-            {{ range .Sections.ByWeight }}
-              <li><a href="{{ .Permalink }}" class="text-blue-600 hover:underline">{{ .Title }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
       {{ end }}
-
+      {{/*
+        NOTA DE EDICIÓN:
+        Se ha eliminado el bloque 'else if .Sections' que estaba aquí.
+        Ese bloque era el que generaba la lista duplicada de capítulos en las páginas
+        de los libros, la cual ya es manejada por el parcial 'chapter-nav.html'.
+      */}}
     </div>
   </div>
 </div>

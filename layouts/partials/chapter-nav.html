@@ -1,23 +1,18 @@
 {{/*
 layouts/partials/chapter-nav.html
 Este partial genera la navegación para los capítulos dentro de un libro.
+El menú comienza colapsado gracias a la clase "collapsed" en el <aside>.
 */}}
 
 {{ $currentPage := . }}
 {{ $bookPage := "" }}
 
 {{/*
-  Solo ejecutar esta lógica si estamos en la sección "libros".
+  Encuentra la página del "libro" (la página principal de la sección).
 */}}
 {{ if eq .Section "libros" }}
-
-  {{/*
-    Encontrar la página del "libro". Un libro es una sección de primer nivel dentro de "libros".
-    Subimos por el árbol de padres desde la página actual hasta encontrar la página
-    cuyo padre sea la sección principal "libros".
-  */}}
   {{ $ancestor := . }}
-  {{ range seq 5 }} {{/* Limita la profundidad a 5 para evitar bucles infinitos */}}
+  {{ range seq 5 }}
     {{ if and $ancestor.Parent (not $ancestor.Parent.IsHome) }}
       {{ if eq $ancestor.Parent.RelPermalink "/libros/" }}
         {{ $bookPage = $ancestor }}
@@ -29,26 +24,26 @@ Este partial genera la navegación para los capítulos dentro de un libro.
       {{ break }}
     {{ end }}
   {{ end }}
-
 {{ end }}
 
 
 {{/*
-  Ahora, si encontramos una página de libro, renderizamos la navegación.
-  Esta condición también previene que se renderice en la página de listado /libros/.
+  Si se encontró una página de libro, renderiza la navegación.
 */}}
 {{ if $bookPage }}
-  <aside class="chapter-nav">
-    <h3>{{ $bookPage.Title }}</h3>
+  <aside class="chapter-nav collapsed">
+    <h3>
+      <span>{{ $bookPage.Title }}</span>
+      <button id="toggle-nav-btn" aria-label="Colapsar navegación">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </h3>
+    
     <nav>
-      <ul>
+      <ul id="chapter-list">
         {{/* Itera sobre las secciones hijas del libro (los capítulos) */}}
         {{ range $bookPage.Sections.ByWeight }}
           <li>
-            {{/*
-              Se eliminaron las clases de Tailwind y se reemplazaron
-              con una clase 'active' para ser estilizada desde el CSS.
-            */}}
             <a href="{{ .Permalink }}" class="{{ if or ($currentPage.IsDescendant .) (eq $currentPage .) }}active{{ end }}">
               {{ .Title }}
             </a>
