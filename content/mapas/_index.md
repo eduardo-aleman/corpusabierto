@@ -1,6 +1,7 @@
 ---
 title: "Mapas"
 layout: "map-page"
+showMap: true 
 ---
 
 ## Historia de la Guerra del Peloponeso
