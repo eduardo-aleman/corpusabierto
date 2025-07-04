@@ -2,6 +2,8 @@
 title: "Obras Disponibles"
 # No necesita un 'weight' aquí, pero sí un título.
 ---
+<img src="/libros/guerra-del-peloponeso/carta_2r.webp" alt="Plut. 69.2" width="128" height="182">
+
 | | | |
 | :--- | :--- | :--- |
 | _La Orestíada_ de Esquilo | _La República_ de Platón | |
