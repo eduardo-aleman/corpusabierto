@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+      :root{--primary-font:'Cardo',serif;--text-color:#212529;--primary-color:#014c9d;--bg-white:#ffffff;--bg-light-gray:#fcfcfd;--border-color:#dee2e6}
+      *,*::before,*::after{box-sizing:border-box}
+      body{background-color:var(--bg-white);color:var(--text-color);font-family:var(--primary-font);margin:0;line-height:1.6}
+      p{line-height:1.8;text-align:justify;margin-bottom:1.5rem}
+      .container-wide{width:90%;max-width:1600px;margin:0 auto;padding:0 2rem}
+      .site-header{background-color:var(--bg-white);border-bottom:1px solid var(--border-color);padding:1.5rem 0;margin-bottom:.5rem}
+      .header-content{display:flex;justify-content:space-between;align-items:center}
+      .site-title{font-size:1.8rem;font-weight:700;color:var(--text-color);text-decoration:none}
+      .main-nav ul{margin:0;padding:0;list-style:none;display:flex;align-items:center;gap:.5rem}
+      .main-nav a{display:flex;align-items:center;justify-content:center;padding:.75rem;color:var(--text-color);background-color:transparent;border-radius:50%}
+      .main-nav svg{width:24px;height:24px}
+      .menu-icon{display:none;width:30px;height:24px;flex-direction:column;justify-content:space-between;z-index:1001}
+      .menu-icon-bar{display:block;width:100%;height:4px;background-color:var(--text-color);border-radius:2px}
+      .nav-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4);z-index:900;opacity:0}
+      .intro-grid{display:grid;grid-template-columns:2fr 1fr;gap:2rem;margin:4rem auto 2rem auto;padding:2rem;background-color:var(--bg-light-gray);border-left:4px solid var(--primary-color);border-radius:4px;max-width:1200px;color:var(--text-color)}
+      .intro-left h2{font-size:2rem;font-weight:700;margin-top:0;display:flex;align-items:center;gap:.5rem}
+      .modal-container{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.8);display:none;justify-content:center;align-items:center;z-index:1000;opacity:0}
+      .modal-content{background-color:var(--bg-white);padding:2rem 3rem;border-radius:8px;width:90%;max-width:800px;height:80vh;position:relative;display:flex;flex-direction:column}
+      .modal-close-btn{position:absolute;top:1rem;right:1.5rem;background:none;border:none;font-size:2.5rem;line-height:1;color:#aaa}
+      #modal-title{margin-top:0;padding-bottom:1rem;border-bottom:1px solid var(--border-color)}
+      #modal-body{overflow-y:auto;flex-grow:1}
+      @media (max-width:800px){.menu-icon{display:flex}.main-nav{display:none}.intro-grid{grid-template-columns:1fr}.intro-left h2{font-size:1.6rem}}
+    </style>
+
+    <link rel="preload" href="{{ "/css/style.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"></noscript>
+
     <meta name="description" content="Proyecto de acceso libre a textos clásicos en griego o latín y español, con notas críticas y herramientas de estudio.">
     <meta name="keywords" content="Corpus Abierto, Tucídides, Historia de la Guerra del Peloponeso, griego, traducción, notas críticas, textos clásicos, literatura, historia antigua, historiografía">
     <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | absURL }}" sizes="96x96">
@@ -41,7 +70,6 @@
 
     {{/*
       Llamada única y centralizada al parcial que maneja todos los scripts.
-      El bloque de scripts duplicado ha sido eliminado.
     */}}
     {{ partial "scripts.html" . }}
 

@@ -1,66 +1,67 @@
 {{ define "main" }}
-<main>
-
-  <div class="container-wide">
-    <section class="intro-grid">
-      <div class="intro-left">
-        <h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-               viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-               style="vertical-align: middle; margin-right: 0.5rem;">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-            <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20"/>
-            <path d="M6.5 7v10"/>
-            <path d="M20 4v16"/>
-          </svg>
-          Bienvenido a CorpusAbierto
-        </h2>
-        <p>
-          Este sitio reúne una colección de textos clásicos en su idioma original junto con traducciones y herramientas para la lectura comparada. Las principales secciones del sitio incluyen:
-        </p>
-        <ul>
-          <li><strong>Índice de Libros</strong>: donde podrás explorar las obras disponibles por autor, título y estructura capitular.</li>
-          <li><strong>Mapas</strong>: con visualizaciones geográficas de los lugares mencionados en las obras.</li>
-          <li><strong>Visualizaciones</strong>: gráficas interactivas para el análisis de los textos.</li>
-          <li><strong>Acerca de</strong> y <strong>Contacto</strong>: información sobre el proyecto y cómo comunicarte.</li>
-        </ul>
-        <p>
-          ¡Espero que disfrutes explorando estos textos y descubriendo la riqueza de la literatura clásica!
-        </p>
-      </div>
-      <div class="intro-right">
-  <h3>Obras disponibles</h3>
-  <p><a href="libros/troyanas-euripides"><em>Las troyanas</em></a> de Eurípides.</p>
-  <p><a href="libros/guerra-del-peloponeso/"><em>Historia de la Guerra del Peloponeso</em></a> de Tucídides.</p>
-  <p><a href="libros/etica-nicomaquea"><em>Ética nicomáquea</em></a> de Aristóteles.</p>
-  <p><a href="libros/anales-de-tacito/"><em>Anales</em></a> de Tácito.</p>
-  <p><a href="libros/res-gestae/"><em>Res gestae</em></a> de Amiano Marcelino.</p>
+<div class="container-wide">
+  <section class="intro-grid">
+    <div class="intro-left">
+      <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="vertical-align: middle; margin-right: 0.5rem;">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20"/>
+          <path d="M6.5 7v10"/>
+          <path d="M20 4v16"/>
+        </svg>
+        Bienvenido a CorpusAbierto
+      </h2>
+      <p>
+        Este sitio reúne una colección de textos clásicos en su idioma original junto con traducciones y herramientas para la lectura comparada. Las principales secciones del sitio incluyen:
+      </p>
+      <ul>
+        <li><strong>Índice de Libros</strong>: donde podrás explorar las obras disponibles por autor, título y estructura capitular.</li>
+        <li><strong>Mapas</strong>: con visualizaciones geográficas de los lugares mencionados en las obras.</li>
+        <li><strong>Visualizaciones</strong>: gráficas interactivas para el análisis de los textos.</li>
+        <li><strong>Acerca de</strong> y <strong>Contacto</strong>: información sobre el proyecto y cómo comunicarte.</li>
+      </ul>
+      <p>
+        ¡Espero que disfrutes explorando estos textos y descubriendo la riqueza de la literatura clásica!
+      </p>
+    </div>
+    <div class="intro-right">
+      <h3>Obras disponibles</h3>
+      <p><a href="libros/troyanas-euripides"><em>Las troyanas</em></a> de Eurípides.</p>
+      <p><a href="libros/guerra-del-peloponeso/"><em>Historia de la Guerra del Peloponeso</em></a> de Tucídides.</p>
+      <p><a href="libros/etica-nicomaquea"><em>Ética nicomáquea</em></a> de Aristóteles.</p>
+      <p><a href="libros/anales-de-tacito/"><em>Anales</em></a> de Tácito.</p>
+      <p><a href="libros/res-gestae/"><em>Res gestae</em></a> de Amiano Marcelino.</p>
+    </div>
+  </section>
 </div>
-    </section>
-  </div> <div class="container-wide">
-    <div class="info-grid">
-      {{/* Filtrar solo las páginas de la sección "features" */}}
-      {{ $pages := where .Site.RegularPages "Section" "features" }}
-      {{ $sortedPages := sort $pages "Weight" }}
 
-      {{/* Iterar sobre todas las páginas ordenadas */}}
-      {{ range $sortedPages }}
-        <div class="info-container">
-          <div class="info-header">
-            <h3>{{ .Title }}</h3>
-            <a href="#" class="expand-icon" title="Ver en pantalla completa">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-              </svg>
-            </a>
-          </div>
-          <div class="info-content">
-            {{ .Content }}
-          </div>
+<div class="container-wide">
+  <div class="info-grid">
+    {{/* Filtrar solo las páginas de la sección "features" */}}
+    {{ $pages := where .Site.RegularPages "Section" "features" }}
+    {{ $sortedPages := sort $pages "Weight" }}
+
+    {{/* Iterar sobre todas las páginas ordenadas */}}
+    {{ range $sortedPages }}
+      <div class="info-container">
+        <div class="info-header">
+          <h3>{{ .Title }}</h3>
+          <a href="#" class="expand-icon" title="Ver en pantalla completa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+            </svg>
+          </a>
         </div>
-      {{ end }}
-    </div> </div> </main>
+        <div class="info-content">
+          {{ .Content }}
+        </div>
+      </div>
+    {{ end }}
+  </div> 
+</div>
 {{ end }}
