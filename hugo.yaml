@@ -25,21 +25,21 @@ menu:
       name: Índice de Libros
       url: /libros/
       weight: 10
-    - identifier: about
-      name: Acerca de
-      url: /acerca/
-      weight: 20
-    - identifier: contact
-      name: Contacto
-      url: /contacto/
-      weight: 30
     - identifier: maps
       name: Mapas
       url: /mapas/
-      weight: 40
+      weight: 20
     - identifier: visualizations
       name: Visualizaciones
       url: /visualizaciones/
+      weight: 30
+    - identifier: about
+      name: Acerca de
+      url: /acerca/
+      weight: 40
+    - identifier: contact
+      name: Contacto
+      url: /contacto/
       weight: 50
     - identifier: github
       name: Ir a GitHub
