@@ -1,5 +1,5 @@
 ---
-title: "Obras Disponibles"
+title: "Índice de libros"
 # No necesita un 'weight' aquí, pero sí un título.
 ---
 
