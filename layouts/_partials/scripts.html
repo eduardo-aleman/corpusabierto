@@ -1,32 +1,27 @@
 {{/* layouts/_partials/scripts.html */}}
 
-{{/* --- MAIN APPLICATION SCRIPT --- */}}
-{{/* Best practice: Bundle global scripts like main.js and nav-collapse.js 
-     into a single file to reduce HTTP requests. */}}
-<script src="{{ "/scripts/app.js" | relURL }}" defer></script>
+{{/* --- SCRIPTS GLOBALES --- */}}
+<script src="{{ "/scripts/main.js" | relURL }}" defer></script>
+<script src="{{ "/scripts/nav-collapse.js" | relURL }}" defer></script>
 
-{{/* --- MAP SCRIPTS (Conditional Loading) --- */}}
+{{/* --- SCRIPTS DEL MAPA (CARGA CONDICIONAL) --- */}}
 {{ if .Params.showMap }}
-  {{/* 1. Load Leaflet libraries from a CDN with Subresource Integrity (SRI) for security. */}}
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"
-          integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-          crossorigin="anonymous" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"
-          integrity="sha512-ZqyonMJByZGjG6NJRkS2dK24Kz29Q4ESM/12zAYJ1aLgHw0Yd209i8fG9eLsP6Qc1bt5Xbe3M0Ie4KnoHjG3g=="
-          crossorigin="anonymous" defer></script>
+  {{/* 1. Carga las librerías de Leaflet y su plugin */}}
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js" defer></script>
 
-  {{/* 2. Define variables for your script. The 'defer' attribute is not needed for inline scripts. */}}
-  <script>
+  {{/* 2. Define las variables para tu script usando el front matter */}}
+  <script defer>
     window.MAP_DATA_URL = "{{ .Params.dataFile | default "data/locations.json" | relURL }}";
     window.MAP_CENTER = {{ .Params.mapCenter | default (slice 38.0 24.0) }};
     window.MAP_ZOOM = {{ .Params.mapZoom | default 5.5 }};
   </script>
 
-  {{/* 3. Load your script that initializes the map. */}}
+  {{/* 3. Carga tu script que dibuja el mapa */}}
   <script src="{{ "/scripts/map-loader.js" | relURL }}" defer></script>
 {{ end }}
 
-{{/* --- OTHER PAGE-SPECIFIC SCRIPTS --- */}}
+{{/* --- OTROS SCRIPTS ESPECÍFICOS DE PÁGINA --- */}}
 {{ with .Params.scripts }}
     {{ range . }}
         <script src="{{ . | relURL }}" defer></script>
