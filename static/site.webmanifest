@@ -1,72 +1,21 @@
 {
-    "name": "CorpusAbierto",
-    "short_name": "CorpusAbierto",
-    "start_url": "/es/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "icons": [
-        {
-            "src": "icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "description": "CorpusAbierto es una plataforma para explorar y analizar corpus lingüísticos abiertos.",
-    "lang": "es",
-    "dir": "ltr",
-    "scope": "/es/",
-    "related_applications": [
-        {
-            "platform": "web",
-            "url": "https://corpusabierto.org/es/",
-            "id": "corpusabierto-web"
-        }
-    ],
-    "prefer_related_applications": true,
-    "screenshots": [
-        {
-            "src": "/static/screenshots/screenshot1.png",
-            "sizes": "1280x720",
-            "type": "image/png",
-            "label": "Pantalla de inicio"
-        },
-        {
-            "src": "/static/screenshots/screenshot2.png",
-            "sizes": "1280x720",
-            "type": "image/png",
-            "label": "Exploración de corpus"
-        }
-    ],
-    "version": "1.0.0",
-    "developer": {
-        "name": "CorpusAbierto: Eduardo Alemán",
-        "url": "https://corpusabierto.org/es/contacto" 
+  "name": "CorpusAbierto",
+  "short_name": "CorpusAbierto",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
-    "license": "CC BY-SA 4.0",
-    "privacy_policy": "https://corpusabierto.org/es/privacidad",
-    "terms_of_service": "https://corpusabierto.org/es/terminos",
-    "categories": [
-        "education",
-        "reference",
-        "language"
-    ],
-    "keywords": [
-        "corpus",
-        "linguistics",
-        "open data",
-        "research",
-        "language learning"
-    ],
-    "orientation": "portrait",
-    "display_override": [
-        "minimal-ui",
-        "fullscreen"
-    ],
-    "prefer_color_scheme": "light"
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }
