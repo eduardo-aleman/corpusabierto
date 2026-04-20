@@ -35,7 +35,8 @@
       {{ if .RegularPages }}
         <div class="info-grid">
           {{ range .RegularPages.ByWeight }}
-            <div class="info-container" id="{{ .File.BaseFileName }}">
+            {{/* CORRECCIÓN: usa panelId del front matter si existe, si no usa el nombre de archivo */}}
+            <div class="info-container" id="{{ .Params.panelId | default .File.BaseFileName }}">
               <div class="info-header">
                 <h3>{{ .Title }}</h3>
                 <a href="#" class="expand-icon" title="Ver en pantalla completa">

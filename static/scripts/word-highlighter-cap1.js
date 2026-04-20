@@ -57,6 +57,8 @@ function enableHighlightCap1() {
 
       // 1) traducciones manuales: data-map="w4" etc.
       if (word.dataset.map) {
+        // CORRECCIÓN: resalta también el elemento clicado
+        word.classList.add('highlight');
         word.dataset.map.split(',').forEach(id => {
           const tgtId = id.trim();
           const tgt = document.getElementById(tgtId);
